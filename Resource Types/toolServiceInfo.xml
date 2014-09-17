@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CMD_ComponentSpec isProfile="false" xsi:schemaLocation="http://www.clarin.eu/cmd https://infra.clarin.eu/cmd/general-component-schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>clarin.eu:cr1:c_1360931019834</ID>
+        <Name>toolServiceInfo</Name>
+        <Description>Groups together elements required for the description of tools and services</Description>
+    </Header>
+    <CMD_Component name="toolServiceInfo" CardinalityMin="1" CardinalityMax="1">
+        <CMD_Element name="resourceType" CardinalityMin="1" CardinalityMax="1" Documentation="Specifies the type of the resource being described or the type of the resource that a tool or service takes as input or produces as output" DisplayPriority="1">
+            <ValueScheme>
+                <enumeration>
+                    <item ConceptLink="" AppInfo="used for tools, systems, system components etc.">toolService</item>
+                </enumeration>
+            </ValueScheme>
+        </CMD_Element>
+        <CMD_Element name="toolServiceType" CardinalityMin="1" CardinalityMax="1" Documentation="Specifies the type of the tool or service">
+            <ValueScheme>
+                <enumeration>
+                    <item ConceptLink="" AppInfo="A form in which NLP taks are realized and delivered to a user, without the need of acquiring and installing the corresponding tools">service</item>
+                    <item ConceptLink="" AppInfo="A technology that eases the development of new tools and services in the NLP field">platform</item>
+                    <item ConceptLink="" AppInfo="A device that performs one or more of the tasks listed in the ForeseenUseInfo component">tool</item>
+                    <item ConceptLink="" AppInfo="A more of less fixed integrated organisation of tools applied for solving a combinaton of tasks">suiteOfTools</item>
+                    <item ConceptLink="" AppInfo="">infrastructure</item>
+                    <item ConceptLink="" AppInfo="A technology that supports the flexible development of NLP applications, together with all the requested resources">architecture</item>
+                    <item ConceptLink="" AppInfo="A technology that supports the development of data resources, like lexicons, grammars, corpora, etc. Can be included in an Architecture or in a Platform">nlpDevelopmentEnvironment</item>
+                    <item ConceptLink="" AppInfo="">other</item>
+                </enumeration>
+            </ValueScheme>
+        </CMD_Element>
+        <CMD_Element name="toolServiceSubtype" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the subtype of tool or service" Multilingual="false"/>
+        <CMD_Element name="languageDependent" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1" Documentation="Indicates whether the operation of the tool or service is language dependent or not"/>
+        <CMD_Component name="inputInfo" ComponentId="clarin.eu:cr1:c_1360931019804" CardinalityMin="0" CardinalityMax="1">
+            <CMD_Element name="mediaType" ConceptLink="http://www.isocat.org/datcat/DC-2570" CardinalityMin="1" CardinalityMax="unbounded" Documentation="Specifies the media type of the resource and basically corresponds to the physical medium of the content representation. Each media type is described through a distinctive set of features. A resource may consist of parts attributed to different types of media. A tool/service may take as input/output more than one different media types." DisplayPriority="1">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="only written medium">text</item>
+                        <item ConceptLink="" AppInfo="for a whole resource or part of a resource that is recorded as an audio file">audio</item>
+                        <item ConceptLink="" AppInfo="for moving image; used for multi-media corpora, with video for the moving image part">video</item>
+                        <item ConceptLink="" AppInfo="for stillimage like photographs, drawings etc.">image</item>
+                        <item ConceptLink="" AppInfo="for the description of sensorimotor data (e.g. biological measurements, geospatial data etc.)">textNumerical</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="resourceType" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the type of the resource being described or the type of the resource that a tool or service takes as input or produces as output">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="for text, speech, video, multimodal/multimedia corpora, corpora with sensorimotor information, n-gram resources">corpus</item>
+                        <item ConceptLink="" AppInfo="includes lexica, ontologies, dictionaries, word lists etc.">lexicalConceptualResource</item>
+                        <item ConceptLink="" AppInfo="covers grammars etc.">languageDescription</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="modalityType" ConceptLink="http://www.isocat.org/datcat/DC-2490" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the type of the modality represented in the resource or processed by a tool/service">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">bodyGesture</item>
+                        <item ConceptLink="" AppInfo="">facialExpression</item>
+                        <item ConceptLink="" AppInfo="">voice</item>
+                        <item ConceptLink="" AppInfo="">combinationOfModalities</item>
+                        <item ConceptLink="" AppInfo="">signLanguage</item>
+                        <item ConceptLink="" AppInfo="">spokenLanguage</item>
+                        <item ConceptLink="" AppInfo="">writtenLanguage</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="languageName" ConceptLink="http://www.isocat.org/datcat/DC-2483" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A human understandable name of the language that is used in the resource or supported by the tool/service; an autocompletion mechanism with values from the ISO 639 is provided in the editor, but the values can be subsequently edited for further specification (according to the IETF BCP47 guidelines)" Multilingual="false"/>
+            <CMD_Element name="languageId" ConceptLink="http://www.isocat.org/datcat/DC-2482" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The identifier of the language that is included in the resource or supported by the tool/service; an autocompletion mechanism with values from the ISO 639 is provided in the editor, but the values can be subsequently edited for further specification (according to the IETF BCP47 guidelines)" Multilingual="false"/>
+            <CMD_Element name="languageVarietyName" ConceptLink="http://www.isocat.org/datcat/DC-3886" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name of the language variety that occurs in the resource or is supported by a tool/service" Multilingual="false"/>
+            <CMD_Element name="mimeType" ConceptLink="http://www.isocat.org/datcat/DC-2571" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The mime-type of the resource which is a formalized specifier for the format included or a mime-type that the tool/service accepts; value to be taken from a subset of the official mime types of the Internet Assigned Numbers Authority" Multilingual="false"/>
+            <CMD_Element name="characterEncoding" ConceptLink="http://www.isocat.org/datcat/DC-2564" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name of the character encoding used in the resource or accepted by the tool/service" Multilingual="false"/>
+            <CMD_Element name="annotationType" ConceptLink="http://www.isocat.org/datcat/DC-2462" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the annotation level of the resource or the annotation type a tool/ service requires or produces as an output">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">alignment</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-audienceReactions</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-coreference</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-dialogueActs</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-discourseRelations</item>
+                        <item ConceptLink="" AppInfo="">lemmatization</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-bodyMovements</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-facialExpressions</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-gazeEyeMovements</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-handArmGestures</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-handManipulationOfObjects</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-headMovements</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-lipMovements</item>
+                        <item ConceptLink="" AppInfo="">morphosyntacticAnnotation-bPosTagging</item>
+                        <item ConceptLink="" AppInfo="">morphosyntacticAnnotation-posTagging</item>
+                        <item ConceptLink="" AppInfo="">segmentation</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-certaintyLevel</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-emotions</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-entityMentions</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-events</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-namedEntities</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-polarity</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-questionTopicalTarget</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-semanticClasses</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-semanticRelations</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-semanticRoles</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-speechActs</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-temporalExpressions</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-textualEntailment</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-wordSenses</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-orthographicTranscription</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-paralanguageAnnotation</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-phoneticTranscription</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-prosodicAnnotation</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-soundEvents</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-soundToTextAlignment</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-speakerIdentification</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-speakerTurns</item>
+                        <item ConceptLink="" AppInfo="">stemming</item>
+                        <item ConceptLink="" AppInfo="">structuralAnnotation</item>
+                        <item ConceptLink="" AppInfo="">syntacticAnnotation-shallowParsing</item>
+                        <item ConceptLink="" AppInfo="">syntacticAnnotation-subcategorizationFrames</item>
+                        <item ConceptLink="" AppInfo="">syntacticAnnotation-treebanks</item>
+                        <item ConceptLink="" AppInfo="">syntacticosemanticAnnotation-links</item>
+                        <item ConceptLink="" AppInfo="">translation</item>
+                        <item ConceptLink="" AppInfo="">transliteration</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="annotationFormat" ConceptLink="http://www.isocat.org/datcat/DC-2562" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the format that is used in the annotation process since often the mime type will not be sufficient for machine processing" Multilingual="false"/>
+            <CMD_Element name="tagset" ConceptLink="http://www.isocat.org/datcat/DC-2497" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A name or a URL intended as reference for the tagset used in the annotation of the resource or by the tool/service" Multilingual="false"/>
+            <CMD_Element name="segmentationLevel" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the segmentation unit in terms of which the resource has been segmented or the level of segmentation a tool/service requires/outputs">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">paragraph</item>
+                        <item ConceptLink="" AppInfo="">sentence</item>
+                        <item ConceptLink="" AppInfo="">clause</item>
+                        <item ConceptLink="" AppInfo="">word</item>
+                        <item ConceptLink="" AppInfo="">wordGroup</item>
+                        <item ConceptLink="" AppInfo="">utterance</item>
+                        <item ConceptLink="" AppInfo="">topic</item>
+                        <item ConceptLink="" AppInfo="">signal</item>
+                        <item ConceptLink="" AppInfo="">phoneme</item>
+                        <item ConceptLink="" AppInfo="">syllable</item>
+                        <item ConceptLink="" AppInfo="">phrase</item>
+                        <item ConceptLink="" AppInfo="">diphone</item>
+                        <item ConceptLink="" AppInfo="">prosodicBoundaries</item>
+                        <item ConceptLink="" AppInfo="">frame</item>
+                        <item ConceptLink="" AppInfo="">scene</item>
+                        <item ConceptLink="" AppInfo="">shot</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="conformanceToStandardsBestPractices" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the standards or the best practices to which the tagset used for the annotation conforms">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">CES</item>
+                        <item ConceptLink="" AppInfo="">EAGLES</item>
+                        <item ConceptLink="" AppInfo="">EML</item>
+                        <item ConceptLink="" AppInfo="">EMMA</item>
+                        <item ConceptLink="" AppInfo="">GMX</item>
+                        <item ConceptLink="" AppInfo="">GrAF</item>
+                        <item ConceptLink="" AppInfo="">HamNoSys</item>
+                        <item ConceptLink="" AppInfo="">InkML</item>
+                        <item ConceptLink="" AppInfo="">ISO12620</item>
+                        <item ConceptLink="" AppInfo="">ISO16642</item>
+                        <item ConceptLink="" AppInfo="">ISO1987</item>
+                        <item ConceptLink="" AppInfo="">ISO26162</item>
+                        <item ConceptLink="" AppInfo="">ISO30042</item>
+                        <item ConceptLink="" AppInfo="">ISO704</item>
+                        <item ConceptLink="" AppInfo="">LMF</item>
+                        <item ConceptLink="" AppInfo="">MAF</item>
+                        <item ConceptLink="" AppInfo="">MLIF</item>
+                        <item ConceptLink="" AppInfo="">MULTEXT</item>
+                        <item ConceptLink="" AppInfo="">multimodalInteractionFramework</item>
+                        <item ConceptLink="" AppInfo="">OAXAL</item>
+                        <item ConceptLink="" AppInfo="">OWL</item>
+                        <item ConceptLink="" AppInfo="">pennTreeBank</item>
+                        <item ConceptLink="" AppInfo="">pragueTreebank</item>
+                        <item ConceptLink="" AppInfo="">RDF</item>
+                        <item ConceptLink="" AppInfo="">SemAF</item>
+                        <item ConceptLink="" AppInfo="">SemAF_DA</item>
+                        <item ConceptLink="" AppInfo="">SemAF_NE</item>
+                        <item ConceptLink="" AppInfo="">SemAF_SRL</item>
+                        <item ConceptLink="" AppInfo="">SemAF_DS</item>
+                        <item ConceptLink="" AppInfo="">SKOS</item>
+                        <item ConceptLink="" AppInfo="">SRX</item>
+                        <item ConceptLink="" AppInfo="">SynAF</item>
+                        <item ConceptLink="" AppInfo="">TBX</item>
+                        <item ConceptLink="" AppInfo="">TMX</item>
+                        <item ConceptLink="" AppInfo="">TEI</item>
+                        <item ConceptLink="" AppInfo="">TEI_P3</item>
+                        <item ConceptLink="" AppInfo="">TEI_P4</item>
+                        <item ConceptLink="" AppInfo="">TEI_P5</item>
+                        <item ConceptLink="" AppInfo="">TimeML</item>
+                        <item ConceptLink="" AppInfo="">WordNet</item>
+                        <item ConceptLink="" AppInfo="">XCES</item>
+                        <item ConceptLink="" AppInfo="">XLIFF</item>
+                        <item ConceptLink="" AppInfo="">MUMIN</item>
+                        <item ConceptLink="" AppInfo="">BLM</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+        </CMD_Component>
+        <CMD_Component name="outputInfo" ComponentId="clarin.eu:cr1:c_1360931019824" CardinalityMin="0" CardinalityMax="1">
+            <CMD_Element name="mediaType" ConceptLink="http://www.isocat.org/datcat/DC-2570" CardinalityMin="1" CardinalityMax="unbounded" Documentation="Specifies the media type of the resource and basically corresponds to the physical medium of the content representation. Each media type is described through a distinctive set of features. A resource may consist of parts attributed to different types of media. A tool/service may take as input/output more than one different media types." DisplayPriority="1">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="only written medium">text</item>
+                        <item ConceptLink="" AppInfo="for a whole resource or part of a resource that is recorded as an audio file">audio</item>
+                        <item ConceptLink="" AppInfo="for moving image; used for multi-media corpora, with video for the moving image part">video</item>
+                        <item ConceptLink="" AppInfo="for stillimage like photographs, drawings etc.">image</item>
+                        <item ConceptLink="" AppInfo="for the description of sensorimotor data (e.g. biological measurements, geospatial data etc.)">textNumerical</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="resourceType" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the type of the resource being described or the type of the resource that a tool or service takes as input or produces as output">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="for text, speech, video, multimodal/multimedia corpora, corpora with sensorimotor information, n-gram resources">corpus</item>
+                        <item ConceptLink="" AppInfo="includes lexica, ontologies, dictionaries, word lists etc.">lexicalConceptualResource</item>
+                        <item ConceptLink="" AppInfo="covers grammars etc.">languageDescription</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="modalityType" ConceptLink="http://www.isocat.org/datcat/DC-2490" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the type of the modality represented in the resource or processed by a tool/service">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">bodyGesture</item>
+                        <item ConceptLink="" AppInfo="">facialExpression</item>
+                        <item ConceptLink="" AppInfo="">voice</item>
+                        <item ConceptLink="" AppInfo="">combinationOfModalities</item>
+                        <item ConceptLink="" AppInfo="">signLanguage</item>
+                        <item ConceptLink="" AppInfo="">spokenLanguage</item>
+                        <item ConceptLink="" AppInfo="">writtenLanguage</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="languageName" ConceptLink="http://www.isocat.org/datcat/DC-2483" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A human understandable name of the language that is used in the resource or supported by the tool/service; an autocompletion mechanism with values from the ISO 639 is provided in the editor, but the values can be subsequently edited for further specification (according to the IETF BCP47 guidelines)" Multilingual="false"/>
+            <CMD_Element name="languageId" ConceptLink="http://www.isocat.org/datcat/DC-2482" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The identifier of the language that is included in the resource or supported by the tool/service; an autocompletion mechanism with values from the ISO 639 is provided in the editor, but the values can be subsequently edited for further specification (according to the IETF BCP47 guidelines)" Multilingual="false"/>
+            <CMD_Element name="languageVarietyName" ConceptLink="http://www.isocat.org/datcat/DC-3886" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name of the language variety that occurs in the resource or is supported by a tool/service" Multilingual="false"/>
+            <CMD_Element name="mimeType" ConceptLink="http://www.isocat.org/datcat/DC-2571" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The mime-type of the resource which is a formalized specifier for the format included or a mime-type that the tool/service accepts; value to be taken from a subset of the official mime types of the Internet Assigned Numbers Authority" Multilingual="false"/>
+            <CMD_Element name="characterEncoding" ConceptLink="http://www.isocat.org/datcat/DC-2564" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name of the character encoding used in the resource or accepted by the tool/service" Multilingual="false"/>
+            <CMD_Element name="annotationType" ConceptLink="http://www.isocat.org/datcat/DC-2462" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the annotation level of the resource or the annotation type a tool/ service requires or produces as an output">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">alignment</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-audienceReactions</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-coreference</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-dialogueActs</item>
+                        <item ConceptLink="" AppInfo="">discourseAnnotation-discourseRelations</item>
+                        <item ConceptLink="" AppInfo="">lemmatization</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-bodyMovements</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-facialExpressions</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-gazeEyeMovements</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-handArmGestures</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-handManipulationOfObjects</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-headMovements</item>
+                        <item ConceptLink="" AppInfo="">modalityAnnotation-lipMovements</item>
+                        <item ConceptLink="" AppInfo="">morphosyntacticAnnotation-bPosTagging</item>
+                        <item ConceptLink="" AppInfo="">morphosyntacticAnnotation-posTagging</item>
+                        <item ConceptLink="" AppInfo="">segmentation</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-certaintyLevel</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-emotions</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-entityMentions</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-events</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-namedEntities</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-polarity</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-questionTopicalTarget</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-semanticClasses</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-semanticRelations</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-semanticRoles</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-speechActs</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-temporalExpressions</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-textualEntailment</item>
+                        <item ConceptLink="" AppInfo="">semanticAnnotation-wordSenses</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-orthographicTranscription</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-paralanguageAnnotation</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-phoneticTranscription</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-prosodicAnnotation</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-soundEvents</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-soundToTextAlignment</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-speakerIdentification</item>
+                        <item ConceptLink="" AppInfo="">speechAnnotation-speakerTurns</item>
+                        <item ConceptLink="" AppInfo="">stemming</item>
+                        <item ConceptLink="" AppInfo="">structuralAnnotation</item>
+                        <item ConceptLink="" AppInfo="">syntacticAnnotation-shallowParsing</item>
+                        <item ConceptLink="" AppInfo="">syntacticAnnotation-subcategorizationFrames</item>
+                        <item ConceptLink="" AppInfo="">syntacticAnnotation-treebanks</item>
+                        <item ConceptLink="" AppInfo="">syntacticosemanticAnnotation-links</item>
+                        <item ConceptLink="" AppInfo="">translation</item>
+                        <item ConceptLink="" AppInfo="">transliteration</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="annotationFormat" ConceptLink="http://www.isocat.org/datcat/DC-2562" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the format that is used in the annotation process since often the mime type will not be sufficient for machine processing" Multilingual="false"/>
+            <CMD_Element name="tagset" ConceptLink="http://www.isocat.org/datcat/DC-2497" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A name or a URL intended as reference for the tagset used in the annotation of the resource or by the tool/service" Multilingual="false"/>
+            <CMD_Element name="segmentationLevel" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the segmentation unit in terms of which the resource has been segmented or the level of segmentation a tool/service requires/outputs">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">paragraph</item>
+                        <item ConceptLink="" AppInfo="">sentence</item>
+                        <item ConceptLink="" AppInfo="">clause</item>
+                        <item ConceptLink="" AppInfo="">word</item>
+                        <item ConceptLink="" AppInfo="">wordGroup</item>
+                        <item ConceptLink="" AppInfo="">utterance</item>
+                        <item ConceptLink="" AppInfo="">topic</item>
+                        <item ConceptLink="" AppInfo="">signal</item>
+                        <item ConceptLink="" AppInfo="">phoneme</item>
+                        <item ConceptLink="" AppInfo="">syllable</item>
+                        <item ConceptLink="" AppInfo="">phrase</item>
+                        <item ConceptLink="" AppInfo="">diphone</item>
+                        <item ConceptLink="" AppInfo="">prosodicBoundaries</item>
+                        <item ConceptLink="" AppInfo="">frame</item>
+                        <item ConceptLink="" AppInfo="">scene</item>
+                        <item ConceptLink="" AppInfo="">shot</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="conformanceToStandardsBestPractices" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Specifies the standards or the best practices to which the tagset used for the annotation conforms">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">CES</item>
+                        <item ConceptLink="" AppInfo="">EAGLES</item>
+                        <item ConceptLink="" AppInfo="">EML</item>
+                        <item ConceptLink="" AppInfo="">EMMA</item>
+                        <item ConceptLink="" AppInfo="">GMX</item>
+                        <item ConceptLink="" AppInfo="">GrAF</item>
+                        <item ConceptLink="" AppInfo="">HamNoSys</item>
+                        <item ConceptLink="" AppInfo="">InkML</item>
+                        <item ConceptLink="" AppInfo="">ISO12620</item>
+                        <item ConceptLink="" AppInfo="">ISO16642</item>
+                        <item ConceptLink="" AppInfo="">ISO1987</item>
+                        <item ConceptLink="" AppInfo="">ISO26162</item>
+                        <item ConceptLink="" AppInfo="">ISO30042</item>
+                        <item ConceptLink="" AppInfo="">ISO704</item>
+                        <item ConceptLink="" AppInfo="">LMF</item>
+                        <item ConceptLink="" AppInfo="">MAF</item>
+                        <item ConceptLink="" AppInfo="">MLIF</item>
+                        <item ConceptLink="" AppInfo="">MULTEXT</item>
+                        <item ConceptLink="" AppInfo="">multimodalInteractionFramework</item>
+                        <item ConceptLink="" AppInfo="">OAXAL</item>
+                        <item ConceptLink="" AppInfo="">OWL</item>
+                        <item ConceptLink="" AppInfo="">pennTreeBank</item>
+                        <item ConceptLink="" AppInfo="">pragueTreebank</item>
+                        <item ConceptLink="" AppInfo="">RDF</item>
+                        <item ConceptLink="" AppInfo="">SemAF</item>
+                        <item ConceptLink="" AppInfo="">SemAF_DA</item>
+                        <item ConceptLink="" AppInfo="">SemAF_NE</item>
+                        <item ConceptLink="" AppInfo="">SemAF_SRL</item>
+                        <item ConceptLink="" AppInfo="">SemAF_DS</item>
+                        <item ConceptLink="" AppInfo="">SKOS</item>
+                        <item ConceptLink="" AppInfo="">SRX</item>
+                        <item ConceptLink="" AppInfo="">SynAF</item>
+                        <item ConceptLink="" AppInfo="">TBX</item>
+                        <item ConceptLink="" AppInfo="">TMX</item>
+                        <item ConceptLink="" AppInfo="">TEI</item>
+                        <item ConceptLink="" AppInfo="">TEI_P3</item>
+                        <item ConceptLink="" AppInfo="">TEI_P4</item>
+                        <item ConceptLink="" AppInfo="">TEI_P5</item>
+                        <item ConceptLink="" AppInfo="">TimeML</item>
+                        <item ConceptLink="" AppInfo="">WordNet</item>
+                        <item ConceptLink="" AppInfo="">XCES</item>
+                        <item ConceptLink="" AppInfo="">XLIFF</item>
+                        <item ConceptLink="" AppInfo="">MUMIN</item>
+                        <item ConceptLink="" AppInfo="">BLM</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+        </CMD_Component>
+        <CMD_Component name="toolServiceOperationInfo" ComponentId="clarin.eu:cr1:c_1360931019835" CardinalityMin="0" CardinalityMax="1">
+            <CMD_Element name="operatingSystem" ConceptLink="http://www.isocat.org/datcat/DC-2572" CardinalityMin="1" CardinalityMax="unbounded" Documentation="The operating system on which the tool will be running" DisplayPriority="1">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">os-independent</item>
+                        <item ConceptLink="" AppInfo="">windows</item>
+                        <item ConceptLink="" AppInfo="">linux</item>
+                        <item ConceptLink="" AppInfo="">unix</item>
+                        <item ConceptLink="" AppInfo="">mac-OS</item>
+                        <item ConceptLink="" AppInfo="">other</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="runningTime" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="Gives information on the running time of a tool or service" Multilingual="false"/>
+            <CMD_Component name="runningEnvironmentInfo" ComponentId="clarin.eu:cr1:c_1360931019826" CardinalityMin="0" CardinalityMax="1">
+                <CMD_Element name="requiredHardware" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Hardware required for running a tool and/or computational grammar" DisplayPriority="1">
+                    <ValueScheme>
+                        <enumeration>
+                            <item ConceptLink="" AppInfo="">graphicCard</item>
+                            <item ConceptLink="" AppInfo="">microphone</item>
+                            <item ConceptLink="" AppInfo="">ocrSystem</item>
+                            <item ConceptLink="" AppInfo="">specialHardwareEquipment</item>
+                            <item ConceptLink="" AppInfo="">none</item>
+                            <item ConceptLink="" AppInfo="">other</item>
+                        </enumeration>
+                    </ValueScheme>
+                </CMD_Element>
+                <CMD_Element name="runningEnvironmentDetails" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="Provides further information on the running environment in free text mode" Multilingual="false"/>
+                <CMD_Component name="requiredSoftware" ComponentId="clarin.eu:cr1:c_1360931019827" CardinalityMin="0" CardinalityMax="unbounded">
+                    <CMD_Element name="targetResourceNameURI" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The full name or url or identifier of a resource related to the one being described" DisplayPriority="1" Multilingual="false"/>
+                </CMD_Component>
+                <CMD_Component name="requiredLRs" ComponentId="clarin.eu:cr1:c_1360931019825" CardinalityMin="0" CardinalityMax="unbounded">
+                    <CMD_Element name="targetResourceNameURI" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The full name or url or identifier of a resource related to the one being described" DisplayPriority="1" Multilingual="false"/>
+                </CMD_Component>
+            </CMD_Component>
+        </CMD_Component>
+        <CMD_Component name="toolServiceEvaluationInfo" ComponentId="clarin.eu:cr1:c_1360931019831" CardinalityMin="0" CardinalityMax="1">
+            <CMD_Element name="evaluated" ValueScheme="boolean" CardinalityMin="1" CardinalityMax="1" Documentation="Indicates whether the tool or service has been evaluated" DisplayPriority="1"/>
+            <CMD_Element name="evaluationLevel" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Indicates the evaluation level">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">technological</item>
+                        <item ConceptLink="" AppInfo="">impact</item>
+                        <item ConceptLink="" AppInfo="">usage</item>
+                        <item ConceptLink="" AppInfo="">diagnostic</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="evaluationType" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Indicates the evaluation type">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">glassBox</item>
+                        <item ConceptLink="" AppInfo="">blackBox</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="evaluationCriteria" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Defines the criteria of the evaluation of a tool">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">extrinsic</item>
+                        <item ConceptLink="" AppInfo="">intrinsic</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="evaluationMeasure" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Defines whether the evaluation measure is human or automatic">
+                <ValueScheme>
+                    <enumeration>
+                        <item ConceptLink="" AppInfo="">human</item>
+                        <item ConceptLink="" AppInfo="">automatic</item>
+                    </enumeration>
+                </ValueScheme>
+            </CMD_Element>
+            <CMD_Element name="evaluationDetails" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="Provides further information on the evaluation process of a tool or service" Multilingual="false"/>
+            <CMD_Component name="evaluationReportStructured" ComponentId="clarin.eu:cr1:c_1360931019829" CardinalityMin="0" CardinalityMax="unbounded">
+                <CMD_Element name="role" CardinalityMin="1" CardinalityMax="1" Documentation="role of documents" DisplayPriority="1">
+                    <ValueScheme>
+                        <enumeration>
+                            <item ConceptLink="" AppInfo="">evaluationReport</item>
+                        </enumeration>
+                    </ValueScheme>
+                </CMD_Element>
+                <CMD_Component name="documentInfo" ComponentId="clarin.eu:cr1:c_1353678848788" CardinalityMin="1" CardinalityMax="1">
+                    <CMD_Element name="documentType" ConceptLink="http://www.isocat.org/datcat/DC-5434" CardinalityMin="1" CardinalityMax="1" Documentation="Specifies the type of the document provided with or related to the resource" DisplayPriority="1">
+                        <ValueScheme>
+                            <enumeration>
+                                <item ConceptLink="" AppInfo="An article from a journal or magazine">article</item>
+                                <item ConceptLink="" AppInfo=" A book with an explicit publisher">book</item>
+                                <item ConceptLink="" AppInfo="A work that is printed and bound, but without a named publisher or sponsoring institution">booklet</item>
+                                <item ConceptLink="" AppInfo="Technical documentation">manual</item>
+                                <item ConceptLink="" AppInfo=" A report published by a school or other institution">techReport</item>
+                                <item ConceptLink="" AppInfo="A Master's thesis">mastersThesis</item>
+                                <item ConceptLink="" AppInfo="A PhD thesis">phdThesis</item>
+                                <item ConceptLink="" AppInfo="A part of a book, which may be a chapter (or section) and/or a range of pages">inBook</item>
+                                <item ConceptLink="" AppInfo="A part of a book having its own title">inCollection</item>
+                                <item ConceptLink="" AppInfo="The proceedings of a conference">proceedings</item>
+                                <item ConceptLink="" AppInfo="An article in a conference proceedings">inProceedings</item>
+                                <item ConceptLink="" AppInfo="A document having an author and title, but not formally published">unpublished</item>
+                                <item ConceptLink="" AppInfo="Use this type when nothing else fits">other</item>
+                            </enumeration>
+                        </ValueScheme>
+                    </CMD_Element>
+                    <CMD_Element name="title" ValueScheme="string" CardinalityMin="1" CardinalityMax="unbounded" Documentation="The title of the document; the element can be repeated for the different language versions using the &quot;lang&quot; attribute to specify the language." Multilingual="true"/>
+                    <CMD_Element name="author" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name(s) of the author(s); for multiple authors, please use &quot;and&quot; in between." Multilingual="false"/>
+                    <CMD_Element name="editor" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name(s) of the editor(s); in case of multiple editors, please use &quot;and&quot; in between" Multilingual="false"/>
+                    <CMD_Element name="year" ValueScheme="gYear" CardinalityMin="0" CardinalityMax="1" Documentation="The year of publication or, for an unpublished work, the year it was written"/>
+                    <CMD_Element name="publisher" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The name of the publisher/publishing house" Multilingual="false"/>
+                    <CMD_Element name="bookTitle" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The title of a book, part of which is being cited" Multilingual="false"/>
+                    <CMD_Element name="journal" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="A journal name; abbreviations could also be provided" Multilingual="false"/>
+                    <CMD_Element name="volume" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="Specifies the volume of a journal or multivolume book" Multilingual="false"/>
+                    <CMD_Element name="series" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of a series or set of books; when citing an entire book, the title field gives its title and an optional series field gives the name of a series or multi-volume set in which the book is published" Multilingual="false"/>
+                    <CMD_Element name="pages" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="One or more page numbers or range of page numbers" Multilingual="false"/>
+                    <CMD_Element name="edition" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The edition of a book" Multilingual="false"/>
+                    <CMD_Element name="conference" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the conference in which the document has been presented" Multilingual="false"/>
+                    <CMD_Element name="doi" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="A digital object identifier assigned to the document" Multilingual="false"/>
+                    <CMD_Element name="url" ConceptLink="http://www.isocat.org/datcat/DC-2546" CardinalityMin="0" CardinalityMax="1" Documentation="A URL used as homepage of an entity (e.g. of a person, organization, resource etc.) and/or where an entity (e.g. LR, document etc.) is located">
+                        <ValueScheme>
+                            <pattern>(http://|https://|ftp://|www.).*</pattern>
+                        </ValueScheme>
+                    </CMD_Element>
+                    <CMD_Element name="ISSN" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The International Standard Serial Number used to identify a journal" Multilingual="false"/>
+                    <CMD_Element name="ISBN" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The International Standard Book Number" Multilingual="false"/>
+                    <CMD_Element name="keywords" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The keyword(s) for indexing and classification of the document" Multilingual="false"/>
+                    <CMD_Element name="documentLanguageName" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the language the document is written in, as mentioned in IETF BCP47; an autocompletion mechanism with values from the ISO 639 is provided in the editor, but the values can be subsequently edited for further specification (according to the IETF BCP47 guidelines)" Multilingual="false"/>
+                    <CMD_Element name="documentLanguageId" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The id of the language the document is written in; an autocompletion mechanism with values from the ISO 639 is provided in the editor, but the values can be subsequently edited for further specification (according to the IETF BCP47 guidelines)" Multilingual="false"/>
+                </CMD_Component>
+            </CMD_Component>
+            <CMD_Component name="evaluationReportUnstructured" ComponentId="clarin.eu:cr1:c_1361876010649" CardinalityMin="0" CardinalityMax="unbounded">
+                <CMD_Element name="role" CardinalityMin="1" CardinalityMax="1" Documentation="role of documents" DisplayPriority="1">
+                    <ValueScheme>
+                        <enumeration>
+                            <item ConceptLink="" AppInfo="">evaluationReport</item>
+                        </enumeration>
+                    </ValueScheme>
+                </CMD_Element>
+                <CMD_Element name="documentUnstructured" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="Used either as a free text description or as an unstructured (free form) presentation of a bibliographic record; alternative to the structured presentation of a document (cf. documentInfo)" Multilingual="false"/>
+            </CMD_Component>
+            <CMD_Component name="evaluationTool" ComponentId="clarin.eu:cr1:c_1360931019828" CardinalityMin="0" CardinalityMax="unbounded">
+                <CMD_Element name="targetResourceNameURI" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The full name or url or identifier of a resource related to the one being described" DisplayPriority="1" Multilingual="false"/>
+            </CMD_Component>
+            <CMD_Component name="evaluatorPerson" ComponentId="clarin.eu:cr1:c_1360931019830" CardinalityMin="0" CardinalityMax="unbounded">
+                <CMD_Element name="role" CardinalityMin="1" CardinalityMax="1" Documentation="role of a person or organization; used for the conversion to META-SHARE" DisplayPriority="1">
+                    <ValueScheme>
+                        <enumeration>
+                            <item ConceptLink="" AppInfo="">evaluator</item>
+                        </enumeration>
+                    </ValueScheme>
+                </CMD_Element>
+                <CMD_Component name="personInfo" ComponentId="clarin.eu:cr1:c_1349361150746" CardinalityMin="1" CardinalityMax="1">
+                    <CMD_Element name="surname" ConceptLink="http://www.isocat.org/datcat/DC-5521" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The surname (family name) of a person related to the resource" DisplayPriority="1" Multilingual="true"/>
+                    <CMD_Element name="givenName" ConceptLink="http://www.isocat.org/datcat/DC-5520" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The given name (first name) of a person related to the resource; initials can also be used" Multilingual="true"/>
+                    <CMD_Element name="sex" ConceptLink="http://www.isocat.org/datcat/DC-2560" CardinalityMin="0" CardinalityMax="1" Documentation="The sex of a person related to or participating in the resource">
+                        <ValueScheme>
+                            <enumeration>
+                                <item ConceptLink="http://www.isocat.org/datcat/DC-2949" AppInfo="">male</item>
+                                <item ConceptLink="http://www.isocat.org/datcat/DC-2950" AppInfo="">female</item>
+                                <item ConceptLink="http://www.isocat.org/datcat/DC-2591" AppInfo="">unknown</item>
+                            </enumeration>
+                        </ValueScheme>
+                    </CMD_Element>
+                    <CMD_Element name="position" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The position or the title of a person if affiliated to an organization" Multilingual="false"/>
+                    <CMD_Component name="communicationInfo" ComponentId="clarin.eu:cr1:c_1352813745460" CardinalityMin="1" CardinalityMax="1">
+                        <CMD_Element name="email" ConceptLink="http://www.isocat.org/datcat/DC-2521" CardinalityMin="1" CardinalityMax="unbounded" Documentation="The email address of a person or an organization" DisplayPriority="1">
+                            <ValueScheme>
+                                <pattern>[^@]+@[^\.]+\..+|</pattern>
+                            </ValueScheme>
+                        </CMD_Element>
+                        <CMD_Element name="url" ConceptLink="http://www.isocat.org/datcat/DC-2546" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A URL used as homepage of an entity (e.g. of a person, organization, resource etc.) and/or where an entity (e.g. LR, document etc.) is located">
+                            <ValueScheme>
+                                <pattern>(http://|https://|ftp://|www.).*</pattern>
+                            </ValueScheme>
+                        </CMD_Element>
+                        <CMD_Element name="address" ConceptLink="http://www.isocat.org/datcat/DC-2505" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The street and the number of the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="zipCode" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The zip code of the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="city" ConceptLink="http://www.isocat.org/datcat/DC-5580" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the city, town or village as mentioned in the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="region" ConceptLink="http://www.isocat.org/datcat/DC-3814" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the region, county or department as mentioned in the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="country" ConceptLink="http://www.isocat.org/datcat/DC-3792" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the country mentioned in the postal address of a person or organization as defined in the list of values of ISO 3166" Multilingual="false"/>
+                        <CMD_Element name="telephoneNumber" ConceptLink="http://www.isocat.org/datcat/DC-2461" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The telephone number of a person or an organization; recommended format: +_international code_city code_number" Multilingual="false"/>
+                        <CMD_Element name="faxNumber" ConceptLink="http://www.isocat.org/datcat/DC-2455" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The fax number of a person or an organization; recommended format: +_international code_city code_number" Multilingual="false"/>
+                    </CMD_Component>
+                    <CMD_Component name="affiliation" ComponentId="clarin.eu:cr1:c_1352813745462" CardinalityMin="0" CardinalityMax="unbounded">
+                        <CMD_Element name="role" CardinalityMin="1" CardinalityMax="1" Documentation="role of person or organization; to be used for the conversion to MetaShare" DisplayPriority="1">
+                            <ValueScheme>
+                                <enumeration>
+                                    <item ConceptLink="" AppInfo="">affiliation</item>
+                                </enumeration>
+                            </ValueScheme>
+                        </CMD_Element>
+                        <CMD_Component name="organizationInfo" ComponentId="clarin.eu:cr1:c_1352813745461" CardinalityMin="1" CardinalityMax="1">
+                            <CMD_Element name="organizationName" ConceptLink="http://www.isocat.org/datcat/DC-2459" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The full name of an organization" DisplayPriority="1" Multilingual="true"/>
+                            <CMD_Element name="organizationShortName" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The short name (abbreviation, acronym etc.) used for an organization" Multilingual="true"/>
+                            <CMD_Element name="departmentName" ConceptLink="http://www.isocat.org/datcat/DC-3812" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the department or unit (e.g. specific university faculty or department, department or unit of a research organization or private company etc.)" Multilingual="true"/>
+                            <CMD_Component name="communicationInfo" ComponentId="clarin.eu:cr1:c_1352813745460" CardinalityMin="1" CardinalityMax="1">
+                                <CMD_Element name="email" ConceptLink="http://www.isocat.org/datcat/DC-2521" CardinalityMin="1" CardinalityMax="unbounded" Documentation="The email address of a person or an organization" DisplayPriority="1">
+                                    <ValueScheme>
+                                        <pattern>[^@]+@[^\.]+\..+|</pattern>
+                                    </ValueScheme>
+                                </CMD_Element>
+                                <CMD_Element name="url" ConceptLink="http://www.isocat.org/datcat/DC-2546" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A URL used as homepage of an entity (e.g. of a person, organization, resource etc.) and/or where an entity (e.g. LR, document etc.) is located">
+                                    <ValueScheme>
+                                        <pattern>(http://|https://|ftp://|www.).*</pattern>
+                                    </ValueScheme>
+                                </CMD_Element>
+                                <CMD_Element name="address" ConceptLink="http://www.isocat.org/datcat/DC-2505" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The street and the number of the postal address of a person or organization" Multilingual="false"/>
+                                <CMD_Element name="zipCode" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The zip code of the postal address of a person or organization" Multilingual="false"/>
+                                <CMD_Element name="city" ConceptLink="http://www.isocat.org/datcat/DC-5580" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the city, town or village as mentioned in the postal address of a person or organization" Multilingual="false"/>
+                                <CMD_Element name="region" ConceptLink="http://www.isocat.org/datcat/DC-3814" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the region, county or department as mentioned in the postal address of a person or organization" Multilingual="false"/>
+                                <CMD_Element name="country" ConceptLink="http://www.isocat.org/datcat/DC-3792" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the country mentioned in the postal address of a person or organization as defined in the list of values of ISO 3166" Multilingual="false"/>
+                                <CMD_Element name="telephoneNumber" ConceptLink="http://www.isocat.org/datcat/DC-2461" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The telephone number of a person or an organization; recommended format: +_international code_city code_number" Multilingual="false"/>
+                                <CMD_Element name="faxNumber" ConceptLink="http://www.isocat.org/datcat/DC-2455" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The fax number of a person or an organization; recommended format: +_international code_city code_number" Multilingual="false"/>
+                            </CMD_Component>
+                        </CMD_Component>
+                    </CMD_Component>
+                </CMD_Component>
+            </CMD_Component>
+            <CMD_Component name="evaluatorOrganization" ComponentId="clarin.eu:cr1:c_1361876010641" CardinalityMin="0" CardinalityMax="unbounded">
+                <CMD_Element name="role" CardinalityMin="1" CardinalityMax="1" Documentation="role of a person or organization; used for the conversion to META-SHARE" DisplayPriority="1">
+                    <ValueScheme>
+                        <enumeration>
+                            <item ConceptLink="" AppInfo="">evaluator</item>
+                        </enumeration>
+                    </ValueScheme>
+                </CMD_Element>
+                <CMD_Component name="organizationInfo" ComponentId="clarin.eu:cr1:c_1352813745461" CardinalityMin="1" CardinalityMax="1">
+                    <CMD_Element name="organizationName" ConceptLink="http://www.isocat.org/datcat/DC-2459" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The full name of an organization" DisplayPriority="1" Multilingual="true"/>
+                    <CMD_Element name="organizationShortName" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The short name (abbreviation, acronym etc.) used for an organization" Multilingual="true"/>
+                    <CMD_Element name="departmentName" ConceptLink="http://www.isocat.org/datcat/DC-3812" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the department or unit (e.g. specific university faculty or department, department or unit of a research organization or private company etc.)" Multilingual="true"/>
+                    <CMD_Component name="communicationInfo" ComponentId="clarin.eu:cr1:c_1352813745460" CardinalityMin="1" CardinalityMax="1">
+                        <CMD_Element name="email" ConceptLink="http://www.isocat.org/datcat/DC-2521" CardinalityMin="1" CardinalityMax="unbounded" Documentation="The email address of a person or an organization" DisplayPriority="1">
+                            <ValueScheme>
+                                <pattern>[^@]+@[^\.]+\..+|</pattern>
+                            </ValueScheme>
+                        </CMD_Element>
+                        <CMD_Element name="url" ConceptLink="http://www.isocat.org/datcat/DC-2546" CardinalityMin="0" CardinalityMax="unbounded" Documentation="A URL used as homepage of an entity (e.g. of a person, organization, resource etc.) and/or where an entity (e.g. LR, document etc.) is located">
+                            <ValueScheme>
+                                <pattern>(http://|https://|ftp://|www.).*</pattern>
+                            </ValueScheme>
+                        </CMD_Element>
+                        <CMD_Element name="address" ConceptLink="http://www.isocat.org/datcat/DC-2505" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The street and the number of the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="zipCode" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The zip code of the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="city" ConceptLink="http://www.isocat.org/datcat/DC-5580" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the city, town or village as mentioned in the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="region" ConceptLink="http://www.isocat.org/datcat/DC-3814" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the region, county or department as mentioned in the postal address of a person or organization" Multilingual="false"/>
+                        <CMD_Element name="country" ConceptLink="http://www.isocat.org/datcat/DC-3792" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="The name of the country mentioned in the postal address of a person or organization as defined in the list of values of ISO 3166" Multilingual="false"/>
+                        <CMD_Element name="telephoneNumber" ConceptLink="http://www.isocat.org/datcat/DC-2461" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The telephone number of a person or an organization; recommended format: +_international code_city code_number" Multilingual="false"/>
+                        <CMD_Element name="faxNumber" ConceptLink="http://www.isocat.org/datcat/DC-2455" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The fax number of a person or an organization; recommended format: +_international code_city code_number" Multilingual="false"/>
+                    </CMD_Component>
+                </CMD_Component>
+            </CMD_Component>
+        </CMD_Component>
+        <CMD_Component name="toolServiceCreationInfo" ComponentId="clarin.eu:cr1:c_1360931019833" CardinalityMin="0" CardinalityMax="1">
+            <CMD_Element name="implementationLanguage" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="The programming languages needed for allowing user contributions, or for running the tools, in case no executables are available" DisplayPriority="1" Multilingual="false"/>
+            <CMD_Element name="formalism" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" Documentation="Reference (name, bibliographic reference or link to url) for the formalism used for the creation/enrichment of the resource (grammar or tool/service)" Multilingual="false"/>
+            <CMD_Element name="creationDetails" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" Documentation="Provides additional information on the creation of a tool or service" Multilingual="false"/>
+            <CMD_Component name="originalSource" ComponentId="clarin.eu:cr1:c_1360230992155" ConceptLink="http://www.isocat.org/datcat/DC-2534" CardinalityMin="0" CardinalityMax="unbounded">
+                <CMD_Element name="targetResourceNameURI" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Documentation="The full name or url or identifier of a resource related to the one being described" DisplayPriority="1" Multilingual="false"/>
+            </CMD_Component>
+        </CMD_Component>
+    </CMD_Component>
+</CMD_ComponentSpec>
