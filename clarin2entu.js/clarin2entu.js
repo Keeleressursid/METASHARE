@@ -10,11 +10,7 @@ var resource_types = []
 var entity_definitions = []
 var classifiers = {}
 
-console.log('\n\n\n===== ' + Date.now() + ' ==============')
-
-var foo = {'foo':'baz'}
-
-console.log(foo.length)
+console.log('\n\n\n===== ' + Date.now()/1000 + ' == START ============')
 
 fs.readdirSync(schema_dir).forEach(function(filename) {
     var nameparts = filename.split('.')
@@ -91,11 +87,11 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
 
     var element = {}
     element.keyname = CMD_Component['@name']
-    element.weight = 1
-    element.datatype = ''
-    element.validator = ''
+    element.weight = 0.001
+    // element.datatype = 'entity'
+    // element.validator = ''
     element.usage = []
-    element.properties = []
+    element.properties = {}
 
     // if (entity_definitions[element.keyname] !== undefined)
     //     return entity_definitions[element.keyname]
@@ -105,8 +101,6 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
             entity_definitions[idx].usage.push(parent_element_name)
         return entity_definitions[idx]
     }
-
-    element.datatype = 'entity'
 
     if (element.usage.indexOf(parent_element_name) === -1)
         element.usage.push(parent_element_name)
@@ -118,8 +112,8 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
             CMD_Component.CMD_Element = [CMD_Component.CMD_Element]
         CMD_Component.CMD_Element.forEach(function(el) {
             var subelement = parseElementRec(element.keyname, el)
-            element.weight += subelement.weight
-            element.properties.push(subelement)
+            element.weight = Math.round((element.weight + subelement.weight)*1000)/1000
+            element.properties[subelement.keyname] = subelement
         })
     }
 
@@ -127,10 +121,9 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
         if (CMD_Component.CMD_Component.length === undefined)
             CMD_Component.CMD_Component = [CMD_Component.CMD_Component]
         CMD_Component.CMD_Component.forEach(function(el) {
-            // console.log(el['@name'])
             var subelement = parseComponentRec(element.keyname, el)
-            element.weight += subelement.weight
-            element.properties.push(subelement)
+            element.weight = Math.round((element.weight + subelement.weight)*1000)/1000
+            element.properties[subelement.keyname] = subelement
         })
     }
     return element
@@ -147,7 +140,10 @@ var stringifier = function(o) {
         if (typeof value === 'object' && value !== null) {
             if (cache.indexOf(value) !== -1) {
                 // Circular reference found, replace key
-                return 'Circular reference to ' + value.keyname + ' [w:' + value.weight  + ']'
+                if (value.weight === 1) {
+                    return value.datatype + (value.validator.length > 0 ? ' [' + value.validator.join('|') + ']' : '')
+                }
+                return 'Reference to ' + value.keyname + ' [w:' + value.weight  + ']'
             }
             // Store value in our collection
             cache.push(value)
@@ -158,14 +154,14 @@ var stringifier = function(o) {
 
 resource_types.forEach(function(resource_type) {
     var CMD_root = resource_type.CMD_root
-    console.log(util.inspect(CMD_root))
-    console.log('\n\n\n===== ' + Date.now() + ' ==============')
+    // console.log(util.inspect(CMD_root))
+    console.log('\n===== ' + Date.now()/1000 + ' == Parse ' + resource_type.resource_name + ' ============')
     parseComponentRec(resource_type.resource_name, CMD_root)
-    // console.log(util.inspect(parseComponentRec(CMD_root, {depth:null})))
 })
 entity_definitions.sort(function(a,b) {
     return a.weight - b.weight
 })
 fs.writeFileSync('parsed_resources.json', stringifier(entity_definitions))
+console.log('\n===== ' + Date.now()/1000 + ' == END ============\n\n')
 
 

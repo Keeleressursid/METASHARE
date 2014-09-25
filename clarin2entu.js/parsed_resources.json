@@ -2865,95 +2865,112 @@
 		]
 	},
 	{
-		"keyname": "creationTool",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
+		"keyname": "requiredSoftware",
+		"weight": 1.001,
 		"usage": [
-			"creationInfo"
+			"runningEnvironmentInfo"
 		],
-		"properties": [
-			"Circular reference to targetResourceNameURI [w:1]"
-		]
-	},
-	{
-		"keyname": "annotationTool",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"annotationInfo"
-		],
-		"properties": [
-			"Circular reference to targetResourceNameURI [w:1]"
-		]
+		"properties": {
+			"targetResourceNameURI": "string"
+		}
 	},
 	{
 		"keyname": "requiredLRs",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 1.001,
 		"usage": [
 			"runningEnvironmentInfo"
 		],
-		"properties": [
-			"Circular reference to targetResourceNameURI [w:1]"
-		]
-	},
-	{
-		"keyname": "requiredSoftware",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"runningEnvironmentInfo"
-		],
-		"properties": [
-			"Circular reference to targetResourceNameURI [w:1]"
-		]
-	},
-	{
-		"keyname": "evaluationTool",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"toolServiceEvaluationInfo"
-		],
-		"properties": [
-			"Circular reference to targetResourceNameURI [w:1]"
-		]
+		"properties": {
+			"targetResourceNameURI": "string"
+		}
 	},
 	{
 		"keyname": "originalSource",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 1.001,
 		"usage": [
 			"creationInfo",
 			"toolServiceCreationInfo"
 		],
-		"properties": [
-			"Circular reference to targetResourceNameURI [w:1]"
-		]
+		"properties": {
+			"targetResourceNameURI": "string"
+		}
+	},
+	{
+		"keyname": "evaluationTool",
+		"weight": 1.001,
+		"usage": [
+			"toolServiceEvaluationInfo"
+		],
+		"properties": {
+			"targetResourceNameURI": "string"
+		}
+	},
+	{
+		"keyname": "creationTool",
+		"weight": 1.001,
+		"usage": [
+			"creationInfo"
+		],
+		"properties": {
+			"targetResourceNameURI": "string"
+		}
 	},
 	{
 		"keyname": "textNumericalContentInfo",
-		"weight": 2,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 1.001,
 		"usage": [
 			"corpusTextNumericalInfo"
 		],
-		"properties": [
-			"Circular reference to typeOfTextNumericalContent [w:1]"
-		]
+		"properties": {
+			"typeOfTextNumericalContent": "string"
+		}
+	},
+	{
+		"keyname": "annotationTool",
+		"weight": 1.001,
+		"usage": [
+			"annotationInfo"
+		],
+		"properties": {
+			"targetResourceNameURI": "string"
+		}
+	},
+	{
+		"keyname": "durationOfAudioInfo",
+		"weight": 2.001,
+		"usage": [
+			"audioSizeInfo"
+		],
+		"properties": {
+			"size": "string",
+			"durationUnit": "enumeration [hours|minutes|seconds]"
+		}
+	},
+	{
+		"keyname": "durationOfEffectiveSpeechInfo",
+		"weight": 2.001,
+		"usage": [
+			"audioSizeInfo"
+		],
+		"properties": {
+			"size": "string",
+			"durationUnit": "enumeration [hours|minutes|seconds]"
+		}
+	},
+	{
+		"keyname": "annotationManualUnstructured",
+		"weight": 2.001,
+		"usage": [
+			"annotationInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"documentUnstructured": "string"
+		}
 	},
 	{
 		"keyname": "sizeInfo",
-		"weight": 3,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 2.001,
 		"usage": [
 			"sizePerLanguage",
 			"sizePerLanguageVariety",
@@ -2986,127 +3003,25 @@
 			"lexicalConceptualResourceVideoInfo",
 			"lexicalConceptualResourceImageInfo"
 		],
-		"properties": [
-			"Circular reference to size [w:1]",
-			"Circular reference to sizeUnit [w:1]"
-		]
-	},
-	{
-		"keyname": "annotationManualUnstructured",
-		"weight": 3,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"annotationInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to documentUnstructured [w:1]"
-		]
+		"properties": {
+			"size": "string",
+			"sizeUnit": "enumeration [4-grams|5-grams|T-HPairs|articles|bigrams|bytes|classes|concepts|diphones|elements|entries|expressions|files|frames|gb|hours|idiomaticExpressions|images|items|kb|keywords|lexicalTypes|mb|minutes|multiWordUnits|neologisms|other|phonemes|phoneticUnits|predicates|questions|rb|rules|seconds|semanticUnits|sentences|shots|syllables|synsets|syntacticUnits|terms|texts|tokens|trigrams|turns|unigrams|units|utterances|words]"
+		}
 	},
 	{
 		"keyname": "evaluationReportUnstructured",
-		"weight": 3,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 2.001,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to documentUnstructured [w:1]"
-		]
-	},
-	{
-		"keyname": "durationOfEffectiveSpeechInfo",
-		"weight": 3,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"audioSizeInfo"
-		],
-		"properties": [
-			"Circular reference to size [w:1]",
-			"Circular reference to durationUnit [w:1]"
-		]
-	},
-	{
-		"keyname": "durationOfAudioInfo",
-		"weight": 3,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"audioSizeInfo"
-		],
-		"properties": [
-			"Circular reference to size [w:1]",
-			"Circular reference to durationUnit [w:1]"
-		]
-	},
-	{
-		"keyname": "relatedLexiconInfo",
-		"weight": 4,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageDescriptionOperationInfo"
-		],
-		"properties": [
-			"Circular reference to relatedLexiconType [w:1]",
-			"Circular reference to attachedLexiconPosition [w:1]",
-			"Circular reference to compatibleLexiconType [w:1]"
-		]
-	},
-	{
-		"keyname": "resolutionInfo",
-		"weight": 4,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"videoFormatInfo",
-			"imageFormatInfo"
-		],
-		"properties": [
-			"Circular reference to sizeWidth [w:1]",
-			"Circular reference to sizeHeight [w:1]",
-			"Circular reference to resolutionStandard [w:1]"
-		]
-	},
-	{
-		"keyname": "compressionInfo",
-		"weight": 4,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"audioFormatInfo",
-			"videoFormatInfo",
-			"imageFormatInfo"
-		],
-		"properties": [
-			"Circular reference to compression [w:1]",
-			"Circular reference to compressionName [w:1]",
-			"Circular reference to compressionLoss [w:1]"
-		]
-	},
-	{
-		"keyname": "languageDescriptionPerformanceInfo",
-		"weight": 4,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageDescriptionInfo"
-		],
-		"properties": [
-			"Circular reference to robustness [w:1]",
-			"Circular reference to shallowness [w:1]",
-			"Circular reference to output [w:1]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"documentUnstructured": "string"
+		}
 	},
 	{
 		"keyname": "lingualityInfo",
-		"weight": 4,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 3.001,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3121,269 +3036,349 @@
 			"lexicalConceptualResourceVideoInfo",
 			"lexicalConceptualResourceImageInfo"
 		],
-		"properties": [
-			"Circular reference to lingualityType [w:1]",
-			"Circular reference to multilingualityType [w:1]",
-			"Circular reference to multilingualityTypeDetails [w:1]"
-		]
+		"properties": {
+			"lingualityType": "enumeration [bilingual|monolingual|multilingual]",
+			"multilingualityType": "enumeration [comparable|multilingualSingleText|other|parallel]",
+			"multilingualityTypeDetails": "string"
+		}
 	},
 	{
-		"keyname": "sizePerCharacterEncoding",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
+		"keyname": "relatedLexiconInfo",
+		"weight": 3.001,
 		"usage": [
-			"characterEncodingInfo"
+			"languageDescriptionOperationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
+		"properties": {
+			"relatedLexiconType": "enumeration [attached|compatible|included|none]",
+			"attachedLexiconPosition": "string",
+			"compatibleLexiconType": "enumeration [morphologicalLexicon|other|wordlist|wordnet]"
+		}
+	},
+	{
+		"keyname": "compressionInfo",
+		"weight": 3.001,
+		"usage": [
+			"audioFormatInfo",
+			"videoFormatInfo",
+			"imageFormatInfo"
+		],
+		"properties": {
+			"compression": "boolean",
+			"compressionName": "enumeration [aac|atrac|avi|flac|mov|mp3|mpeg|mpg|oggVorbis|other|realAudio|shorten]",
+			"compressionLoss": "boolean"
+		}
+	},
+	{
+		"keyname": "languageDescriptionPerformanceInfo",
+		"weight": 3.001,
+		"usage": [
+			"languageDescriptionInfo"
+		],
+		"properties": {
+			"robustness": "string",
+			"shallowness": "string",
+			"output": "string"
+		}
+	},
+	{
+		"keyname": "resolutionInfo",
+		"weight": 3.001,
+		"usage": [
+			"videoFormatInfo",
+			"imageFormatInfo"
+		],
+		"properties": {
+			"sizeWidth": "integer",
+			"sizeHeight": "integer",
+			"resolutionStandard": "enumeration [HD.1080|HD.720|VGA]"
+		}
+	},
+	{
+		"keyname": "sizePerVideoFormat",
+		"weight": 3.002,
+		"usage": [
+			"videoFormatInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerTextFormat",
+		"weight": 3.002,
+		"usage": [
+			"textFormatInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerTextClassification",
+		"weight": 3.002,
+		"usage": [
+			"textClassificationInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerLanguage",
+		"weight": 3.002,
+		"usage": [
+			"languageInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerAudioClassification",
+		"weight": 3.002,
+		"usage": [
+			"audioClassificationInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerImageFormat",
+		"weight": 3.002,
+		"usage": [
+			"imageFormatInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerDomain",
+		"weight": 3.002,
+		"usage": [
+			"domainInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerTimeCoverage",
+		"weight": 3.002,
+		"usage": [
+			"timeCoverageInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerImageClassification",
+		"weight": 3.002,
+		"usage": [
+			"imageClassificationInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerModality",
+		"weight": 3.002,
+		"usage": [
+			"modalityInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerVideoClassification",
+		"weight": 3.002,
+		"usage": [
+			"videoClassificationInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerGeographicCoverage",
+		"weight": 3.002,
+		"usage": [
+			"geographicCoverageInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
 	},
 	{
 		"keyname": "sizePerAudioFormat",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 3.002,
 		"usage": [
 			"audioFormatInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerTextNumericalFormat",
+		"weight": 3.002,
+		"usage": [
+			"textNumericalFormatInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerLanguageVariety",
+		"weight": 3.002,
+		"usage": [
+			"languageVarietyInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
 	},
 	{
 		"keyname": "sizePerAnnotation",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 3.002,
 		"usage": [
 			"annotationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
+	},
+	{
+		"keyname": "sizePerCharacterEncoding",
+		"weight": 3.002,
+		"usage": [
+			"characterEncodingInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]"
+		}
 	},
 	{
 		"keyname": "audioContentInfo",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 4.001,
 		"usage": [
 			"corpusAudioInfo",
 			"lexicalConceptualResourceAudioInfo"
 		],
-		"properties": [
-			"Circular reference to speechItems [w:1]",
-			"Circular reference to nonSpeechItems [w:1]",
-			"Circular reference to textualDescription [w:1]",
-			"Circular reference to noiseLevel [w:1]"
-		]
-	},
-	{
-		"keyname": "sizePerLanguageVariety",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageVarietyInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerVideoClassification",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"videoClassificationInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerImageFormat",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"imageFormatInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerModality",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"modalityInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerDomain",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"domainInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerImageClassification",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"imageClassificationInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerLanguage",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerTextClassification",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"textClassificationInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerVideoFormat",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"videoFormatInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerTextFormat",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"textFormatInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerTextNumericalFormat",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"textNumericalFormatInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerTimeCoverage",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"timeCoverageInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerGeographicCoverage",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"geographicCoverageInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "sizePerAudioClassification",
-		"weight": 5,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"audioClassificationInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to sizeInfo [w:3]"
-		]
+		"properties": {
+			"speechItems": "enumeration [applicationWords|creditCardNumbers|freeSpeech|isolatedDigits|isolatedWords|moneyAmounts|naturalNumbers|other|phoneticallyBalancedSentences|phoneticallyRichSentences|phoneticallyRichWords|properNouns|telephoneNumbers|vcvSequences|yesNoQuestions]",
+			"nonSpeechItems": "enumeration [commercial|music|noise|notes|other|sounds|tempo]",
+			"textualDescription": "string",
+			"noiseLevel": "enumeration [high|low|medium]"
+		}
 	},
 	{
 		"keyname": "toolServiceCreationInfo",
-		"weight": 6,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 4.002,
 		"usage": [
 			"toolServiceInfo"
 		],
-		"properties": [
-			"Circular reference to implementationLanguage [w:1]",
-			"Circular reference to formalism [w:1]",
-			"Circular reference to creationDetails [w:1]",
-			"Circular reference to originalSource [w:2]"
-		]
+		"properties": {
+			"implementationLanguage": "string",
+			"formalism": "string",
+			"creationDetails": "string",
+			"originalSource": "Reference to originalSource [w:1.001]"
+		}
+	},
+	{
+		"keyname": "timeCoverageInfo",
+		"weight": 4.003,
+		"usage": [
+			"corpusTextInfo",
+			"corpusAudioInfo",
+			"corpusVideoInfo",
+			"corpusImageInfo",
+			"corpusTextNgramInfo",
+			"languageDescriptionTextInfo",
+			"languageDescriptionVideoInfo",
+			"languageDescriptionImageInfo",
+			"lexicalConceptualResourceTextInfo",
+			"lexicalConceptualResourceAudioInfo",
+			"lexicalConceptualResourceVideoInfo",
+			"lexicalConceptualResourceImageInfo"
+		],
+		"properties": {
+			"timeCoverage": "string",
+			"sizePerTimeCoverage": "Reference to sizePerTimeCoverage [w:3.002]"
+		}
+	},
+	{
+		"keyname": "geographicCoverageInfo",
+		"weight": 4.003,
+		"usage": [
+			"corpusTextInfo",
+			"corpusAudioInfo",
+			"corpusVideoInfo",
+			"corpusImageInfo",
+			"corpusTextNgramInfo",
+			"languageDescriptionTextInfo",
+			"languageDescriptionVideoInfo",
+			"languageDescriptionImageInfo",
+			"lexicalConceptualResourceTextInfo",
+			"lexicalConceptualResourceAudioInfo",
+			"lexicalConceptualResourceVideoInfo",
+			"lexicalConceptualResourceImageInfo"
+		],
+		"properties": {
+			"geographicCoverage": "string",
+			"sizePerGeographicCoverage": "Reference to sizePerGeographicCoverage [w:3.002]"
+		}
+	},
+	{
+		"keyname": "textNumericalFormatInfo",
+		"weight": 4.003,
+		"usage": [
+			"corpusTextNumericalInfo"
+		],
+		"properties": {
+			"mimeType": "string",
+			"sizePerTextNumericalFormat": "Reference to sizePerTextNumericalFormat [w:3.002]"
+		}
+	},
+	{
+		"keyname": "textFormatInfo",
+		"weight": 4.003,
+		"usage": [
+			"corpusTextInfo",
+			"corpusTextNgramInfo",
+			"languageDescriptionTextInfo",
+			"lexicalConceptualResourceTextInfo"
+		],
+		"properties": {
+			"mimeType": "string",
+			"sizePerTextFormat": "Reference to sizePerTextFormat [w:3.002]"
+		}
 	},
 	{
 		"keyname": "creationInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 4.003,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3397,145 +3392,68 @@
 			"languageDescriptionImageInfo",
 			"lexicalConceptualResourceInfo"
 		],
-		"properties": [
-			"Circular reference to creationMode [w:1]",
-			"Circular reference to creationModeDetails [w:1]",
-			"Circular reference to originalSource [w:2]",
-			"Circular reference to creationTool [w:2]"
-		]
-	},
-	{
-		"keyname": "geographicCoverageInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusTextInfo",
-			"corpusAudioInfo",
-			"corpusVideoInfo",
-			"corpusImageInfo",
-			"corpusTextNgramInfo",
-			"languageDescriptionTextInfo",
-			"languageDescriptionVideoInfo",
-			"languageDescriptionImageInfo",
-			"lexicalConceptualResourceTextInfo",
-			"lexicalConceptualResourceAudioInfo",
-			"lexicalConceptualResourceVideoInfo",
-			"lexicalConceptualResourceImageInfo"
-		],
-		"properties": [
-			"Circular reference to geographicCoverage [w:1]",
-			"Circular reference to sizePerGeographicCoverage [w:5]"
-		]
-	},
-	{
-		"keyname": "textNumericalFormatInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusTextNumericalInfo"
-		],
-		"properties": [
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to sizePerTextNumericalFormat [w:5]"
-		]
-	},
-	{
-		"keyname": "timeCoverageInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusTextInfo",
-			"corpusAudioInfo",
-			"corpusVideoInfo",
-			"corpusImageInfo",
-			"corpusTextNgramInfo",
-			"languageDescriptionTextInfo",
-			"languageDescriptionVideoInfo",
-			"languageDescriptionImageInfo",
-			"lexicalConceptualResourceTextInfo",
-			"lexicalConceptualResourceAudioInfo",
-			"lexicalConceptualResourceVideoInfo",
-			"lexicalConceptualResourceImageInfo"
-		],
-		"properties": [
-			"Circular reference to timeCoverage [w:1]",
-			"Circular reference to sizePerTimeCoverage [w:5]"
-		]
-	},
-	{
-		"keyname": "settingInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusAudioInfo",
-			"corpusVideoInfo"
-		],
-		"properties": [
-			"Circular reference to naturality [w:1]",
-			"Circular reference to conversationalType [w:1]",
-			"Circular reference to scenarioType [w:1]",
-			"Circular reference to audience [w:1]",
-			"Circular reference to interactivity [w:1]",
-			"Circular reference to interaction [w:1]"
-		]
+		"properties": {
+			"creationMode": "enumeration [automatic|interactive|manual|mixed]",
+			"creationModeDetails": "string",
+			"originalSource": "Reference to originalSource [w:1.001]",
+			"creationTool": "Reference to creationTool [w:1.001]"
+		}
 	},
 	{
 		"keyname": "characterEncodingInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 4.003,
 		"usage": [
 			"corpusTextInfo",
 			"corpusTextNgramInfo",
 			"languageDescriptionTextInfo",
 			"lexicalConceptualResourceTextInfo"
 		],
-		"properties": [
-			"Circular reference to characterEncoding [w:1]",
-			"Circular reference to sizePerCharacterEncoding [w:5]"
-		]
-	},
-	{
-		"keyname": "textFormatInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusTextInfo",
-			"corpusTextNgramInfo",
-			"languageDescriptionTextInfo",
-			"lexicalConceptualResourceTextInfo"
-		],
-		"properties": [
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to sizePerTextFormat [w:5]"
-		]
+		"properties": {
+			"characterEncoding": "string",
+			"sizePerCharacterEncoding": "Reference to sizePerCharacterEncoding [w:3.002]"
+		}
 	},
 	{
 		"keyname": "runningEnvironmentInfo",
-		"weight": 7,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 4.003,
 		"usage": [
 			"languageDescriptionOperationInfo",
 			"toolServiceOperationInfo"
 		],
-		"properties": [
-			"Circular reference to requiredHardware [w:1]",
-			"Circular reference to runningEnvironmentDetails [w:1]",
-			"Circular reference to requiredSoftware [w:2]",
-			"Circular reference to requiredLRs [w:2]"
-		]
+		"properties": {
+			"requiredHardware": "enumeration [graphicCard|microphone|none|ocrSystem|other|specialHardwareEquipment]",
+			"runningEnvironmentDetails": "string",
+			"requiredSoftware": "Reference to requiredSoftware [w:1.001]",
+			"requiredLRs": "Reference to requiredLRs [w:1.001]"
+		}
+	},
+	{
+		"keyname": "modalityInfo",
+		"weight": 5.003,
+		"usage": [
+			"corpusTextInfo",
+			"corpusAudioInfo",
+			"corpusVideoInfo",
+			"corpusImageInfo",
+			"corpusTextNumericalInfo",
+			"corpusTextNgramInfo",
+			"languageDescriptionTextInfo",
+			"languageDescriptionVideoInfo",
+			"languageDescriptionImageInfo",
+			"lexicalConceptualResourceTextInfo",
+			"lexicalConceptualResourceAudioInfo",
+			"lexicalConceptualResourceVideoInfo",
+			"lexicalConceptualResourceImageInfo"
+		],
+		"properties": {
+			"modalityType": "enumeration [bodyGesture|combinationOfModalities|facialExpression|other|signLanguage|spokenLanguage|voice|writtenLanguage]",
+			"modalityTypeDetails": "string",
+			"sizePerModality": "Reference to sizePerModality [w:3.002]"
+		}
 	},
 	{
 		"keyname": "domainInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 5.003,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3550,67 +3468,93 @@
 			"lexicalConceptualResourceVideoInfo",
 			"lexicalConceptualResourceImageInfo"
 		],
-		"properties": [
-			"Circular reference to domain [w:1]",
-			"Circular reference to conformanceToClassificationScheme [w:1]",
-			"Circular reference to sizePerDomain [w:5]"
-		]
-	},
-	{
-		"keyname": "lexicalConceptualResourceEncodingInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"lexicalConceptualResourceInfo"
-		],
-		"properties": [
-			"Circular reference to encodingLevel [w:1]",
-			"Circular reference to linguisticInformation [w:1]",
-			"Circular reference to conformanceToStandardsBestPractices [w:1]",
-			"Circular reference to theoreticModel [w:1]",
-			"Circular reference to externalRef [w:1]",
-			"Circular reference to extratextualInformation [w:1]",
-			"Circular reference to extraTextualInformationUnit [w:1]"
-		]
+		"properties": {
+			"domain": "string",
+			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"sizePerDomain": "Reference to sizePerDomain [w:3.002]"
+		}
 	},
 	{
 		"keyname": "languageVarietyInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 5.003,
 		"usage": [
 			"languageInfo"
 		],
-		"properties": [
-			"Circular reference to languageVarietyType [w:1]",
-			"Circular reference to languageVarietyName [w:1]",
-			"Circular reference to sizePerLanguageVariety [w:5]"
-		]
+		"properties": {
+			"languageVarietyType": "enumeration [dialect|jargon|other]",
+			"languageVarietyName": "string",
+			"sizePerLanguageVariety": "Reference to sizePerLanguageVariety [w:3.002]"
+		}
 	},
 	{
-		"keyname": "ngramInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
+		"keyname": "settingInfo",
+		"weight": 6.001,
 		"usage": [
-			"corpusTextNgramInfo"
+			"corpusAudioInfo",
+			"corpusVideoInfo"
 		],
-		"properties": [
-			"Circular reference to baseItem [w:1]",
-			"Circular reference to order [w:1]",
-			"Circular reference to perplexity [w:1]",
-			"Circular reference to isFactored [w:1]",
-			"Circular reference to factors [w:1]",
-			"Circular reference to smoothing [w:1]",
-			"Circular reference to interpolated [w:1]"
-		]
+		"properties": {
+			"naturality": "enumeration [assisted|elicited|natural|planned|prompted|readSpeech|semiPlanned|spontaneous]",
+			"conversationalType": "enumeration [dialogue|monologue|multilogue]",
+			"scenarioType": "enumeration [frogStory|mapTask|onlineEducationalGame|other|pearStory|rolePlay|wizardOfOz|wordGame]",
+			"audience": "enumeration [few|largePublic|no|some]",
+			"interactivity": "enumeration [interactive|nonInteractive|other|overlapping|semiInteractive]",
+			"interaction": "string"
+		}
+	},
+	{
+		"keyname": "videoClassificationInfo",
+		"weight": 6.003,
+		"usage": [
+			"corpusVideoInfo"
+		],
+		"properties": {
+			"videoGenre": "string",
+			"subject_topic": "string",
+			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"sizePerVideoClassification": "Reference to sizePerVideoClassification [w:3.002]"
+		}
+	},
+	{
+		"keyname": "imageClassificationInfo",
+		"weight": 6.003,
+		"usage": [
+			"corpusImageInfo"
+		],
+		"properties": {
+			"imageGenre": "string",
+			"subject_topic": "string",
+			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"sizePerImageClassification": "Reference to sizePerImageClassification [w:3.002]"
+		}
+	},
+	{
+		"keyname": "toolServiceOperationInfo",
+		"weight": 6.004,
+		"usage": [
+			"toolServiceInfo"
+		],
+		"properties": {
+			"operatingSystem": "enumeration [linux|mac-OS|os-independent|other|unix|windows]",
+			"runningTime": "string",
+			"runningEnvironmentInfo": "Reference to runningEnvironmentInfo [w:4.003]"
+		}
+	},
+	{
+		"keyname": "audioSizeInfo",
+		"weight": 6.004,
+		"usage": [
+			"corpusAudioInfo"
+		],
+		"properties": {
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"durationOfEffectiveSpeechInfo": "Reference to durationOfEffectiveSpeechInfo [w:2.001]",
+			"durationOfAudioInfo": "Reference to durationOfAudioInfo [w:2.001]"
+		}
 	},
 	{
 		"keyname": "linkToOtherMediaInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 7.001,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3621,45 +3565,152 @@
 			"languageDescriptionVideoInfo",
 			"languageDescriptionImageInfo"
 		],
-		"properties": [
-			"Circular reference to otherMedia [w:1]",
-			"Circular reference to mediaTypeDetails [w:1]",
-			"Circular reference to synchronizedWithText [w:1]",
-			"Circular reference to synchronizedWithAudio [w:1]",
-			"Circular reference to synchronizedWithVideo [w:1]",
-			"Circular reference to sycnhronizedWithImage [w:1]",
-			"Circular reference to synchronizedWithTextNumerical [w:1]"
-		]
+		"properties": {
+			"otherMedia": "enumeration [audio|image|text|textNumerical|video]",
+			"mediaTypeDetails": "string",
+			"synchronizedWithText": "boolean",
+			"synchronizedWithAudio": "boolean",
+			"synchronizedWithVideo": "boolean",
+			"sycnhronizedWithImage": "boolean",
+			"synchronizedWithTextNumerical": "boolean"
+		}
+	},
+	{
+		"keyname": "ngramInfo",
+		"weight": 7.001,
+		"usage": [
+			"corpusTextNgramInfo"
+		],
+		"properties": {
+			"baseItem": "enumeration [letter|other|phoneme|syllable|word]",
+			"order": "integer",
+			"perplexity": "string",
+			"isFactored": "boolean",
+			"factors": "string",
+			"smoothing": "string",
+			"interpolated": "boolean"
+		}
+	},
+	{
+		"keyname": "lexicalConceptualResourceEncodingInfo",
+		"weight": 7.001,
+		"usage": [
+			"lexicalConceptualResourceInfo"
+		],
+		"properties": {
+			"encodingLevel": "enumeration [morphology|other|phonetics|phonology|pragmatics|semantics|syntax]",
+			"linguisticInformation": "enumeration [accentuation|definition/gloss|lemma|lemma-Abbreviations|lemma-CliticForms|lemma-Compounds|lemma-MultiWordUnits|lemma-Variants|morpho-Aspect|morpho-Auxiliary|morpho-Case|morpho-Degree|morpho-Derivation|morpho-Gender|morpho-Inflection|morpho-IrregularForms|morpho-Mood|morpho-Number|morpho-Person|morpho-Reflexivity|morpho-Tense|morpho-Voice|other|partOfSpeech|phonetics-Transcription|semantics-CrossReferences|semantics-Domain|semantics-EventType|semantics-QualiaStructure|semantics-Relations|semantics-Relations-Antonyms|semantics-Relations-Hyperonyms|semantics-Relations-Hyponyms|semantics-Relations-Meronyms|semantics-Relations-Synonyms|semantics-Relations-Troponyms|semantics-SemanticClass|semantics-SemanticRoles|semantics-Traits|statisticalProperties|syntacticoSemanticLinks|syntax-SubcatFrame|translationEquivalent|usage-Collocations|usage-Examples|usage-Frequency|usage-Notes|usage-Register]",
+			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]",
+			"theoreticModel": "string",
+			"externalRef": "string",
+			"extratextualInformation": "enumeration [images|other|soundRecordings|videos]",
+			"extraTextualInformationUnit": "enumeration [example|lemma|lexicalUnit|other|semantics|syntax|word]"
+		}
 	},
 	{
 		"keyname": "languageDescriptionEncodingInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 7.001,
 		"usage": [
 			"languageDescriptionInfo"
 		],
-		"properties": [
-			"Circular reference to encodingLevel [w:1]",
-			"Circular reference to conformanceToStandardsBestPractices [w:1]",
-			"Circular reference to theoreticModel [w:1]",
-			"Circular reference to formalism [w:1]",
-			"Circular reference to task [w:1]",
-			"Circular reference to grammaticalPhenomenaCoverage [w:1]",
-			"Circular reference to weightedGrammar [w:1]"
-		]
+		"properties": {
+			"encodingLevel": "enumeration [morphology|other|phonetics|phonology|pragmatics|semantics|syntax]",
+			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]",
+			"theoreticModel": "string",
+			"formalism": "string",
+			"task": "enumeration [analysis|anaphoraResolution|chunking|definitionsParsing|generation|npRecognition|other|parsing|titlesParsing]",
+			"grammaticalPhenomenaCoverage": "enumeration [anaphora|clauseStructure|coordination|npStructure|other|ppAttachment]",
+			"weightedGrammar": "boolean"
+		}
 	},
 	{
-		"keyname": "modalityInfo",
-		"weight": 8,
-		"datatype": "entity",
-		"validator": "",
+		"keyname": "languageDescriptionOperationInfo",
+		"weight": 7.005,
+		"usage": [
+			"languageDescriptionInfo"
+		],
+		"properties": {
+			"runningEnvironmentInfo": "Reference to runningEnvironmentInfo [w:4.003]",
+			"relatedLexiconInfo": "Reference to relatedLexiconInfo [w:3.001]"
+		}
+	},
+	{
+		"keyname": "textClassificationInfo",
+		"weight": 8.003,
+		"usage": [
+			"corpusTextInfo",
+			"corpusTextNgramInfo"
+		],
+		"properties": {
+			"textGenre": "string",
+			"textType": "string",
+			"register": "string",
+			"subject_topic": "string",
+			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"sizePerTextClassification": "Reference to sizePerTextClassification [w:3.002]"
+		}
+	},
+	{
+		"keyname": "audioClassificationInfo",
+		"weight": 8.003,
+		"usage": [
+			"corpusAudioInfo"
+		],
+		"properties": {
+			"audioGenre": "enumeration [animalVocalizations|humanNonSpeech|instrumentalMusic|noise|other|song|speech]",
+			"speechGenre": "enumeration [airTrafficControl|broadcastNews|call-in|conversation|debate|emotionalExpressive|interview|lecture|meeting|narrative|other|presentation|questionAnswer|roundtable]",
+			"subject_topic": "string",
+			"register": "string",
+			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"sizePerAudioClassification": "Reference to sizePerAudioClassification [w:3.002]"
+		}
+	},
+	{
+		"keyname": "communicationInfo",
+		"weight": 9.001,
+		"usage": [
+			"personInfo",
+			"organizationInfo"
+		],
+		"properties": {
+			"email": "string [[^@]+@[^\\.]+\\..+|]",
+			"url": "string [(http://|https://|ftp://|www.).*]",
+			"address": "string",
+			"zipCode": "string",
+			"city": "string",
+			"region": "string",
+			"country": "string",
+			"telephoneNumber": "string",
+			"faxNumber": "string"
+		}
+	},
+	{
+		"keyname": "staticElementInfo",
+		"weight": 10.001,
+		"usage": [
+			"imageContentInfo"
+		],
+		"properties": {
+			"typeOfElement": "string",
+			"bodyParts": "enumeration [arms|face|feet|hands|head|legs|mouth|none|wholeBody]",
+			"faceViews": "string",
+			"faceExpressions": "string",
+			"artifactParts": "string",
+			"landscapeParts": "string",
+			"personDescription": "string",
+			"thingDescription": "string",
+			"organizationDescription": "string",
+			"eventDescription": "string"
+		}
+	},
+	{
+		"keyname": "languageInfo",
+		"weight": 11.006,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
 			"corpusVideoInfo",
 			"corpusImageInfo",
-			"corpusTextNumericalInfo",
 			"corpusTextNgramInfo",
 			"languageDescriptionTextInfo",
 			"languageDescriptionVideoInfo",
@@ -3669,776 +3720,583 @@
 			"lexicalConceptualResourceVideoInfo",
 			"lexicalConceptualResourceImageInfo"
 		],
-		"properties": [
-			"Circular reference to modalityType [w:1]",
-			"Circular reference to modalityTypeDetails [w:1]",
-			"Circular reference to sizePerModality [w:5]"
-		]
-	},
-	{
-		"keyname": "imageClassificationInfo",
-		"weight": 9,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusImageInfo"
-		],
-		"properties": [
-			"Circular reference to imageGenre [w:1]",
-			"Circular reference to subject_topic [w:1]",
-			"Circular reference to conformanceToClassificationScheme [w:1]",
-			"Circular reference to sizePerImageClassification [w:5]"
-		]
-	},
-	{
-		"keyname": "videoClassificationInfo",
-		"weight": 9,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusVideoInfo"
-		],
-		"properties": [
-			"Circular reference to videoGenre [w:1]",
-			"Circular reference to subject_topic [w:1]",
-			"Circular reference to conformanceToClassificationScheme [w:1]",
-			"Circular reference to sizePerVideoClassification [w:5]"
-		]
-	},
-	{
-		"keyname": "audioSizeInfo",
-		"weight": 10,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusAudioInfo"
-		],
-		"properties": [
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to durationOfEffectiveSpeechInfo [w:3]",
-			"Circular reference to durationOfAudioInfo [w:3]"
-		]
-	},
-	{
-		"keyname": "communicationInfo",
-		"weight": 10,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"personInfo",
-			"organizationInfo"
-		],
-		"properties": [
-			"Circular reference to email [w:1]",
-			"Circular reference to url [w:1]",
-			"Circular reference to address [w:1]",
-			"Circular reference to zipCode [w:1]",
-			"Circular reference to city [w:1]",
-			"Circular reference to region [w:1]",
-			"Circular reference to country [w:1]",
-			"Circular reference to telephoneNumber [w:1]",
-			"Circular reference to faxNumber [w:1]"
-		]
-	},
-	{
-		"keyname": "toolServiceOperationInfo",
-		"weight": 10,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"toolServiceInfo"
-		],
-		"properties": [
-			"Circular reference to operatingSystem [w:1]",
-			"Circular reference to runningTime [w:1]",
-			"Circular reference to runningEnvironmentInfo [w:7]"
-		]
-	},
-	{
-		"keyname": "textClassificationInfo",
-		"weight": 11,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusTextInfo",
-			"corpusTextNgramInfo"
-		],
-		"properties": [
-			"Circular reference to textGenre [w:1]",
-			"Circular reference to textType [w:1]",
-			"Circular reference to register [w:1]",
-			"Circular reference to subject_topic [w:1]",
-			"Circular reference to conformanceToClassificationScheme [w:1]",
-			"Circular reference to sizePerTextClassification [w:5]"
-		]
-	},
-	{
-		"keyname": "audioClassificationInfo",
-		"weight": 11,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusAudioInfo"
-		],
-		"properties": [
-			"Circular reference to audioGenre [w:1]",
-			"Circular reference to speechGenre [w:1]",
-			"Circular reference to subject_topic [w:1]",
-			"Circular reference to register [w:1]",
-			"Circular reference to conformanceToClassificationScheme [w:1]",
-			"Circular reference to sizePerAudioClassification [w:5]"
-		]
-	},
-	{
-		"keyname": "staticElementInfo",
-		"weight": 11,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"imageContentInfo"
-		],
-		"properties": [
-			"Circular reference to typeOfElement [w:1]",
-			"Circular reference to bodyParts [w:1]",
-			"Circular reference to faceViews [w:1]",
-			"Circular reference to faceExpressions [w:1]",
-			"Circular reference to artifactParts [w:1]",
-			"Circular reference to landscapeParts [w:1]",
-			"Circular reference to personDescription [w:1]",
-			"Circular reference to thingDescription [w:1]",
-			"Circular reference to organizationDescription [w:1]",
-			"Circular reference to eventDescription [w:1]"
-		]
-	},
-	{
-		"keyname": "languageDescriptionOperationInfo",
-		"weight": 12,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageDescriptionInfo"
-		],
-		"properties": [
-			"Circular reference to runningEnvironmentInfo [w:7]",
-			"Circular reference to relatedLexiconInfo [w:4]"
-		]
+		"properties": {
+			"languageId": "string",
+			"languageName": "string",
+			"languageScript": "string",
+			"sizePerLanguage": "Reference to sizePerLanguage [w:3.002]",
+			"languageVarietyInfo": "Reference to languageVarietyInfo [w:5.003]"
+		}
 	},
 	{
 		"keyname": "imageContentInfo",
-		"weight": 14,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 12.002,
 		"usage": [
 			"corpusImageInfo",
 			"languageDescriptionImageInfo",
 			"lexicalConceptualResourceImageInfo"
 		],
-		"properties": [
-			"Circular reference to typeOfImageContent [w:1]",
-			"Circular reference to textIncludedInImage [w:1]",
-			"Circular reference to staticElementInfo [w:11]"
-		]
+		"properties": {
+			"typeOfImageContent": "string",
+			"textIncludedInImage": "enumeration [captions|captureTime|none|subtitles]",
+			"staticElementInfo": "Reference to staticElementInfo [w:10.001]"
+		}
 	},
 	{
 		"keyname": "organizationInfo",
-		"weight": 14,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 12.002,
 		"usage": [
 			"affiliation",
 			"annotatorOrganization",
 			"recorderOrganization",
 			"evaluatorOrganization"
 		],
-		"properties": [
-			"Circular reference to organizationName [w:1]",
-			"Circular reference to organizationShortName [w:1]",
-			"Circular reference to departmentName [w:1]",
-			"Circular reference to communicationInfo [w:10]"
-		]
-	},
-	{
-		"keyname": "outputInfo",
-		"weight": 14,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"toolServiceInfo"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to resourceType [w:1]",
-			"Circular reference to modalityType [w:1]",
-			"Circular reference to languageName [w:1]",
-			"Circular reference to languageId [w:1]",
-			"Circular reference to languageVarietyName [w:1]",
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to characterEncoding [w:1]",
-			"Circular reference to annotationType [w:1]",
-			"Circular reference to annotationFormat [w:1]",
-			"Circular reference to tagset [w:1]",
-			"Circular reference to segmentationLevel [w:1]",
-			"Circular reference to conformanceToStandardsBestPractices [w:1]"
-		]
+		"properties": {
+			"organizationName": "string",
+			"organizationShortName": "string",
+			"departmentName": "string",
+			"communicationInfo": "Reference to communicationInfo [w:9.001]"
+		}
 	},
 	{
 		"keyname": "inputInfo",
-		"weight": 14,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 13.001,
 		"usage": [
 			"toolServiceInfo"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to resourceType [w:1]",
-			"Circular reference to modalityType [w:1]",
-			"Circular reference to languageName [w:1]",
-			"Circular reference to languageId [w:1]",
-			"Circular reference to languageVarietyName [w:1]",
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to characterEncoding [w:1]",
-			"Circular reference to annotationType [w:1]",
-			"Circular reference to annotationFormat [w:1]",
-			"Circular reference to tagset [w:1]",
-			"Circular reference to segmentationLevel [w:1]",
-			"Circular reference to conformanceToStandardsBestPractices [w:1]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"resourceType": "enumeration [corpus]",
+			"modalityType": "enumeration [bodyGesture|combinationOfModalities|facialExpression|other|signLanguage|spokenLanguage|voice|writtenLanguage]",
+			"languageName": "string",
+			"languageId": "string",
+			"languageVarietyName": "string",
+			"mimeType": "string",
+			"characterEncoding": "string",
+			"annotationType": "enumeration [alignment|discourseAnnotation|discourseAnnotation-audienceReactions|discourseAnnotation-coreference|discourseAnnotation-dialogueActs|discourseAnnotation-discourseRelations|lemmatization|modalityAnnotation-bodyMovements|modalityAnnotation-facialExpressions|modalityAnnotation-gazeEyeMovements|modalityAnnotation-handArmGestures|modalityAnnotation-handManipulationOfObjects|modalityAnnotation-headMovements|modalityAnnotation-lipMovements|morphosyntacticAnnotation-bPosTagging|morphosyntacticAnnotation-posTagging|other|segmentation|semanticAnnotation|semanticAnnotation-certaintyLevel|semanticAnnotation-emotions|semanticAnnotation-entityMentions|semanticAnnotation-events|semanticAnnotation-namedEntities|semanticAnnotation-polarity|semanticAnnotation-questionTopicalTarget|semanticAnnotation-semanticClasses|semanticAnnotation-semanticRelations|semanticAnnotation-semanticRoles|semanticAnnotation-speechActs|semanticAnnotation-temporalExpressions|semanticAnnotation-textualEntailment|semanticAnnotation-wordSenses|speechAnnotation|speechAnnotation-orthographicTranscription|speechAnnotation-paralanguageAnnotation|speechAnnotation-phoneticTranscription|speechAnnotation-prosodicAnnotation|speechAnnotation-soundEvents|speechAnnotation-soundToTextAlignment|speechAnnotation-speakerIdentification|speechAnnotation-speakerTurns|stemming|structuralAnnotation|syntacticAnnotation-shallowParsing|syntacticAnnotation-subcategorizationFrames|syntacticAnnotation-treebanks|syntacticosemanticAnnotation-links|translation|transliteration]",
+			"annotationFormat": "string",
+			"tagset": "string",
+			"segmentationLevel": "enumeration [clause|diphone|frame|other|paragraph|phoneme|phrase|prosodicBoundaries|scene|sentence|shot|signal|syllable|topic|utterance|word|wordGroup]",
+			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]"
+		}
 	},
 	{
 		"keyname": "dynamicElementInfo",
-		"weight": 14,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 13.001,
 		"usage": [
 			"videoContentInfo"
 		],
-		"properties": [
-			"Circular reference to typeOfElement [w:1]",
-			"Circular reference to bodyParts [w:1]",
-			"Circular reference to distractors [w:1]",
-			"Circular reference to interactiveMedia [w:1]",
-			"Circular reference to faceViews [w:1]",
-			"Circular reference to faceExpressions [w:1]",
-			"Circular reference to bodyMovement [w:1]",
-			"Circular reference to gestures [w:1]",
-			"Circular reference to handArmMovement [w:1]",
-			"Circular reference to handManipulation [w:1]",
-			"Circular reference to headMovement [w:1]",
-			"Circular reference to eyeMovement [w:1]",
-			"Circular reference to posesPerSubject [w:1]"
-		]
+		"properties": {
+			"typeOfElement": "string",
+			"bodyParts": "enumeration [arms|face|feet|hands|head|legs|mouth|none|wholeBody]",
+			"distractors": "string",
+			"interactiveMedia": "string",
+			"faceViews": "string",
+			"faceExpressions": "string",
+			"bodyMovement": "string",
+			"gestures": "string",
+			"handArmMovement": "string",
+			"handManipulation": "string",
+			"headMovement": "string",
+			"eyeMovement": "string",
+			"posesPerSubject": "integer"
+		}
 	},
 	{
-		"keyname": "evaluatorOrganization",
-		"weight": 16,
-		"datatype": "entity",
-		"validator": "",
+		"keyname": "outputInfo",
+		"weight": 13.001,
 		"usage": [
-			"toolServiceEvaluationInfo"
+			"toolServiceInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to organizationInfo [w:14]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"resourceType": "enumeration [corpus]",
+			"modalityType": "enumeration [bodyGesture|combinationOfModalities|facialExpression|other|signLanguage|spokenLanguage|voice|writtenLanguage]",
+			"languageName": "string",
+			"languageId": "string",
+			"languageVarietyName": "string",
+			"mimeType": "string",
+			"characterEncoding": "string",
+			"annotationType": "enumeration [alignment|discourseAnnotation|discourseAnnotation-audienceReactions|discourseAnnotation-coreference|discourseAnnotation-dialogueActs|discourseAnnotation-discourseRelations|lemmatization|modalityAnnotation-bodyMovements|modalityAnnotation-facialExpressions|modalityAnnotation-gazeEyeMovements|modalityAnnotation-handArmGestures|modalityAnnotation-handManipulationOfObjects|modalityAnnotation-headMovements|modalityAnnotation-lipMovements|morphosyntacticAnnotation-bPosTagging|morphosyntacticAnnotation-posTagging|other|segmentation|semanticAnnotation|semanticAnnotation-certaintyLevel|semanticAnnotation-emotions|semanticAnnotation-entityMentions|semanticAnnotation-events|semanticAnnotation-namedEntities|semanticAnnotation-polarity|semanticAnnotation-questionTopicalTarget|semanticAnnotation-semanticClasses|semanticAnnotation-semanticRelations|semanticAnnotation-semanticRoles|semanticAnnotation-speechActs|semanticAnnotation-temporalExpressions|semanticAnnotation-textualEntailment|semanticAnnotation-wordSenses|speechAnnotation|speechAnnotation-orthographicTranscription|speechAnnotation-paralanguageAnnotation|speechAnnotation-phoneticTranscription|speechAnnotation-prosodicAnnotation|speechAnnotation-soundEvents|speechAnnotation-soundToTextAlignment|speechAnnotation-speakerIdentification|speechAnnotation-speakerTurns|stemming|structuralAnnotation|syntacticAnnotation-shallowParsing|syntacticAnnotation-subcategorizationFrames|syntacticAnnotation-treebanks|syntacticosemanticAnnotation-links|translation|transliteration]",
+			"annotationFormat": "string",
+			"tagset": "string",
+			"segmentationLevel": "enumeration [clause|diphone|frame|other|paragraph|phoneme|phrase|prosodicBoundaries|scene|sentence|shot|signal|syllable|topic|utterance|word|wordGroup]",
+			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]"
+		}
 	},
 	{
 		"keyname": "affiliation",
-		"weight": 16,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 13.003,
 		"usage": [
 			"personInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to organizationInfo [w:14]"
-		]
-	},
-	{
-		"keyname": "recorderOrganization",
-		"weight": 16,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"recordingInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to organizationInfo [w:14]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"organizationInfo": "Reference to organizationInfo [w:12.002]"
+		}
 	},
 	{
 		"keyname": "annotatorOrganization",
-		"weight": 16,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 13.003,
 		"usage": [
 			"annotationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to organizationInfo [w:14]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"organizationInfo": "Reference to organizationInfo [w:12.002]"
+		}
 	},
 	{
-		"keyname": "languageInfo",
-		"weight": 17,
-		"datatype": "entity",
-		"validator": "",
+		"keyname": "evaluatorOrganization",
+		"weight": 13.003,
 		"usage": [
-			"corpusTextInfo",
-			"corpusAudioInfo",
-			"corpusVideoInfo",
-			"corpusImageInfo",
-			"corpusTextNgramInfo",
-			"languageDescriptionTextInfo",
-			"languageDescriptionVideoInfo",
-			"languageDescriptionImageInfo",
-			"lexicalConceptualResourceTextInfo",
-			"lexicalConceptualResourceAudioInfo",
-			"lexicalConceptualResourceVideoInfo",
-			"lexicalConceptualResourceImageInfo"
+			"toolServiceEvaluationInfo"
 		],
-		"properties": [
-			"Circular reference to languageId [w:1]",
-			"Circular reference to languageName [w:1]",
-			"Circular reference to languageScript [w:1]",
-			"Circular reference to sizePerLanguage [w:5]",
-			"Circular reference to languageVarietyInfo [w:8]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"organizationInfo": "Reference to organizationInfo [w:12.002]"
+		}
+	},
+	{
+		"keyname": "recorderOrganization",
+		"weight": 13.003,
+		"usage": [
+			"recordingInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"organizationInfo": "Reference to organizationInfo [w:12.002]"
+		}
 	},
 	{
 		"keyname": "videoContentInfo",
-		"weight": 17,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 15.002,
 		"usage": [
 			"corpusVideoInfo",
 			"languageDescriptionVideoInfo",
 			"lexicalConceptualResourceVideoInfo"
 		],
-		"properties": [
-			"Circular reference to typeOfVideoContent [w:1]",
-			"Circular reference to textIncludedInVideo [w:1]",
-			"Circular reference to dynamicElementInfo [w:14]"
-		]
+		"properties": {
+			"typeOfVideoContent": "string",
+			"textIncludedInVideo": "enumeration [captions|none|subtitles]",
+			"dynamicElementInfo": "Reference to dynamicElementInfo [w:13.001]"
+		}
 	},
 	{
 		"keyname": "audioFormatInfo",
-		"weight": 19,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 15.004,
 		"usage": [
 			"corpusAudioInfo",
 			"lexicalConceptualResourceAudioInfo"
 		],
-		"properties": [
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to signalEncoding [w:1]",
-			"Circular reference to samplingRate [w:1]",
-			"Circular reference to quantization [w:1]",
-			"Circular reference to byteOrder [w:1]",
-			"Circular reference to signConvention [w:1]",
-			"Circular reference to audioQualityMeasuresIncluded [w:1]",
-			"Circular reference to numberOfTracks [w:1]",
-			"Circular reference to recordingQuality [w:1]",
-			"Circular reference to compressionInfo [w:4]",
-			"Circular reference to sizePerAudioFormat [w:5]"
-		]
+		"properties": {
+			"mimeType": "string",
+			"signalEncoding": "enumeration [ADPCM|aLaw|linearPCM|other|µ-law]",
+			"samplingRate": "integer",
+			"quantization": "enumeration [16|24|32|64|8]",
+			"byteOrder": "enumeration [bigEndian|littleEndian]",
+			"signConvention": "enumeration [floatingPoint|signedInteger|unsignedInteger]",
+			"audioQualityMeasuresIncluded": "enumeration [SNR|backgroundNoise|clippingRate|crossTalk|other]",
+			"numberOfTracks": "enumeration [1|2|4|8]",
+			"recordingQuality": "enumeration [high|low|medium|veryHigh|veryLow]",
+			"compressionInfo": "Reference to compressionInfo [w:3.001]",
+			"sizePerAudioFormat": "Reference to sizePerAudioFormat [w:3.002]"
+		}
 	},
 	{
 		"keyname": "imageFormatInfo",
-		"weight": 20,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 15.005,
 		"usage": [
 			"corpusImageInfo",
 			"languageDescriptionImageInfo",
 			"lexicalConceptualResourceImageInfo"
 		],
-		"properties": [
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to colourSpace [w:1]",
-			"Circular reference to colourDepth [w:1]",
-			"Circular reference to visualModelling [w:1]",
-			"Circular reference to rasterOrVectorGraphics [w:1]",
-			"Circular reference to quality [w:1]",
-			"Circular reference to compressionInfo [w:4]",
-			"Circular reference to resolutionInfo [w:4]",
-			"Circular reference to sizePerImageFormat [w:5]"
-		]
-	},
-	{
-		"keyname": "participantInfo",
-		"weight": 20,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"personSourceSetInfo"
-		],
-		"properties": [
-			"Circular reference to alias [w:1]",
-			"Circular reference to ageGroup [w:1]",
-			"Circular reference to age [w:1]",
-			"Circular reference to sex [w:1]",
-			"Circular reference to origin [w:1]",
-			"Circular reference to placeOfLiving [w:1]",
-			"Circular reference to placeOfBirth [w:1]",
-			"Circular reference to placeOfChildhood [w:1]",
-			"Circular reference to dialectAccent [w:1]",
-			"Circular reference to speakingImpairment [w:1]",
-			"Circular reference to hearingImpairment [w:1]",
-			"Circular reference to smokingHabits [w:1]",
-			"Circular reference to vocalTractConditions [w:1]",
-			"Circular reference to profession [w:1]",
-			"Circular reference to height [w:1]",
-			"Circular reference to weight [w:1]",
-			"Circular reference to trainedSpeaker [w:1]",
-			"Circular reference to placeOfSecondEducation [w:1]",
-			"Circular reference to educationLevel [w:1]"
-		]
+		"properties": {
+			"mimeType": "string",
+			"colourSpace": "enumeration [4:2:2|CMYK|RGB|YUV]",
+			"colourDepth": "integer",
+			"visualModelling": "enumeration [2D|3D]",
+			"rasterOrVectorGraphics": "enumeration [raster|vector]",
+			"quality": "enumeration [high|low|medium|veryHigh|veryLow]",
+			"compressionInfo": "Reference to compressionInfo [w:3.001]",
+			"resolutionInfo": "Reference to resolutionInfo [w:3.001]",
+			"sizePerImageFormat": "Reference to sizePerImageFormat [w:3.002]"
+		}
 	},
 	{
 		"keyname": "videoFormatInfo",
-		"weight": 20,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 15.005,
 		"usage": [
 			"corpusVideoInfo",
 			"languageDescriptionVideoInfo",
 			"lexicalConceptualResourceVideoInfo"
 		],
-		"properties": [
-			"Circular reference to mimeType [w:1]",
-			"Circular reference to colourSpace [w:1]",
-			"Circular reference to colourDepth [w:1]",
-			"Circular reference to frameRate [w:1]",
-			"Circular reference to visualModelling [w:1]",
-			"Circular reference to fidelity [w:1]",
-			"Circular reference to resolutionInfo [w:4]",
-			"Circular reference to compressionInfo [w:4]",
-			"Circular reference to sizePerVideoFormat [w:5]"
-		]
+		"properties": {
+			"mimeType": "string",
+			"colourSpace": "enumeration [4:2:2|CMYK|RGB|YUV]",
+			"colourDepth": "integer",
+			"frameRate": "integer",
+			"visualModelling": "enumeration [2D|3D]",
+			"fidelity": "boolean",
+			"resolutionInfo": "Reference to resolutionInfo [w:3.001]",
+			"compressionInfo": "Reference to compressionInfo [w:3.001]",
+			"sizePerVideoFormat": "Reference to sizePerVideoFormat [w:3.002]"
+		}
+	},
+	{
+		"keyname": "participantInfo",
+		"weight": 19.001,
+		"usage": [
+			"personSourceSetInfo"
+		],
+		"properties": {
+			"alias": "string",
+			"ageGroup": "enumeration [adult|child|elderly|teenager]",
+			"age": "string",
+			"sex": "enumeration [female|male|unknown]",
+			"origin": "enumeration [native|nonNative|unknown]",
+			"placeOfLiving": "string",
+			"placeOfBirth": "string",
+			"placeOfChildhood": "string",
+			"dialectAccent": "string",
+			"speakingImpairment": "string",
+			"hearingImpairment": "string",
+			"smokingHabits": "string",
+			"vocalTractConditions": "enumeration [dentalProsthesis|other]",
+			"profession": "string",
+			"height": "integer",
+			"weight": "integer",
+			"trainedSpeaker": "boolean",
+			"placeOfSecondEducation": "string",
+			"educationLevel": "string"
+		}
 	},
 	{
 		"keyname": "documentInfo",
-		"weight": 21,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 20.001,
 		"usage": [
 			"annotationManualStructured",
 			"evaluationReportStructured"
 		],
-		"properties": [
-			"Circular reference to documentType [w:1]",
-			"Circular reference to title [w:1]",
-			"Circular reference to author [w:1]",
-			"Circular reference to editor [w:1]",
-			"Circular reference to year [w:1]",
-			"Circular reference to publisher [w:1]",
-			"Circular reference to bookTitle [w:1]",
-			"Circular reference to journal [w:1]",
-			"Circular reference to volume [w:1]",
-			"Circular reference to series [w:1]",
-			"Circular reference to pages [w:1]",
-			"Circular reference to edition [w:1]",
-			"Circular reference to conference [w:1]",
-			"Circular reference to doi [w:1]",
-			"Circular reference to url [w:1]",
-			"Circular reference to ISSN [w:1]",
-			"Circular reference to ISBN [w:1]",
-			"Circular reference to keywords [w:1]",
-			"Circular reference to documentLanguageName [w:1]",
-			"Circular reference to documentLanguageId [w:1]"
-		]
-	},
-	{
-		"keyname": "evaluationReportStructured",
-		"weight": 23,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"toolServiceEvaluationInfo"
-		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to documentInfo [w:21]"
-		]
+		"properties": {
+			"documentType": "enumeration [article|book|booklet|inBook|inCollection|inProceedings|manual|mastersThesis|other|phdThesis|proceedings|techReport|unpublished]",
+			"title": "string",
+			"author": "string",
+			"editor": "string",
+			"year": "integer",
+			"publisher": "string",
+			"bookTitle": "string",
+			"journal": "string",
+			"volume": "string",
+			"series": "string",
+			"pages": "string",
+			"edition": "string",
+			"conference": "string",
+			"doi": "string",
+			"url": "string [(http://|https://|ftp://|www.).*]",
+			"ISSN": "string",
+			"ISBN": "string",
+			"keywords": "string",
+			"documentLanguageName": "string",
+			"documentLanguageId": "string"
+		}
 	},
 	{
 		"keyname": "annotationManualStructured",
-		"weight": 23,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 21.002,
 		"usage": [
 			"annotationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to documentInfo [w:21]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"documentInfo": "Reference to documentInfo [w:20.001]"
+		}
+	},
+	{
+		"keyname": "evaluationReportStructured",
+		"weight": 21.002,
+		"usage": [
+			"toolServiceEvaluationInfo"
+		],
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"documentInfo": "Reference to documentInfo [w:20.001]"
+		}
 	},
 	{
 		"keyname": "personInfo",
-		"weight": 31,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 26.005,
 		"usage": [
 			"annotatorPerson",
 			"recorderPerson",
 			"evaluatorPerson"
 		],
-		"properties": [
-			"Circular reference to surname [w:1]",
-			"Circular reference to givenName [w:1]",
-			"Circular reference to sex [w:1]",
-			"Circular reference to position [w:1]",
-			"Circular reference to communicationInfo [w:10]",
-			"Circular reference to affiliation [w:16]"
-		]
+		"properties": {
+			"surname": "string",
+			"givenName": "string",
+			"sex": "enumeration [female|male|unknown]",
+			"position": "string",
+			"communicationInfo": "Reference to communicationInfo [w:9.001]",
+			"affiliation": "Reference to affiliation [w:13.003]"
+		}
 	},
 	{
 		"keyname": "annotatorPerson",
-		"weight": 33,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 27.006,
 		"usage": [
 			"annotationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to personInfo [w:31]"
-		]
-	},
-	{
-		"keyname": "personSourceSetInfo",
-		"weight": 33,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"captureInfo"
-		],
-		"properties": [
-			"Circular reference to numberOfPersons [w:1]",
-			"Circular reference to ageOfPersons [w:1]",
-			"Circular reference to ageRangeStart [w:1]",
-			"Circular reference to ageRangeEnd [w:1]",
-			"Circular reference to sexOfPersons [w:1]",
-			"Circular reference to originOfPersons [w:1]",
-			"Circular reference to dialectAccentOfPersons [w:1]",
-			"Circular reference to geographicDistributionOfPersons [w:1]",
-			"Circular reference to hearingImpairmentOfPersons [w:1]",
-			"Circular reference to speakingImpairmentOfPersons [w:1]",
-			"Circular reference to numberOfTrainedSpeakers [w:1]",
-			"Circular reference to speechInfluences [w:1]",
-			"Circular reference to participantInfo [w:20]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"personInfo": "Reference to personInfo [w:26.005]"
+		}
 	},
 	{
 		"keyname": "recorderPerson",
-		"weight": 33,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 27.006,
 		"usage": [
 			"recordingInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to personInfo [w:31]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"personInfo": "Reference to personInfo [w:26.005]"
+		}
 	},
 	{
 		"keyname": "evaluatorPerson",
-		"weight": 33,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 27.006,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
-		"properties": [
-			"Circular reference to role [w:1]",
-			"Circular reference to personInfo [w:31]"
-		]
+		"properties": {
+			"role": "enumeration [sizePerLanguage]",
+			"personInfo": "Reference to personInfo [w:26.005]"
+		}
+	},
+	{
+		"keyname": "personSourceSetInfo",
+		"weight": 31.002,
+		"usage": [
+			"captureInfo"
+		],
+		"properties": {
+			"numberOfPersons": "integer",
+			"ageOfPersons": "enumeration [adult|child|elderly|teenager]",
+			"ageRangeStart": "integer",
+			"ageRangeEnd": "integer",
+			"sexOfPersons": "enumeration [female|male|mixed|unknown]",
+			"originOfPersons": "enumeration [mixed|native|nonNative|unknown]",
+			"dialectAccentOfPersons": "string",
+			"geographicDistributionOfPersons": "string",
+			"hearingImpairmentOfPersons": "enumeration [mixed|no|yes]",
+			"speakingImpairmentOfPersons": "enumeration [mixed|no|yes]",
+			"numberOfTrainedSpeakers": "integer",
+			"speechInfluences": "enumeration [alcohol|hyperbaric|medication|other|sleepDeprivation]",
+			"participantInfo": "Reference to participantInfo [w:19.001]"
+		}
 	},
 	{
 		"keyname": "captureInfo",
-		"weight": 40,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 37.003,
 		"usage": [
 			"corpusAudioInfo",
 			"corpusVideoInfo",
 			"corpusImageInfo",
 			"corpusTextNumericalInfo"
 		],
-		"properties": [
-			"Circular reference to capturingDeviceType [w:1]",
-			"Circular reference to capturingDeviceTypeDetails [w:1]",
-			"Circular reference to capturingDetails [w:1]",
-			"Circular reference to capturingEnvironment [w:1]",
-			"Circular reference to sensorTechnology [w:1]",
-			"Circular reference to sceneIllumination [w:1]",
-			"Circular reference to personSourceSetInfo [w:33]"
-		]
+		"properties": {
+			"capturingDeviceType": "enumeration [camera|closeTalkMicrophone|embeddedMicrophone|farfieldMicrophone|largeMembraneMicrophone|laryngograph|lavalierMicrophone|microphone|microphoneArray|other|studioEquipment|telephoneFixed|telephoneIP|telephoneMobile|webcam]",
+			"capturingDeviceTypeDetails": "string",
+			"capturingDetails": "string",
+			"capturingEnvironment": "enumeration [complex|plain]",
+			"sensorTechnology": "string",
+			"sceneIllumination": "enumeration [daylight|fix|multipleSources|other|singleSource|variable]",
+			"personSourceSetInfo": "Reference to personSourceSetInfo [w:31.002]"
+		}
+	},
+	{
+		"keyname": "lexicalConceptualResourceTextInfo",
+		"weight": 43.027,
+		"usage": [
+			"lexicalConceptualResourceMediaType"
+		],
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
+			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]"
+		}
 	},
 	{
 		"keyname": "recordingInfo",
-		"weight": 58,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 48.01,
 		"usage": [
 			"corpusAudioInfo",
 			"corpusVideoInfo",
 			"corpusTextNumericalInfo"
 		],
-		"properties": [
-			"Circular reference to recordingDeviceType [w:1]",
-			"Circular reference to recordingDeviceTypeDetails [w:1]",
-			"Circular reference to recordingPlatformSoftware [w:1]",
-			"Circular reference to recordingEnvironment [w:1]",
-			"Circular reference to sourceChannel [w:1]",
-			"Circular reference to sourceChannelType [w:1]",
-			"Circular reference to sourceChannelName [w:1]",
-			"Circular reference to sourceChannelDetails [w:1]",
-			"Circular reference to recorderPerson [w:33]",
-			"Circular reference to recorderOrganization [w:16]"
-		]
-	},
-	{
-		"keyname": "lexicalConceptualResourceTextInfo",
-		"weight": 70,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"lexicalConceptualResourceMediaType"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to textFormatInfo [w:7]",
-			"Circular reference to characterEncodingInfo [w:7]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]"
-		]
+		"properties": {
+			"recordingDeviceType": "enumeration [DAT|dv|flash|hardDisk|other|soundBlasterCard|tapeVHS]",
+			"recordingDeviceTypeDetails": "string",
+			"recordingPlatformSoftware": "string",
+			"recordingEnvironment": "enumeration [anechoicChamber|closedPublicPlace|conferenceRoom|inCar|industrial|lectureRoom|office|openPublicPlace|other|studio|transport]",
+			"sourceChannel": "enumeration [EMA|airflow|camcorder|internet|laryngograph|other|radio|telephone|tv|webCam]",
+			"sourceChannelType": "enumeration [3G|CDMA|DVB-C|DVB-S|DVB-T|GSM|ISDN|VOIP|other]",
+			"sourceChannelName": "string",
+			"sourceChannelDetails": "string",
+			"recorderPerson": "Reference to recorderPerson [w:27.006]",
+			"recorderOrganization": "Reference to recorderOrganization [w:13.003]"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceAudioInfo",
-		"weight": 80,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 54.026,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to audioContentInfo [w:5]",
-			"Circular reference to audioFormatInfo [w:19]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to timeCoverageInfo [w:7]"
-		]
-	},
-	{
-		"keyname": "toolServiceEvaluationInfo",
-		"weight": 84,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"toolServiceInfo"
-		],
-		"properties": [
-			"Circular reference to evaluated [w:1]",
-			"Circular reference to evaluationLevel [w:1]",
-			"Circular reference to evaluationType [w:1]",
-			"Circular reference to evaluationCriteria [w:1]",
-			"Circular reference to evaluationMeasure [w:1]",
-			"Circular reference to evaluationDetails [w:1]",
-			"Circular reference to evaluationReportStructured [w:23]",
-			"Circular reference to evaluationReportUnstructured [w:3]",
-			"Circular reference to evaluationTool [w:2]",
-			"Circular reference to evaluatorPerson [w:33]",
-			"Circular reference to evaluatorOrganization [w:16]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"audioContentInfo": "Reference to audioContentInfo [w:4.001]",
+			"audioFormatInfo": "Reference to audioFormatInfo [w:15.004]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
+		}
 	},
 	{
 		"keyname": "languageDescriptionTextInfo",
-		"weight": 85,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 54.031,
 		"usage": [
 			"languageDescriptionMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to textFormatInfo [w:7]",
-			"Circular reference to characterEncodingInfo [w:7]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
+			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceImageInfo",
-		"weight": 90,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 62.028,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to imageContentInfo [w:14]",
-			"Circular reference to imageFormatInfo [w:20]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to timeCoverageInfo [w:7]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"imageContentInfo": "Reference to imageContentInfo [w:12.002]",
+			"imageFormatInfo": "Reference to imageFormatInfo [w:15.005]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceVideoInfo",
-		"weight": 93,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 65.028,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to videoContentInfo [w:17]",
-			"Circular reference to videoFormatInfo [w:20]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to timeCoverageInfo [w:7]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"videoContentInfo": "Reference to videoContentInfo [w:15.002]",
+			"videoFormatInfo": "Reference to videoFormatInfo [w:15.005]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
+		}
+	},
+	{
+		"keyname": "toolServiceEvaluationInfo",
+		"weight": 70.014,
+		"usage": [
+			"toolServiceInfo"
+		],
+		"properties": {
+			"evaluated": "boolean",
+			"evaluationLevel": "enumeration [diagnostic|impact|technological|usage]",
+			"evaluationType": "enumeration [blackBox|glassBox]",
+			"evaluationCriteria": "enumeration [extrinsic|intrinsic]",
+			"evaluationMeasure": "enumeration [automatic|human]",
+			"evaluationDetails": "string",
+			"evaluationReportStructured": "Reference to evaluationReportStructured [w:21.002]",
+			"evaluationReportUnstructured": "Reference to evaluationReportUnstructured [w:2.001]",
+			"evaluationTool": "Reference to evaluationTool [w:1.001]",
+			"evaluatorPerson": "Reference to evaluatorPerson [w:27.006]",
+			"evaluatorOrganization": "Reference to evaluatorOrganization [w:13.003]"
+		}
+	},
+	{
+		"keyname": "languageDescriptionImageInfo",
+		"weight": 73.032,
+		"usage": [
+			"languageDescriptionMediaType"
+		],
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"imageContentInfo": "Reference to imageContentInfo [w:12.002]",
+			"imageFormatInfo": "Reference to imageFormatInfo [w:15.005]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
+		}
+	},
+	{
+		"keyname": "languageDescriptionVideoInfo",
+		"weight": 76.032,
+		"usage": [
+			"languageDescriptionMediaType"
+		],
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"videoContentInfo": "Reference to videoContentInfo [w:15.002]",
+			"videoFormatInfo": "Reference to videoFormatInfo [w:15.005]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
+		}
 	},
 	{
 		"keyname": "annotationInfo",
-		"weight": 99,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 83.016,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -4447,341 +4305,269 @@
 			"corpusTextNumericalInfo",
 			"corpusTextNgramInfo"
 		],
-		"properties": [
-			"Circular reference to annotationType [w:1]",
-			"Circular reference to annotatedElements [w:1]",
-			"Circular reference to annotationStandoff [w:1]",
-			"Circular reference to segmentationLevel [w:1]",
-			"Circular reference to annotationFormat [w:1]",
-			"Circular reference to tagset [w:1]",
-			"Circular reference to tagsetLanguageId [w:1]",
-			"Circular reference to tagsetLanguageName [w:1]",
-			"Circular reference to conformanceToStandardsBestPractices [w:1]",
-			"Circular reference to theoreticModel [w:1]",
-			"Circular reference to annotationMode [w:1]",
-			"Circular reference to annotationModeDetails [w:1]",
-			"Circular reference to annotationStartDate [w:1]",
-			"Circular reference to annotationEndDate [w:1]",
-			"Circular reference to interannotatorAgreement [w:1]",
-			"Circular reference to intraannotatorAgreement [w:1]",
-			"Circular reference to annotationManualUnstructured [w:3]",
-			"Circular reference to annotationManualStructured [w:23]",
-			"Circular reference to annotationTool [w:2]",
-			"Circular reference to sizePerAnnotation [w:5]",
-			"Circular reference to annotatorPerson [w:33]",
-			"Circular reference to annotatorOrganization [w:16]"
-		]
-	},
-	{
-		"keyname": "languageDescriptionImageInfo",
-		"weight": 105,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageDescriptionMediaType"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to imageContentInfo [w:14]",
-			"Circular reference to imageFormatInfo [w:20]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to timeCoverageInfo [w:7]"
-		]
-	},
-	{
-		"keyname": "languageDescriptionVideoInfo",
-		"weight": 108,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageDescriptionMediaType"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to videoContentInfo [w:17]",
-			"Circular reference to videoFormatInfo [w:20]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to timeCoverageInfo [w:7]"
-		]
+		"properties": {
+			"annotationType": "enumeration [alignment|discourseAnnotation|discourseAnnotation-audienceReactions|discourseAnnotation-coreference|discourseAnnotation-dialogueActs|discourseAnnotation-discourseRelations|lemmatization|modalityAnnotation-bodyMovements|modalityAnnotation-facialExpressions|modalityAnnotation-gazeEyeMovements|modalityAnnotation-handArmGestures|modalityAnnotation-handManipulationOfObjects|modalityAnnotation-headMovements|modalityAnnotation-lipMovements|morphosyntacticAnnotation-bPosTagging|morphosyntacticAnnotation-posTagging|other|segmentation|semanticAnnotation|semanticAnnotation-certaintyLevel|semanticAnnotation-emotions|semanticAnnotation-entityMentions|semanticAnnotation-events|semanticAnnotation-namedEntities|semanticAnnotation-polarity|semanticAnnotation-questionTopicalTarget|semanticAnnotation-semanticClasses|semanticAnnotation-semanticRelations|semanticAnnotation-semanticRoles|semanticAnnotation-speechActs|semanticAnnotation-temporalExpressions|semanticAnnotation-textualEntailment|semanticAnnotation-wordSenses|speechAnnotation|speechAnnotation-orthographicTranscription|speechAnnotation-paralanguageAnnotation|speechAnnotation-phoneticTranscription|speechAnnotation-prosodicAnnotation|speechAnnotation-soundEvents|speechAnnotation-soundToTextAlignment|speechAnnotation-speakerIdentification|speechAnnotation-speakerTurns|stemming|structuralAnnotation|syntacticAnnotation-shallowParsing|syntacticAnnotation-subcategorizationFrames|syntacticAnnotation-treebanks|syntacticosemanticAnnotation-links|translation|transliteration]",
+			"annotatedElements": "enumeration [backgroundNoise|discourseMarkers|mispronunciations|other|speakerNoise|truncation]",
+			"annotationStandoff": "boolean",
+			"segmentationLevel": "enumeration [clause|diphone|frame|other|paragraph|phoneme|phrase|prosodicBoundaries|scene|sentence|shot|signal|syllable|topic|utterance|word|wordGroup]",
+			"annotationFormat": "string",
+			"tagset": "string",
+			"tagsetLanguageId": "string",
+			"tagsetLanguageName": "string",
+			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]",
+			"theoreticModel": "string",
+			"annotationMode": "enumeration [automatic|interactive|manual|mixed]",
+			"annotationModeDetails": "string",
+			"annotationStartDate": "date",
+			"annotationEndDate": "date",
+			"interannotatorAgreement": "string",
+			"intraannotatorAgreement": "string",
+			"annotationManualUnstructured": "Reference to annotationManualUnstructured [w:2.001]",
+			"annotationManualStructured": "Reference to annotationManualStructured [w:21.002]",
+			"annotationTool": "Reference to annotationTool [w:1.001]",
+			"sizePerAnnotation": "Reference to sizePerAnnotation [w:3.002]",
+			"annotatorPerson": "Reference to annotatorPerson [w:27.006]",
+			"annotatorOrganization": "Reference to annotatorOrganization [w:13.003]"
+		}
 	},
 	{
 		"keyname": "toolServiceInfo",
-		"weight": 133,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 110.023,
 		"usage": [
 			"toolServiceInfo"
 		],
-		"properties": [
-			"Circular reference to resourceType [w:1]",
-			"Circular reference to toolServiceType [w:1]",
-			"Circular reference to toolServiceSubtype [w:1]",
-			"Circular reference to languageDependent [w:1]",
-			"Circular reference to inputInfo [w:14]",
-			"Circular reference to outputInfo [w:14]",
-			"Circular reference to toolServiceOperationInfo [w:10]",
-			"Circular reference to toolServiceEvaluationInfo [w:84]",
-			"Circular reference to toolServiceCreationInfo [w:6]"
-		]
-	},
-	{
-		"keyname": "corpusTextInfo",
-		"weight": 195,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusMediaType"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to textFormatInfo [w:7]",
-			"Circular reference to characterEncodingInfo [w:7]",
-			"Circular reference to annotationInfo [w:99]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to textClassificationInfo [w:11]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]"
-		]
+		"properties": {
+			"resourceType": "enumeration [corpus]",
+			"toolServiceType": "enumeration [architecture|infrastructure|nlpDevelopmentEnvironment|other|platform|service|suiteOfTools|tool]",
+			"toolServiceSubtype": "string",
+			"languageDependent": "boolean",
+			"inputInfo": "Reference to inputInfo [w:13.001]",
+			"outputInfo": "Reference to outputInfo [w:13.001]",
+			"toolServiceOperationInfo": "Reference to toolServiceOperationInfo [w:6.004]",
+			"toolServiceEvaluationInfo": "Reference to toolServiceEvaluationInfo [w:70.014]",
+			"toolServiceCreationInfo": "Reference to toolServiceCreationInfo [w:4.002]"
+		}
 	},
 	{
 		"keyname": "corpusTextNgramInfo",
-		"weight": 195,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 145.05,
 		"usage": [
 			"corpusMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to ngramInfo [w:8]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to textFormatInfo [w:7]",
-			"Circular reference to characterEncodingInfo [w:7]",
-			"Circular reference to annotationInfo [w:99]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to textClassificationInfo [w:11]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to creationInfo [w:7]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"ngramInfo": "Reference to ngramInfo [w:7.001]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
+			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
+			"annotationInfo": "Reference to annotationInfo [w:83.016]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"textClassificationInfo": "Reference to textClassificationInfo [w:8.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"creationInfo": "Reference to creationInfo [w:4.003]"
+		}
+	},
+	{
+		"keyname": "corpusTextInfo",
+		"weight": 145.05,
+		"usage": [
+			"corpusMediaType"
+		],
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
+			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
+			"annotationInfo": "Reference to annotationInfo [w:83.016]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"textClassificationInfo": "Reference to textClassificationInfo [w:8.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
+		}
 	},
 	{
 		"keyname": "corpusTextNumericalInfo",
-		"weight": 234,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 192.042,
 		"usage": [
 			"corpusMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to textNumericalContentInfo [w:2]",
-			"Circular reference to textNumericalFormatInfo [w:7]",
-			"Circular reference to recordingInfo [w:58]",
-			"Circular reference to captureInfo [w:40]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to annotationInfo [w:99]",
-			"Circular reference to linkToOtherMediaInfo [w:8]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"textNumericalContentInfo": "Reference to textNumericalContentInfo [w:1.001]",
+			"textNumericalFormatInfo": "Reference to textNumericalFormatInfo [w:4.003]",
+			"recordingInfo": "Reference to recordingInfo [w:48.01]",
+			"captureInfo": "Reference to captureInfo [w:37.003]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"annotationInfo": "Reference to annotationInfo [w:83.016]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
+		}
 	},
 	{
 		"keyname": "corpusImageInfo",
-		"weight": 253,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 199.054,
 		"usage": [
 			"corpusMediaType"
 		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to imageContentInfo [w:14]",
-			"Circular reference to imageFormatInfo [w:20]",
-			"Circular reference to annotationInfo [w:99]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to imageClassificationInfo [w:9]",
-			"Circular reference to captureInfo [w:40]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]"
-		]
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"imageContentInfo": "Reference to imageContentInfo [w:12.002]",
+			"imageFormatInfo": "Reference to imageFormatInfo [w:15.005]",
+			"annotationInfo": "Reference to annotationInfo [w:83.016]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"imageClassificationInfo": "Reference to imageClassificationInfo [w:6.003]",
+			"captureInfo": "Reference to captureInfo [w:37.003]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
+		}
 	},
 	{
 		"keyname": "languageDescriptionMediaType",
-		"weight": 299,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 203.096,
 		"usage": [
 			"languageDescriptionInfo"
 		],
-		"properties": [
-			"Circular reference to languageDescriptionTextInfo [w:85]",
-			"Circular reference to languageDescriptionVideoInfo [w:108]",
-			"Circular reference to languageDescriptionImageInfo [w:105]"
-		]
-	},
-	{
-		"keyname": "corpusAudioInfo",
-		"weight": 317,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusMediaType"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to audioSizeInfo [w:10]",
-			"Circular reference to audioContentInfo [w:5]",
-			"Circular reference to settingInfo [w:7]",
-			"Circular reference to audioFormatInfo [w:19]",
-			"Circular reference to annotationInfo [w:99]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to audioClassificationInfo [w:11]",
-			"Circular reference to recordingInfo [w:58]",
-			"Circular reference to captureInfo [w:40]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]"
-		]
-	},
-	{
-		"keyname": "corpusVideoInfo",
-		"weight": 321,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"corpusMediaType"
-		],
-		"properties": [
-			"Circular reference to mediaType [w:1]",
-			"Circular reference to lingualityInfo [w:4]",
-			"Circular reference to languageInfo [w:17]",
-			"Circular reference to modalityInfo [w:8]",
-			"Circular reference to sizeInfo [w:3]",
-			"Circular reference to videoContentInfo [w:17]",
-			"Circular reference to settingInfo [w:7]",
-			"Circular reference to videoFormatInfo [w:20]",
-			"Circular reference to annotationInfo [w:99]",
-			"Circular reference to domainInfo [w:8]",
-			"Circular reference to timeCoverageInfo [w:7]",
-			"Circular reference to geographicCoverageInfo [w:7]",
-			"Circular reference to videoClassificationInfo [w:9]",
-			"Circular reference to recordingInfo [w:58]",
-			"Circular reference to captureInfo [w:40]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to linkToOtherMediaInfo [w:8]"
-		]
-	},
-	{
-		"keyname": "languageDescriptionInfo",
-		"weight": 333,
-		"datatype": "entity",
-		"validator": "",
-		"usage": [
-			"languageDescriptionInfo"
-		],
-		"properties": [
-			"Circular reference to resourceType [w:1]",
-			"Circular reference to languageDescriptionType [w:1]",
-			"Circular reference to languageDescriptionEncodingInfo [w:8]",
-			"Circular reference to languageDescriptionOperationInfo [w:12]",
-			"Circular reference to languageDescriptionPerformanceInfo [w:4]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to languageDescriptionMediaType [w:299]"
-		]
+		"properties": {
+			"languageDescriptionTextInfo": "Reference to languageDescriptionTextInfo [w:54.031]",
+			"languageDescriptionVideoInfo": "Reference to languageDescriptionVideoInfo [w:76.032]",
+			"languageDescriptionImageInfo": "Reference to languageDescriptionImageInfo [w:73.032]"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceMediaType",
-		"weight": 334,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 224.11,
 		"usage": [
 			"lexicalConceptualResourceInfo"
 		],
-		"properties": [
-			"Circular reference to lexicalConceptualResourceTextInfo [w:70]",
-			"Circular reference to lexicalConceptualResourceAudioInfo [w:80]",
-			"Circular reference to lexicalConceptualResourceVideoInfo [w:93]",
-			"Circular reference to lexicalConceptualResourceImageInfo [w:90]"
-		]
+		"properties": {
+			"lexicalConceptualResourceTextInfo": "Reference to lexicalConceptualResourceTextInfo [w:43.027]",
+			"lexicalConceptualResourceAudioInfo": "Reference to lexicalConceptualResourceAudioInfo [w:54.026]",
+			"lexicalConceptualResourceVideoInfo": "Reference to lexicalConceptualResourceVideoInfo [w:65.028]",
+			"lexicalConceptualResourceImageInfo": "Reference to lexicalConceptualResourceImageInfo [w:62.028]"
+		}
+	},
+	{
+		"keyname": "languageDescriptionInfo",
+		"weight": 226.107,
+		"usage": [
+			"languageDescriptionInfo"
+		],
+		"properties": {
+			"resourceType": "enumeration [corpus]",
+			"languageDescriptionType": "enumeration [grammar|other]",
+			"languageDescriptionEncodingInfo": "Reference to languageDescriptionEncodingInfo [w:7.001]",
+			"languageDescriptionOperationInfo": "Reference to languageDescriptionOperationInfo [w:7.005]",
+			"languageDescriptionPerformanceInfo": "Reference to languageDescriptionPerformanceInfo [w:3.001]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"languageDescriptionMediaType": "Reference to languageDescriptionMediaType [w:203.096]"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceInfo",
-		"weight": 352,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 237.115,
 		"usage": [
 			"lexicalConceptualResourceInfo"
 		],
-		"properties": [
-			"Circular reference to resourceType [w:1]",
-			"Circular reference to lexicalConceptualResourceType [w:1]",
-			"Circular reference to lexicalConceptualResourceEncodingInfo [w:8]",
-			"Circular reference to creationInfo [w:7]",
-			"Circular reference to lexicalConceptualResourceMediaType [w:334]"
-		]
+		"properties": {
+			"resourceType": "enumeration [corpus]",
+			"lexicalConceptualResourceType": "enumeration [computationalLexicon|framenet|lexicon|machineReadableDictionary|ontology|other|terminologicalResource|thesaurus|wordList|wordnet]",
+			"lexicalConceptualResourceEncodingInfo": "Reference to lexicalConceptualResourceEncodingInfo [w:7.001]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"lexicalConceptualResourceMediaType": "Reference to lexicalConceptualResourceMediaType [w:224.11]"
+		}
+	},
+	{
+		"keyname": "corpusAudioInfo",
+		"weight": 251.066,
+		"usage": [
+			"corpusMediaType"
+		],
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"audioSizeInfo": "Reference to audioSizeInfo [w:6.004]",
+			"audioContentInfo": "Reference to audioContentInfo [w:4.001]",
+			"settingInfo": "Reference to settingInfo [w:6.001]",
+			"audioFormatInfo": "Reference to audioFormatInfo [w:15.004]",
+			"annotationInfo": "Reference to annotationInfo [w:83.016]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"audioClassificationInfo": "Reference to audioClassificationInfo [w:8.003]",
+			"recordingInfo": "Reference to recordingInfo [w:48.01]",
+			"captureInfo": "Reference to captureInfo [w:37.003]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
+		}
+	},
+	{
+		"keyname": "corpusVideoInfo",
+		"weight": 256.065,
+		"usage": [
+			"corpusMediaType"
+		],
+		"properties": {
+			"mediaType": "enumeration [text]",
+			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
+			"languageInfo": "Reference to languageInfo [w:11.006]",
+			"modalityInfo": "Reference to modalityInfo [w:5.003]",
+			"sizeInfo": "Reference to sizeInfo [w:2.001]",
+			"videoContentInfo": "Reference to videoContentInfo [w:15.002]",
+			"settingInfo": "Reference to settingInfo [w:6.001]",
+			"videoFormatInfo": "Reference to videoFormatInfo [w:15.005]",
+			"annotationInfo": "Reference to annotationInfo [w:83.016]",
+			"domainInfo": "Reference to domainInfo [w:5.003]",
+			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
+			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
+			"videoClassificationInfo": "Reference to videoClassificationInfo [w:6.003]",
+			"recordingInfo": "Reference to recordingInfo [w:48.01]",
+			"captureInfo": "Reference to captureInfo [w:37.003]",
+			"creationInfo": "Reference to creationInfo [w:4.003]",
+			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
+		}
 	},
 	{
 		"keyname": "corpusMediaType",
-		"weight": 1516,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 1188.328,
 		"usage": [
 			"corpusInfo"
 		],
-		"properties": [
-			"Circular reference to corpusTextInfo [w:195]",
-			"Circular reference to corpusAudioInfo [w:317]",
-			"Circular reference to corpusVideoInfo [w:321]",
-			"Circular reference to corpusImageInfo [w:253]",
-			"Circular reference to corpusTextNumericalInfo [w:234]",
-			"Circular reference to corpusTextNgramInfo [w:195]"
-		]
+		"properties": {
+			"corpusTextInfo": "Reference to corpusTextInfo [w:145.05]",
+			"corpusAudioInfo": "Reference to corpusAudioInfo [w:251.066]",
+			"corpusVideoInfo": "Reference to corpusVideoInfo [w:256.065]",
+			"corpusImageInfo": "Reference to corpusImageInfo [w:199.054]",
+			"corpusTextNumericalInfo": "Reference to corpusTextNumericalInfo [w:192.042]",
+			"corpusTextNgramInfo": "Reference to corpusTextNgramInfo [w:145.05]"
+		}
 	},
 	{
 		"keyname": "corpusInfo",
-		"weight": 1518,
-		"datatype": "entity",
-		"validator": "",
+		"weight": 1189.329,
 		"usage": [
 			"corpusInfo"
 		],
-		"properties": [
-			"Circular reference to resourceType [w:1]",
-			"Circular reference to corpusMediaType [w:1516]"
-		]
+		"properties": {
+			"resourceType": "enumeration [corpus]",
+			"corpusMediaType": "Reference to corpusMediaType [w:1188.328]"
+		}
 	}
 ]
