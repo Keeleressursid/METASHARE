@@ -22,7 +22,6 @@
                     "ValueScheme": {
                         "enumeration": {
                             "item": {
-                                "@ConceptLink": "",
                                 "@AppInfo": "used for tools, systems, system components etc.",
                                 "#text": "toolService"
                             }
@@ -38,43 +37,33 @@
                         "enumeration": {
                             "item": [
                                 {
-                                    "@ConceptLink": "",
                                     "@AppInfo": "A form in which NLP taks are realized and delivered to a user, without the need of acquiring and installing the corresponding tools",
                                     "#text": "service"
                                 },
                                 {
-                                    "@ConceptLink": "",
                                     "@AppInfo": "A technology that eases the development of new tools and services in the NLP field",
                                     "#text": "platform"
                                 },
                                 {
-                                    "@ConceptLink": "",
                                     "@AppInfo": "A device that performs one or more of the tasks listed in the ForeseenUseInfo component",
                                     "#text": "tool"
                                 },
                                 {
-                                    "@ConceptLink": "",
                                     "@AppInfo": "A more of less fixed integrated organisation of tools applied for solving a combinaton of tasks",
                                     "#text": "suiteOfTools"
                                 },
                                 {
-                                    "@ConceptLink": "",
-                                    "@AppInfo": "",
                                     "#text": "infrastructure"
                                 },
                                 {
-                                    "@ConceptLink": "",
                                     "@AppInfo": "A technology that supports the flexible development of NLP applications, together with all the requested resources",
                                     "#text": "architecture"
                                 },
                                 {
-                                    "@ConceptLink": "",
                                     "@AppInfo": "A technology that supports the development of data resources, like lexicons, grammars, corpora, etc. Can be included in an Architecture or in a Platform",
                                     "#text": "nlpDevelopmentEnvironment"
                                 },
                                 {
-                                    "@ConceptLink": "",
-                                    "@AppInfo": "",
                                     "#text": "other"
                                 }
                             ]
@@ -115,27 +104,22 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "only written medium",
                                             "#text": "text"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for a whole resource or part of a resource that is recorded as an audio file",
                                             "#text": "audio"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for moving image; used for multi-media corpora, with video for the moving image part",
                                             "#text": "video"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for stillimage like photographs, drawings etc.",
                                             "#text": "image"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for the description of sensorimotor data (e.g. biological measurements, geospatial data etc.)",
                                             "#text": "textNumerical"
                                         }
@@ -152,17 +136,14 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for text, speech, video, multimodal/multimedia corpora, corpora with sensorimotor information, n-gram resources",
                                             "#text": "corpus"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "includes lexica, ontologies, dictionaries, word lists etc.",
                                             "#text": "lexicalConceptualResource"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "covers grammars etc.",
                                             "#text": "languageDescription"
                                         }
@@ -180,38 +161,24 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "bodyGesture"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "facialExpression"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "voice"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "combinationOfModalities"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "signLanguage"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "spokenLanguage"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "writtenLanguage"
                                         }
                                     ]
@@ -273,253 +240,153 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "alignment"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-audienceReactions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-coreference"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-dialogueActs"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-discourseRelations"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "lemmatization"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-bodyMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-facialExpressions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-gazeEyeMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-handArmGestures"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-handManipulationOfObjects"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-headMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-lipMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "morphosyntacticAnnotation-bPosTagging"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "morphosyntacticAnnotation-posTagging"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "segmentation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-certaintyLevel"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-emotions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-entityMentions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-events"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-namedEntities"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-polarity"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-questionTopicalTarget"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-semanticClasses"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-semanticRelations"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-semanticRoles"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-speechActs"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-temporalExpressions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-textualEntailment"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-wordSenses"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-orthographicTranscription"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-paralanguageAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-phoneticTranscription"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-prosodicAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-soundEvents"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-soundToTextAlignment"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-speakerIdentification"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-speakerTurns"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "stemming"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "structuralAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticAnnotation-shallowParsing"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticAnnotation-subcategorizationFrames"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticAnnotation-treebanks"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticosemanticAnnotation-links"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "translation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "transliteration"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -553,88 +420,54 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "paragraph"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "sentence"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "clause"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "word"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "wordGroup"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "utterance"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "topic"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "signal"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "phoneme"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syllable"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "phrase"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "diphone"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "prosodicBoundaries"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "frame"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "scene"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "shot"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -650,228 +483,138 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "CES"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "EAGLES"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "EML"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "EMMA"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "GMX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "GrAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "HamNoSys"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "InkML"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO12620"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO16642"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO1987"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO26162"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO30042"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO704"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "LMF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MLIF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MULTEXT"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "multimodalInteractionFramework"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "OAXAL"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "OWL"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "pennTreeBank"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "pragueTreebank"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "RDF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_DA"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_NE"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_SRL"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_DS"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SKOS"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SRX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SynAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TBX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TMX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI_P3"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI_P4"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI_P5"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TimeML"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "WordNet"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "XCES"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "XLIFF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MUMIN"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "BLM"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -897,27 +640,22 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "only written medium",
                                             "#text": "text"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for a whole resource or part of a resource that is recorded as an audio file",
                                             "#text": "audio"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for moving image; used for multi-media corpora, with video for the moving image part",
                                             "#text": "video"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for stillimage like photographs, drawings etc.",
                                             "#text": "image"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for the description of sensorimotor data (e.g. biological measurements, geospatial data etc.)",
                                             "#text": "textNumerical"
                                         }
@@ -934,17 +672,14 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "for text, speech, video, multimodal/multimedia corpora, corpora with sensorimotor information, n-gram resources",
                                             "#text": "corpus"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "includes lexica, ontologies, dictionaries, word lists etc.",
                                             "#text": "lexicalConceptualResource"
                                         },
                                         {
-                                            "@ConceptLink": "",
                                             "@AppInfo": "covers grammars etc.",
                                             "#text": "languageDescription"
                                         }
@@ -962,38 +697,24 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "bodyGesture"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "facialExpression"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "voice"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "combinationOfModalities"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "signLanguage"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "spokenLanguage"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "writtenLanguage"
                                         }
                                     ]
@@ -1055,253 +776,153 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "alignment"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-audienceReactions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-coreference"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-dialogueActs"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "discourseAnnotation-discourseRelations"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "lemmatization"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-bodyMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-facialExpressions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-gazeEyeMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-handArmGestures"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-handManipulationOfObjects"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-headMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "modalityAnnotation-lipMovements"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "morphosyntacticAnnotation-bPosTagging"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "morphosyntacticAnnotation-posTagging"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "segmentation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-certaintyLevel"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-emotions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-entityMentions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-events"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-namedEntities"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-polarity"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-questionTopicalTarget"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-semanticClasses"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-semanticRelations"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-semanticRoles"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-speechActs"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-temporalExpressions"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-textualEntailment"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "semanticAnnotation-wordSenses"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-orthographicTranscription"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-paralanguageAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-phoneticTranscription"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-prosodicAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-soundEvents"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-soundToTextAlignment"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-speakerIdentification"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "speechAnnotation-speakerTurns"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "stemming"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "structuralAnnotation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticAnnotation-shallowParsing"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticAnnotation-subcategorizationFrames"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticAnnotation-treebanks"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syntacticosemanticAnnotation-links"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "translation"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "transliteration"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -1335,88 +956,54 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "paragraph"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "sentence"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "clause"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "word"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "wordGroup"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "utterance"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "topic"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "signal"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "phoneme"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "syllable"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "phrase"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "diphone"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "prosodicBoundaries"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "frame"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "scene"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "shot"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -1432,228 +1019,138 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "CES"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "EAGLES"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "EML"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "EMMA"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "GMX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "GrAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "HamNoSys"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "InkML"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO12620"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO16642"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO1987"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO26162"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO30042"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "ISO704"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "LMF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MLIF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MULTEXT"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "multimodalInteractionFramework"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "OAXAL"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "OWL"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "pennTreeBank"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "pragueTreebank"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "RDF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_DA"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_NE"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_SRL"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SemAF_DS"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SKOS"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SRX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "SynAF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TBX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TMX"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI_P3"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI_P4"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TEI_P5"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "TimeML"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "WordNet"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "XCES"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "XLIFF"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "MUMIN"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "BLM"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -1679,33 +1176,21 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "os-independent"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "windows"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "linux"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "unix"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "mac-OS"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "other"
                                         }
                                     ]
@@ -1737,33 +1222,21 @@
                                     "enumeration": {
                                         "item": [
                                             {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "graphicCard"
                                             },
                                             {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "microphone"
                                             },
                                             {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "ocrSystem"
                                             },
                                             {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "specialHardwareEquipment"
                                             },
                                             {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "none"
                                             },
                                             {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "other"
                                             }
                                         ]
@@ -1836,23 +1309,15 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "technological"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "impact"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "usage"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "diagnostic"
                                         }
                                     ]
@@ -1868,13 +1333,9 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "glassBox"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "blackBox"
                                         }
                                     ]
@@ -1890,13 +1351,9 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "extrinsic"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "intrinsic"
                                         }
                                     ]
@@ -1912,13 +1369,9 @@
                                 "enumeration": {
                                     "item": [
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "human"
                                         },
                                         {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "automatic"
                                         }
                                     ]
@@ -1949,8 +1402,6 @@
                                 "ValueScheme": {
                                     "enumeration": {
                                         "item": {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "evaluationReport"
                                         }
                                     }
@@ -1973,67 +1424,54 @@
                                             "enumeration": {
                                                 "item": [
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "An article from a journal or magazine",
                                                         "#text": "article"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": " A book with an explicit publisher",
                                                         "#text": "book"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "A work that is printed and bound, but without a named publisher or sponsoring institution",
                                                         "#text": "booklet"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "Technical documentation",
                                                         "#text": "manual"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": " A report published by a school or other institution",
                                                         "#text": "techReport"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "A Master's thesis",
                                                         "#text": "mastersThesis"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "A PhD thesis",
                                                         "#text": "phdThesis"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "A part of a book, which may be a chapter (or section) and/or a range of pages",
                                                         "#text": "inBook"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "A part of a book having its own title",
                                                         "#text": "inCollection"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "The proceedings of a conference",
                                                         "#text": "proceedings"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "An article in a conference proceedings",
                                                         "#text": "inProceedings"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "A document having an author and title, but not formally published",
                                                         "#text": "unpublished"
                                                     },
                                                     {
-                                                        "@ConceptLink": "",
                                                         "@AppInfo": "Use this type when nothing else fits",
                                                         "#text": "other"
                                                     }
@@ -2212,8 +1650,6 @@
                                     "ValueScheme": {
                                         "enumeration": {
                                             "item": {
-                                                "@ConceptLink": "",
-                                                "@AppInfo": "",
                                                 "#text": "evaluationReport"
                                             }
                                         }
@@ -2258,8 +1694,6 @@
                                 "ValueScheme": {
                                     "enumeration": {
                                         "item": {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "evaluator"
                                         }
                                     }
@@ -2301,17 +1735,14 @@
                                                 "item": [
                                                     {
                                                         "@ConceptLink": "http://www.isocat.org/datcat/DC-2949",
-                                                        "@AppInfo": "",
                                                         "#text": "male"
                                                     },
                                                     {
                                                         "@ConceptLink": "http://www.isocat.org/datcat/DC-2950",
-                                                        "@AppInfo": "",
                                                         "#text": "female"
                                                     },
                                                     {
                                                         "@ConceptLink": "http://www.isocat.org/datcat/DC-2591",
-                                                        "@AppInfo": "",
                                                         "#text": "unknown"
                                                     }
                                                 ]
@@ -2433,8 +1864,6 @@
                                             "ValueScheme": {
                                                 "enumeration": {
                                                     "item": {
-                                                        "@ConceptLink": "",
-                                                        "@AppInfo": "",
                                                         "#text": "affiliation"
                                                     }
                                                 }
@@ -2584,8 +2013,6 @@
                                 "ValueScheme": {
                                     "enumeration": {
                                         "item": {
-                                            "@ConceptLink": "",
-                                            "@AppInfo": "",
                                             "#text": "evaluator"
                                         }
                                     }
