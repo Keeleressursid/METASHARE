@@ -9,6 +9,10 @@ var schema_dir = '../Resource Types/'
 var resource_types = []
 var entity_definitions = []
 var classifiers = {}
+var mysql = []
+
+var CMD_roots = ['corpusInfo', 'languageDescriptionInfo', 'lexicalConceptualResourceInfo', 'toolServiceInfo']
+
 
 console.log('\n\n\n===== ' + Date.now()/1000 + ' == START ============')
 
@@ -21,9 +25,10 @@ fs.readdirSync(schema_dir).forEach(function(filename) {
         resource_types.push({'resource_name':resource_name, 'CMD_root':JSON.parse(data).CMD_ComponentSpec.CMD_Component})
     }
 })
-
+//
 // Resource types are loaded
-// console.log(util.inspect(resource_types, {depth:3}))
+//
+
 function indexByKeyVal(source, key, val) {
     for (var i = 0; i < source.length; i++)
         if (source[i][key] === val)
@@ -31,25 +36,62 @@ function indexByKeyVal(source, key, val) {
     return -1
 }
 
+var stringifier = function(o) {
+    var cache = [];
+    return JSON.stringify(o, function(key, value) {
+        if (typeof value === 'object' && value !== null) {
+            if (cache.indexOf(value) !== -1) {
+                // Circular reference found, replace key
+                if (value.weight === 1) {
+                    return value.datatype + (value.validator.length > 0 ? ' [' + value.validator.join('|') + ']' : '')
+                }
+                return 'Reference to ' + value.keyname + ' [w:' + value.weight  + ']'
+            }
+            // Store value in our collection
+            cache.push(value)
+        }
+        return value
+    }, '\t')
+}
+
 var parseElementRec = function parseElementRec(parent_element_name, CMD_Element) {
     var element = {}
     element.keyname = CMD_Element['@name']
     element.weight = 1
+    element.mandatory = CMD_Element['@CardinalityMin'] === "0" ? false : true
+    element.listproperty = CMD_Element['@CardinalityMax'] === "1" ? false : true
     element.datatype = ''
     element.validator = []
     element.usage = []
+    element.mysql = []
 
-    // if (entity_definitions[element.keyname] !== undefined)
-    //     return entity_definitions[element.keyname]
-    var idx = indexByKeyVal(entity_definitions, 'keyname', element.keyname)
-    if (idx > -1) {
-        if (entity_definitions[idx].usage.indexOf(parent_element_name) === -1)
-            entity_definitions[idx].usage.push(parent_element_name)
-        return entity_definitions[idx]
+    var addUsage = function addUsage(child, parent_element_name) {
+        if (child.usage.indexOf(parent_element_name) === -1)
+            child.usage.push(parent_element_name)
     }
 
-    if (element.usage.indexOf(parent_element_name) === -1)
-        element.usage.push(parent_element_name)
+    var addValidator = function addValidator(items, element) {
+        if (items.length === undefined)
+            items = [items]
+        items.forEach(function(item) {
+            var validator_item = {'item':item['#text'], 'AppInfo':(item['@AppInfo'] === undefined ? '' : item['@AppInfo'])}
+            if (indexByKeyVal(element.validator, 'item', item['#text']) === -1) {
+                element.validator.push(validator_item)
+            }
+        })
+        // console.log('- ' + util.inspect(element.validator))
+    }
+
+    var idx = indexByKeyVal(entity_definitions, 'keyname', element.keyname)
+    if (idx > -1) {
+        element = entity_definitions[idx]
+        addUsage(element, parent_element_name)
+        if (element.datatype === 'enumeration') {
+            addValidator(CMD_Element.ValueScheme.enumeration.item, element)
+        }
+        return entity_definitions[idx]
+    }
+    addUsage(element, parent_element_name)
 
     if (CMD_Element.ValueScheme === undefined)
         CMD_Element.ValueScheme = CMD_Element['@ValueScheme']
@@ -70,12 +112,7 @@ var parseElementRec = function parseElementRec(parent_element_name, CMD_Element)
         element.datatype = 'date'
     } else if (CMD_Element.ValueScheme.enumeration !== undefined) {
         element.datatype = 'enumeration'
-        if (CMD_Element.ValueScheme.enumeration.item.length === undefined)
-            CMD_Element.ValueScheme.enumeration.item = [CMD_Element.ValueScheme.enumeration.item]
-        CMD_Element.ValueScheme.enumeration.item.forEach(function(item){
-            element.validator.push(item['#text'])
-        })
-        element.validator.sort()
+        addValidator(CMD_Element.ValueScheme.enumeration.item, element)
     }
     entity_definitions.push(element)
     return element
@@ -88,17 +125,21 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
     var element = {}
     element.keyname = CMD_Component['@name']
     element.weight = 0.001
+    element.mandatory = CMD_Component['@CardinalityMin'] === "0" ? false : true
+    element.listproperty = CMD_Component['@CardinalityMax'] === "1" ? false : true
     // element.datatype = 'entity'
     // element.validator = ''
     element.usage = []
     element.properties = {}
+    element.mysql = []
 
     // if (entity_definitions[element.keyname] !== undefined)
     //     return entity_definitions[element.keyname]
     var idx = indexByKeyVal(entity_definitions, 'keyname', element.keyname)
     if (idx > -1) {
-        if (entity_definitions[idx].usage.indexOf(parent_element_name) === -1)
+        if (entity_definitions[idx].usage.indexOf(parent_element_name) === -1) {
             entity_definitions[idx].usage.push(parent_element_name)
+        }
         return entity_definitions[idx]
     }
 
@@ -134,24 +175,6 @@ var setPropertyType = function setPropertyType(value_scheme) {
     return definition
 }
 
-var stringifier = function(o) {
-    var cache = [];
-    return JSON.stringify(o, function(key, value) {
-        if (typeof value === 'object' && value !== null) {
-            if (cache.indexOf(value) !== -1) {
-                // Circular reference found, replace key
-                if (value.weight === 1) {
-                    return value.datatype + (value.validator.length > 0 ? ' [' + value.validator.join('|') + ']' : '')
-                }
-                return 'Reference to ' + value.keyname + ' [w:' + value.weight  + ']'
-            }
-            // Store value in our collection
-            cache.push(value)
-        }
-        return value
-    }, '\t')
-}
-
 resource_types.forEach(function(resource_type) {
     var CMD_root = resource_type.CMD_root
     // console.log(util.inspect(CMD_root))
@@ -161,6 +184,13 @@ resource_types.forEach(function(resource_type) {
 entity_definitions.sort(function(a,b) {
     return a.weight - b.weight
 })
+
+entity_definitions.forEach(function(entity_definition) {
+    entity_definition.usage.forEach(function(used_by_def) {
+        // entity_definition.mysql.push("INSERT IGNORE INTO entity_definition SET keyname = '" + used_by_def + "' created = now();")
+    })
+})
+
 fs.writeFileSync('parsed_resources.json', stringifier(entity_definitions))
 console.log('\n===== ' + Date.now()/1000 + ' == END ============\n\n')
 

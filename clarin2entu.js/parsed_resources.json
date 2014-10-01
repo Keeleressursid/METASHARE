@@ -2,45 +2,82 @@
 	{
 		"keyname": "sourceChannelName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "creationDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"toolServiceCreationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "implementationLanguage",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"toolServiceCreationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "mediaType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"text"
+			{
+				"item": "text",
+				"AppInfo": "only written medium"
+			},
+			{
+				"item": "audio",
+				"AppInfo": " for a whole resource or part of a resource that is recorded as an audio file"
+			},
+			{
+				"item": "video",
+				"AppInfo": "for moving image; used for multi-media corpora, with video for the moving image part"
+			},
+			{
+				"item": "image",
+				"AppInfo": "for stillimage like photographs, drawings etc."
+			},
+			{
+				"item": "textNumerical",
+				"AppInfo": "for the description of sensorimotor data (e.g. biological measurements, geospatial data etc.)"
+			},
+			{
+				"item": "textNgram",
+				"AppInfo": "for n-gram resources"
+			}
 		],
 		"usage": [
 			"corpusTextInfo",
@@ -58,117 +95,277 @@
 			"lexicalConceptualResourceImageInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationMeasure",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"automatic",
-			"human"
+			{
+				"item": "human",
+				"AppInfo": ""
+			},
+			{
+				"item": "automatic",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "lingualityType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"bilingual",
-			"monolingual",
-			"multilingual"
+			{
+				"item": "monolingual",
+				"AppInfo": ""
+			},
+			{
+				"item": "multilingual",
+				"AppInfo": ""
+			},
+			{
+				"item": "bilingual",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"lingualityInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "multilingualityType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"comparable",
-			"multilingualSingleText",
-			"other",
-			"parallel"
+			{
+				"item": "comparable",
+				"AppInfo": ""
+			},
+			{
+				"item": "parallel",
+				"AppInfo": ""
+			},
+			{
+				"item": "multilingualSingleText",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"lingualityInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "multilingualityTypeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"lingualityInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationCriteria",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"extrinsic",
-			"intrinsic"
+			{
+				"item": "extrinsic",
+				"AppInfo": ""
+			},
+			{
+				"item": "intrinsic",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageId",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageName",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageScript",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"blackBox",
-			"glassBox"
+			{
+				"item": "glassBox",
+				"AppInfo": ""
+			},
+			{
+				"item": "blackBox",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "role",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"sizePerLanguage"
+			{
+				"item": "sizePerLanguage",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerLanguageVariety",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerModality",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerTextFormat",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerCharacterEncoding",
+				"AppInfo": ""
+			},
+			{
+				"item": "annotationManual",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "annotator",
+				"AppInfo": ""
+			},
+			{
+				"item": "affiliation",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerDomain",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerTextClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerTimeCoverage",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerGeographicCoverage",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerAudioFormat",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerAudioClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "recorder",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerVideoFormat",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerVideoClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerImageFormat",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerImageClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "sizePerTextNumericalFormat",
+				"AppInfo": ""
+			},
+			{
+				"item": "evaluationReport",
+				"AppInfo": ""
+			},
+			{
+				"item": "evaluator",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"sizePerLanguage",
@@ -199,200 +396,449 @@
 			"evaluationReportUnstructured",
 			"evaluatorPerson",
 			"evaluatorOrganization"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationLevel",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"diagnostic",
-			"impact",
-			"technological",
-			"usage"
+			{
+				"item": "technological",
+				"AppInfo": ""
+			},
+			{
+				"item": "impact",
+				"AppInfo": ""
+			},
+			{
+				"item": "usage",
+				"AppInfo": ""
+			},
+			{
+				"item": "diagnostic",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "size",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"sizeInfo",
 			"durationOfEffectiveSpeechInfo",
 			"durationOfAudioInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sizeUnit",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"4-grams",
-			"5-grams",
-			"T-HPairs",
-			"articles",
-			"bigrams",
-			"bytes",
-			"classes",
-			"concepts",
-			"diphones",
-			"elements",
-			"entries",
-			"expressions",
-			"files",
-			"frames",
-			"gb",
-			"hours",
-			"idiomaticExpressions",
-			"images",
-			"items",
-			"kb",
-			"keywords",
-			"lexicalTypes",
-			"mb",
-			"minutes",
-			"multiWordUnits",
-			"neologisms",
-			"other",
-			"phonemes",
-			"phoneticUnits",
-			"predicates",
-			"questions",
-			"rb",
-			"rules",
-			"seconds",
-			"semanticUnits",
-			"sentences",
-			"shots",
-			"syllables",
-			"synsets",
-			"syntacticUnits",
-			"terms",
-			"texts",
-			"tokens",
-			"trigrams",
-			"turns",
-			"unigrams",
-			"units",
-			"utterances",
-			"words"
+			{
+				"item": "articles",
+				"AppInfo": ""
+			},
+			{
+				"item": "bigrams",
+				"AppInfo": ""
+			},
+			{
+				"item": "bytes",
+				"AppInfo": ""
+			},
+			{
+				"item": "classes",
+				"AppInfo": ""
+			},
+			{
+				"item": "concepts",
+				"AppInfo": ""
+			},
+			{
+				"item": "diphones",
+				"AppInfo": ""
+			},
+			{
+				"item": "elements",
+				"AppInfo": ""
+			},
+			{
+				"item": "entries",
+				"AppInfo": ""
+			},
+			{
+				"item": "expressions",
+				"AppInfo": ""
+			},
+			{
+				"item": "files",
+				"AppInfo": ""
+			},
+			{
+				"item": "frames",
+				"AppInfo": ""
+			},
+			{
+				"item": "gb",
+				"AppInfo": ""
+			},
+			{
+				"item": "hours",
+				"AppInfo": ""
+			},
+			{
+				"item": "idiomaticExpressions",
+				"AppInfo": ""
+			},
+			{
+				"item": "images",
+				"AppInfo": ""
+			},
+			{
+				"item": "items",
+				"AppInfo": ""
+			},
+			{
+				"item": "kb",
+				"AppInfo": ""
+			},
+			{
+				"item": "keywords",
+				"AppInfo": ""
+			},
+			{
+				"item": "lexicalTypes",
+				"AppInfo": ""
+			},
+			{
+				"item": "mb",
+				"AppInfo": ""
+			},
+			{
+				"item": "minutes",
+				"AppInfo": ""
+			},
+			{
+				"item": "multiWordUnits",
+				"AppInfo": ""
+			},
+			{
+				"item": "neologisms",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			},
+			{
+				"item": "phonemes",
+				"AppInfo": ""
+			},
+			{
+				"item": "phoneticUnits",
+				"AppInfo": ""
+			},
+			{
+				"item": "predicates",
+				"AppInfo": ""
+			},
+			{
+				"item": "questions",
+				"AppInfo": ""
+			},
+			{
+				"item": "rb",
+				"AppInfo": ""
+			},
+			{
+				"item": "rules",
+				"AppInfo": ""
+			},
+			{
+				"item": "seconds",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticUnits",
+				"AppInfo": ""
+			},
+			{
+				"item": "sentences",
+				"AppInfo": ""
+			},
+			{
+				"item": "shots",
+				"AppInfo": ""
+			},
+			{
+				"item": "syllables",
+				"AppInfo": ""
+			},
+			{
+				"item": "synsets",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntacticUnits",
+				"AppInfo": ""
+			},
+			{
+				"item": "terms",
+				"AppInfo": ""
+			},
+			{
+				"item": "texts",
+				"AppInfo": ""
+			},
+			{
+				"item": "T-HPairs",
+				"AppInfo": ""
+			},
+			{
+				"item": "tokens",
+				"AppInfo": ""
+			},
+			{
+				"item": "trigrams",
+				"AppInfo": ""
+			},
+			{
+				"item": "turns",
+				"AppInfo": ""
+			},
+			{
+				"item": "unigrams",
+				"AppInfo": ""
+			},
+			{
+				"item": "units",
+				"AppInfo": ""
+			},
+			{
+				"item": "utterances",
+				"AppInfo": ""
+			},
+			{
+				"item": "words",
+				"AppInfo": ""
+			},
+			{
+				"item": "4-grams",
+				"AppInfo": ""
+			},
+			{
+				"item": "5-grams",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"sizeInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "evaluated",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageVarietyType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"dialect",
-			"jargon",
-			"other"
+			{
+				"item": "dialect",
+				"AppInfo": ""
+			},
+			{
+				"item": "jargon",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"languageVarietyInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageVarietyName",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageVarietyInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "runningTime",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"toolServiceOperationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "operatingSystem",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"linux",
-			"mac-OS",
-			"os-independent",
-			"other",
-			"unix",
-			"windows"
+			{
+				"item": "os-independent",
+				"AppInfo": ""
+			},
+			{
+				"item": "windows",
+				"AppInfo": ""
+			},
+			{
+				"item": "linux",
+				"AppInfo": ""
+			},
+			{
+				"item": "unix",
+				"AppInfo": ""
+			},
+			{
+				"item": "mac-OS",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"toolServiceOperationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "modalityType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"bodyGesture",
-			"combinationOfModalities",
-			"facialExpression",
-			"other",
-			"signLanguage",
-			"spokenLanguage",
-			"voice",
-			"writtenLanguage"
+			{
+				"item": "bodyGesture",
+				"AppInfo": ""
+			},
+			{
+				"item": "facialExpression",
+				"AppInfo": ""
+			},
+			{
+				"item": "voice",
+				"AppInfo": ""
+			},
+			{
+				"item": "combinationOfModalities",
+				"AppInfo": ""
+			},
+			{
+				"item": "signLanguage",
+				"AppInfo": ""
+			},
+			{
+				"item": "spokenLanguage",
+				"AppInfo": ""
+			},
+			{
+				"item": "writtenLanguage",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"modalityInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "modalityTypeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"modalityInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageDependent",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"toolServiceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "toolServiceSubtype",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"toolServiceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "mimeType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
@@ -403,283 +849,736 @@
 			"textNumericalFormatInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "toolServiceType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"architecture",
-			"infrastructure",
-			"nlpDevelopmentEnvironment",
-			"other",
-			"platform",
-			"service",
-			"suiteOfTools",
-			"tool"
+			{
+				"item": "service",
+				"AppInfo": "A form in which NLP taks are realized and delivered to a user, without the need of acquiring and installing the corresponding tools"
+			},
+			{
+				"item": "platform",
+				"AppInfo": "A technology that eases the development of new tools and services in the NLP field"
+			},
+			{
+				"item": "tool",
+				"AppInfo": "A device that performs one or more of the tasks listed in the ForeseenUseInfo component"
+			},
+			{
+				"item": "suiteOfTools",
+				"AppInfo": "A more of less fixed integrated organisation of tools applied for solving a combinaton of tasks"
+			},
+			{
+				"item": "infrastructure",
+				"AppInfo": ""
+			},
+			{
+				"item": "architecture",
+				"AppInfo": "A technology that supports the flexible development of NLP applications, together with all the requested resources"
+			},
+			{
+				"item": "nlpDevelopmentEnvironment",
+				"AppInfo": "A technology that supports the development of data resources, like lexicons, grammars, corpora, etc. Can be included in an Architecture or in a Platform"
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"toolServiceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "extraTextualInformationUnit",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"example",
-			"lemma",
-			"lexicalUnit",
-			"other",
-			"semantics",
-			"syntax",
-			"word"
+			{
+				"item": "word",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics",
+				"AppInfo": ""
+			},
+			{
+				"item": "example",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntax",
+				"AppInfo": ""
+			},
+			{
+				"item": "lexicalUnit",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "characterEncoding",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"characterEncodingInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "extratextualInformation",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"images",
-			"other",
-			"soundRecordings",
-			"videos"
+			{
+				"item": "images",
+				"AppInfo": ""
+			},
+			{
+				"item": "videos",
+				"AppInfo": ""
+			},
+			{
+				"item": "soundRecordings",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "externalRef",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"alignment",
-			"discourseAnnotation",
-			"discourseAnnotation-audienceReactions",
-			"discourseAnnotation-coreference",
-			"discourseAnnotation-dialogueActs",
-			"discourseAnnotation-discourseRelations",
-			"lemmatization",
-			"modalityAnnotation-bodyMovements",
-			"modalityAnnotation-facialExpressions",
-			"modalityAnnotation-gazeEyeMovements",
-			"modalityAnnotation-handArmGestures",
-			"modalityAnnotation-handManipulationOfObjects",
-			"modalityAnnotation-headMovements",
-			"modalityAnnotation-lipMovements",
-			"morphosyntacticAnnotation-bPosTagging",
-			"morphosyntacticAnnotation-posTagging",
-			"other",
-			"segmentation",
-			"semanticAnnotation",
-			"semanticAnnotation-certaintyLevel",
-			"semanticAnnotation-emotions",
-			"semanticAnnotation-entityMentions",
-			"semanticAnnotation-events",
-			"semanticAnnotation-namedEntities",
-			"semanticAnnotation-polarity",
-			"semanticAnnotation-questionTopicalTarget",
-			"semanticAnnotation-semanticClasses",
-			"semanticAnnotation-semanticRelations",
-			"semanticAnnotation-semanticRoles",
-			"semanticAnnotation-speechActs",
-			"semanticAnnotation-temporalExpressions",
-			"semanticAnnotation-textualEntailment",
-			"semanticAnnotation-wordSenses",
-			"speechAnnotation",
-			"speechAnnotation-orthographicTranscription",
-			"speechAnnotation-paralanguageAnnotation",
-			"speechAnnotation-phoneticTranscription",
-			"speechAnnotation-prosodicAnnotation",
-			"speechAnnotation-soundEvents",
-			"speechAnnotation-soundToTextAlignment",
-			"speechAnnotation-speakerIdentification",
-			"speechAnnotation-speakerTurns",
-			"stemming",
-			"structuralAnnotation",
-			"syntacticAnnotation-shallowParsing",
-			"syntacticAnnotation-subcategorizationFrames",
-			"syntacticAnnotation-treebanks",
-			"syntacticosemanticAnnotation-links",
-			"translation",
-			"transliteration"
+			{
+				"item": "alignment",
+				"AppInfo": ""
+			},
+			{
+				"item": "discourseAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "discourseAnnotation-audienceReactions",
+				"AppInfo": ""
+			},
+			{
+				"item": "discourseAnnotation-coreference",
+				"AppInfo": ""
+			},
+			{
+				"item": "discourseAnnotation-dialogueActs",
+				"AppInfo": ""
+			},
+			{
+				"item": "discourseAnnotation-discourseRelations",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemmatization",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-bodyMovements",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-facialExpressions",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-gazeEyeMovements",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-handArmGestures",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-handManipulationOfObjects",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-headMovements",
+				"AppInfo": ""
+			},
+			{
+				"item": "modalityAnnotation-lipMovements",
+				"AppInfo": ""
+			},
+			{
+				"item": "morphosyntacticAnnotation-bPosTagging",
+				"AppInfo": ""
+			},
+			{
+				"item": "morphosyntacticAnnotation-posTagging",
+				"AppInfo": ""
+			},
+			{
+				"item": "segmentation",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-certaintyLevel",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-emotions",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-entityMentions",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-events",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-namedEntities",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-polarity",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-questionTopicalTarget",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-semanticClasses",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-semanticRelations",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-semanticRoles",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-speechActs",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-temporalExpressions",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-textualEntailment",
+				"AppInfo": ""
+			},
+			{
+				"item": "semanticAnnotation-wordSenses",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-orthographicTranscription",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-paralanguageAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-phoneticTranscription",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-prosodicAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-soundEvents",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-speakerIdentification",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-speakerTurns",
+				"AppInfo": ""
+			},
+			{
+				"item": "stemming",
+				"AppInfo": ""
+			},
+			{
+				"item": "structuralAnnotation",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntacticAnnotation-shallowParsing",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntacticAnnotation-subcategorizationFrames",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntacticAnnotation-treebanks",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntacticosemanticAnnotation-links",
+				"AppInfo": ""
+			},
+			{
+				"item": "translation",
+				"AppInfo": ""
+			},
+			{
+				"item": "transliteration",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			},
+			{
+				"item": "speechAnnotation-soundToTextAlignment",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotatedElements",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"backgroundNoise",
-			"discourseMarkers",
-			"mispronunciations",
-			"other",
-			"speakerNoise",
-			"truncation"
+			{
+				"item": "speakerNoise",
+				"AppInfo": ""
+			},
+			{
+				"item": "backgroundNoise",
+				"AppInfo": ""
+			},
+			{
+				"item": "mispronunciations",
+				"AppInfo": ""
+			},
+			{
+				"item": "truncation",
+				"AppInfo": ""
+			},
+			{
+				"item": "discourseMarkers",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationStandoff",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "segmentationLevel",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"clause",
-			"diphone",
-			"frame",
-			"other",
-			"paragraph",
-			"phoneme",
-			"phrase",
-			"prosodicBoundaries",
-			"scene",
-			"sentence",
-			"shot",
-			"signal",
-			"syllable",
-			"topic",
-			"utterance",
-			"word",
-			"wordGroup"
+			{
+				"item": "paragraph",
+				"AppInfo": ""
+			},
+			{
+				"item": "sentence",
+				"AppInfo": ""
+			},
+			{
+				"item": "clause",
+				"AppInfo": ""
+			},
+			{
+				"item": "word",
+				"AppInfo": ""
+			},
+			{
+				"item": "wordGroup",
+				"AppInfo": ""
+			},
+			{
+				"item": "utterance",
+				"AppInfo": ""
+			},
+			{
+				"item": "topic",
+				"AppInfo": ""
+			},
+			{
+				"item": "signal",
+				"AppInfo": ""
+			},
+			{
+				"item": "phoneme",
+				"AppInfo": ""
+			},
+			{
+				"item": "syllable",
+				"AppInfo": ""
+			},
+			{
+				"item": "phrase",
+				"AppInfo": ""
+			},
+			{
+				"item": "diphone",
+				"AppInfo": ""
+			},
+			{
+				"item": "prosodicBoundaries",
+				"AppInfo": ""
+			},
+			{
+				"item": "frame",
+				"AppInfo": ""
+			},
+			{
+				"item": "scene",
+				"AppInfo": ""
+			},
+			{
+				"item": "shot",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationFormat",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "tagset",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "tagsetLanguageId",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "tagsetLanguageName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "conformanceToStandardsBestPractices",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"BLM",
-			"CES",
-			"EAGLES",
-			"EML",
-			"EMMA",
-			"GMX",
-			"GrAF",
-			"HamNoSys",
-			"ISO12620",
-			"ISO16642",
-			"ISO1987",
-			"ISO26162",
-			"ISO30042",
-			"ISO704",
-			"InkML",
-			"LMF",
-			"MAF",
-			"MLIF",
-			"MULTEXT",
-			"MUMIN",
-			"OAXAL",
-			"OWL",
-			"RDF",
-			"SKOS",
-			"SRX",
-			"SemAF",
-			"SemAF_DA",
-			"SemAF_DS",
-			"SemAF_NE",
-			"SemAF_SRL",
-			"SynAF",
-			"TBX",
-			"TEI",
-			"TEI_P3",
-			"TEI_P4",
-			"TEI_P5",
-			"TMX",
-			"TimeML",
-			"WordNet",
-			"XCES",
-			"XLIFF",
-			"multimodalInteractionFramework",
-			"other",
-			"pennTreeBank",
-			"pragueTreebank"
+			{
+				"item": "BLM",
+				"AppInfo": ""
+			},
+			{
+				"item": "CES",
+				"AppInfo": ""
+			},
+			{
+				"item": "EAGLES",
+				"AppInfo": ""
+			},
+			{
+				"item": "EML",
+				"AppInfo": ""
+			},
+			{
+				"item": "EMMA",
+				"AppInfo": ""
+			},
+			{
+				"item": "GMX",
+				"AppInfo": ""
+			},
+			{
+				"item": "GrAF",
+				"AppInfo": ""
+			},
+			{
+				"item": "HamNoSys",
+				"AppInfo": ""
+			},
+			{
+				"item": "InkML",
+				"AppInfo": ""
+			},
+			{
+				"item": "ISO12620",
+				"AppInfo": ""
+			},
+			{
+				"item": "ISO16642",
+				"AppInfo": ""
+			},
+			{
+				"item": "ISO1987",
+				"AppInfo": ""
+			},
+			{
+				"item": "ISO26162",
+				"AppInfo": ""
+			},
+			{
+				"item": "ISO30042",
+				"AppInfo": ""
+			},
+			{
+				"item": "ISO704",
+				"AppInfo": ""
+			},
+			{
+				"item": "LMF",
+				"AppInfo": ""
+			},
+			{
+				"item": "MAF",
+				"AppInfo": ""
+			},
+			{
+				"item": "MLIF",
+				"AppInfo": ""
+			},
+			{
+				"item": "MULTEXT",
+				"AppInfo": ""
+			},
+			{
+				"item": "MUMIN",
+				"AppInfo": ""
+			},
+			{
+				"item": "multimodalInteractionFramework",
+				"AppInfo": ""
+			},
+			{
+				"item": "OAXAL",
+				"AppInfo": ""
+			},
+			{
+				"item": "OWL",
+				"AppInfo": ""
+			},
+			{
+				"item": "pennTreeBank",
+				"AppInfo": ""
+			},
+			{
+				"item": "pragueTreebank",
+				"AppInfo": ""
+			},
+			{
+				"item": "RDF",
+				"AppInfo": ""
+			},
+			{
+				"item": "SemAF",
+				"AppInfo": ""
+			},
+			{
+				"item": "SemAF_DA",
+				"AppInfo": ""
+			},
+			{
+				"item": "SemAF_NE",
+				"AppInfo": ""
+			},
+			{
+				"item": "SemAF_SRL",
+				"AppInfo": ""
+			},
+			{
+				"item": "SemAF_DS",
+				"AppInfo": ""
+			},
+			{
+				"item": "SKOS",
+				"AppInfo": ""
+			},
+			{
+				"item": "SRX",
+				"AppInfo": ""
+			},
+			{
+				"item": "SynAF",
+				"AppInfo": ""
+			},
+			{
+				"item": "TBX",
+				"AppInfo": ""
+			},
+			{
+				"item": "TMX",
+				"AppInfo": ""
+			},
+			{
+				"item": "TEI",
+				"AppInfo": ""
+			},
+			{
+				"item": "TEI_P3",
+				"AppInfo": ""
+			},
+			{
+				"item": "TEI_P4",
+				"AppInfo": ""
+			},
+			{
+				"item": "TEI_P5",
+				"AppInfo": ""
+			},
+			{
+				"item": "TimeML",
+				"AppInfo": ""
+			},
+			{
+				"item": "XCES",
+				"AppInfo": ""
+			},
+			{
+				"item": "XLIFF",
+				"AppInfo": ""
+			},
+			{
+				"item": "WordNet",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"annotationInfo",
@@ -687,318 +1586,621 @@
 			"lexicalConceptualResourceEncodingInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "theoreticModel",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo",
 			"languageDescriptionEncodingInfo",
 			"lexicalConceptualResourceEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationMode",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"automatic",
-			"interactive",
-			"manual",
-			"mixed"
+			{
+				"item": "automatic",
+				"AppInfo": ""
+			},
+			{
+				"item": "manual",
+				"AppInfo": ""
+			},
+			{
+				"item": "mixed",
+				"AppInfo": ""
+			},
+			{
+				"item": "interactive",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationModeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationStartDate",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "date",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "annotationEndDate",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "date",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "interannotatorAgreement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "intraannotatorAgreement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "linguisticInformation",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"accentuation",
-			"definition/gloss",
-			"lemma",
-			"lemma-Abbreviations",
-			"lemma-CliticForms",
-			"lemma-Compounds",
-			"lemma-MultiWordUnits",
-			"lemma-Variants",
-			"morpho-Aspect",
-			"morpho-Auxiliary",
-			"morpho-Case",
-			"morpho-Degree",
-			"morpho-Derivation",
-			"morpho-Gender",
-			"morpho-Inflection",
-			"morpho-IrregularForms",
-			"morpho-Mood",
-			"morpho-Number",
-			"morpho-Person",
-			"morpho-Reflexivity",
-			"morpho-Tense",
-			"morpho-Voice",
-			"other",
-			"partOfSpeech",
-			"phonetics-Transcription",
-			"semantics-CrossReferences",
-			"semantics-Domain",
-			"semantics-EventType",
-			"semantics-QualiaStructure",
-			"semantics-Relations",
-			"semantics-Relations-Antonyms",
-			"semantics-Relations-Hyperonyms",
-			"semantics-Relations-Hyponyms",
-			"semantics-Relations-Meronyms",
-			"semantics-Relations-Synonyms",
-			"semantics-Relations-Troponyms",
-			"semantics-SemanticClass",
-			"semantics-SemanticRoles",
-			"semantics-Traits",
-			"statisticalProperties",
-			"syntacticoSemanticLinks",
-			"syntax-SubcatFrame",
-			"translationEquivalent",
-			"usage-Collocations",
-			"usage-Examples",
-			"usage-Frequency",
-			"usage-Notes",
-			"usage-Register"
+			{
+				"item": "accentuation",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma-MultiWordUnits",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma-Variants",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma-Abbreviations",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma-Compounds",
+				"AppInfo": ""
+			},
+			{
+				"item": "lemma-CliticForms",
+				"AppInfo": ""
+			},
+			{
+				"item": "partOfSpeech",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Case",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Gender",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Number",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Degree",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-IrregularForms",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Mood",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Tense",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Person",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Aspect",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Voice",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Auxiliary",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Inflection",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Reflexivity",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntax-SubcatFrame",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Traits",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-SemanticClass",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-CrossReferences",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations-Hyponyms",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations-Hyperonyms",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations-Synonyms",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations-Antonyms",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations-Troponyms",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Relations-Meronyms",
+				"AppInfo": ""
+			},
+			{
+				"item": "usage-Frequency",
+				"AppInfo": ""
+			},
+			{
+				"item": "usage-Register",
+				"AppInfo": ""
+			},
+			{
+				"item": "usage-Collocations",
+				"AppInfo": ""
+			},
+			{
+				"item": "usage-Examples",
+				"AppInfo": ""
+			},
+			{
+				"item": "usage-Notes",
+				"AppInfo": ""
+			},
+			{
+				"item": "definition/gloss",
+				"AppInfo": ""
+			},
+			{
+				"item": "translationEquivalent",
+				"AppInfo": ""
+			},
+			{
+				"item": "phonetics-Transcription",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-Domain",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-EventType",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-SemanticRoles",
+				"AppInfo": ""
+			},
+			{
+				"item": "statisticalProperties",
+				"AppInfo": ""
+			},
+			{
+				"item": "morpho-Derivation",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics-QualiaStructure",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntacticoSemanticLinks",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "documentUnstructured",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"annotationManualUnstructured",
 			"evaluationReportUnstructured"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"computationalLexicon",
-			"framenet",
-			"lexicon",
-			"machineReadableDictionary",
-			"ontology",
-			"other",
-			"terminologicalResource",
-			"thesaurus",
-			"wordList",
-			"wordnet"
+			{
+				"item": "wordList",
+				"AppInfo": ""
+			},
+			{
+				"item": "computationalLexicon",
+				"AppInfo": ""
+			},
+			{
+				"item": "ontology",
+				"AppInfo": ""
+			},
+			{
+				"item": "wordnet",
+				"AppInfo": ""
+			},
+			{
+				"item": "thesaurus",
+				"AppInfo": ""
+			},
+			{
+				"item": "framenet",
+				"AppInfo": ""
+			},
+			{
+				"item": "terminologicalResource",
+				"AppInfo": ""
+			},
+			{
+				"item": "machineReadableDictionary",
+				"AppInfo": ""
+			},
+			{
+				"item": "lexicon",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"lexicalConceptualResourceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "output",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageDescriptionPerformanceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "documentType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"article",
-			"book",
-			"booklet",
-			"inBook",
-			"inCollection",
-			"inProceedings",
-			"manual",
-			"mastersThesis",
-			"other",
-			"phdThesis",
-			"proceedings",
-			"techReport",
-			"unpublished"
+			{
+				"item": "article",
+				"AppInfo": "An article from a journal or magazine"
+			},
+			{
+				"item": "book",
+				"AppInfo": " A book with an explicit publisher"
+			},
+			{
+				"item": "booklet",
+				"AppInfo": "A work that is printed and bound, but without a named publisher or sponsoring institution"
+			},
+			{
+				"item": "manual",
+				"AppInfo": "Technical documentation"
+			},
+			{
+				"item": "techReport",
+				"AppInfo": " A report published by a school or other institution"
+			},
+			{
+				"item": "mastersThesis",
+				"AppInfo": "A Master's thesis"
+			},
+			{
+				"item": "phdThesis",
+				"AppInfo": "A PhD thesis"
+			},
+			{
+				"item": "inBook",
+				"AppInfo": "A part of a book, which may be a chapter (or section) and/or a range of pages"
+			},
+			{
+				"item": "inCollection",
+				"AppInfo": "A part of a book having its own title"
+			},
+			{
+				"item": "proceedings",
+				"AppInfo": "The proceedings of a conference"
+			},
+			{
+				"item": "inProceedings",
+				"AppInfo": "An article in a conference proceedings"
+			},
+			{
+				"item": "unpublished",
+				"AppInfo": "A document having an author and title, but not formally published"
+			},
+			{
+				"item": "other",
+				"AppInfo": "Use this type when nothing else fits"
+			}
 		],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "title",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "author",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "editor",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "year",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "publisher",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "bookTitle",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "journal",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "volume",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "series",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "pages",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "edition",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "conference",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "doi",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "url",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [
 			"(http://|https://|ftp://|www.).*"
@@ -1006,65 +2208,86 @@
 		"usage": [
 			"documentInfo",
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "ISSN",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "ISBN",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "keywords",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "documentLanguageName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "documentLanguageId",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "shallowness",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageDescriptionPerformanceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "targetResourceNameURI",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
@@ -1074,273 +2297,456 @@
 			"requiredSoftware",
 			"requiredLRs",
 			"evaluationTool"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "robustness",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageDescriptionPerformanceInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "compatibleLexiconType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"morphologicalLexicon",
-			"other",
-			"wordlist",
-			"wordnet"
+			{
+				"item": "wordnet",
+				"AppInfo": "Value for compatibleLexiconType; to be used for grammars that are compatible with wordnets"
+			},
+			{
+				"item": "wordlist",
+				"AppInfo": "Value for compatibleLexiconType; to be used for grammars that need wordlists for their operation"
+			},
+			{
+				"item": "morphologicalLexicon",
+				"AppInfo": "Value for compatibleLexiconType; to be used for grammars that need lexica with morphological information for their operation"
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"relatedLexiconInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "attachedLexiconPosition",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"relatedLexiconInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "surname",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"personInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "givenName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"personInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sex",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"female",
-			"male",
-			"unknown"
+			{
+				"item": "male",
+				"AppInfo": ""
+			},
+			{
+				"item": "female",
+				"AppInfo": ""
+			},
+			{
+				"item": "unknown",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personInfo",
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "position",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"personInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "relatedLexiconType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"attached",
-			"compatible",
-			"included",
-			"none"
+			{
+				"item": "included",
+				"AppInfo": "For lexica that are included in the grammar file"
+			},
+			{
+				"item": "attached",
+				"AppInfo": "For lexica attached to a resource (e.g. as a different file in the same directory, or downloadable from another position); the element attachedLexiconPosition should be used for further information"
+			},
+			{
+				"item": "compatible",
+				"AppInfo": "For grammars that can use any lexicon as long as they of a compatible type; the element compatibleLexiconType must be used for further specification"
+			},
+			{
+				"item": "none",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"relatedLexiconInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "email",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [
 			"[^@]+@[^\\.]+\\..+|"
 		],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "address",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "zipCode",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "city",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "region",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "country",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "telephoneNumber",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "faxNumber",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "runningEnvironmentDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"runningEnvironmentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "requiredHardware",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"graphicCard",
-			"microphone",
-			"none",
-			"ocrSystem",
-			"other",
-			"specialHardwareEquipment"
+			{
+				"item": "graphicCard",
+				"AppInfo": ""
+			},
+			{
+				"item": "microphone",
+				"AppInfo": ""
+			},
+			{
+				"item": "ocrSystem",
+				"AppInfo": ""
+			},
+			{
+				"item": "specialHardwareEquipment",
+				"AppInfo": ""
+			},
+			{
+				"item": "none",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"runningEnvironmentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "organizationName",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"organizationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "organizationShortName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"organizationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "departmentName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"organizationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "weightedGrammar",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"languageDescriptionEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "grammaticalPhenomenaCoverage",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"anaphora",
-			"clauseStructure",
-			"coordination",
-			"npStructure",
-			"other",
-			"ppAttachment"
+			{
+				"item": "clauseStructure",
+				"AppInfo": "Value for grammaticalPheonomenaCoverage; for grammars that can recognise the structure of clauses"
+			},
+			{
+				"item": "ppAttachment",
+				"AppInfo": "Value for grammaticalPheonomenaCoverage; for grammars that cover pp-attachment (attachment of prepositional phrases)"
+			},
+			{
+				"item": "npStructure",
+				"AppInfo": "value for grammaticalPheonomenaCoverage; for grammars that cover structure of noun phrases"
+			},
+			{
+				"item": "coordination",
+				"AppInfo": "value for grammaticalPheonomenaCoverage; for grammars that cover coordination"
+			},
+			{
+				"item": "anaphora",
+				"AppInfo": "value for grammaticalPheonomenaCoverage; for grammars that cover anaphora problems"
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"languageDescriptionEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "domain",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"domainInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "conformanceToClassificationScheme",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"ANC_domainClassification",
-			"ANC_genreClassification",
-			"BNC_domainClassification",
-			"BNC_textTypeClassification",
-			"DDC_classification",
-			"MeSH_classification",
-			"NLK_classification",
-			"PAROLE_genreClassification",
-			"PAROLE_topicClassification",
-			"UDC_classification",
-			"libraryOfCongress_domainClassification",
-			"libraryofCongressSubjectHeadings_classification",
-			"other"
+			{
+				"item": "ANC_domainClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "ANC_genreClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "BNC_domainClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "BNC_textTypeClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "DDC_classification",
+				"AppInfo": ""
+			},
+			{
+				"item": "libraryOfCongress_domainClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "libraryofCongressSubjectHeadings_classification",
+				"AppInfo": ""
+			},
+			{
+				"item": "MeSH_classification",
+				"AppInfo": ""
+			},
+			{
+				"item": "NLK_classification",
+				"AppInfo": ""
+			},
+			{
+				"item": "PAROLE_topicClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "PAROLE_genreClassification",
+				"AppInfo": ""
+			},
+			{
+				"item": "UDC_classification",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"domainInfo",
@@ -1348,68 +2754,113 @@
 			"audioClassificationInfo",
 			"videoClassificationInfo",
 			"imageClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "task",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"analysis",
-			"anaphoraResolution",
-			"chunking",
-			"definitionsParsing",
-			"generation",
-			"npRecognition",
-			"other",
-			"parsing",
-			"titlesParsing"
+			{
+				"item": "anaphoraResolution",
+				"AppInfo": "Value for task; for grammars used for anaphora resolution"
+			},
+			{
+				"item": "chunking",
+				"AppInfo": "Value for task; for grammars used for chunking (shallow syntactic parsing)"
+			},
+			{
+				"item": "parsing",
+				"AppInfo": "Value for task; for grammars used for parsing"
+			},
+			{
+				"item": "npRecognition",
+				"AppInfo": "Value for task; for grammars used for identifying noun phrases"
+			},
+			{
+				"item": "titlesParsing",
+				"AppInfo": "Value for task; for grammars that are restricted to parsing titles"
+			},
+			{
+				"item": "definitionsParsing",
+				"AppInfo": "Value for task; for grammars that are restricted to parsing definitions"
+			},
+			{
+				"item": "analysis",
+				"AppInfo": "Value for task; for grammars used for analysis tasks"
+			},
+			{
+				"item": "generation",
+				"AppInfo": "Value for task; for grammars used for language generation"
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"languageDescriptionEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "formalism",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"languageDescriptionEncodingInfo",
 			"toolServiceCreationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "textGenre",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"textClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "textType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"textClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "register",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"textClassificationInfo",
 			"audioClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "subject_topic",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
@@ -1417,794 +2868,1565 @@
 			"audioClassificationInfo",
 			"videoClassificationInfo",
 			"imageClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "encodingLevel",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"morphology",
-			"other",
-			"phonetics",
-			"phonology",
-			"pragmatics",
-			"semantics",
-			"syntax"
+			{
+				"item": "phonetics",
+				"AppInfo": ""
+			},
+			{
+				"item": "phonology",
+				"AppInfo": ""
+			},
+			{
+				"item": "semantics",
+				"AppInfo": ""
+			},
+			{
+				"item": "morphology",
+				"AppInfo": ""
+			},
+			{
+				"item": "syntax",
+				"AppInfo": ""
+			},
+			{
+				"item": "pragmatics",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"languageDescriptionEncodingInfo",
 			"lexicalConceptualResourceEncodingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"grammar",
-			"other"
+			{
+				"item": "grammar",
+				"AppInfo": "Value for languageDescriptionType; to be used for resources describing the morphological, syntactic etc. system (or part therof) of a language"
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"languageDescriptionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "timeCoverage",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"timeCoverageInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "interpolated",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "smoothing",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "geographicCoverage",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"geographicCoverageInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "factors",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "isFactored",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "creationMode",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"automatic",
-			"interactive",
-			"manual",
-			"mixed"
+			{
+				"item": "automatic",
+				"AppInfo": ""
+			},
+			{
+				"item": "manual",
+				"AppInfo": ""
+			},
+			{
+				"item": "mixed",
+				"AppInfo": ""
+			},
+			{
+				"item": "interactive",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"creationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "creationModeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"creationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "perplexity",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "order",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "baseItem",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"letter",
-			"other",
-			"phoneme",
-			"syllable",
-			"word"
+			{
+				"item": "word",
+				"AppInfo": ""
+			},
+			{
+				"item": "syllable",
+				"AppInfo": ""
+			},
+			{
+				"item": "letter",
+				"AppInfo": ""
+			},
+			{
+				"item": "phoneme",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"ngramInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "otherMedia",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"audio",
-			"image",
-			"text",
-			"textNumerical",
-			"video"
+			{
+				"item": "audio",
+				"AppInfo": ""
+			},
+			{
+				"item": "image",
+				"AppInfo": ""
+			},
+			{
+				"item": "text",
+				"AppInfo": ""
+			},
+			{
+				"item": "textNumerical",
+				"AppInfo": ""
+			},
+			{
+				"item": "video",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "mediaTypeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "synchronizedWithText",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "synchronizedWithAudio",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "synchronizedWithVideo",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sycnhronizedWithImage",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "synchronizedWithTextNumerical",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "typeOfTextNumericalContent",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"textNumericalContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "imageGenre",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"imageClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "quality",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"high",
-			"low",
-			"medium",
-			"veryHigh",
-			"veryLow"
+			{
+				"item": "veryLow",
+				"AppInfo": ""
+			},
+			{
+				"item": "low",
+				"AppInfo": ""
+			},
+			{
+				"item": "medium",
+				"AppInfo": ""
+			},
+			{
+				"item": "high",
+				"AppInfo": ""
+			},
+			{
+				"item": "veryHigh",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"imageFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "durationUnit",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"hours",
-			"minutes",
-			"seconds"
+			{
+				"item": "hours",
+				"AppInfo": ""
+			},
+			{
+				"item": "minutes",
+				"AppInfo": ""
+			},
+			{
+				"item": "seconds",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"durationOfEffectiveSpeechInfo",
 			"durationOfAudioInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "rasterOrVectorGraphics",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"raster",
-			"vector"
+			{
+				"item": "raster",
+				"AppInfo": ""
+			},
+			{
+				"item": "vector",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"imageFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "eventDescription",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "speechItems",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"applicationWords",
-			"creditCardNumbers",
-			"freeSpeech",
-			"isolatedDigits",
-			"isolatedWords",
-			"moneyAmounts",
-			"naturalNumbers",
-			"other",
-			"phoneticallyBalancedSentences",
-			"phoneticallyRichSentences",
-			"phoneticallyRichWords",
-			"properNouns",
-			"telephoneNumbers",
-			"vcvSequences",
-			"yesNoQuestions"
+			{
+				"item": "applicationWords",
+				"AppInfo": ""
+			},
+			{
+				"item": "creditCardNumbers",
+				"AppInfo": ""
+			},
+			{
+				"item": "freeSpeech",
+				"AppInfo": ""
+			},
+			{
+				"item": "isolatedWords",
+				"AppInfo": ""
+			},
+			{
+				"item": "isolatedDigits",
+				"AppInfo": ""
+			},
+			{
+				"item": "moneyAmounts",
+				"AppInfo": ""
+			},
+			{
+				"item": "naturalNumbers",
+				"AppInfo": ""
+			},
+			{
+				"item": "phoneticallyBalancedSentences",
+				"AppInfo": ""
+			},
+			{
+				"item": "phoneticallyRichWords",
+				"AppInfo": ""
+			},
+			{
+				"item": "phoneticallyRichSentences",
+				"AppInfo": ""
+			},
+			{
+				"item": "properNouns",
+				"AppInfo": ""
+			},
+			{
+				"item": "telephoneNumbers",
+				"AppInfo": ""
+			},
+			{
+				"item": "yesNoQuestions",
+				"AppInfo": ""
+			},
+			{
+				"item": "vcvSequences",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "nonSpeechItems",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"commercial",
-			"music",
-			"noise",
-			"notes",
-			"other",
-			"sounds",
-			"tempo"
+			{
+				"item": "commercial",
+				"AppInfo": ""
+			},
+			{
+				"item": "music",
+				"AppInfo": ""
+			},
+			{
+				"item": "noise",
+				"AppInfo": ""
+			},
+			{
+				"item": "notes",
+				"AppInfo": ""
+			},
+			{
+				"item": "sounds",
+				"AppInfo": ""
+			},
+			{
+				"item": "tempo",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "textualDescription",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"audioContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "noiseLevel",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"high",
-			"low",
-			"medium"
+			{
+				"item": "low",
+				"AppInfo": ""
+			},
+			{
+				"item": "medium",
+				"AppInfo": ""
+			},
+			{
+				"item": "high",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "organizationDescription",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "naturality",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"assisted",
-			"elicited",
-			"natural",
-			"planned",
-			"prompted",
-			"readSpeech",
-			"semiPlanned",
-			"spontaneous"
+			{
+				"item": "assisted",
+				"AppInfo": ""
+			},
+			{
+				"item": "elicited",
+				"AppInfo": ""
+			},
+			{
+				"item": "natural",
+				"AppInfo": ""
+			},
+			{
+				"item": "planned",
+				"AppInfo": ""
+			},
+			{
+				"item": "prompted",
+				"AppInfo": ""
+			},
+			{
+				"item": "readSpeech",
+				"AppInfo": ""
+			},
+			{
+				"item": "semiPlanned",
+				"AppInfo": ""
+			},
+			{
+				"item": "spontaneous",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"settingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "conversationalType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"dialogue",
-			"monologue",
-			"multilogue"
+			{
+				"item": "monologue",
+				"AppInfo": ""
+			},
+			{
+				"item": "dialogue",
+				"AppInfo": ""
+			},
+			{
+				"item": "multilogue",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"settingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "scenarioType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"frogStory",
-			"mapTask",
-			"onlineEducationalGame",
-			"other",
-			"pearStory",
-			"rolePlay",
-			"wizardOfOz",
-			"wordGame"
+			{
+				"item": "frogStory",
+				"AppInfo": ""
+			},
+			{
+				"item": "pearStory",
+				"AppInfo": ""
+			},
+			{
+				"item": "mapTask",
+				"AppInfo": ""
+			},
+			{
+				"item": "onlineEducationalGame",
+				"AppInfo": ""
+			},
+			{
+				"item": "rolePlay",
+				"AppInfo": ""
+			},
+			{
+				"item": "wordGame",
+				"AppInfo": ""
+			},
+			{
+				"item": "wizardOfOz",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"settingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "audience",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"few",
-			"largePublic",
-			"no",
-			"some"
+			{
+				"item": "no",
+				"AppInfo": ""
+			},
+			{
+				"item": "few",
+				"AppInfo": ""
+			},
+			{
+				"item": "some",
+				"AppInfo": ""
+			},
+			{
+				"item": "largePublic",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"settingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "interactivity",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"interactive",
-			"nonInteractive",
-			"other",
-			"overlapping",
-			"semiInteractive"
+			{
+				"item": "interactive",
+				"AppInfo": ""
+			},
+			{
+				"item": "nonInteractive",
+				"AppInfo": ""
+			},
+			{
+				"item": "semiInteractive",
+				"AppInfo": ""
+			},
+			{
+				"item": "overlapping",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"settingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "interaction",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"settingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "thingDescription",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "signalEncoding",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"ADPCM",
-			"aLaw",
-			"linearPCM",
-			"other",
-			"µ-law"
+			{
+				"item": "ADPCM",
+				"AppInfo": ""
+			},
+			{
+				"item": "aLaw",
+				"AppInfo": ""
+			},
+			{
+				"item": "linearPCM",
+				"AppInfo": ""
+			},
+			{
+				"item": "µ-law",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "samplingRate",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "quantization",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"16",
-			"24",
-			"32",
-			"64",
-			"8"
+			{
+				"item": "8",
+				"AppInfo": ""
+			},
+			{
+				"item": "16",
+				"AppInfo": ""
+			},
+			{
+				"item": "24",
+				"AppInfo": ""
+			},
+			{
+				"item": "32",
+				"AppInfo": ""
+			},
+			{
+				"item": "64",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "byteOrder",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"bigEndian",
-			"littleEndian"
+			{
+				"item": "littleEndian",
+				"AppInfo": ""
+			},
+			{
+				"item": "bigEndian",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "signConvention",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"floatingPoint",
-			"signedInteger",
-			"unsignedInteger"
+			{
+				"item": "signedInteger",
+				"AppInfo": ""
+			},
+			{
+				"item": "unsignedInteger",
+				"AppInfo": ""
+			},
+			{
+				"item": "floatingPoint",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "audioQualityMeasuresIncluded",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"SNR",
-			"backgroundNoise",
-			"clippingRate",
-			"crossTalk",
-			"other"
+			{
+				"item": "SNR",
+				"AppInfo": ""
+			},
+			{
+				"item": "crossTalk",
+				"AppInfo": ""
+			},
+			{
+				"item": "clippingRate",
+				"AppInfo": ""
+			},
+			{
+				"item": "backgroundNoise",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "numberOfTracks",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"1",
-			"2",
-			"4",
-			"8"
+			{
+				"item": "1",
+				"AppInfo": ""
+			},
+			{
+				"item": "2",
+				"AppInfo": ""
+			},
+			{
+				"item": "4",
+				"AppInfo": ""
+			},
+			{
+				"item": "8",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "recordingQuality",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"high",
-			"low",
-			"medium",
-			"veryHigh",
-			"veryLow"
+			{
+				"item": "veryLow",
+				"AppInfo": ""
+			},
+			{
+				"item": "low",
+				"AppInfo": ""
+			},
+			{
+				"item": "medium",
+				"AppInfo": ""
+			},
+			{
+				"item": "high",
+				"AppInfo": ""
+			},
+			{
+				"item": "veryHigh",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "personDescription",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "compression",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"compressionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "compressionName",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"aac",
-			"atrac",
-			"avi",
-			"flac",
-			"mov",
-			"mp3",
-			"mpeg",
-			"mpg",
-			"oggVorbis",
-			"other",
-			"realAudio",
-			"shorten"
+			{
+				"item": "flac",
+				"AppInfo": ""
+			},
+			{
+				"item": "shorten",
+				"AppInfo": ""
+			},
+			{
+				"item": "mp3",
+				"AppInfo": ""
+			},
+			{
+				"item": "oggVorbis",
+				"AppInfo": ""
+			},
+			{
+				"item": "atrac",
+				"AppInfo": ""
+			},
+			{
+				"item": "aac",
+				"AppInfo": ""
+			},
+			{
+				"item": "mpeg",
+				"AppInfo": ""
+			},
+			{
+				"item": "realAudio",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			},
+			{
+				"item": "mpg",
+				"AppInfo": ""
+			},
+			{
+				"item": "avi",
+				"AppInfo": ""
+			},
+			{
+				"item": "mov",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"compressionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "compressionLoss",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"compressionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "landscapeParts",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "artifactParts",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "audioGenre",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"animalVocalizations",
-			"humanNonSpeech",
-			"instrumentalMusic",
-			"noise",
-			"other",
-			"song",
-			"speech"
+			{
+				"item": "speech",
+				"AppInfo": ""
+			},
+			{
+				"item": "humanNonSpeech",
+				"AppInfo": ""
+			},
+			{
+				"item": "song",
+				"AppInfo": ""
+			},
+			{
+				"item": "instrumentalMusic",
+				"AppInfo": ""
+			},
+			{
+				"item": "noise",
+				"AppInfo": ""
+			},
+			{
+				"item": "animalVocalizations",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "speechGenre",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"airTrafficControl",
-			"broadcastNews",
-			"call-in",
-			"conversation",
-			"debate",
-			"emotionalExpressive",
-			"interview",
-			"lecture",
-			"meeting",
-			"narrative",
-			"other",
-			"presentation",
-			"questionAnswer",
-			"roundtable"
+			{
+				"item": "broadcastNews",
+				"AppInfo": ""
+			},
+			{
+				"item": "conversation",
+				"AppInfo": ""
+			},
+			{
+				"item": "meeting",
+				"AppInfo": ""
+			},
+			{
+				"item": "roundtable",
+				"AppInfo": ""
+			},
+			{
+				"item": "interview",
+				"AppInfo": ""
+			},
+			{
+				"item": "debate",
+				"AppInfo": ""
+			},
+			{
+				"item": "call-in",
+				"AppInfo": ""
+			},
+			{
+				"item": "lecture",
+				"AppInfo": ""
+			},
+			{
+				"item": "emotionalExpressive",
+				"AppInfo": ""
+			},
+			{
+				"item": "airTrafficControl",
+				"AppInfo": ""
+			},
+			{
+				"item": "questionAnswer",
+				"AppInfo": ""
+			},
+			{
+				"item": "presentation",
+				"AppInfo": ""
+			},
+			{
+				"item": "narrative",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"audioClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "textIncludedInImage",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"captions",
-			"captureTime",
-			"none",
-			"subtitles"
+			{
+				"item": "captions",
+				"AppInfo": ""
+			},
+			{
+				"item": "subtitles",
+				"AppInfo": ""
+			},
+			{
+				"item": "captureTime",
+				"AppInfo": ""
+			},
+			{
+				"item": "none",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"imageContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "typeOfImageContent",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"imageContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "recordingDeviceType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"DAT",
-			"dv",
-			"flash",
-			"hardDisk",
-			"other",
-			"soundBlasterCard",
-			"tapeVHS"
+			{
+				"item": "hardDisk",
+				"AppInfo": ""
+			},
+			{
+				"item": "dv",
+				"AppInfo": ""
+			},
+			{
+				"item": "tapeVHS",
+				"AppInfo": ""
+			},
+			{
+				"item": "DAT",
+				"AppInfo": ""
+			},
+			{
+				"item": "flash",
+				"AppInfo": ""
+			},
+			{
+				"item": "soundBlasterCard",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "recordingDeviceTypeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "recordingPlatformSoftware",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "recordingEnvironment",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"anechoicChamber",
-			"closedPublicPlace",
-			"conferenceRoom",
-			"inCar",
-			"industrial",
-			"lectureRoom",
-			"office",
-			"openPublicPlace",
-			"other",
-			"studio",
-			"transport"
+			{
+				"item": "office",
+				"AppInfo": ""
+			},
+			{
+				"item": "inCar",
+				"AppInfo": ""
+			},
+			{
+				"item": "studio",
+				"AppInfo": ""
+			},
+			{
+				"item": "transport",
+				"AppInfo": ""
+			},
+			{
+				"item": "openPublicPlace",
+				"AppInfo": ""
+			},
+			{
+				"item": "closedPublicPlace",
+				"AppInfo": ""
+			},
+			{
+				"item": "anechoicChamber",
+				"AppInfo": ""
+			},
+			{
+				"item": "conferenceRoom",
+				"AppInfo": ""
+			},
+			{
+				"item": "lectureRoom",
+				"AppInfo": ""
+			},
+			{
+				"item": "industrial",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sourceChannel",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"EMA",
-			"airflow",
-			"camcorder",
-			"internet",
-			"laryngograph",
-			"other",
-			"radio",
-			"telephone",
-			"tv",
-			"webCam"
+			{
+				"item": "internet",
+				"AppInfo": ""
+			},
+			{
+				"item": "radio",
+				"AppInfo": ""
+			},
+			{
+				"item": "tv",
+				"AppInfo": ""
+			},
+			{
+				"item": "telephone",
+				"AppInfo": ""
+			},
+			{
+				"item": "laryngograph",
+				"AppInfo": ""
+			},
+			{
+				"item": "airflow",
+				"AppInfo": ""
+			},
+			{
+				"item": "EMA",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			},
+			{
+				"item": "webCam",
+				"AppInfo": ""
+			},
+			{
+				"item": "camcorder",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sourceChannelType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"3G",
-			"CDMA",
-			"DVB-C",
-			"DVB-S",
-			"DVB-T",
-			"GSM",
-			"ISDN",
-			"VOIP",
-			"other"
+			{
+				"item": "ISDN",
+				"AppInfo": ""
+			},
+			{
+				"item": "GSM",
+				"AppInfo": ""
+			},
+			{
+				"item": "3G",
+				"AppInfo": ""
+			},
+			{
+				"item": "CDMA",
+				"AppInfo": ""
+			},
+			{
+				"item": "DVB-T",
+				"AppInfo": ""
+			},
+			{
+				"item": "DVB-S",
+				"AppInfo": ""
+			},
+			{
+				"item": "DVB-C",
+				"AppInfo": ""
+			},
+			{
+				"item": "VOIP",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "resourceType",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"corpus"
+			{
+				"item": "corpus",
+				"AppInfo": "for text, speech, video, multimodal/multimedia corpora, corpora with sensorimotor information, n-gram resources"
+			},
+			{
+				"item": "languageDescription",
+				"AppInfo": "covers grammars etc."
+			},
+			{
+				"item": "lexicalConceptualResource",
+				"AppInfo": "includes lexica, ontologies, dictionaries, word lists etc."
+			},
+			{
+				"item": "toolService",
+				"AppInfo": "used for tools, systems, system components etc."
+			}
 		],
 		"usage": [
 			"corpusInfo",
@@ -2213,764 +4435,1208 @@
 			"toolServiceInfo",
 			"inputInfo",
 			"outputInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sourceChannelDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "videoGenre",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"videoClassificationInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "resolutionStandard",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"HD.1080",
-			"HD.720",
-			"VGA"
+			{
+				"item": "VGA",
+				"AppInfo": ""
+			},
+			{
+				"item": "HD.720",
+				"AppInfo": ""
+			},
+			{
+				"item": "HD.1080",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"resolutionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sizeHeight",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"resolutionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "capturingDeviceType",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"camera",
-			"closeTalkMicrophone",
-			"embeddedMicrophone",
-			"farfieldMicrophone",
-			"largeMembraneMicrophone",
-			"laryngograph",
-			"lavalierMicrophone",
-			"microphone",
-			"microphoneArray",
-			"other",
-			"studioEquipment",
-			"telephoneFixed",
-			"telephoneIP",
-			"telephoneMobile",
-			"webcam"
+			{
+				"item": "studioEquipment",
+				"AppInfo": ""
+			},
+			{
+				"item": "microphone",
+				"AppInfo": ""
+			},
+			{
+				"item": "closeTalkMicrophone",
+				"AppInfo": ""
+			},
+			{
+				"item": "farfieldMicrophone",
+				"AppInfo": ""
+			},
+			{
+				"item": "lavalierMicrophone",
+				"AppInfo": ""
+			},
+			{
+				"item": "microphoneArray",
+				"AppInfo": ""
+			},
+			{
+				"item": "embeddedMicrophone",
+				"AppInfo": ""
+			},
+			{
+				"item": "largeMembraneMicrophone",
+				"AppInfo": ""
+			},
+			{
+				"item": "laryngograph",
+				"AppInfo": ""
+			},
+			{
+				"item": "telephoneFixed",
+				"AppInfo": ""
+			},
+			{
+				"item": "telephoneMobile",
+				"AppInfo": ""
+			},
+			{
+				"item": "telephoneIP",
+				"AppInfo": ""
+			},
+			{
+				"item": "camera",
+				"AppInfo": ""
+			},
+			{
+				"item": "webcam",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"captureInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "capturingDeviceTypeDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"captureInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "capturingDetails",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"captureInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "capturingEnvironment",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"complex",
-			"plain"
+			{
+				"item": "complex",
+				"AppInfo": ""
+			},
+			{
+				"item": "plain",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"captureInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sensorTechnology",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"captureInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sceneIllumination",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"daylight",
-			"fix",
-			"multipleSources",
-			"other",
-			"singleSource",
-			"variable"
+			{
+				"item": "daylight",
+				"AppInfo": ""
+			},
+			{
+				"item": "fix",
+				"AppInfo": ""
+			},
+			{
+				"item": "multipleSources",
+				"AppInfo": ""
+			},
+			{
+				"item": "singleSource",
+				"AppInfo": ""
+			},
+			{
+				"item": "variable",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"captureInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sizeWidth",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"resolutionInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "numberOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "ageOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"adult",
-			"child",
-			"elderly",
-			"teenager"
+			{
+				"item": "child",
+				"AppInfo": ""
+			},
+			{
+				"item": "teenager",
+				"AppInfo": ""
+			},
+			{
+				"item": "adult",
+				"AppInfo": ""
+			},
+			{
+				"item": "elderly",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "ageRangeStart",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "ageRangeEnd",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "sexOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"female",
-			"male",
-			"mixed",
-			"unknown"
+			{
+				"item": "male",
+				"AppInfo": ""
+			},
+			{
+				"item": "female",
+				"AppInfo": ""
+			},
+			{
+				"item": "mixed",
+				"AppInfo": ""
+			},
+			{
+				"item": "unknown",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "originOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"mixed",
-			"native",
-			"nonNative",
-			"unknown"
+			{
+				"item": "native",
+				"AppInfo": ""
+			},
+			{
+				"item": "nonNative",
+				"AppInfo": ""
+			},
+			{
+				"item": "mixed",
+				"AppInfo": ""
+			},
+			{
+				"item": "unknown",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "dialectAccentOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "geographicDistributionOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "hearingImpairmentOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"mixed",
-			"no",
-			"yes"
+			{
+				"item": "yes",
+				"AppInfo": ""
+			},
+			{
+				"item": "no",
+				"AppInfo": ""
+			},
+			{
+				"item": "mixed",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "speakingImpairmentOfPersons",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"mixed",
-			"no",
-			"yes"
+			{
+				"item": "yes",
+				"AppInfo": ""
+			},
+			{
+				"item": "no",
+				"AppInfo": ""
+			},
+			{
+				"item": "mixed",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "numberOfTrainedSpeakers",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "speechInfluences",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"alcohol",
-			"hyperbaric",
-			"medication",
-			"other",
-			"sleepDeprivation"
+			{
+				"item": "alcohol",
+				"AppInfo": ""
+			},
+			{
+				"item": "sleepDeprivation",
+				"AppInfo": ""
+			},
+			{
+				"item": "hyperbaric",
+				"AppInfo": ""
+			},
+			{
+				"item": "medication",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"personSourceSetInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "fidelity",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"videoFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "alias",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "ageGroup",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"adult",
-			"child",
-			"elderly",
-			"teenager"
+			{
+				"item": "child",
+				"AppInfo": ""
+			},
+			{
+				"item": "teenager",
+				"AppInfo": ""
+			},
+			{
+				"item": "adult",
+				"AppInfo": ""
+			},
+			{
+				"item": "elderly",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "age",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "origin",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"native",
-			"nonNative",
-			"unknown"
+			{
+				"item": "native",
+				"AppInfo": ""
+			},
+			{
+				"item": "nonNative",
+				"AppInfo": ""
+			},
+			{
+				"item": "unknown",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "placeOfLiving",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "placeOfBirth",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "placeOfChildhood",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "dialectAccent",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "speakingImpairment",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "hearingImpairment",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "smokingHabits",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "vocalTractConditions",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"dentalProsthesis",
-			"other"
+			{
+				"item": "dentalProsthesis",
+				"AppInfo": ""
+			},
+			{
+				"item": "other",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "profession",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "height",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "weight",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "trainedSpeaker",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "boolean",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "placeOfSecondEducation",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "educationLevel",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "visualModelling",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "enumeration",
 		"validator": [
-			"2D",
-			"3D"
+			{
+				"item": "2D",
+				"AppInfo": ""
+			},
+			{
+				"item": "3D",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "frameRate",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"videoFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "typeOfVideoContent",
 		"weight": 1,
+		"mandatory": true,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"videoContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "textIncludedInVideo",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"captions",
-			"none",
-			"subtitles"
+			{
+				"item": "captions",
+				"AppInfo": ""
+			},
+			{
+				"item": "subtitles",
+				"AppInfo": ""
+			},
+			{
+				"item": "none",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"videoContentInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "colourDepth",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "typeOfElement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "bodyParts",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"arms",
-			"face",
-			"feet",
-			"hands",
-			"head",
-			"legs",
-			"mouth",
-			"none",
-			"wholeBody"
+			{
+				"item": "arms",
+				"AppInfo": ""
+			},
+			{
+				"item": "face",
+				"AppInfo": ""
+			},
+			{
+				"item": "feet",
+				"AppInfo": ""
+			},
+			{
+				"item": "hands",
+				"AppInfo": ""
+			},
+			{
+				"item": "head",
+				"AppInfo": ""
+			},
+			{
+				"item": "legs",
+				"AppInfo": ""
+			},
+			{
+				"item": "mouth",
+				"AppInfo": ""
+			},
+			{
+				"item": "wholeBody",
+				"AppInfo": ""
+			},
+			{
+				"item": "none",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "distractors",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "interactiveMedia",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "faceViews",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "faceExpressions",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "bodyMovement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "gestures",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "handArmMovement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "handManipulation",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "headMovement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "eyeMovement",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "string",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "posesPerSubject",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": false,
 		"datatype": "integer",
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "colourSpace",
 		"weight": 1,
+		"mandatory": false,
+		"listproperty": true,
 		"datatype": "enumeration",
 		"validator": [
-			"4:2:2",
-			"CMYK",
-			"RGB",
-			"YUV"
+			{
+				"item": "RGB",
+				"AppInfo": ""
+			},
+			{
+				"item": "CMYK",
+				"AppInfo": ""
+			},
+			{
+				"item": "4:2:2",
+				"AppInfo": ""
+			},
+			{
+				"item": "YUV",
+				"AppInfo": ""
+			}
 		],
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
-		]
+		],
+		"mysql": []
 	},
 	{
 		"keyname": "requiredSoftware",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"runningEnvironmentInfo"
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "requiredLRs",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"runningEnvironmentInfo"
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "originalSource",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"creationInfo",
 			"toolServiceCreationInfo"
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationTool",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "creationTool",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"creationInfo"
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "textNumericalContentInfo",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusTextNumericalInfo"
 		],
 		"properties": {
 			"typeOfTextNumericalContent": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "annotationTool",
 		"weight": 1.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"annotationInfo"
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "durationOfAudioInfo",
 		"weight": 2.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"audioSizeInfo"
 		],
 		"properties": {
 			"size": "string",
-			"durationUnit": "enumeration [hours|minutes|seconds]"
-		}
+			"durationUnit": "enumeration [[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "durationOfEffectiveSpeechInfo",
 		"weight": 2.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"audioSizeInfo"
 		],
 		"properties": {
 			"size": "string",
-			"durationUnit": "enumeration [hours|minutes|seconds]"
-		}
+			"durationUnit": "enumeration [[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "annotationManualUnstructured",
 		"weight": 2.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"documentUnstructured": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizeInfo",
 		"weight": 2.001,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"sizePerLanguage",
 			"sizePerLanguageVariety",
@@ -3005,23 +5671,29 @@
 		],
 		"properties": {
 			"size": "string",
-			"sizeUnit": "enumeration [4-grams|5-grams|T-HPairs|articles|bigrams|bytes|classes|concepts|diphones|elements|entries|expressions|files|frames|gb|hours|idiomaticExpressions|images|items|kb|keywords|lexicalTypes|mb|minutes|multiWordUnits|neologisms|other|phonemes|phoneticUnits|predicates|questions|rb|rules|seconds|semanticUnits|sentences|shots|syllables|synsets|syntacticUnits|terms|texts|tokens|trigrams|turns|unigrams|units|utterances|words]"
-		}
+			"sizeUnit": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationReportUnstructured",
 		"weight": 2.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"documentUnstructured": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lingualityInfo",
 		"weight": 3.001,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3037,26 +5709,32 @@
 			"lexicalConceptualResourceImageInfo"
 		],
 		"properties": {
-			"lingualityType": "enumeration [bilingual|monolingual|multilingual]",
-			"multilingualityType": "enumeration [comparable|multilingualSingleText|other|parallel]",
+			"lingualityType": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"multilingualityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"multilingualityTypeDetails": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "relatedLexiconInfo",
 		"weight": 3.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionOperationInfo"
 		],
 		"properties": {
-			"relatedLexiconType": "enumeration [attached|compatible|included|none]",
+			"relatedLexiconType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"attachedLexiconPosition": "string",
-			"compatibleLexiconType": "enumeration [morphologicalLexicon|other|wordlist|wordnet]"
-		}
+			"compatibleLexiconType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "compressionInfo",
 		"weight": 3.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"audioFormatInfo",
 			"videoFormatInfo",
@@ -3064,13 +5742,16 @@
 		],
 		"properties": {
 			"compression": "boolean",
-			"compressionName": "enumeration [aac|atrac|avi|flac|mov|mp3|mpeg|mpg|oggVorbis|other|realAudio|shorten]",
+			"compressionName": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"compressionLoss": "boolean"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionPerformanceInfo",
 		"weight": 3.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionInfo"
 		],
@@ -3078,11 +5759,14 @@
 			"robustness": "string",
 			"shallowness": "string",
 			"output": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "resolutionInfo",
 		"weight": 3.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
@@ -3090,213 +5774,270 @@
 		"properties": {
 			"sizeWidth": "integer",
 			"sizeHeight": "integer",
-			"resolutionStandard": "enumeration [HD.1080|HD.720|VGA]"
-		}
+			"resolutionStandard": "enumeration [[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerVideoFormat",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"videoFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerTextFormat",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"textFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerTextClassification",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"textClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerLanguage",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerAudioClassification",
 		"weight": 3.002,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"audioClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerImageFormat",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"imageFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerDomain",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"domainInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerTimeCoverage",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"timeCoverageInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerImageClassification",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"imageClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerModality",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"modalityInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerVideoClassification",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"videoClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerGeographicCoverage",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"geographicCoverageInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerAudioFormat",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"audioFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerTextNumericalFormat",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"textNumericalFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerLanguageVariety",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageVarietyInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerAnnotation",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "sizePerCharacterEncoding",
 		"weight": 3.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"characterEncodingInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "audioContentInfo",
 		"weight": 4.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusAudioInfo",
 			"lexicalConceptualResourceAudioInfo"
 		],
 		"properties": {
-			"speechItems": "enumeration [applicationWords|creditCardNumbers|freeSpeech|isolatedDigits|isolatedWords|moneyAmounts|naturalNumbers|other|phoneticallyBalancedSentences|phoneticallyRichSentences|phoneticallyRichWords|properNouns|telephoneNumbers|vcvSequences|yesNoQuestions]",
-			"nonSpeechItems": "enumeration [commercial|music|noise|notes|other|sounds|tempo]",
+			"speechItems": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"nonSpeechItems": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"textualDescription": "string",
-			"noiseLevel": "enumeration [high|low|medium]"
-		}
+			"noiseLevel": "enumeration [[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "toolServiceCreationInfo",
 		"weight": 4.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"toolServiceInfo"
 		],
@@ -3305,11 +6046,14 @@
 			"formalism": "string",
 			"creationDetails": "string",
 			"originalSource": "Reference to originalSource [w:1.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "timeCoverageInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3327,11 +6071,14 @@
 		"properties": {
 			"timeCoverage": "string",
 			"sizePerTimeCoverage": "Reference to sizePerTimeCoverage [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "geographicCoverageInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3349,22 +6096,28 @@
 		"properties": {
 			"geographicCoverage": "string",
 			"sizePerGeographicCoverage": "Reference to sizePerGeographicCoverage [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "textNumericalFormatInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextNumericalInfo"
 		],
 		"properties": {
 			"mimeType": "string",
 			"sizePerTextNumericalFormat": "Reference to sizePerTextNumericalFormat [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "textFormatInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusTextNgramInfo",
@@ -3374,11 +6127,14 @@
 		"properties": {
 			"mimeType": "string",
 			"sizePerTextFormat": "Reference to sizePerTextFormat [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "creationInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3393,15 +6149,18 @@
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"creationMode": "enumeration [automatic|interactive|manual|mixed]",
+			"creationMode": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"creationModeDetails": "string",
 			"originalSource": "Reference to originalSource [w:1.001]",
 			"creationTool": "Reference to creationTool [w:1.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "characterEncodingInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusTextNgramInfo",
@@ -3411,25 +6170,31 @@
 		"properties": {
 			"characterEncoding": "string",
 			"sizePerCharacterEncoding": "Reference to sizePerCharacterEncoding [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "runningEnvironmentInfo",
 		"weight": 4.003,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionOperationInfo",
 			"toolServiceOperationInfo"
 		],
 		"properties": {
-			"requiredHardware": "enumeration [graphicCard|microphone|none|ocrSystem|other|specialHardwareEquipment]",
+			"requiredHardware": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"runningEnvironmentDetails": "string",
 			"requiredSoftware": "Reference to requiredSoftware [w:1.001]",
 			"requiredLRs": "Reference to requiredLRs [w:1.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "modalityInfo",
 		"weight": 5.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3446,14 +6211,17 @@
 			"lexicalConceptualResourceImageInfo"
 		],
 		"properties": {
-			"modalityType": "enumeration [bodyGesture|combinationOfModalities|facialExpression|other|signLanguage|spokenLanguage|voice|writtenLanguage]",
+			"modalityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"modalityTypeDetails": "string",
 			"sizePerModality": "Reference to sizePerModality [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "domainInfo",
 		"weight": 5.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3470,79 +6238,97 @@
 		],
 		"properties": {
 			"domain": "string",
-			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizePerDomain": "Reference to sizePerDomain [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageVarietyInfo",
 		"weight": 5.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"languageInfo"
 		],
 		"properties": {
-			"languageVarietyType": "enumeration [dialect|jargon|other]",
+			"languageVarietyType": "enumeration [[object Object]|[object Object]|[object Object]]",
 			"languageVarietyName": "string",
 			"sizePerLanguageVariety": "Reference to sizePerLanguageVariety [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "settingInfo",
 		"weight": 6.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusAudioInfo",
 			"corpusVideoInfo"
 		],
 		"properties": {
-			"naturality": "enumeration [assisted|elicited|natural|planned|prompted|readSpeech|semiPlanned|spontaneous]",
-			"conversationalType": "enumeration [dialogue|monologue|multilogue]",
-			"scenarioType": "enumeration [frogStory|mapTask|onlineEducationalGame|other|pearStory|rolePlay|wizardOfOz|wordGame]",
-			"audience": "enumeration [few|largePublic|no|some]",
-			"interactivity": "enumeration [interactive|nonInteractive|other|overlapping|semiInteractive]",
+			"naturality": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"conversationalType": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"scenarioType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"audience": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"interactivity": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"interaction": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "videoClassificationInfo",
 		"weight": 6.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusVideoInfo"
 		],
 		"properties": {
 			"videoGenre": "string",
 			"subject_topic": "string",
-			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizePerVideoClassification": "Reference to sizePerVideoClassification [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "imageClassificationInfo",
 		"weight": 6.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusImageInfo"
 		],
 		"properties": {
 			"imageGenre": "string",
 			"subject_topic": "string",
-			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizePerImageClassification": "Reference to sizePerImageClassification [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "toolServiceOperationInfo",
 		"weight": 6.004,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"toolServiceInfo"
 		],
 		"properties": {
-			"operatingSystem": "enumeration [linux|mac-OS|os-independent|other|unix|windows]",
+			"operatingSystem": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"runningTime": "string",
 			"runningEnvironmentInfo": "Reference to runningEnvironmentInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "audioSizeInfo",
 		"weight": 6.004,
+		"mandatory": true,
+		"listproperty": true,
 		"usage": [
 			"corpusAudioInfo"
 		],
@@ -3550,11 +6336,14 @@
 			"sizeInfo": "Reference to sizeInfo [w:2.001]",
 			"durationOfEffectiveSpeechInfo": "Reference to durationOfEffectiveSpeechInfo [w:2.001]",
 			"durationOfAudioInfo": "Reference to durationOfAudioInfo [w:2.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "linkToOtherMediaInfo",
 		"weight": 7.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3566,77 +6355,92 @@
 			"languageDescriptionImageInfo"
 		],
 		"properties": {
-			"otherMedia": "enumeration [audio|image|text|textNumerical|video]",
+			"otherMedia": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"mediaTypeDetails": "string",
 			"synchronizedWithText": "boolean",
 			"synchronizedWithAudio": "boolean",
 			"synchronizedWithVideo": "boolean",
 			"sycnhronizedWithImage": "boolean",
 			"synchronizedWithTextNumerical": "boolean"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "ngramInfo",
 		"weight": 7.001,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"corpusTextNgramInfo"
 		],
 		"properties": {
-			"baseItem": "enumeration [letter|other|phoneme|syllable|word]",
+			"baseItem": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"order": "integer",
 			"perplexity": "string",
 			"isFactored": "boolean",
 			"factors": "string",
 			"smoothing": "string",
 			"interpolated": "boolean"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceEncodingInfo",
 		"weight": 7.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"encodingLevel": "enumeration [morphology|other|phonetics|phonology|pragmatics|semantics|syntax]",
-			"linguisticInformation": "enumeration [accentuation|definition/gloss|lemma|lemma-Abbreviations|lemma-CliticForms|lemma-Compounds|lemma-MultiWordUnits|lemma-Variants|morpho-Aspect|morpho-Auxiliary|morpho-Case|morpho-Degree|morpho-Derivation|morpho-Gender|morpho-Inflection|morpho-IrregularForms|morpho-Mood|morpho-Number|morpho-Person|morpho-Reflexivity|morpho-Tense|morpho-Voice|other|partOfSpeech|phonetics-Transcription|semantics-CrossReferences|semantics-Domain|semantics-EventType|semantics-QualiaStructure|semantics-Relations|semantics-Relations-Antonyms|semantics-Relations-Hyperonyms|semantics-Relations-Hyponyms|semantics-Relations-Meronyms|semantics-Relations-Synonyms|semantics-Relations-Troponyms|semantics-SemanticClass|semantics-SemanticRoles|semantics-Traits|statisticalProperties|syntacticoSemanticLinks|syntax-SubcatFrame|translationEquivalent|usage-Collocations|usage-Examples|usage-Frequency|usage-Notes|usage-Register]",
-			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]",
+			"encodingLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"linguisticInformation": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"theoreticModel": "string",
 			"externalRef": "string",
-			"extratextualInformation": "enumeration [images|other|soundRecordings|videos]",
-			"extraTextualInformationUnit": "enumeration [example|lemma|lexicalUnit|other|semantics|syntax|word]"
-		}
+			"extratextualInformation": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"extraTextualInformationUnit": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionEncodingInfo",
 		"weight": 7.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionInfo"
 		],
 		"properties": {
-			"encodingLevel": "enumeration [morphology|other|phonetics|phonology|pragmatics|semantics|syntax]",
-			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]",
+			"encodingLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"theoreticModel": "string",
 			"formalism": "string",
-			"task": "enumeration [analysis|anaphoraResolution|chunking|definitionsParsing|generation|npRecognition|other|parsing|titlesParsing]",
-			"grammaticalPhenomenaCoverage": "enumeration [anaphora|clauseStructure|coordination|npStructure|other|ppAttachment]",
+			"task": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"grammaticalPhenomenaCoverage": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"weightedGrammar": "boolean"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionOperationInfo",
 		"weight": 7.005,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionInfo"
 		],
 		"properties": {
 			"runningEnvironmentInfo": "Reference to runningEnvironmentInfo [w:4.003]",
 			"relatedLexiconInfo": "Reference to relatedLexiconInfo [w:3.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "textClassificationInfo",
 		"weight": 8.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusTextNgramInfo"
@@ -3646,28 +6450,34 @@
 			"textType": "string",
 			"register": "string",
 			"subject_topic": "string",
-			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizePerTextClassification": "Reference to sizePerTextClassification [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "audioClassificationInfo",
 		"weight": 8.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusAudioInfo"
 		],
 		"properties": {
-			"audioGenre": "enumeration [animalVocalizations|humanNonSpeech|instrumentalMusic|noise|other|song|speech]",
-			"speechGenre": "enumeration [airTrafficControl|broadcastNews|call-in|conversation|debate|emotionalExpressive|interview|lecture|meeting|narrative|other|presentation|questionAnswer|roundtable]",
+			"audioGenre": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"speechGenre": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"subject_topic": "string",
 			"register": "string",
-			"conformanceToClassificationScheme": "enumeration [ANC_domainClassification|ANC_genreClassification|BNC_domainClassification|BNC_textTypeClassification|DDC_classification|MeSH_classification|NLK_classification|PAROLE_genreClassification|PAROLE_topicClassification|UDC_classification|libraryOfCongress_domainClassification|libraryofCongressSubjectHeadings_classification|other]",
+			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sizePerAudioClassification": "Reference to sizePerAudioClassification [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "communicationInfo",
 		"weight": 9.001,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"personInfo",
 			"organizationInfo"
@@ -3682,17 +6492,20 @@
 			"country": "string",
 			"telephoneNumber": "string",
 			"faxNumber": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "staticElementInfo",
 		"weight": 10.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"imageContentInfo"
 		],
 		"properties": {
 			"typeOfElement": "string",
-			"bodyParts": "enumeration [arms|face|feet|hands|head|legs|mouth|none|wholeBody]",
+			"bodyParts": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"faceViews": "string",
 			"faceExpressions": "string",
 			"artifactParts": "string",
@@ -3701,11 +6514,14 @@
 			"thingDescription": "string",
 			"organizationDescription": "string",
 			"eventDescription": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageInfo",
 		"weight": 11.006,
+		"mandatory": true,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -3726,11 +6542,14 @@
 			"languageScript": "string",
 			"sizePerLanguage": "Reference to sizePerLanguage [w:3.002]",
 			"languageVarietyInfo": "Reference to languageVarietyInfo [w:5.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "imageContentInfo",
 		"weight": 12.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusImageInfo",
 			"languageDescriptionImageInfo",
@@ -3738,13 +6557,16 @@
 		],
 		"properties": {
 			"typeOfImageContent": "string",
-			"textIncludedInImage": "enumeration [captions|captureTime|none|subtitles]",
+			"textIncludedInImage": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"staticElementInfo": "Reference to staticElementInfo [w:10.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "organizationInfo",
 		"weight": 12.002,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"affiliation",
 			"annotatorOrganization",
@@ -3756,39 +6578,45 @@
 			"organizationShortName": "string",
 			"departmentName": "string",
 			"communicationInfo": "Reference to communicationInfo [w:9.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "inputInfo",
 		"weight": 13.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"toolServiceInfo"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
-			"resourceType": "enumeration [corpus]",
-			"modalityType": "enumeration [bodyGesture|combinationOfModalities|facialExpression|other|signLanguage|spokenLanguage|voice|writtenLanguage]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"modalityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"languageName": "string",
 			"languageId": "string",
 			"languageVarietyName": "string",
 			"mimeType": "string",
 			"characterEncoding": "string",
-			"annotationType": "enumeration [alignment|discourseAnnotation|discourseAnnotation-audienceReactions|discourseAnnotation-coreference|discourseAnnotation-dialogueActs|discourseAnnotation-discourseRelations|lemmatization|modalityAnnotation-bodyMovements|modalityAnnotation-facialExpressions|modalityAnnotation-gazeEyeMovements|modalityAnnotation-handArmGestures|modalityAnnotation-handManipulationOfObjects|modalityAnnotation-headMovements|modalityAnnotation-lipMovements|morphosyntacticAnnotation-bPosTagging|morphosyntacticAnnotation-posTagging|other|segmentation|semanticAnnotation|semanticAnnotation-certaintyLevel|semanticAnnotation-emotions|semanticAnnotation-entityMentions|semanticAnnotation-events|semanticAnnotation-namedEntities|semanticAnnotation-polarity|semanticAnnotation-questionTopicalTarget|semanticAnnotation-semanticClasses|semanticAnnotation-semanticRelations|semanticAnnotation-semanticRoles|semanticAnnotation-speechActs|semanticAnnotation-temporalExpressions|semanticAnnotation-textualEntailment|semanticAnnotation-wordSenses|speechAnnotation|speechAnnotation-orthographicTranscription|speechAnnotation-paralanguageAnnotation|speechAnnotation-phoneticTranscription|speechAnnotation-prosodicAnnotation|speechAnnotation-soundEvents|speechAnnotation-soundToTextAlignment|speechAnnotation-speakerIdentification|speechAnnotation-speakerTurns|stemming|structuralAnnotation|syntacticAnnotation-shallowParsing|syntacticAnnotation-subcategorizationFrames|syntacticAnnotation-treebanks|syntacticosemanticAnnotation-links|translation|transliteration]",
+			"annotationType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"annotationFormat": "string",
 			"tagset": "string",
-			"segmentationLevel": "enumeration [clause|diphone|frame|other|paragraph|phoneme|phrase|prosodicBoundaries|scene|sentence|shot|signal|syllable|topic|utterance|word|wordGroup]",
-			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]"
-		}
+			"segmentationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "dynamicElementInfo",
 		"weight": 13.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"videoContentInfo"
 		],
 		"properties": {
 			"typeOfElement": "string",
-			"bodyParts": "enumeration [arms|face|feet|hands|head|legs|mouth|none|wholeBody]",
+			"bodyParts": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"distractors": "string",
 			"interactiveMedia": "string",
 			"faceViews": "string",
@@ -3800,77 +6628,95 @@
 			"headMovement": "string",
 			"eyeMovement": "string",
 			"posesPerSubject": "integer"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "outputInfo",
 		"weight": 13.001,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"toolServiceInfo"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
-			"resourceType": "enumeration [corpus]",
-			"modalityType": "enumeration [bodyGesture|combinationOfModalities|facialExpression|other|signLanguage|spokenLanguage|voice|writtenLanguage]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"modalityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"languageName": "string",
 			"languageId": "string",
 			"languageVarietyName": "string",
 			"mimeType": "string",
 			"characterEncoding": "string",
-			"annotationType": "enumeration [alignment|discourseAnnotation|discourseAnnotation-audienceReactions|discourseAnnotation-coreference|discourseAnnotation-dialogueActs|discourseAnnotation-discourseRelations|lemmatization|modalityAnnotation-bodyMovements|modalityAnnotation-facialExpressions|modalityAnnotation-gazeEyeMovements|modalityAnnotation-handArmGestures|modalityAnnotation-handManipulationOfObjects|modalityAnnotation-headMovements|modalityAnnotation-lipMovements|morphosyntacticAnnotation-bPosTagging|morphosyntacticAnnotation-posTagging|other|segmentation|semanticAnnotation|semanticAnnotation-certaintyLevel|semanticAnnotation-emotions|semanticAnnotation-entityMentions|semanticAnnotation-events|semanticAnnotation-namedEntities|semanticAnnotation-polarity|semanticAnnotation-questionTopicalTarget|semanticAnnotation-semanticClasses|semanticAnnotation-semanticRelations|semanticAnnotation-semanticRoles|semanticAnnotation-speechActs|semanticAnnotation-temporalExpressions|semanticAnnotation-textualEntailment|semanticAnnotation-wordSenses|speechAnnotation|speechAnnotation-orthographicTranscription|speechAnnotation-paralanguageAnnotation|speechAnnotation-phoneticTranscription|speechAnnotation-prosodicAnnotation|speechAnnotation-soundEvents|speechAnnotation-soundToTextAlignment|speechAnnotation-speakerIdentification|speechAnnotation-speakerTurns|stemming|structuralAnnotation|syntacticAnnotation-shallowParsing|syntacticAnnotation-subcategorizationFrames|syntacticAnnotation-treebanks|syntacticosemanticAnnotation-links|translation|transliteration]",
+			"annotationType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"annotationFormat": "string",
 			"tagset": "string",
-			"segmentationLevel": "enumeration [clause|diphone|frame|other|paragraph|phoneme|phrase|prosodicBoundaries|scene|sentence|shot|signal|syllable|topic|utterance|word|wordGroup]",
-			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]"
-		}
+			"segmentationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "affiliation",
 		"weight": 13.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"personInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "annotatorOrganization",
 		"weight": 13.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "evaluatorOrganization",
 		"weight": 13.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "recorderOrganization",
 		"weight": 13.003,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"recordingInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "videoContentInfo",
 		"weight": 15.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusVideoInfo",
 			"languageDescriptionVideoInfo",
@@ -3878,34 +6724,40 @@
 		],
 		"properties": {
 			"typeOfVideoContent": "string",
-			"textIncludedInVideo": "enumeration [captions|none|subtitles]",
+			"textIncludedInVideo": "enumeration [[object Object]|[object Object]|[object Object]]",
 			"dynamicElementInfo": "Reference to dynamicElementInfo [w:13.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "audioFormatInfo",
 		"weight": 15.004,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusAudioInfo",
 			"lexicalConceptualResourceAudioInfo"
 		],
 		"properties": {
 			"mimeType": "string",
-			"signalEncoding": "enumeration [ADPCM|aLaw|linearPCM|other|µ-law]",
+			"signalEncoding": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"samplingRate": "integer",
-			"quantization": "enumeration [16|24|32|64|8]",
-			"byteOrder": "enumeration [bigEndian|littleEndian]",
-			"signConvention": "enumeration [floatingPoint|signedInteger|unsignedInteger]",
-			"audioQualityMeasuresIncluded": "enumeration [SNR|backgroundNoise|clippingRate|crossTalk|other]",
-			"numberOfTracks": "enumeration [1|2|4|8]",
-			"recordingQuality": "enumeration [high|low|medium|veryHigh|veryLow]",
+			"quantization": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"byteOrder": "enumeration [[object Object]|[object Object]]",
+			"signConvention": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"audioQualityMeasuresIncluded": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"numberOfTracks": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"recordingQuality": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"compressionInfo": "Reference to compressionInfo [w:3.001]",
 			"sizePerAudioFormat": "Reference to sizePerAudioFormat [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "imageFormatInfo",
 		"weight": 15.005,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusImageInfo",
 			"languageDescriptionImageInfo",
@@ -3913,19 +6765,22 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"colourSpace": "enumeration [4:2:2|CMYK|RGB|YUV]",
+			"colourSpace": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"colourDepth": "integer",
-			"visualModelling": "enumeration [2D|3D]",
-			"rasterOrVectorGraphics": "enumeration [raster|vector]",
-			"quality": "enumeration [high|low|medium|veryHigh|veryLow]",
+			"visualModelling": "enumeration [[object Object]|[object Object]]",
+			"rasterOrVectorGraphics": "enumeration [[object Object]|[object Object]]",
+			"quality": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"compressionInfo": "Reference to compressionInfo [w:3.001]",
 			"resolutionInfo": "Reference to resolutionInfo [w:3.001]",
 			"sizePerImageFormat": "Reference to sizePerImageFormat [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "videoFormatInfo",
 		"weight": 15.005,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusVideoInfo",
 			"languageDescriptionVideoInfo",
@@ -3933,28 +6788,31 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"colourSpace": "enumeration [4:2:2|CMYK|RGB|YUV]",
+			"colourSpace": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"colourDepth": "integer",
 			"frameRate": "integer",
-			"visualModelling": "enumeration [2D|3D]",
+			"visualModelling": "enumeration [[object Object]|[object Object]]",
 			"fidelity": "boolean",
 			"resolutionInfo": "Reference to resolutionInfo [w:3.001]",
 			"compressionInfo": "Reference to compressionInfo [w:3.001]",
 			"sizePerVideoFormat": "Reference to sizePerVideoFormat [w:3.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "participantInfo",
 		"weight": 19.001,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"personSourceSetInfo"
 		],
 		"properties": {
 			"alias": "string",
-			"ageGroup": "enumeration [adult|child|elderly|teenager]",
+			"ageGroup": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"age": "string",
-			"sex": "enumeration [female|male|unknown]",
-			"origin": "enumeration [native|nonNative|unknown]",
+			"sex": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"origin": "enumeration [[object Object]|[object Object]|[object Object]]",
 			"placeOfLiving": "string",
 			"placeOfBirth": "string",
 			"placeOfChildhood": "string",
@@ -3962,24 +6820,27 @@
 			"speakingImpairment": "string",
 			"hearingImpairment": "string",
 			"smokingHabits": "string",
-			"vocalTractConditions": "enumeration [dentalProsthesis|other]",
+			"vocalTractConditions": "enumeration [[object Object]|[object Object]]",
 			"profession": "string",
 			"height": "integer",
 			"weight": "integer",
 			"trainedSpeaker": "boolean",
 			"placeOfSecondEducation": "string",
 			"educationLevel": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "documentInfo",
 		"weight": 20.001,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"annotationManualStructured",
 			"evaluationReportStructured"
 		],
 		"properties": {
-			"documentType": "enumeration [article|book|booklet|inBook|inCollection|inProceedings|manual|mastersThesis|other|phdThesis|proceedings|techReport|unpublished]",
+			"documentType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"title": "string",
 			"author": "string",
 			"editor": "string",
@@ -3999,33 +6860,42 @@
 			"keywords": "string",
 			"documentLanguageName": "string",
 			"documentLanguageId": "string"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "annotationManualStructured",
 		"weight": 21.002,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"documentInfo": "Reference to documentInfo [w:20.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "evaluationReportStructured",
 		"weight": 21.002,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"documentInfo": "Reference to documentInfo [w:20.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "personInfo",
 		"weight": 26.005,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"annotatorPerson",
 			"recorderPerson",
@@ -4034,70 +6904,85 @@
 		"properties": {
 			"surname": "string",
 			"givenName": "string",
-			"sex": "enumeration [female|male|unknown]",
+			"sex": "enumeration [[object Object]|[object Object]|[object Object]]",
 			"position": "string",
 			"communicationInfo": "Reference to communicationInfo [w:9.001]",
 			"affiliation": "Reference to affiliation [w:13.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "annotatorPerson",
 		"weight": 27.006,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"personInfo": "Reference to personInfo [w:26.005]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "recorderPerson",
 		"weight": 27.006,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"recordingInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"personInfo": "Reference to personInfo [w:26.005]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "evaluatorPerson",
 		"weight": 27.006,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [sizePerLanguage]",
+			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"personInfo": "Reference to personInfo [w:26.005]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "personSourceSetInfo",
 		"weight": 31.002,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"captureInfo"
 		],
 		"properties": {
 			"numberOfPersons": "integer",
-			"ageOfPersons": "enumeration [adult|child|elderly|teenager]",
+			"ageOfPersons": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"ageRangeStart": "integer",
 			"ageRangeEnd": "integer",
-			"sexOfPersons": "enumeration [female|male|mixed|unknown]",
-			"originOfPersons": "enumeration [mixed|native|nonNative|unknown]",
+			"sexOfPersons": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"originOfPersons": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"dialectAccentOfPersons": "string",
 			"geographicDistributionOfPersons": "string",
-			"hearingImpairmentOfPersons": "enumeration [mixed|no|yes]",
-			"speakingImpairmentOfPersons": "enumeration [mixed|no|yes]",
+			"hearingImpairmentOfPersons": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"speakingImpairmentOfPersons": "enumeration [[object Object]|[object Object]|[object Object]]",
 			"numberOfTrainedSpeakers": "integer",
-			"speechInfluences": "enumeration [alcohol|hyperbaric|medication|other|sleepDeprivation]",
+			"speechInfluences": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"participantInfo": "Reference to participantInfo [w:19.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "captureInfo",
 		"weight": 37.003,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusAudioInfo",
 			"corpusVideoInfo",
@@ -4105,23 +6990,26 @@
 			"corpusTextNumericalInfo"
 		],
 		"properties": {
-			"capturingDeviceType": "enumeration [camera|closeTalkMicrophone|embeddedMicrophone|farfieldMicrophone|largeMembraneMicrophone|laryngograph|lavalierMicrophone|microphone|microphoneArray|other|studioEquipment|telephoneFixed|telephoneIP|telephoneMobile|webcam]",
+			"capturingDeviceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"capturingDeviceTypeDetails": "string",
 			"capturingDetails": "string",
-			"capturingEnvironment": "enumeration [complex|plain]",
+			"capturingEnvironment": "enumeration [[object Object]|[object Object]]",
 			"sensorTechnology": "string",
-			"sceneIllumination": "enumeration [daylight|fix|multipleSources|other|singleSource|variable]",
+			"sceneIllumination": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"personSourceSetInfo": "Reference to personSourceSetInfo [w:31.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceTextInfo",
 		"weight": 43.027,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
@@ -4131,37 +7019,43 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "recordingInfo",
 		"weight": 48.01,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusAudioInfo",
 			"corpusVideoInfo",
 			"corpusTextNumericalInfo"
 		],
 		"properties": {
-			"recordingDeviceType": "enumeration [DAT|dv|flash|hardDisk|other|soundBlasterCard|tapeVHS]",
+			"recordingDeviceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"recordingDeviceTypeDetails": "string",
 			"recordingPlatformSoftware": "string",
-			"recordingEnvironment": "enumeration [anechoicChamber|closedPublicPlace|conferenceRoom|inCar|industrial|lectureRoom|office|openPublicPlace|other|studio|transport]",
-			"sourceChannel": "enumeration [EMA|airflow|camcorder|internet|laryngograph|other|radio|telephone|tv|webCam]",
-			"sourceChannelType": "enumeration [3G|CDMA|DVB-C|DVB-S|DVB-T|GSM|ISDN|VOIP|other]",
+			"recordingEnvironment": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"sourceChannel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"sourceChannelType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"sourceChannelName": "string",
 			"sourceChannelDetails": "string",
 			"recorderPerson": "Reference to recorderPerson [w:27.006]",
 			"recorderOrganization": "Reference to recorderOrganization [w:13.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceAudioInfo",
 		"weight": 54.026,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
@@ -4171,16 +7065,19 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionTextInfo",
 		"weight": 54.031,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
@@ -4192,16 +7089,19 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceImageInfo",
 		"weight": 62.028,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
@@ -4211,16 +7111,19 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceVideoInfo",
 		"weight": 65.028,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
@@ -4230,36 +7133,42 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "toolServiceEvaluationInfo",
 		"weight": 70.014,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"toolServiceInfo"
 		],
 		"properties": {
 			"evaluated": "boolean",
-			"evaluationLevel": "enumeration [diagnostic|impact|technological|usage]",
-			"evaluationType": "enumeration [blackBox|glassBox]",
-			"evaluationCriteria": "enumeration [extrinsic|intrinsic]",
-			"evaluationMeasure": "enumeration [automatic|human]",
+			"evaluationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"evaluationType": "enumeration [[object Object]|[object Object]]",
+			"evaluationCriteria": "enumeration [[object Object]|[object Object]]",
+			"evaluationMeasure": "enumeration [[object Object]|[object Object]]",
 			"evaluationDetails": "string",
 			"evaluationReportStructured": "Reference to evaluationReportStructured [w:21.002]",
 			"evaluationReportUnstructured": "Reference to evaluationReportUnstructured [w:2.001]",
 			"evaluationTool": "Reference to evaluationTool [w:1.001]",
 			"evaluatorPerson": "Reference to evaluatorPerson [w:27.006]",
 			"evaluatorOrganization": "Reference to evaluatorOrganization [w:13.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionImageInfo",
 		"weight": 73.032,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
@@ -4271,16 +7180,19 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionVideoInfo",
 		"weight": 76.032,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
@@ -4292,11 +7204,14 @@
 			"domainInfo": "Reference to domainInfo [w:5.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "annotationInfo",
 		"weight": 83.016,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusTextInfo",
 			"corpusAudioInfo",
@@ -4306,17 +7221,17 @@
 			"corpusTextNgramInfo"
 		],
 		"properties": {
-			"annotationType": "enumeration [alignment|discourseAnnotation|discourseAnnotation-audienceReactions|discourseAnnotation-coreference|discourseAnnotation-dialogueActs|discourseAnnotation-discourseRelations|lemmatization|modalityAnnotation-bodyMovements|modalityAnnotation-facialExpressions|modalityAnnotation-gazeEyeMovements|modalityAnnotation-handArmGestures|modalityAnnotation-handManipulationOfObjects|modalityAnnotation-headMovements|modalityAnnotation-lipMovements|morphosyntacticAnnotation-bPosTagging|morphosyntacticAnnotation-posTagging|other|segmentation|semanticAnnotation|semanticAnnotation-certaintyLevel|semanticAnnotation-emotions|semanticAnnotation-entityMentions|semanticAnnotation-events|semanticAnnotation-namedEntities|semanticAnnotation-polarity|semanticAnnotation-questionTopicalTarget|semanticAnnotation-semanticClasses|semanticAnnotation-semanticRelations|semanticAnnotation-semanticRoles|semanticAnnotation-speechActs|semanticAnnotation-temporalExpressions|semanticAnnotation-textualEntailment|semanticAnnotation-wordSenses|speechAnnotation|speechAnnotation-orthographicTranscription|speechAnnotation-paralanguageAnnotation|speechAnnotation-phoneticTranscription|speechAnnotation-prosodicAnnotation|speechAnnotation-soundEvents|speechAnnotation-soundToTextAlignment|speechAnnotation-speakerIdentification|speechAnnotation-speakerTurns|stemming|structuralAnnotation|syntacticAnnotation-shallowParsing|syntacticAnnotation-subcategorizationFrames|syntacticAnnotation-treebanks|syntacticosemanticAnnotation-links|translation|transliteration]",
-			"annotatedElements": "enumeration [backgroundNoise|discourseMarkers|mispronunciations|other|speakerNoise|truncation]",
+			"annotationType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"annotatedElements": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"annotationStandoff": "boolean",
-			"segmentationLevel": "enumeration [clause|diphone|frame|other|paragraph|phoneme|phrase|prosodicBoundaries|scene|sentence|shot|signal|syllable|topic|utterance|word|wordGroup]",
+			"segmentationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"annotationFormat": "string",
 			"tagset": "string",
 			"tagsetLanguageId": "string",
 			"tagsetLanguageName": "string",
-			"conformanceToStandardsBestPractices": "enumeration [BLM|CES|EAGLES|EML|EMMA|GMX|GrAF|HamNoSys|ISO12620|ISO16642|ISO1987|ISO26162|ISO30042|ISO704|InkML|LMF|MAF|MLIF|MULTEXT|MUMIN|OAXAL|OWL|RDF|SKOS|SRX|SemAF|SemAF_DA|SemAF_DS|SemAF_NE|SemAF_SRL|SynAF|TBX|TEI|TEI_P3|TEI_P4|TEI_P5|TMX|TimeML|WordNet|XCES|XLIFF|multimodalInteractionFramework|other|pennTreeBank|pragueTreebank]",
+			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"theoreticModel": "string",
-			"annotationMode": "enumeration [automatic|interactive|manual|mixed]",
+			"annotationMode": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"annotationModeDetails": "string",
 			"annotationStartDate": "date",
 			"annotationEndDate": "date",
@@ -4328,17 +7243,20 @@
 			"sizePerAnnotation": "Reference to sizePerAnnotation [w:3.002]",
 			"annotatorPerson": "Reference to annotatorPerson [w:27.006]",
 			"annotatorOrganization": "Reference to annotatorOrganization [w:13.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "toolServiceInfo",
 		"weight": 110.023,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"toolServiceInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [corpus]",
-			"toolServiceType": "enumeration [architecture|infrastructure|nlpDevelopmentEnvironment|other|platform|service|suiteOfTools|tool]",
+			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"toolServiceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"toolServiceSubtype": "string",
 			"languageDependent": "boolean",
 			"inputInfo": "Reference to inputInfo [w:13.001]",
@@ -4346,16 +7264,19 @@
 			"toolServiceOperationInfo": "Reference to toolServiceOperationInfo [w:6.004]",
 			"toolServiceEvaluationInfo": "Reference to toolServiceEvaluationInfo [w:70.014]",
 			"toolServiceCreationInfo": "Reference to toolServiceCreationInfo [w:4.002]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusTextNgramInfo",
 		"weight": 145.05,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"ngramInfo": "Reference to ngramInfo [w:7.001]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
@@ -4369,16 +7290,19 @@
 			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"creationInfo": "Reference to creationInfo [w:4.003]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusTextInfo",
 		"weight": 145.05,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
@@ -4392,16 +7316,19 @@
 			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusTextNumericalInfo",
 		"weight": 192.042,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
 			"sizeInfo": "Reference to sizeInfo [w:2.001]",
 			"textNumericalContentInfo": "Reference to textNumericalContentInfo [w:1.001]",
@@ -4411,16 +7338,19 @@
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"annotationInfo": "Reference to annotationInfo [w:83.016]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusImageInfo",
 		"weight": 199.054,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
@@ -4435,11 +7365,14 @@
 			"captureInfo": "Reference to captureInfo [w:37.003]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionMediaType",
 		"weight": 203.096,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionInfo"
 		],
@@ -4447,11 +7380,14 @@
 			"languageDescriptionTextInfo": "Reference to languageDescriptionTextInfo [w:54.031]",
 			"languageDescriptionVideoInfo": "Reference to languageDescriptionVideoInfo [w:76.032]",
 			"languageDescriptionImageInfo": "Reference to languageDescriptionImageInfo [w:73.032]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceMediaType",
 		"weight": 224.11,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceInfo"
 		],
@@ -4460,46 +7396,55 @@
 			"lexicalConceptualResourceAudioInfo": "Reference to lexicalConceptualResourceAudioInfo [w:54.026]",
 			"lexicalConceptualResourceVideoInfo": "Reference to lexicalConceptualResourceVideoInfo [w:65.028]",
 			"lexicalConceptualResourceImageInfo": "Reference to lexicalConceptualResourceImageInfo [w:62.028]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "languageDescriptionInfo",
 		"weight": 226.107,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"languageDescriptionInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [corpus]",
-			"languageDescriptionType": "enumeration [grammar|other]",
+			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"languageDescriptionType": "enumeration [[object Object]|[object Object]]",
 			"languageDescriptionEncodingInfo": "Reference to languageDescriptionEncodingInfo [w:7.001]",
 			"languageDescriptionOperationInfo": "Reference to languageDescriptionOperationInfo [w:7.005]",
 			"languageDescriptionPerformanceInfo": "Reference to languageDescriptionPerformanceInfo [w:3.001]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"languageDescriptionMediaType": "Reference to languageDescriptionMediaType [w:203.096]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "lexicalConceptualResourceInfo",
 		"weight": 237.115,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [corpus]",
-			"lexicalConceptualResourceType": "enumeration [computationalLexicon|framenet|lexicon|machineReadableDictionary|ontology|other|terminologicalResource|thesaurus|wordList|wordnet]",
+			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"lexicalConceptualResourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lexicalConceptualResourceEncodingInfo": "Reference to lexicalConceptualResourceEncodingInfo [w:7.001]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"lexicalConceptualResourceMediaType": "Reference to lexicalConceptualResourceMediaType [w:224.11]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusAudioInfo",
 		"weight": 251.066,
+		"mandatory": false,
+		"listproperty": false,
 		"usage": [
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
@@ -4516,16 +7461,19 @@
 			"captureInfo": "Reference to captureInfo [w:37.003]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusVideoInfo",
 		"weight": 256.065,
+		"mandatory": false,
+		"listproperty": true,
 		"usage": [
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [text]",
+			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
 			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
 			"languageInfo": "Reference to languageInfo [w:11.006]",
 			"modalityInfo": "Reference to modalityInfo [w:5.003]",
@@ -4542,11 +7490,14 @@
 			"captureInfo": "Reference to captureInfo [w:37.003]",
 			"creationInfo": "Reference to creationInfo [w:4.003]",
 			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusMediaType",
 		"weight": 1188.328,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"corpusInfo"
 		],
@@ -4557,17 +7508,21 @@
 			"corpusImageInfo": "Reference to corpusImageInfo [w:199.054]",
 			"corpusTextNumericalInfo": "Reference to corpusTextNumericalInfo [w:192.042]",
 			"corpusTextNgramInfo": "Reference to corpusTextNgramInfo [w:145.05]"
-		}
+		},
+		"mysql": []
 	},
 	{
 		"keyname": "corpusInfo",
 		"weight": 1189.329,
+		"mandatory": true,
+		"listproperty": false,
 		"usage": [
 			"corpusInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [corpus]",
+			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
 			"corpusMediaType": "Reference to corpusMediaType [w:1188.328]"
-		}
+		},
+		"mysql": []
 	}
 ]
