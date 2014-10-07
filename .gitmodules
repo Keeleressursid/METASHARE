@@ -1,0 +1,3 @@
+[submodule "entulib"]
+	path = entulib
+	url = git@github.com:mitselek/entulib.git
