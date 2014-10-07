@@ -35,6 +35,9 @@ function indexByKeyVal(source, key, val) {
             return i
     return -1
 }
+function getByKeyname(keyname) {
+    return entity_definitions[indexByKeyVal(entity_definitions, 'keyname', keyname)]
+}
 
 var stringifier = function(o) {
     var cache = [];
@@ -45,7 +48,8 @@ var stringifier = function(o) {
                 if (value.weight === 1) {
                     return value.datatype + (value.validator.length > 0 ? ' [' + value.validator.join('|') + ']' : '')
                 }
-                return 'Reference to ' + value.keyname + ' [w:' + value.weight  + ']'
+                return 'reference'
+                // return 'Reference to ' + value.keyname + ' [w:' + value.weight  + ']'
             }
             // Store value in our collection
             cache.push(value)
@@ -63,7 +67,7 @@ var parseElementRec = function parseElementRec(parent_element_name, CMD_Element)
     element.datatype = ''
     element.validator = []
     element.usage = []
-    element.mysql = []
+    // element.mysql = []
 
     var addUsage = function addUsage(child, parent_element_name) {
         if (child.usage.indexOf(parent_element_name) === -1)
@@ -131,7 +135,7 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
     // element.validator = ''
     element.usage = []
     element.properties = {}
-    element.mysql = []
+    // element.mysql = []
 
     // if (entity_definitions[element.keyname] !== undefined)
     //     return entity_definitions[element.keyname]
@@ -154,7 +158,7 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
         CMD_Component.CMD_Element.forEach(function(el) {
             var subelement = parseElementRec(element.keyname, el)
             element.weight = Math.round((element.weight + subelement.weight)*1000)/1000
-            element.properties[subelement.keyname] = subelement
+            element.properties[subelement.keyname] = subelement.datatype
         })
     }
 
@@ -170,10 +174,10 @@ var parseComponentRec = function parseComponentRec(parent_element_name, CMD_Comp
     return element
 }
 
-var setPropertyType = function setPropertyType(value_scheme) {
-    if (element)
-    return definition
-}
+// var setPropertyType = function setPropertyType(value_scheme) {
+//     if (element)
+//     return definition
+// }
 
 resource_types.forEach(function(resource_type) {
     var CMD_root = resource_type.CMD_root
@@ -186,12 +190,96 @@ entity_definitions.sort(function(a,b) {
 })
 
 entity_definitions.forEach(function(entity_definition) {
-    entity_definition.usage.forEach(function(used_by_def) {
-        // entity_definition.mysql.push("INSERT IGNORE INTO entity_definition SET keyname = '" + used_by_def + "' created = now();")
-    })
-})
+    if (entity_definition.weight === 1) {
+        if (entity_definition.datatype === 'enumeration') {
+            // console.log('adding mysql to ' + entity_definition.keyname)
+            mysql.push("INSERT INTO entity_definition SET keyname = 'CL" + entity_definition.keyname + "', created = now();")
+            mysql.push("INSERT INTO property_definition SET keyname = 'CL" + entity_definition.keyname + "-name', entity_definition_keyname = 'CL" + entity_definition.keyname + "', dataproperty = 'name', datatype = 'string', ordinal = 1, public = 1, mandatory = 1, search = 1, created = now();")
+            mysql.push("INSERT INTO property_definition SET keyname = 'CL" + entity_definition.keyname + "-description', entity_definition_keyname = 'CL" + entity_definition.keyname + "', dataproperty = 'description', datatype = 'text', ordinal = 2, public = 1, mandatory = 0, search = 1, created = now();")
+            mysql.push("INSERT INTO translation SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', field = 'label', value = '" + entity_definition.keyname + "';")
+            mysql.push("INSERT INTO translation SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', field = 'label_plural', value = '" + entity_definition.keyname + "';")
+            mysql.push("INSERT INTO translation SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', field = 'displayname', value = '@name@';")
+            mysql.push("INSERT INTO translation SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', field = 'displayinfo', value = '@description@';")
+            mysql.push("INSERT INTO translation SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', field = 'sort', value = '@name@';")
+            mysql.push("INSERT INTO translation SET property_definition_keyname = 'CL" + entity_definition.keyname + "-name', field = 'label', value = 'Name';")
+            mysql.push("INSERT INTO translation SET property_definition_keyname = 'CL" + entity_definition.keyname + "-name', field = 'label_plural', value = 'Names';")
+            mysql.push("INSERT INTO translation SET property_definition_keyname = 'CL" + entity_definition.keyname + "-description', field = 'label', value = 'Description';")
+            mysql.push("INSERT INTO translation SET property_definition_keyname = 'CL" + entity_definition.keyname + "-description', field = 'label_plural', value = 'Descriptions';")
+            entity_definition.validator.forEach(function(cl) {
+                mysql.push("INSERT INTO entity SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', sharing = 'public', created = now(), old_id = 'temporarykey';")
+                mysql.push("INSERT INTO property SET property_definition_keyname = 'CL" + entity_definition.keyname + "-name', entity_id = (SELECT id FROM entity WHERE old_id = 'temporarykey'), value_display = '" + cl.item + "', value_string = '" + cl.item + "', created = now();")
+                mysql.push("INSERT INTO property SET property_definition_keyname = 'CL" + entity_definition.keyname + "-description', entity_id = (SELECT id FROM entity WHERE old_id = 'temporarykey'), value_display = '" + cl.AppInfo + "', value_text = '" + cl.AppInfo + "', created = now();")
+                mysql.push("UPDATE entity SET old_id = null WHERE old_id = 'temporarykey';")
+            })
+        }
+    } else { // entity_definition.weight > 1
+        var property_ordinal = 1
+        mysql.push("INSERT INTO entity_definition SET keyname = '" + entity_definition.keyname + "', created = now();")
+        mysql.push("INSERT INTO translation SET entity_definition_keyname = '" + entity_definition.keyname + "', field = 'label', value = '" + entity_definition.keyname + "';")
+        mysql.push("INSERT INTO translation SET entity_definition_keyname = '" + entity_definition.keyname + "', field = 'label_plural', value = '" + entity_definition.keyname + "';")
+        // mysql.push("INSERT INTO translation SET entity_definition_keyname = '" + entity_definition.keyname + "', field = 'displayname', value = '';")
+        // mysql.push("INSERT INTO translation SET entity_definition_keyname = '" + entity_definition.keyname + "', field = 'displayinfo', value = '';")
+        // mysql.push("INSERT INTO translation SET entity_definition_keyname = '" + entity_definition.keyname + "', field = 'sort', value = '';")
+        Object.keys(entity_definition.properties).forEach(function(property_definition_keyname) {
+            property_element = getByKeyname(property_definition_keyname)
+            if (entity_definition.properties[property_definition_keyname] === 'enumeration') {
+                mysql.push("INSERT INTO property_definition SET keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "'"
+                    + ", entity_definition_keyname = '" + entity_definition.keyname + "'"
+                    + ", dataproperty = '" + property_definition_keyname + "'"
+                    + ", datatype = 'reference'"
+                    + ", ordinal = " + property_ordinal++
+                    + ", multiplicity = " + (property_element.listproperty ? 'null' : 1)
+                    + ", public = 1"
+                    + ", mandatory = " + (property_element.mandatory ? 1 : 0)
+                    + ", search = 1"
+                    + ", classifying_entity_definition_keyname = 'CL" + property_definition_keyname + "'"
+                    + ", created = now();")
+            } else if (typeof entity_definition.properties[property_definition_keyname] === 'object') {
+                mysql.push("INSERT INTO property_definition SET keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "'"
+                    + ", entity_definition_keyname = '" + entity_definition.keyname + "'"
+                    + ", dataproperty = '" + property_definition_keyname + "'"
+                    + ", datatype = 'reference'"
+                    + ", ordinal = " + property_ordinal++
+                    + ", multiplicity = " + (property_element.listproperty ? 'null' : 1)
+                    + ", public = 1"
+                    + ", mandatory = " + (property_element.mandatory ? 1 : 0)
+                    + ", search = 1"
+                    + ", classifying_entity_definition_keyname = '" + property_definition_keyname + "'"
+                    + ", created = now();")
+            } else if (entity_definition.properties[property_definition_keyname] !== 'string'
+                && entity_definition.properties[property_definition_keyname] !== 'date'
+                && entity_definition.properties[property_definition_keyname] !== 'boolean'
+                && entity_definition.properties[property_definition_keyname] !== 'integer') {
+                throw(stringifier([typeof entity_definition.properties[property_definition_keyname], entity_definition.properties[property_definition_keyname], entity_definition]))
+            }
 
+            mysql.push("INSERT INTO translation SET property_definition_keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "', field = 'label', value = '" + property_definition_keyname + "';")
+            mysql.push("INSERT INTO translation SET property_definition_keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "', field = 'label_plural', value = '" + property_definition_keyname + "';")
+        })
+    }
+    // entity_definition.usage.forEach(function(used_by_def) {
+    //     // entity_definition.mysql.push("INSERT IGNORE INTO entity_definition SET keyname = '" + used_by_def + "' created = now();")
+    // })
+})
+// entity_definitions.push(mysql)
 fs.writeFileSync('parsed_resources.json', stringifier(entity_definitions))
+fs.writeFileSync('clarin2entu.sql', mysql.join('\n'))
 console.log('\n===== ' + Date.now()/1000 + ' == END ============\n\n')
 
 
+
+// SET @edk = 'CLcolourSpace';
+// DELETE FROM property WHERE entity_id IN (SELECT id FROM entity WHERE entity_definition_keyname = @edk);
+// DELETE FROM property WHERE value_reference IN (SELECT id FROM entity WHERE entity_definition_keyname = @edk);
+// DELETE FROM property WHERE property_definition_keyname IN (SELECT keyname FROM property_definition WHERE classifying_entity_definition_keyname = @edk);
+// DELETE FROM relationship WHERE entity_id IN (SELECT id FROM entity WHERE entity_definition_keyname = @edk);
+// DELETE FROM relationship WHERE related_entity_id IN (SELECT id FROM entity WHERE entity_definition_keyname = @edk);
+// DELETE FROM entity WHERE entity_definition_keyname = @edk;
+// DELETE FROM relationship WHERE entity_definition_keyname = @edk;
+// DELETE FROM relationship WHERE related_entity_definition_keyname = @edk;
+// DELETE FROM translation WHERE entity_definition_keyname = @edk;
+// DELETE FROM translation WHERE property_definition_keyname IN (SELECT keyname FROM property_definition WHERE entity_definition_keyname = @edk);
+// DELETE FROM translation WHERE property_definition_keyname IN (SELECT keyname FROM property_definition WHERE classifying_entity_definition_keyname = @edk);
+// DELETE FROM property_definition WHERE entity_definition_keyname = @edk;
+// DELETE FROM property_definition WHERE classifying_entity_definition_keyname = @edk;
+// DELETE FROM entity_definition WHERE keyname = @edk;

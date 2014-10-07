@@ -1,0 +1,85 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1355150532312/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0000-4</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1355150532312</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+    <ResourceProxyList>
+     <ResourceProxy id="resourcepage">
+       <ResourceType mimetype="text/html">LandingPage</ResourceType>
+       <ResourceRef>http://hdl.handle.net/11297/1-00-0000-0000-0000-0002-0</ResourceRef>
+      </ResourceProxy>
+    </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Aligned Estonian-Icelandic ICD-10</resourceName>
+            <description xml:lang="en">Aligned Estonian and Icelandic versions of WHO-s International Classification of Diseases (ICD-10)</description>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>underNegotiation</availability>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="et">Muischnek</surname>
+               <givenName xml:lang="et">Kadri</givenName>
+               <communicationInfo>
+                  <email>korpus.info@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-01-07</metadataCreationDate>
+            <metadataLastDateUpdated>2013-01-15</metadataLastDateUpdated>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="et">Muischnek</surname>
+                  <givenName xml:lang="et">Kadri</givenName>
+                  <communicationInfo>
+                     <email>korpus.info@ut.ee</email>
+                  </communicationInfo>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <lexicalConceptualResourceInfo>
+            <resourceType>lexicalConceptualResource</resourceType>
+            <lexicalConceptualResourceType>terminologicalResource</lexicalConceptualResourceType>
+            <lexicalConceptualResourceMediaType>
+               <lexicalConceptualResourceTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>bilingual</lingualityType>
+                     <multilingualityType>parallel</multilingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                     <languageScript>latin</languageScript>
+                  </languageInfo>
+                  <languageInfo>
+                     <languageId>is</languageId>
+                     <languageName>Icelandic</languageName>
+                     <languageScript>latin</languageScript>
+                  </languageInfo>
+                  <sizeInfo>
+                     <size>14644</size>
+                     <sizeUnit>entries</sizeUnit>
+                  </sizeInfo>
+               </lexicalConceptualResourceTextInfo>
+            </lexicalConceptualResourceMediaType>
+         </lexicalConceptualResourceInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

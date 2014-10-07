@@ -1,0 +1,107 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0000-F</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType>LandingPage</ResourceType>
+       <ResourceRef>http://lamus.phon.ioc.ee/</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Estonian Foreign Accent Corpus</resourceName>
+            <description xml:lang="en">Estonian Foreign Accent Corpus includes speech recoridngs of non-native Estonian speech. Among speakers different first language backgrounds are represented: Russian (50 speakers), Finnish (30), German (15), French (12), Italian (4), Spanish (4), English (4), Lithuanian (3), Danish (2), Dutch (2), Slovak (2), Japanese (1), Latvian (1), Polish (1), Portuguese (1), Swedish (1). For the reference material a subset of native Estonian speakers (10 male, 10 female) has been recorded, as well. The final target will be 200 speakers. The corpus includes some spontaneous speech (subject’s self-introduction and description of three pictures), 136 isolated sentences (including main phonological features of Estonian - all vowels and consonats in different quantity oppositions, palatalisation, etc), and two short passages; ca 25 minutes of speech per speaker. </description>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>CLARIN_ACA</licence>
+               <restrictionsOfUse>academic-nonCommercialUse</restrictionsOfUse>
+               <restrictionsOfUse>attribution</restrictionsOfUse>
+               <distributionAccessMedium>accessibleThroughInterface</distributionAccessMedium>
+               <executionLocation>http://lamus.phon.ioc.ee/</executionLocation>
+               <userNature>academic</userNature>
+            </licenceInfo>
+            <iprHolderOrganization>
+               <role>iprHolder</role>
+               <organizationInfo>
+                  <organizationName xml:lang="en"> Tallinn University of Technology</organizationName>
+                  <departmentName xml:lang="en">Institute of Cybernetics</departmentName>
+                  <communicationInfo>
+                     <email>einar@ioc.ee </email>
+                  </communicationInfo>
+               </organizationInfo>
+            </iprHolderOrganization>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="en">Meister</surname>
+               <givenName xml:lang="en">Einar</givenName>
+               <sex>male</sex>
+               <communicationInfo>
+                  <email>einar@ioc.ee</email>
+               </communicationInfo>
+               <affiliation>
+                  <role>affiliation</role>
+                  <organizationInfo>
+                     <organizationName xml:lang="en"> Tallinn University of Technology</organizationName>
+                     <departmentName xml:lang="en">Institute of Cybernetics</departmentName>
+                     <communicationInfo>
+                        <email>einar@ioc.ee </email>
+                     </communicationInfo>
+                  </organizationInfo>
+               </affiliation>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-01-09</metadataCreationDate>
+            <metadataLastDateUpdated>2013-01-09</metadataLastDateUpdated>
+         </metadataInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusAudioInfo>
+                  <mediaType>audio</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>spokenLanguage</modalityType>
+                  </modalityInfo>
+                  <audioSizeInfo>
+                     <sizeInfo>
+                        <size>63</size>
+                        <sizeUnit>hours</sizeUnit>
+                     </sizeInfo>
+                  </audioSizeInfo>
+                  <audioFormatInfo>
+                     <mimeType>Audio/wav </mimeType>
+                     <samplingRate>44100</samplingRate>
+                     <quantization>16</quantization>
+                     <recordingQuality>high</recordingQuality>
+                  </audioFormatInfo>
+               </corpusAudioInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

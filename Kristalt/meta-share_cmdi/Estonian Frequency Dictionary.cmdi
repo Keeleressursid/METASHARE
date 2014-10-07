@@ -1,0 +1,136 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1355150532312/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0001-0</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1355150532312</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType>LandingPage</ResourceType>
+       <ResourceRef>http://www.cl.ut.ee/ressursid/sagedused/</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Estonian Frequency Dictionary</resourceName>
+            <description xml:lang="en">Frequency lists based on 0,5 million words of fiction texts (representing years 1992-1998), and 0,5 million words newspaper texts (from years 1995-1999).
+Three frequency lists, with words and their frequencies in the sub-corpora and in the whole corpus:
+10 000 lemmas (includes also POS)
+1000 most frequent word forms
+100 words representing only one of the sub-corpora - words that counted as frequent in one of the sub-corpora, but were missing in the other. 
+</description>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-unrestrictedUse</availability>
+            <licenceInfo>
+               <licence>CC-BY</licence>
+               <restrictionsOfUse>attribution</restrictionsOfUse>
+               <distributionAccessMedium>downloadable</distributionAccessMedium>
+               <downloadLocation>http://www.cl.ut.ee/ressursid/sagedused/</downloadLocation>
+            </licenceInfo>
+            <iprHolderPerson>
+               <role>iprHolder</role>
+               <personInfo>
+                  <surname xml:lang="et">Muischnek</surname>
+                  <givenName xml:lang="et">Kadri</givenName>
+                  <communicationInfo>
+                     <email>korpus.info@ut.ee</email>
+                  </communicationInfo>
+               </personInfo>
+            </iprHolderPerson>
+            <iprHolderPerson>
+               <role>iprHolder</role>
+               <personInfo>
+                  <surname xml:lang="en">Kaalep</surname>
+                  <givenName xml:lang="en">Heiki-Jaan</givenName>
+                  <sex>male</sex>
+                  <communicationInfo>
+                     <email>heiki-jaan.kaalep@ut.ee</email>
+                  </communicationInfo>
+                  <affiliation>
+                     <role>affiliation</role>
+                     <organizationInfo>
+                        <organizationName xml:lang="en">Filosoft</organizationName>
+                        <communicationInfo>
+                           <email>filosoft@filosoft.ee</email>
+                           <url>http://www.filosoft.ee</url>
+                        </communicationInfo>
+                     </organizationInfo>
+                  </affiliation>
+               </personInfo>
+            </iprHolderPerson>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="et">Muischnek</surname>
+               <givenName xml:lang="et">Kadri</givenName>
+               <communicationInfo>
+                  <email>korpus.info@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-01-10</metadataCreationDate>
+            <metadataLastDateUpdated>2013-01-10</metadataLastDateUpdated>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="et">Liin</surname>
+                  <givenName xml:lang="et">Krista</givenName>
+                  <sex>female</sex>
+                  <communicationInfo>
+                     <email>Krista.Liin@ut.ee</email>
+                     <country>Estonia</country>
+                  </communicationInfo>
+                  <affiliation>
+                     <role>affiliation</role>
+                     <organizationInfo>
+                        <organizationName xml:lang="et">Tartu Ülikool</organizationName>
+                        <organizationName xml:lang="en">University of Tartu</organizationName>
+                        <organizationShortName xml:lang="en">UT</organizationShortName>
+                        <communicationInfo>
+                           <email>ekrk.groups@lists.ut.ee</email>
+                           <url>http://www.ut.ee</url>
+                           <city>Tartu</city>
+                           <country>Estonia</country>
+                        </communicationInfo>
+                     </organizationInfo>
+                  </affiliation>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <lexicalConceptualResourceInfo>
+            <resourceType>lexicalConceptualResource</resourceType>
+            <lexicalConceptualResourceType>wordList</lexicalConceptualResourceType>
+            <lexicalConceptualResourceMediaType>
+               <lexicalConceptualResourceTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <sizeInfo>
+                     <size>10000</size>
+                     <sizeUnit>words</sizeUnit>
+                  </sizeInfo>
+               </lexicalConceptualResourceTextInfo>
+            </lexicalConceptualResourceMediaType>
+         </lexicalConceptualResourceInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

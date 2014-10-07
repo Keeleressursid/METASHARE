@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1290431694581/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1290431694581</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <ToolProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Rule-based morphosyntactic disambiguator for Estonian</ResourceName>
+                <ResourceTitle xml:lang="en">Rule-based morphosyntactic disambiguator for Estonian</ResourceTitle>
+                <ResourceClass>Tool</ResourceClass>
+                <Version xml:lang="en">27.04.2011</Version>
+                <LifeCycleStatus>development</LifeCycleStatus>
+                <StartYear>1996</StartYear>
+                
+                <PublicationDate>27.04.2011</PublicationDate>
+                <LastUpdate>27.04.2011</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">University of Tartu</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Ulikooli 18</Address>
+                    <Region xml:lang="en"/>
+                    <ContinentName xml:lang="en">Europe</ContinentName>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            
+            
+            <Documentations>
+                <Documentation>
+                    <DocumentationType xml:lang="en">website</DocumentationType>
+                    <FileName xml:lang="en"/>
+                    <Url>http://www.ut.ee/~kaili/grammatika</Url>
+                    <DocumentationLanguages>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <DocumentationLanguage>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Language>
+                                <LanguageName xml:lang="en">Estonian</LanguageName>
+                                <ISO639>
+                                    <iso-639-3-code>est</iso-639-3-code>
+                                </ISO639>
+                            </Language>
+                        </DocumentationLanguage>
+                    </DocumentationLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en">General documentation (workflow, requirements etc)</Description>
+                    </Descriptions>
+                </Documentation>
+                <Documentation>
+               <DocumentationType>website</DocumentationType>
+               <Url>http://www.ut.ee/~kaili/parser/demo/morftags.html</Url>
+               <DocumentationLanguages>
+                  <DocumentationLanguage>
+                     <Language>
+                        <LanguageName>Estonian</LanguageName>
+                        <ISO639>
+                           <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                     </Language>
+                  </DocumentationLanguage>
+               </DocumentationLanguages>
+               <Descriptions>
+                  <Description>Morphological tagset</Description>
+               </Descriptions>
+            </Documentation>
+            <Documentation>
+               <DocumentationType>website</DocumentationType>
+               <Url>http://www.ut.ee/~kaili/Korpus/pindmine/labels.pdf</Url>
+               <DocumentationLanguages>
+                  <DocumentationLanguage>
+                     <Language>
+                        <LanguageName>Estonian</LanguageName>
+                        <ISO639>
+                           <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                     </Language>
+                  </DocumentationLanguage>
+               </DocumentationLanguages>
+               <Descriptions>
+                  <Description>Syntactic tagset</Description>
+               </Descriptions>
+            </Documentation>
+            <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Documentations>
+            <Creators>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Creator>
+                    <Contact>
+                        <Person>Tiina Puolakainen</Person>
+                        <Role xml:lang="en">resource creator</Role>
+                        <Address xml:lang="en"/>
+                        <Email>tiina.puolakainen@ut.ee</Email>
+                        <Department xml:lang="en">Institute of Computer Science, Faculty of Mathematics and Computer Science</Department>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url>https://www.etis.ee/portaal/isikuCV.aspx?PersonVID=4935&amp;lang=en</Url>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Creator>
+            </Creators>
+            <Access>
+                <Availability xml:lang="en">freely usable for non-commercial usage (inform resource creator)</Availability>
+                <DistributionMedium xml:lang="en">download</DistributionMedium>
+                <CatalogueLink>http://www.ut.ee/~kaili/grammatika</CatalogueLink>
+                <Price xml:lang="en">free</Price>
+                <Licence xml:lang="en">CLARIN-ACA</Licence>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Copyright>
+                <CopyrightLicence>
+                    <OpenSource>false</OpenSource>
+                    <LicenceType xml:lang="en">CLARIN-ACA</LicenceType>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CopyrightLicence>
+                <UsageLicence>
+                    <Availability xml:lang="en">free for academic use</Availability>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </UsageLicence>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Copyright>
+            <ResourceContext>
+                <FieldOfResearch>Syntax</FieldOfResearch>
+                <Genre>unspecified</Genre>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+            </ResourceContext>
+            <ToolContext>
+                <ToolClassification>
+                    <ToolType xml:lang="en">syntactic parser</ToolType>
+                    <ClassificationType xml:lang="en">annotate</ClassificationType>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ToolClassification>
+                <Distribution>
+                    <DistributionType>binary</DistributionType>
+                    <DeliveryFormat xml:lang="en">tar.gz of the compiled rule files</DeliveryFormat>
+                    <DistributionMedium xml:lang="en">download</DistributionMedium>
+                    <DistributionFiles>
+                        <DistributionFile>
+                            <FileName xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DistributionFile>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </DistributionFiles>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Distribution>
+                
+                <DocumentationLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <DocumentationLanguage>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <Language>
+                            <LanguageName xml:lang="en">Estonian</LanguageName>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </DocumentationLanguage>
+                </DocumentationLanguages>
+                <Inputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Input>
+                        <InputType xml:lang="en"/>
+                        <Schema xml:lang="en"/>
+                        <InputResource xml:lang="en">written corpus</InputResource>
+                        <InputParameters>
+                            <InputParameter xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </InputParameters>
+                        <InputResourceConditions>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Substructures>
+                                <Substructure>
+                                    <substructureName xml:lang="en"/>
+                                    <substructureValue/>
+                                    <substructureType xml:lang="en">Morphological annotation</substructureType>
+                                    <SubstructureLanguage>
+                                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                                        <ISO639>
+                                            <iso-639-1-code>et</iso-639-1-code>
+                                        </ISO639>
+                                    </SubstructureLanguage>
+                                    <Descriptions>
+                                        <Description xml:lang="en"/>
+                                    </Descriptions>
+                                </Substructure>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </Substructures>
+                        </InputResourceConditions>
+                        <InputLanguages>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <InputLanguage>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <Language>
+                                    <LanguageName xml:lang="en">Estonian</LanguageName>
+                                    <ISO639>
+                                        <iso-639-3-code>est</iso-639-3-code>
+                                    </ISO639>
+                                </Language>
+                            </InputLanguage>
+                        </InputLanguages>
+                        <TextTechnical>
+                            <CharacterEncoding xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <LanguageScripts>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <LanguageScriptGrp>
+                                    <ScriptName xml:lang="en">Latin</ScriptName>
+                                    <LanguageScript xml:lang="en">latn</LanguageScript>
+                                    <MainScript>true</MainScript>
+                                </LanguageScriptGrp>
+                            </LanguageScripts>
+                            <MimeTypes>
+                                <MimeType>text/plain</MimeType>
+                            </MimeTypes>
+                        </TextTechnical>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Input>
+                </Inputs>
+                <Outputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Output>
+                        <OutputType xml:lang="en"/>
+                        <replacesInput>false</replacesInput>
+                        <Schema xml:lang="en"/>
+                        <OutputResource xml:lang="en">written corpus</OutputResource>
+                        
+                        <OutputSubstructures>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Substructures>
+                                <Substructure>
+                                    <substructureName xml:lang="en"/>
+                                    <substructureValue/>
+                                    <substructureType xml:lang="en">Morphological annotation</substructureType>
+                                    <SubstructureLanguage>
+                                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                                        <ISO639>
+                                            <iso-639-1-code>et</iso-639-1-code>
+                                        </ISO639>
+                                    </SubstructureLanguage>
+                                    <Descriptions>
+                                        <Description xml:lang="en"/>
+                                    </Descriptions>
+                                </Substructure>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </Substructures>
+                        </OutputSubstructures>
+                        <TextTechnical>
+                            <CharacterEncoding xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <LanguageScripts>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <LanguageScriptGrp>
+                                    <ScriptName xml:lang="en">Latin</ScriptName>
+                                    <LanguageScript xml:lang="en">latn</LanguageScript>
+                                    <MainScript>true</MainScript>
+                                </LanguageScriptGrp>
+                            </LanguageScripts>
+                            <MimeTypes>
+                                <MimeType>text/plain</MimeType>
+                            </MimeTypes>
+                        </TextTechnical>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Output>
+                </Outputs>
+                <Implementations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Implementation>
+                        <Approach xml:lang="en">rule-based</Approach>
+                        <ImplementationLanguage xml:lang="en">Constraint Grammar, VISLCG3 style</ImplementationLanguage>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Implementation>
+                </Implementations>
+                <InstallEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <InstallEnv>
+                        <WorkingMemoryMin xml:lang="en"/>
+                        <HardDiskMin xml:lang="en"/>
+                        <OperatingSystems>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <OperatingSystemGrp>
+                                <OperatingSystem xml:lang="en">Linux</OperatingSystem>
+                                <Version xml:lang="en"/>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </OperatingSystemGrp>
+                        <OperatingSystemGrp>
+                        <OperatingSystem>Windows</OperatingSystem>
+                     </OperatingSystemGrp>
+                     <OperatingSystemGrp>
+                        <OperatingSystem/>
+                     </OperatingSystemGrp>
+                  </OperatingSystems>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </InstallEnv>
+                </InstallEnvs>
+                <Prerequisites>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Prerequisite>
+                        <PrerequisiteName xml:lang="en">VISL Constraint Grammar parser version 3</PrerequisiteName>
+                        <Url>http://beta.visl.sdu.dk/cg3.html</Url>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Prerequisite>
+                </Prerequisites>
+                <TechEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <TechEnv>
+                        <ApplicationType>local/desktop</ApplicationType>
+                        <orchestration/>
+                        <Url/>
+                        <API xml:lang="en"/>
+                        <AccessProtocol xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </TechEnv>
+                </TechEnvs>
+            </ToolContext>
+        </ToolProfile>
+    </Components>
+</CMD>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1290431694581/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1290431694581</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <ToolProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Text-to-Speech Synthesis for Estonian</ResourceName>
+                <ResourceTitle xml:lang="en">Text-to-Speech Synthesis for Estonian</ResourceTitle>
+                <ResourceClass>Tool</ResourceClass>
+                <Version xml:lang="en"/>
+                <LifeCycleStatus>development</LifeCycleStatus>
+                <StartYear>2006</StartYear>
+                <CompletionYear>2014</CompletionYear>
+                <PublicationDate/>
+                <LastUpdate>2013</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">Institute of the Estonian Language</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">6 Roosikrantsi St</Address>
+                    <Region xml:lang="en">Harju</Region>
+                    <ContinentName xml:lang="en">Europe</ContinentName>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Project>
+                <ProjectName xml:lang="en"/>
+                <ProjectTitle xml:lang="en"/>
+                <ProjectID/>
+                <Funder xml:lang="en"/>
+                <Url targetLang=""/>
+                <Institution>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">Institute of the Estonian Language</Organisation>
+                    <Url targetLang=""/>
+                    <Location>
+                        <Address xml:lang="en">6 Roosikrantsi St</Address>
+                        <Region xml:lang="en"/>
+                        <ContinentName xml:lang="en"/>
+                        <Country>
+                            <CountryName xml:lang="en">Estonia</CountryName>
+                            <CountryCoding>EE</CountryCoding>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Contact>
+                    <Person>Meelis Mihkla</Person>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email>Meelis.Mihkla@eki.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">Institute of the Estonian Language</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Duration>
+                    <StartYear/>
+                    <CompletionYear/>
+                </Duration>
+            </Project>
+            <Publications>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+            </Publications>
+            
+            <Creators>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Creator>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Creator>
+            </Creators>
+            <Access>
+                <Availability xml:lang="en"/>
+                <DistributionMedium xml:lang="en"/>
+                <CatalogueLink/>
+                <Price xml:lang="en"/>
+                <Licence src="" xml:lang="en"/>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <!--
+            <ResourceContext>
+                <FieldOfResearch/>
+                <Genre/>
+                <ModalityInfo>
+                    <Modalities/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+            </ResourceContext>
+            -->
+            <ToolContext>
+                <ToolClassification>
+                    <ToolType xml:lang="en">speech synthesizer</ToolType>
+                    <ClassificationType xml:lang="en"/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ToolClassification>
+                <!--
+                <Distribution>
+                    <DistributionType/>
+                    <DeliveryFormat xml:lang="en"/>
+                    <DistributionMedium xml:lang="en"/>
+                    <DistributionFiles>
+                        <DistributionFile>
+                            <FileName xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DistributionFile>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </DistributionFiles>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Distribution>
+                -->
+                <!--
+                <TotalSize>
+                    <Size/>
+                    <SizeUnit xml:lang="en"/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </TotalSize>
+                -->
+                <Inputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Input>
+                        <InputType xml:lang="en">text</InputType>
+                        <Schema xml:lang="en"/>
+                        <InputResource xml:lang="en"/>
+                        <InputParameters>
+                            <InputParameter xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </InputParameters>
+                        <!--
+                        <InputResourceConditions>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Substructures>
+                                <Substructure>
+                                    <substructureName xml:lang="en"/>
+                                    <substructureValue/>
+                                    <substructureType xml:lang="en"/>
+                                    <SubstructureLanguage>
+                                        <LanguageName xml:lang="en"/>
+                                        <ISO639>
+                                            <iso-639-1-code/>
+                                        </ISO639>
+                                    </SubstructureLanguage>
+                                    <Descriptions>
+                                        <Description xml:lang="en"/>
+                                    </Descriptions>
+                                </Substructure>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </Substructures>
+                        </InputResourceConditions>
+                        -->
+                        <InputLanguages>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <InputLanguage>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <Language>
+                                    <LanguageName xml:lang="en">Estonian</LanguageName>
+                                    <ISO639>
+                                        <iso-639-3-code>est</iso-639-3-code>
+                                    </ISO639>
+                                </Language>
+                            </InputLanguage>
+                        </InputLanguages>
+                        <!--
+                        <TextTechnical>
+                            <CharacterEncoding xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <LanguageScripts>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <LanguageScriptGrp>
+                                    <ScriptName xml:lang="en"/>
+                                    <LanguageScript xml:lang="en"/>
+                                    <MainScript/>
+                                </LanguageScriptGrp>
+                            </LanguageScripts>
+                            <MimeTypes>
+                                <MimeType/>
+                            </MimeTypes>
+                        </TextTechnical>
+                        -->
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Input>
+                </Inputs>
+                <Outputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Output>
+                        <OutputType xml:lang="en">sound</OutputType>
+                        <replacesInput>false</replacesInput>
+                        <Schema xml:lang="en"/>
+                        <OutputResource xml:lang="en"/>
+                        <DisplayType xml:lang="en"/>
+                        
+                        
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Output>
+                </Outputs>
+                <Implementations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Implementation>
+                        <Approach xml:lang="en"/>
+                        <ImplementationLanguage xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Implementation>
+                </Implementations>
+                <InstallEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <InstallEnv>
+                        <WorkingMemoryMin xml:lang="en"/>
+                        <HardDiskMin xml:lang="en"/>
+                        <OperatingSystems>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <OperatingSystemGrp>
+                                <OperatingSystem xml:lang="en"/>
+                                <Version xml:lang="en"/>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </OperatingSystemGrp>
+                        </OperatingSystems>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </InstallEnv>
+                </InstallEnvs>
+                <Prerequisites>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Prerequisite>
+                        <PrerequisiteName xml:lang="en"/>
+                        <Url/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Prerequisite>
+                </Prerequisites>
+                <TechEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <TechEnv>
+                        <ApplicationType>web service</ApplicationType>
+                        <orchestration/>
+                        <Url>http://heli.eki.ee/syntees</Url>
+                        <API xml:lang="en"/>
+                        <AccessProtocol xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </TechEnv>
+                </TechEnvs>
+            </ToolContext>
+        </ToolProfile>
+    </Components>
+</CMD>

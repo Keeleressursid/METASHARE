@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?><CMD xmlns="http://www.clarin.eu/cmd/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977511/xsd">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-03-07</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977511</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+    <MonolingualDictionaryProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Dictionary of Standard Estonian</ResourceName>
+                <ResourceTitle xml:lang="en">Dictionary of Standard Estonian</ResourceTitle>
+                <ResourceClass>MonolinugalDictionary</ResourceClass>
+                <Version xml:lang="en"/>
+                <LifeCycleStatus>development</LifeCycleStatus>
+<!--                <StartYear/>-->
+                <CompletionYear>2013</CompletionYear>
+<!--                <PublicationDate/>-->
+                <LastUpdate>2013</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">Institute of the Estonian Language</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">6 Roosikrantsi St</Address>
+                    <Region xml:lang="en">Harju</Region>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description type="long" xml:lang="en">Dictionary of Standard Estonian is a normative dictionary of modern standard Estonian, giving recommendations on correct language use. It contains recommended spellings and the morphology of words, instructions on pronunciation and semantics, also some syntactic recommendations. Abbreviations, geographical names and instruction on pronouncing foreign names are attached.</Description>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en">free</Availability>
+                <DistributionMedium xml:lang="en">web interface</DistributionMedium>
+                <CatalogueLink>http://www.eki.ee/dict/qs/</CatalogueLink>
+                <Licence src="" xml:lang="en">to be clarified</Licence>
+<!--                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>-->
+                <Contact>
+                    <Person>Margit Langemets</Person>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email>Margit.Langemets@eki.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">Institute of the Estonian Language</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description type="short" xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description type="short" xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Creation>
+                <Topic xml:lang="en"/>
+                <Creators>
+                    <Descriptions>
+                        <Description type="short" xml:lang="en"/>
+                    </Descriptions>
+                    <Creator>
+                        <Contact>
+                            <Person/>
+                            <Role xml:lang="en"/>
+                            <Address xml:lang="en"/>
+                            <Email/>
+                            <Department xml:lang="en"/>
+                            <Organisation xml:lang="en"/>
+                            <TelephoneNumber/>
+                            <FaxNumber/>
+                            <Url targetLang=""/>
+                            <Descriptions>
+                                <Description type="short" xml:lang="en"/>
+                            </Descriptions>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <CreationToolInfo>
+                    <CreationTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description type="short" xml:lang="en"/>
+                    </Descriptions>
+                </CreationToolInfo>
+<!--                <Source>
+                    <OriginalSource xml:lang="en"/>
+                    <SourceType xml:lang="en"/>
+                    <MediaFiles id="">
+                        <MediaFile>
+                            <CatalogueLink xml:lang="en"/>
+                            <Type/>
+                            <Format xml:lang="en"/>
+                            <Size xml:lang="en"/>
+                            <Quality/>
+                            <RecordingConditions xml:lang="en"/>
+                            <Position>
+                                <PositionType xml:lang="en"/>
+                                <StartPosition/>
+                                <EndPosition/>
+                            </Position>
+                            <Access>
+                                <Availability xml:lang="en"/>
+                                <DistributionMedium xml:lang="en"/>
+                                <CatalogueLink/>
+                                <Price xml:lang="en"/>
+                                <Licence src="" xml:lang="en"/>
+                                <DeploymentToolInfo>
+                                    <DeploymentTool xml:lang="en"/>
+                                    <ToolType xml:lang="en"/>
+                                    <Version xml:lang="en"/>
+                                    <Url/>
+                                    <Descriptions>
+                                        <Description  xml:lang="en"/>
+                                    </Descriptions>
+                                </DeploymentToolInfo>
+                                <Contact>
+                                    <Person/>
+                                    <Role xml:lang="en"/>
+                                    <Address xml:lang="en"/>
+                                    <Email/>
+                                    <Department xml:lang="en"/>
+                                    <Organisation xml:lang="en"/>
+                                    <TelephoneNumber/>
+                                    <FaxNumber/>
+                                    <Url targetLang=""/>
+                                    <Descriptions>
+                                        <Description  xml:lang="en"/>
+                                    </Descriptions>
+                                </Contact>
+                                <Descriptions>
+                                    <Description  xml:lang="en"/>
+                                </Descriptions>
+                            </Access>
+                            <Descriptions>
+                                <Description  xml:lang="en"/>
+                            </Descriptions>
+                            <Keys>
+                                <Key Name="" xml:lang="en"/>
+                            </Keys>
+                        </MediaFile>
+                        <Descriptions>
+                            <Description  xml:lang="en"/>
+                        </Descriptions>
+                    </MediaFiles>
+                    <Derivation>
+                        <Organisation xml:lang="en"/>
+                        <DerivationDate/>
+                        <DerivationMode xml:lang="en"/>
+                        <DerivationType xml:lang="en"/>
+                        <DerivationWorkflow xml:lang="en"/>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description  xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description  xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </Source>-->
+                <Descriptions>
+                    <Description  xml:lang="en"/>
+                </Descriptions>
+            </Creation>
+<!--            <Project>
+                <ProjectName xml:lang="en"/>
+                <ProjectTitle xml:lang="en"/>
+                <ProjectID/>
+                <Funder xml:lang="en"/>
+                <Url targetLang=""/>
+                <Institution>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <Url targetLang=""/>
+                    <Location>
+                        <Address xml:lang="en"/>
+                        <Region xml:lang="en"/>
+                        <Country>
+                            <CountryName xml:lang="en"/>
+                            <CountryCoding/>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description  xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description  xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Duration>
+                    <StartYear/>
+                    <CompletionYear/>
+                </Duration>
+                <Descriptions>
+                    <Description  xml:lang="en"/>
+                </Descriptions>
+            </Project>-->
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <PublicationDate/>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description  xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en"/>
+                        <ISO639>
+                            <iso-639-3-code/>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description  xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <MonolingualDictionarySpecific>
+                <LexiconType>monolingual dictionary</LexiconType>
+                <SubjectLanguages>
+                    <NoLanguages>monolingual</NoLanguages>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                    <SubjectLanguage>
+                        <DominantLanguage>true</DominantLanguage>
+                        <SourceLanguage>true</SourceLanguage>
+                        <TargetLanguage>true</TargetLanguage>
+                        <Descriptions>
+                            <Description  xml:lang="en"/>
+                        </Descriptions>
+                        <Language>
+                            <LanguageName xml:lang="en">Estonian</LanguageName>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                </SubjectLanguages>
+                <AuxiliaryLanguages>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </AuxiliaryLanguages>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <HeadwordType>
+                    <LexicalUnit xml:lang="en"/>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </HeadwordType>
+                <Descriptions>
+                    <Description  xml:lang="en"/>
+                </Descriptions>
+            </MonolingualDictionarySpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en"/>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en">Latin</ScriptName>
+                        <LanguageScript xml:lang="en">LATN</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description  xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+<!--                <MimeTypes>
+                    <MimeType/>
+                </MimeTypes>-->
+                <Descriptions>
+                    <Description  xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </MonolingualDictionaryProfile>
+    </Components>
+</CMD>

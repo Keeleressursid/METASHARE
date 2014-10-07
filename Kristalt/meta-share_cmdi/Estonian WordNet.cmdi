@@ -1,0 +1,112 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1355150532312/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0001-3</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1355150532312</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType>LandingPage</ResourceType>
+       <ResourceRef>http://www.cl.ut.ee/ressursid/teksaurus</ResourceRef>
+      </ResourceProxy>
+      <ResourceProxy id="querypage">
+       <ResourceType>SearchPage</ResourceType>
+       <ResourceRef>http://www.cl.ut.ee/ressursid/teksaurus/teksaurus.cgi.en</ResourceRef>
+      </ResourceProxy>
+      <ResourceProxy id="wordties">
+       <ResourceType>SearchPage</ResourceType>
+       <ResourceRef>http://wordties.cst.dk/wordties-estwn/</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Estonian WordNet</resourceName>
+            <description xml:lang="en">Compiled manually according to EuroWordNet project.</description>
+            <resourceShortName xml:lang="en">EstWordNet</resourceShortName>
+            <url>http://www.cl.ut.ee/ressursid/teksaurus</url>
+            <metaShareId>
+            NOT_DEFINED_FOR_V2
+          </metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>CC-BY-NC</licence>
+               <restrictionsOfUse>academic-nonCommercialUse</restrictionsOfUse>
+               <restrictionsOfUse>attribution</restrictionsOfUse>
+               <distributionAccessMedium>accessibleThroughInterface</distributionAccessMedium>
+            </licenceInfo>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="et">Orav</surname>
+               <givenName xml:lang="et">Heili</givenName>
+               <communicationInfo>
+                  <email>heili.orav@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2011-11-22</metadataCreationDate>
+            <metadataLastDateUpdated>2014-02-03</metadataLastDateUpdated>
+            <revision>kb65a</revision>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="et">Orav</surname>
+                  <givenName xml:lang="et">Heili</givenName>
+                  <communicationInfo>
+                     <email>heili.orav@ut.ee</email>
+                  </communicationInfo>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <usageInfo>
+            <foreseenUseInfo>
+               <foreseenUse>humanUse</foreseenUse>
+            </foreseenUseInfo>
+            <foreseenUseInfo>
+               <foreseenUse>nlpApplications</foreseenUse>
+               <useNLPSpecific>languageIdentification</useNLPSpecific>
+            </foreseenUseInfo>
+            <actualUseInfo>
+               <actualUse>humanUse</actualUse>
+            </actualUseInfo>
+         </usageInfo>
+         <lexicalConceptualResourceInfo>
+            <resourceType>lexicalConceptualResource</resourceType>
+            <lexicalConceptualResourceType>wordnet</lexicalConceptualResourceType>
+            <lexicalConceptualResourceMediaType>
+               <lexicalConceptualResourceTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>writtenLanguage</modalityType>
+                  </modalityInfo>
+                  <sizeInfo>
+                     <size>49000</size>
+                     <sizeUnit>synsets</sizeUnit>
+                  </sizeInfo>
+               </lexicalConceptualResourceTextInfo>
+            </lexicalConceptualResourceMediaType>
+         </lexicalConceptualResourceInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

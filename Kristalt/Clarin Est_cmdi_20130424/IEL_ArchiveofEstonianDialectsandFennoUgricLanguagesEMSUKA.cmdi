@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977526/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977526</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <MultimodalCorpus>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Archive of Estonian Dialects and Fenno-Ugric Languages (EMSUKA)</ResourceName>
+                <ResourceTitle xml:lang="en">Archive of Estonian Dialects and Fenno-Ugric Languages (EMSUKA)</ResourceTitle>
+                <ResourceClass>MultimodalCorpus</ResourceClass>
+                <Version xml:lang="en"/>
+                <LifeCycleStatus>development</LifeCycleStatus>
+            <!--                <StartYear/>
+                <CompletionYear/>
+                -->
+                <PublicationDate/>
+                <LastUpdate>2013</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">Institute of the Estonian Language</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">6 Roosikrantsi St 10119 Tallinn</Address>
+                    <Region xml:lang="en">Harju</Region>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en">to be specified</Availability>
+                <DistributionMedium xml:lang="en">web interface, on CD, downloadable</DistributionMedium>
+                <CatalogueLink/>
+                <Licence src="" xml:lang="en"/>
+            <!--                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>-->
+                <Contact>
+                    <Person>Jüri Viikberg</Person>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email>Jyri.Viikberg@eki.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">Institute of the Estonian Language</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Creation>
+                <Topic xml:lang="en"/>
+                <Creators>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Creator>
+                        <Contact>
+        		            <Person>Jüri Viikberg</Person>
+                    		<Role xml:lang="en"/>
+                    		<Address xml:lang="en"/>
+                    		<Email>Jyri.Viikberg@eki.ee</Email>
+                    		<Department xml:lang="en"/>
+                    		<Organisation xml:lang="en">Institute of the Estonian Language</Organisation>
+                            <TelephoneNumber/>
+                            <FaxNumber/>
+                            <Url targetLang=""/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <CreationToolInfo>
+                    <CreationTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CreationToolInfo>
+            <!--                <Source>
+                    <OriginalSource xml:lang="en"/>
+                    <SourceType xml:lang="en"/>
+                    <MediaFiles id="">
+                        <MediaFile>
+                            <CatalogueLink xml:lang="en"/>
+                            <Type/>
+                            <Format xml:lang="en"/>
+                            <Size xml:lang="en"/>
+                            <Quality/>
+                            <RecordingConditions xml:lang="en"/>
+                            <Position>
+                                <PositionType xml:lang="en"/>
+                                <StartPosition/>
+                                <EndPosition/>
+                            </Position>
+                            <Access>
+                                <Availability xml:lang="en"/>
+                                <DistributionMedium xml:lang="en"/>
+                                <CatalogueLink/>
+                                <Price xml:lang="en"/>
+                                <Licence src="" xml:lang="en"/>
+                                <DeploymentToolInfo>
+                                    <DeploymentTool xml:lang="en"/>
+                                    <ToolType xml:lang="en"/>
+                                    <Version xml:lang="en"/>
+                                    <Url/>
+                                    <Descriptions>
+                                        <Description xml:lang="en"/>
+                                    </Descriptions>
+                                </DeploymentToolInfo>
+                                <Contact>
+                                    <Person/>
+                                    <Role xml:lang="en"/>
+                                    <Address xml:lang="en"/>
+                                    <Email/>
+                                    <Department xml:lang="en"/>
+                                    <Organisation xml:lang="en"/>
+                                    <TelephoneNumber/>
+                                    <FaxNumber/>
+                                    <Url targetLang=""/>
+                                    <Descriptions>
+                                        <Description xml:lang="en"/>
+                                    </Descriptions>
+                                </Contact>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </Access>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Keys>
+                                <Key Name="" xml:lang="en"/>
+                            </Keys>
+                        </MediaFile>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </MediaFiles>
+                    <Derivation>
+                        <Organisation xml:lang="en"/>
+                        <DerivationDate/>
+                        <DerivationMode xml:lang="en"/>
+                        <DerivationType xml:lang="en"/>
+                        <DerivationWorkflow xml:lang="en"/>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Source>
+-->
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Creation>
+         <!--            <Project>
+                <ProjectName xml:lang="en"/>
+                <ProjectTitle xml:lang="en"/>
+                <ProjectID/>
+                <Funder xml:lang="en"/>
+                <Url targetLang=""/>
+                <Institution>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <Url targetLang=""/>
+                    <Location>
+                        <Address xml:lang="en"/>
+                        <Region xml:lang="en"/>
+                        <Country>
+                            <CountryName xml:lang="en"/>
+                            <CountryCoding/>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Duration>
+                    <StartYear/>
+                    <CompletionYear/>
+                </Duration>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Project>
+            -->
+<!--            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <PublicationDate/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            -->
+            <SubjectLanguages>
+                <NumberOfLanguages>0</NumberOfLanguages>
+                <SubjectLanguage>
+                    <DominantLanguage>true</DominantLanguage>
+                    <!--
+                    <SourceLanguage/>
+                    <TargetLanguage/>
+                    -->
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </SubjectLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </SubjectLanguages>
+         <!--            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en"/>
+                        <ISO639>
+                            <iso-639-3-code/>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>-->
+
+            <MultimodalCorpusSpecific>
+                <Modalities/>
+                <MediaType/>
+                <SpeechCorpus>
+                    <DurationOfEffectiveSpeech>0</DurationOfEffectiveSpeech>
+                    <DurationOfFullDatabase>0</DurationOfFullDatabase>
+                    <NumberOfSpeakers>0</NumberOfSpeakers>
+                    <RecordingEnvironment>public place</RecordingEnvironment>
+                    <SpeakerDemographics/>
+                    <Quality>Unspecified</Quality>
+                    <RecordingPlatformHardware/>
+                    <RecordingPlatformSoftware/>
+               <!--                    <SpeechTechnicalMetadata>
+                        <SamplingFrequency/>
+                        <NumberOfChannels/>
+                        <ByteOrder/>
+                        <Compression/>
+                        <BitResolution/>
+                        <SpeechCoding/>
+                        <MimeType>
+                            <MimeType/>
+                        </MimeType>
+                    </SpeechTechnicalMetadata>
+                    -->
+                </SpeechCorpus>
+                <Multilinguality>
+                    <Multilinguality>Multilingual</Multilinguality>
+                </Multilinguality>
+                <AnnotationTypes>
+                    <AnnotationType>
+                        <AnnotationType>Phonetics</AnnotationType>
+                        <Description>
+                            <Description LanguageID="" xml:lang="en"/>
+                        </Description>
+                    </AnnotationType>
+                    <Description>
+                        <Description LanguageID="" xml:lang="en"/>
+                    </Description>
+                </AnnotationTypes>
+                <Size>
+                    <TotalSize>
+                        <Number>0</Number>
+                        <SizeUnit xml:lang="en">to be specified</SizeUnit>
+                    </TotalSize>
+                    <SizePerLanguage>
+                        <Number>0</Number>
+                        <SizeUnit xml:lang="en">to be specified</SizeUnit>
+                        <Language>
+                            <LanguageName xml:lang="en">Estonian</LanguageName>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SizePerLanguage>
+                </Size>
+            </MultimodalCorpusSpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en"/>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en">Latin</ScriptName>
+                        <LanguageScript xml:lang="en">LATN</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+            <!--                <MimeTypes>
+                    <MimeType/>
+                </MimeTypes>-->
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </MultimodalCorpus>
+    </Components>
+</CMD>

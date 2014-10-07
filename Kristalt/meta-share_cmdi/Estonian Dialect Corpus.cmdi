@@ -1,0 +1,159 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0000-F</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType>SearchPage</ResourceType>
+       <ResourceRef>http://www.murre.ut.ee/arhiiv/otsi.php?mida=MKT&amp;otsi_andmebaasist=Otsi</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Estonian Dialect Corpus</resourceName>
+            <description xml:lang="en">The dialect corpus consists of:
+
+1)      Dialect recordings. The corpus is based on dialect recordings which have mainly been made in the 1960s and 1970s. The first recordings are even earlier – they date from 1938. The recordings are traditional dialect recordings where the interview is conducted at the home of the informant.
+
+2)      Phonetically transcribed texts. The traditional Finno-Ugric phonetic transcription is used. The texts are available as Word and pdf files (by the 1st of May 2011, there are about 1,284,000 text words in the corpus).
+
+3)      Dialect texts in simplified transcription. All of the phonetically transcribed texts have been transported one-to-one into the simplified transcription (.txt), which enables the use of these texts with every program and to conduct primary analyses.
+
+4)      Morphologically tagged texts which have been read into a MySQL database. All the word classes and morphological forms are tagged;
+
+5)      Database containing information about informants and recordings;
+
+6)      Syntactically parsed texts (about 40000 text words).
+
+In the corpus, every phonetically transcribed text is accompanied by a recording, a file in simplified transcription and a description; more than half of the texts are also accompanied by a morphologically tagged file.
+
+Also some data from other Finnic languages which are spoken around Estonia have been added. The aim is to incorporate at least Votic, Ingrian and Livonian data to the corpus.</description>
+            <url>http://www.murre.ut.ee/estonian-dialect-corpus/</url>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>CLARIN_ACA</licence>
+               <distributionAccessMedium>accessibleThroughInterface</distributionAccessMedium>
+               <executionLocation>http://www.murre.ut.ee/arhiiv/otsi.php?mida=MKT&amp;otsi_andmebaasist=Otsi</executionLocation>
+               <userNature>academic</userNature>
+            </licenceInfo>
+            <iprHolderOrganization>
+               <role>iprHolder</role>
+               <organizationInfo>
+                  <organizationName xml:lang="et">Eesti Keele Instituut</organizationName>
+                  <organizationName xml:lang="en">Institute of the Estonian Language</organizationName>
+                  <communicationInfo>
+                     <email>eki@eki.ee</email>
+                     <url>http://portaal.eki.ee/</url>
+                     <address>Roosikrantsi 6</address>
+                     <zipCode>10119</zipCode>
+                     <city>Tallinn</city>
+                     <country>Estonia</country>
+                     <telephoneNumber>+372 6177 500</telephoneNumber>
+                     <faxNumber>+372 6177 550</faxNumber>
+                  </communicationInfo>
+               </organizationInfo>
+            </iprHolderOrganization>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="en">Lindström</surname>
+               <givenName xml:lang="en">Liina</givenName>
+               <sex>female</sex>
+               <communicationInfo>
+                  <email>liina.lindstrom@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-01-09</metadataCreationDate>
+            <metadataLastDateUpdated>2013-01-09</metadataLastDateUpdated>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="et">Liin</surname>
+                  <givenName xml:lang="et">Krista</givenName>
+                  <sex>female</sex>
+                  <communicationInfo>
+                     <email>Krista.Liin@ut.ee</email>
+                     <country>Estonia</country>
+                  </communicationInfo>
+                  <affiliation>
+                     <role>affiliation</role>
+                     <organizationInfo>
+                        <organizationName xml:lang="et">Tartu Ülikool</organizationName>
+                        <organizationName xml:lang="en">University of Tartu</organizationName>
+                        <organizationShortName xml:lang="en">UT</organizationShortName>
+                        <communicationInfo>
+                           <email>ekrk.groups@lists.ut.ee</email>
+                           <url>http://www.ut.ee</url>
+                           <city>Tartu</city>
+                           <country>Estonia</country>
+                        </communicationInfo>
+                     </organizationInfo>
+                  </affiliation>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>spokenLanguage</modalityType>
+                  </modalityInfo>
+                  <sizeInfo>
+                     <size>1 284 000</size>
+                     <sizeUnit>words</sizeUnit>
+                  </sizeInfo>
+               </corpusTextInfo>
+               <corpusAudioInfo>
+                  <mediaType>audio</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>spokenLanguage</modalityType>
+                  </modalityInfo>
+                  <audioSizeInfo>
+                     <sizeInfo>
+                        <size>113</size>
+                        <sizeUnit>hours</sizeUnit>
+                     </sizeInfo>
+                  </audioSizeInfo>
+                  <audioContentInfo>
+                     <speechItems>freeSpeech</speechItems>
+                  </audioContentInfo>
+               </corpusAudioInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

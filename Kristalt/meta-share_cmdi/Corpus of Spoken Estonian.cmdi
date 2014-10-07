@@ -1,0 +1,128 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0000-7</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList/>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Corpus of Spoken Estonian</resourceName>
+            <description xml:lang="en">The Department of Estonian Language initiated the corpus of spoken Estonian in 1997. The corpus is compiled by the research group of Spoken Estonian (Tiit Hennoste, Airi Jansons, Liina Lindström, Andriela Rääbis, Krista Strandson, Piret Toomet, Riina Vellerind). 
+The corpus is transcribed by the transcription of conversational analysis (CA). Each tape is provided with a header that lists in all 44 situational factors that have been found to affect language use in the analysis of various languages. For each concrete tape the number of possible factors is as high as possible.
+The corpus is planned as an open corpus, i.e. no limits have been set. Our intention is to collect various types of oral speech, the usage of both everyday and institutional conversation, spontaneous and planned speech, monologues and dialogues, face-to-face interaction and media texts. The speakers are inhabitants of the largest towns of Estonia: Tallinn, Tartu and Pärnu.
+As of April 2008, the corpus consists of 710 audio tapes, 20 video tapes, 1970 transliterated texts (1 315 000 words).
+Transliterated texts: 
+Face-to-face conversations 559 (716100 words): 181 everyday conversations, 342 institutional conversations, 36 other types (e.g. asking for directions);
+Phone conversations 1259 (350080 words): 175 everyday conversations, 1076 institutional conversations, 8 other;
+Radio and TV broadcasts 149 (249300 words).
+The institutional situations include a large number of shop dialogues (65) and dialogues at service institutions and government offices.
+The corpus is a data bank in the Word format and simple txt-format (ISO-8859-1). In order to access the corpus, a contract with the research group of Spoken Estonian is required.</description>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>proprietary</licence>
+               <restrictionsOfUse>other</restrictionsOfUse>
+               <userNature>academic</userNature>
+            </licenceInfo>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="en">Gerassimenko</surname>
+               <givenName xml:lang="en">Olga</givenName>
+               <sex>female</sex>
+               <communicationInfo>
+                  <email>olga.gerassimenko@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-01-09</metadataCreationDate>
+            <metadataLastDateUpdated>2013-01-09</metadataLastDateUpdated>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="et">Liin</surname>
+                  <givenName xml:lang="et">Krista</givenName>
+                  <sex>female</sex>
+                  <communicationInfo>
+                     <email>Krista.Liin@ut.ee</email>
+                     <country>Estonia</country>
+                  </communicationInfo>
+                  <affiliation>
+                     <role>affiliation</role>
+                     <organizationInfo>
+                        <organizationName xml:lang="et">Tartu Ülikool</organizationName>
+                        <organizationName xml:lang="en">University of Tartu</organizationName>
+                        <organizationShortName xml:lang="en">UT</organizationShortName>
+                        <communicationInfo>
+                           <email>ekrk.groups@lists.ut.ee</email>
+                           <url>http://www.ut.ee</url>
+                           <city>Tartu</city>
+                           <country>Estonia</country>
+                        </communicationInfo>
+                     </organizationInfo>
+                  </affiliation>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>spokenLanguage</modalityType>
+                  </modalityInfo>
+                  <sizeInfo>
+                     <size>1 315 500</size>
+                     <sizeUnit>words</sizeUnit>
+                  </sizeInfo>
+               </corpusTextInfo>
+               <corpusAudioInfo>
+                  <mediaType>audio</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>spokenLanguage</modalityType>
+                  </modalityInfo>
+                  <audioSizeInfo>
+                     <sizeInfo>
+                        <size>1 315 500</size>
+                        <sizeUnit>words</sizeUnit>
+                     </sizeInfo>
+                  </audioSizeInfo>
+                  <audioContentInfo>
+                     <speechItems>freeSpeech</speechItems>
+                  </audioContentInfo>
+               </corpusAudioInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

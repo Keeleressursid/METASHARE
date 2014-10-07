@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977511/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977511</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <MonolingualDictionaryProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Database of Estonian Multi-word Verbs</ResourceName>
+                <ResourceTitle xml:lang="en">Database of Estonian Multi-word Verbs</ResourceTitle>
+                <ResourceClass>other</ResourceClass>
+                <Version xml:lang="en"/>
+                <LifeCycleStatus>development</LifeCycleStatus>
+                
+                
+                <PublicationDate>2003-04-11</PublicationDate>
+                <LastUpdate>04.05.2008</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">University of Tartu</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Ulikooli 18, Tartu</Address>
+                    <Region xml:lang="en"/>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en">freely available</Availability>
+                <DistributionMedium xml:lang="en">download; search interface</DistributionMedium>
+                <CatalogueLink/>
+                <Licence xml:lang="en">freely available</Licence>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person>Kadri Muischnek</Person>
+                    <Role xml:lang="en">project leader</Role>
+                    <Address xml:lang="en"/>
+                    <Email>kadri.muischnek@ut.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">University of Tartu</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Creation>
+                <Topic xml:lang="en"/>
+                <Creators>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Creator>
+                        <Contact>
+                            <Person>Kadri Muischnek</Person>
+                            <Role xml:lang="en">project leader</Role>
+                            <Address xml:lang="en"/>
+                            <Email>kadri.muischnek@ut.ee</Email>
+                            <Department xml:lang="en"/>
+                            <Organisation xml:lang="en">University of Tartu</Organisation>
+                            <TelephoneNumber/>
+                            <FaxNumber/>
+                            <Url targetLang=""/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <CreationToolInfo>
+                    <CreationTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CreationToolInfo>
+                <Source>
+                    <OriginalSource xml:lang="en">Dictionary of Synonyms (Õim 1991)</OriginalSource>
+                    <SourceType xml:lang="en">human-readable dictionary</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">head-word extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the list of multi-word expressions in the dictionary was extracted, in the resulting resource it is noted whether the MWE was present in this source</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">Õim, A. "Sünonüümisõnastik" Tallinn 1991</Description>
+                    </Descriptions>
+                </Source>
+                <Source>
+                    <OriginalSource xml:lang="en">Filosoft thesaurus</OriginalSource>
+                    <SourceType xml:lang="en">computer-readable dictionary</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">head-word extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the list of multi-word expressions in the dictionary was extracted, in the resulting resource it is noted whether the MWE was present in this source</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">http://www.filosoft.ee/thes_et/</Description>
+                    </Descriptions>
+                </Source>
+            <Source>
+                    <OriginalSource xml:lang="en">The Explanatory Dictionary of Estonian (EKSS 1988-2000)</OriginalSource>
+                    <SourceType xml:lang="en">human-readable dictionary</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">head-word extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the list of multi-word expressions in the dictionary was extracted, in the resulting resource it is noted whether the MWE was present in this source</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">EKSS "Eesti kirjakeele seletussõnaraamat (A - sentimeetririhm)" ETA KKI, Tallinn, 1988 - 1999</Description>
+                    </Descriptions>
+                </Source>
+            <Source>
+                    <OriginalSource xml:lang="en">Fraselogical dictionary (Õim 1993)</OriginalSource>
+                    <SourceType xml:lang="en">human-readable dictionary</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">head-word extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the list of multi-word expressions in the dictionary was extracted, in the resulting resource it is noted whether the MWE was present in this source</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">Õim, A. "Fraseoloogiasõnaraamat" ETA KKI, Tallinn 1993</Description>
+                    </Descriptions>
+                </Source>
+            <Source>
+                    <OriginalSource xml:lang="en">Index of the Thesaurus of Estonian (Saareste 1979)</OriginalSource>
+                    <SourceType xml:lang="en">human-readable dictionary</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">head-word extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the list of multi-word expressions in the dictionary was extracted, in the resulting resource it is noted whether the MWE was present in this source</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">Saareste, A. "Eesti keele mõistelise sõnaraamatu indeks" Finsk-ugriska institutsionen, Uppsala, 1979</Description>
+                    </Descriptions>
+                </Source>
+            <Source>
+                    <OriginalSource xml:lang="en">A list of particle verbs (Hasselblatt 1990)</OriginalSource>
+                    <SourceType xml:lang="en">human-readable dictionary</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">head-word extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the list of multi-word expressions in the dictionary was extracted, in the resulting resource it is noted whether the MWE was present in this source</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">Cornelius Hasselblatt "Das Estnische Partikelverb als Lehnübersetzung aus dem Deutschen" Wiesbaden 1990</Description>
+                    </Descriptions>
+                </Source>
+            <Source>
+                    <OriginalSource xml:lang="en">Corpora from the Estonian Reference Corpus</OriginalSource>
+                    <SourceType xml:lang="en">written corpus</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2003-04-11</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">collocation extraction</DerivationType>
+                        <DerivationWorkflow xml:lang="en">the texts were morphologically analyzed and diambiguated with estyhmm; verbs were lemmatized; stop words extracted; verb collocation 2-grams and 3-grams were extracted, using ME and LocalMax to pick the right n-grams.</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en">1. 0.5 million words of fiction from 1992-1998.
+2. 9.8 million words of newspapers form 1995-2001.
+3. 12.6 million words of transcripts of the sessions of the Estonian parliament Riigikogu from 1995-
+2001.</Description>
+                    </Descriptions>
+                </Source>
+            <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Creation>
+            
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en">Inconsistent Selectional Criteria in Semi-automatic Multi-word Unit Extraction</PublicationTitle>
+                    <Author>Kaalep, H-J.; Muischnek, K.</Author>
+                    <Url>www.cl.ut.ee/yllitised/xmplx2003.pdf</Url>
+                    <PublicationDate>2003</PublicationDate>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <MonolingualDictionarySpecific>
+                <LexiconType>monolingual dictionary</LexiconType>
+                <SubjectLanguages>
+                    <NoLanguages>monolingual</NoLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <SubjectLanguage>
+                        <DominantLanguage>true</DominantLanguage>
+                        <SourceLanguage>false</SourceLanguage>
+                        <TargetLanguage>false</TargetLanguage>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <Language>
+                            <LanguageName xml:lang="en">Estonian</LanguageName>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                </SubjectLanguages>
+                
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <HeadwordType>
+                    <LexicalUnit xml:lang="en">multi-word expression</LexicalUnit>
+                    <Descriptions>
+                        <Description xml:lang="en">This database contains a subtype of multi-word expressions, namely those consisting of a verb and a particle or a verb and its complements. The expressions consisting of a verb and its subject are not included. The multi-word units consisting of a verb and a infinite form of a verb are included irregularly.</Description>
+                    </Descriptions>
+                </HeadwordType>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </MonolingualDictionarySpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en">UTF-8</CharacterEncoding>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en">Latin</ScriptName>
+                        <LanguageScript xml:lang="en">latn</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+                <MimeTypes>
+                    <MimeType>text/plain</MimeType>
+                </MimeTypes>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </MonolingualDictionaryProfile>
+    </Components>
+</CMD>

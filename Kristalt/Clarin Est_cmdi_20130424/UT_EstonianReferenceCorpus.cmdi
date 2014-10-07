@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977520/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977520</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <AnnotatedCorpusProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Estonian Reference Corpus</ResourceName>
+                <ResourceTitle xml:lang="en">Estonian Reference Corpus</ResourceTitle>
+                <ResourceClass>AnnotatedTextCorpus</ResourceClass>
+                <Version xml:lang="en"/>
+                <LifeCycleStatus>published</LifeCycleStatus>
+                
+                
+                <PublicationDate/>
+                <LastUpdate/>
+                <TimeCoverage xml:lang="en">1990-present</TimeCoverage>
+                <LegalOwner xml:lang="en">University of Tartu</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Ulikooli 18, Tartu</Address>
+                    <Region xml:lang="en"/>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en">non-commercial use</Availability>
+                <DistributionMedium xml:lang="en">download; query interface</DistributionMedium>
+                <CatalogueLink>http://www.cl.ut.ee/korpused/</CatalogueLink>
+                <Licence xml:lang="en">CLARIN-ACA</Licence>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person>Kadri Muischnek</Person>
+                    <Role xml:lang="en">project leader</Role>
+                    <Address xml:lang="en"/>
+                    <Email>kadri.muischnek@ut.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">University of Tartu</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url>http://www.cl.ut.ee/</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <PublicationDate/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <SubjectLanguages>
+                <NumberOfLanguages>1</NumberOfLanguages>
+                <SubjectLanguage>
+                    <DominantLanguage>true</DominantLanguage>
+                    <SourceLanguage>false</SourceLanguage>
+                    <TargetLanguage>false</TargetLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </SubjectLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </SubjectLanguages>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <AnnotatedCorpusSpecific>
+                <CorpusType>annotated</CorpusType>
+                <domain/>
+                <TemporalClassification>synchronic</TemporalClassification>
+                <NumberOfWords>230000000</NumberOfWords>
+                <AnnotationScheme>morphological annotation by Estmorf</AnnotationScheme>
+                <AnnotationMode>automatic</AnnotationMode>
+                <LinguisticSubject>generalLinguistics</LinguisticSubject>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </AnnotatedCorpusSpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en">UTF-8</CharacterEncoding>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en">Latin</ScriptName>
+                        <LanguageScript xml:lang="en">latn</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+                <MimeTypes>
+                    <MimeType>text/xml</MimeType>
+                </MimeTypes>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        
+      </AnnotatedCorpusProfile>
+    </Components>
+</CMD>

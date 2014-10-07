@@ -1,0 +1,118 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0001-8</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList/>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Semantically disambiguated corpus of Estonian</resourceName>
+            <description xml:lang="en">Raw text corpus. Resource for building Estonian Framenet</description>
+            <metaShareId>
+            NOT_DEFINED_FOR_V2
+          </metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>CLARIN_ACA-NC</licence>
+               <restrictionsOfUse>academic-nonCommercialUse</restrictionsOfUse>
+               <restrictionsOfUse>attribution</restrictionsOfUse>
+               <distributionAccessMedium>downloadable</distributionAccessMedium>
+               <userNature>academic</userNature>
+            </licenceInfo>
+            <iprHolderOrganization>
+               <role>iprHolder</role>
+               <organizationInfo>
+                  <organizationName xml:lang="et">Tartu Ülikool</organizationName>
+                  <organizationName xml:lang="en">University of Tartu</organizationName>
+                  <organizationShortName xml:lang="et">UT</organizationShortName>
+                  <communicationInfo>
+                     <email>neeme.kahusk@ut.ee</email>
+                  </communicationInfo>
+               </organizationInfo>
+            </iprHolderOrganization>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="et">Kahusk</surname>
+               <givenName xml:lang="et">Neeme</givenName>
+               <communicationInfo>
+                  <email>neeme.kahusk@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2011-12-31</metadataCreationDate>
+            <metadataLastDateUpdated>2013-01-09</metadataLastDateUpdated>
+         </metadataInfo>
+         <usageInfo>
+            <foreseenUseInfo>
+               <foreseenUse>humanUse</foreseenUse>
+            </foreseenUseInfo>
+            <actualUseInfo>
+               <actualUse>humanUse</actualUse>
+            </actualUseInfo>
+         </usageInfo>
+         <resourceCreationInfo>
+            <fundingProject>
+               <role>fundingProject</role>
+               <projectInfo>
+                  <projectName xml:lang="et">Riiklik programm "Eesti keele keeletehnoloogiline tugi (2006-2010)" </projectName>
+                  <projectName xml:lang="en">National Programme for Estonian Language Technology (2006-2010) </projectName>
+                  <projectShortName xml:lang="et">EKKTT</projectShortName>
+                  <projectShortName xml:lang="en">EKKTT</projectShortName>
+                  <url>http://www.keeletehnoloogia.ee/ekktt-1</url>
+                  <fundingType>nationalFunds</fundingType>
+                  <fundingCountry>Estonia</fundingCountry>
+                  <projectStartDate>2006-06-26</projectStartDate>
+                  <projectEndDate>2010-12-31</projectEndDate>
+               </projectInfo>
+            </fundingProject>
+         </resourceCreationInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <modalityInfo>
+                     <modalityType>writtenLanguage</modalityType>
+                  </modalityInfo>
+                  <sizeInfo>
+                     <size>500000</size>
+                     <sizeUnit>words</sizeUnit>
+                  </sizeInfo>
+                  <annotationInfo>
+                     <annotationType>lemmatization</annotationType>
+                  </annotationInfo>
+                  <annotationInfo>
+                     <annotationType>morphosyntacticAnnotation-posTagging</annotationType>
+                  </annotationInfo>
+                  <annotationInfo>
+                     <annotationType>semanticAnnotation</annotationType>
+                  </annotationInfo>
+               </corpusTextInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

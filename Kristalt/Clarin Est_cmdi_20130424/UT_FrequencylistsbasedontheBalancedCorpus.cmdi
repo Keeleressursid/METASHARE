@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977490/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977490</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <FrequencyListProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Frequency lists based on the Balanced Corpus</ResourceName>
+                <ResourceTitle xml:lang="en">Frequency lists based on the Balanced Corpus</ResourceTitle>
+                <ResourceClass>FrequencyList</ResourceClass>
+                <Version xml:lang="en"/>
+                <LifeCycleStatus>published</LifeCycleStatus>
+                <StartYear>2012</StartYear>
+                <CompletionYear>2012</CompletionYear>
+                <PublicationDate>14.02.2012</PublicationDate>
+                <LastUpdate>14.02.2012</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">University of Tartu</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Ulikooli 18, Tartu</Address>
+                    <Region xml:lang="en"/>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en">freely available</Availability>
+                <DistributionMedium xml:lang="en">download</DistributionMedium>
+                <CatalogueLink/>
+                <Licence xml:lang="en">CLARIN-PUB</Licence>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person>Kadri Muischnek</Person>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email>kadri.muischnek@ut.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en">University of Tartu</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Creation>
+                <Topic xml:lang="en"/>
+                <Creators>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Creator>
+                        <Contact>
+                            <Person>Kadri Muischnek</Person>
+                            <Role xml:lang="en"/>
+                            <Address xml:lang="en"/>
+                            <Email>kadri.muischnek@ut.ee</Email>
+                            <Department xml:lang="en"/>
+                            <Organisation xml:lang="en">University of Tartu</Organisation>
+                            <TelephoneNumber/>
+                            <FaxNumber/>
+                            <Url targetLang=""/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <CreationToolInfo>
+                    <CreationTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CreationToolInfo>
+                <Source>
+                    <OriginalSource xml:lang="en">Balanced Corpus of Estonian</OriginalSource>
+                    <SourceType xml:lang="en">written corpus</SourceType>
+                    
+                    <Derivation>
+                        <Organisation xml:lang="en">University of Tartu</Organisation>
+                        <DerivationDate>2012-02-14</DerivationDate>
+                        <DerivationMode xml:lang="en">automatic</DerivationMode>
+                        <DerivationType xml:lang="en">statistical (frequency counts)</DerivationType>
+                        <DerivationWorkflow xml:lang="en">statistical morphological disambiguator t3mesta, postprocessing with rule-based morpholigcal disambiguator</DerivationWorkflow>
+                        <DerivationToolInfo>
+                            <DerivationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </DerivationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Derivation>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Source>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Creation>
+            
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <PublicationDate/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <SubjectLanguages>
+                <NumberOfLanguages>1</NumberOfLanguages>
+                <SubjectLanguage>
+                    <DominantLanguage>true</DominantLanguage>
+                    <SourceLanguage>false</SourceLanguage>
+                    <TargetLanguage>false</TargetLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </SubjectLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </SubjectLanguages>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <FrequencyListSpecific>
+                <NumberOfWords>1710197</NumberOfWords>
+                <OrthographyName>unknown</OrthographyName>
+                <LanguageScript>latn</LanguageScript>
+                <ScriptName xml:lang="en">Latin</ScriptName>
+                <Domain>fiction, newspapers, scientific text</Domain>
+                <RelativeFrequency>false</RelativeFrequency>
+                <AbsoluteFrequency>true</AbsoluteFrequency>
+            </FrequencyListSpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en">UTF-8</CharacterEncoding>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en">Latin</ScriptName>
+                        <LanguageScript xml:lang="en">latn</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+                <MimeTypes>
+                    <MimeType>text/plain</MimeType>
+                </MimeTypes>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </FrequencyListProfile>
+    </Components>
+</CMD>

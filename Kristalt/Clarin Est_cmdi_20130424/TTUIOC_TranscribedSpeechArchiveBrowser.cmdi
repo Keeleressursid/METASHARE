@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1290431694581/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1290431694581</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <ToolProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Transcribed Speech Archive Browser</ResourceName>
+                <ResourceTitle xml:lang="en">Transcribed Speech Archive Browser</ResourceTitle>
+                <ResourceClass>Tool</ResourceClass>
+                <Version xml:lang="en">1.1</Version>
+                <LifeCycleStatus>released</LifeCycleStatus>
+                <StartYear>2009</StartYear>
+                <CompletionYear>2009</CompletionYear>
+                <PublicationDate>2009</PublicationDate>
+                <LastUpdate>2012</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">TTU IOC</LegalOwner>
+                <Location>
+                    <Address xml:lang="en"/>
+                    <Region xml:lang="en"/>
+                    <ContinentName xml:lang="en">Europe</ContinentName>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Project>
+                <ProjectName xml:lang="en">Estonian speech recognition</ProjectName>
+                <ProjectTitle xml:lang="en">Estonian speech recognition</ProjectTitle>
+                <ProjectID>EKKTT06-7</ProjectID>
+                <Funder xml:lang="en">National Programme for Estonian Language Technology</Funder>
+                <Url>http://www.keeletehnoloogia.ee</Url>
+                <Institution>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <Url>http://www.ioc.ee</Url>
+                    <Location>
+                        <Address xml:lang="en"/>
+                        <Region xml:lang="en"/>
+                        <ContinentName xml:lang="en">Europe</ContinentName>
+                        <Country>
+                            <CountryName xml:lang="en">Estonia</CountryName>
+                            <CountryCoding>EE</CountryCoding>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Contact>
+                    <Person>Tanel Alumäe</Person>
+                    <Role xml:lang="en">Project leader</Role>
+                    <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn</Address>
+                    
+               <Email>tanel.alumae@phon.ioc.ee</Email>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <TelephoneNumber>+3726204202</TelephoneNumber>
+                    <FaxNumber>+3726204151</FaxNumber>
+                    <Url>http://phon.ioc.ee</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Duration>
+                    <StartYear>2006</StartYear>
+                    <CompletionYear>2010</CompletionYear>
+                </Duration>
+            </Project>
+            <Publications>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Publication>
+                    <PublicationTitle xml:lang="en">TSAB - web interface for transcribed speech collections. In: Interspeech 2011 : Conference Proceedings, 27-31 August, Florence, Italy : Speech Science and Technology for Real Life: Florence, Italy: International Speech Communication Association, 2011, 3335 - 3336.</PublicationTitle>
+                    <Author>Alumäe, Tanel; Kitsik, Ahti</Author>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+            </Publications>
+            <Documentations>
+                <Documentation>
+                    <DocumentationType xml:lang="en"/>
+                    <FileName xml:lang="en"/>
+                    <Url/>
+                    <DocumentationLanguages>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <DocumentationLanguage>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Language>
+                                <LanguageName xml:lang="en">Estonian</LanguageName>
+                                <ISO639>
+                                    <iso-639-3-code>est</iso-639-3-code>
+                                </ISO639>
+                            </Language>
+                        </DocumentationLanguage>
+                    </DocumentationLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Documentation>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Documentations>
+            <Creators>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Creator>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Creator>
+            </Creators>
+            <Access>
+                <Availability xml:lang="en"/>
+                <DistributionMedium xml:lang="en"/>
+                <CatalogueLink/>
+                <Price xml:lang="en"/>
+                <Licence src="" xml:lang="en"/>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Copyright>
+                <CopyrightLicence>
+                    <OpenSource>true</OpenSource>
+                    <LicenceType xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CopyrightLicence>
+                <UsageLicence>
+                    <Availability xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </UsageLicence>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Copyright>
+            <ToolContext>
+                <ToolClassification>
+                    <ToolType xml:lang="en"/>
+                    <ClassificationType xml:lang="en"/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ToolClassification>
+                <TotalSize>
+                    <Size>200</Size>
+                    <SizeUnit xml:lang="en">MB</SizeUnit>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </TotalSize>
+                <Inputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Input>
+                        <InputType xml:lang="en"/>
+                        <Schema xml:lang="en"/>
+                        <InputResource xml:lang="en"/>
+                        <InputParameters>
+                            <InputParameter xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </InputParameters>
+                        <InputResourceConditions>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </InputResourceConditions>
+                        <InputLanguages>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <InputLanguage>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <Language>
+                                    <LanguageName xml:lang="en">Estonian</LanguageName>
+                                    <ISO639>
+                                        <iso-639-3-code>est</iso-639-3-code>
+                                    </ISO639>
+                                </Language>
+                            </InputLanguage>
+                        </InputLanguages>
+                        <TextTechnical>
+                            <CharacterEncoding xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <LanguageScripts>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <LanguageScriptGrp>
+                                    <ScriptName xml:lang="en"/>
+                                    <LanguageScript xml:lang="en"/>
+                                </LanguageScriptGrp>
+                            </LanguageScripts>
+                        </TextTechnical>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Input>
+                </Inputs>
+                <Outputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Output>
+                        <OutputType xml:lang="en"/>
+                        <Schema xml:lang="en"/>
+                        <OutputResource xml:lang="en"/>
+                        <DisplayType xml:lang="en"/>
+                        <OutputSubstructures>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </OutputSubstructures>
+                        <TextTechnical>
+                            <CharacterEncoding xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <LanguageScripts>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <LanguageScriptGrp>
+                                    <ScriptName xml:lang="en"/>
+                                    <LanguageScript xml:lang="en"/>
+                                </LanguageScriptGrp>
+                            </LanguageScripts>
+                            <MimeTypes>
+                                <MimeType>text/html</MimeType>
+                            </MimeTypes>
+                        </TextTechnical>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Output>
+                </Outputs>
+                <Implementations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Implementation>
+                        <Approach xml:lang="en"/>
+                        <ImplementationLanguage xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Implementation>
+                </Implementations>
+                <InstallEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <InstallEnv>
+                        <WorkingMemoryMin xml:lang="en"/>
+                        <HardDiskMin xml:lang="en"/>
+                        <OperatingSystems>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <OperatingSystemGrp>
+                                <OperatingSystem xml:lang="en"/>
+                                <Version xml:lang="en"/>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </OperatingSystemGrp>
+                        </OperatingSystems>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </InstallEnv>
+                </InstallEnvs>
+                <Prerequisites>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Prerequisite>
+                        <PrerequisiteName xml:lang="en"/>
+                        <Url/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Prerequisite>
+                </Prerequisites>
+                <TechEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <TechEnv>
+                        <ApplicationType>web application</ApplicationType>
+                        <orchestration/>
+                        <Url/>
+                        <API xml:lang="en"/>
+                        <AccessProtocol xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </TechEnv>
+                </TechEnvs>
+            </ToolContext>
+        </ToolProfile>
+    </Components>
+</CMD>

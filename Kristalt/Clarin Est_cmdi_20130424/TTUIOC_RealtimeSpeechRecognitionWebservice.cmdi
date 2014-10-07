@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1320657629644/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1320657629644</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <WebLichtWebService>
+            <Service CoreVersion="1.0">
+                <Name>Real-time speech recognition web service</Name>
+                <Description>Real-time speech recognition web service</Description>
+                <ApplicationType>webService</ApplicationType>
+                <TypeOfWebservice/>
+                <url>http://bark.phon.ioc.ee/speech-api/v1</url>
+                <LifeCycleStatus>existing</LifeCycleStatus>
+                <PublicationDate>2011</PublicationDate>
+                <LastUpdate>2012</LastUpdate>
+                <ServiceDescriptionLocation>http://bark.phon.ioc.ee/speech-api/v1</ServiceDescriptionLocation>
+                <Contact>
+                    <Person>Tanel Alumäe</Person>
+                    <Role xml:lang="en">Developer</Role>
+                    <Address xml:lang="en">Akadeemia tee21, 12618 Tallinn</Address>
+                    <Email>tanel.alumae@phon.ioc.ee</Email>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <TelephoneNumber>+3726204202</TelephoneNumber>
+                    <FaxNumber>+3726204151</FaxNumber>
+                    <Url>http://phon.ioc.ee</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Creation>
+                    <Topic xml:lang="en"/>
+                    <Creators>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <Creator>
+                            <Contact>
+                                <Person/>
+                                <Role xml:lang="en"/>
+                                <Address xml:lang="en"/>
+                                <Email/>
+                                <Department xml:lang="en"/>
+                                <Organisation xml:lang="en"/>
+                                <TelephoneNumber/>
+                                <FaxNumber/>
+                                <Url targetLang=""/>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </Contact>
+                        </Creator>
+                    </Creators>
+                    <CreationToolInfo>
+                        <CreationTool xml:lang="en"/>
+                        <ToolType xml:lang="en"/>
+                        <Version xml:lang="en"/>
+                        <Url/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </CreationToolInfo>
+                    <Annotation>
+                        <AnnotationMode xml:lang="en"/>
+                        <AnnotationStandoff xml:lang="en"/>
+                        <InterannotatorAgreement xml:lang="en"/>
+                        <AnnotationFormat xml:lang="en"/>
+                        <SegmentationUnits>
+                            <SegmentationUnit>unknown</SegmentationUnit>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </SegmentationUnits>
+                        <AnnotationTypes>
+                            <AnnotationType>
+                                <AnnotationLevelType xml:lang="en"/>
+                                <AnnotationMode xml:lang="en"/>
+                                <TagsetInfo>
+                                    <Tagset xml:lang="en"/>
+                                    <Descriptions>
+                                        <Description xml:lang="en"/>
+                                    </Descriptions>
+                                </TagsetInfo>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </AnnotationType>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </AnnotationTypes>
+                        <AnnotationToolInfo>
+                            <AnnotationTool xml:lang="en"/>
+                            <ToolType xml:lang="en"/>
+                            <Version xml:lang="en"/>
+                            <Url/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </AnnotationToolInfo>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Annotation>
+                    <Source>
+                        <OriginalSource xml:lang="en"/>
+                        <SourceType xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Source>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Creation>
+                <Operations>
+                    <Operation>
+                        <Name>Real-time speech recognition web service</Name>
+                        <Description/>
+                        <Input>
+                        </Input>
+                        <Output>
+                        </Output>
+                    </Operation>
+                </Operations>
+            </Service>
+        </WebLichtWebService>
+    </Components>
+</CMD>

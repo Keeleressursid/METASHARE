@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1290431694581/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1290431694581</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <ToolProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Real-time speech recognition application for Android (Kõnele)</ResourceName>
+                <ResourceName xml:lang="est">Kõnele Androidi rakendus</ResourceName>
+            <ResourceTitle xml:lang="en">Real-time speech recognition application for Android (Kõnele)</ResourceTitle>
+                <ResourceClass>Tool</ResourceClass>
+                <Version xml:lang="en">0.8.40</Version>
+                <LifeCycleStatus>released</LifeCycleStatus>
+                <StartYear>2011</StartYear>
+                <CompletionYear>2011</CompletionYear>
+                <PublicationDate>2011</PublicationDate>
+                <LastUpdate>2013</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">TTU IOC</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn</Address>
+                    <Region xml:lang="en">Baltic</Region>
+                    <ContinentName xml:lang="en">Europe</ContinentName>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Project>
+                <ProjectName xml:lang="en">Speech recognition</ProjectName>
+                <ProjectTitle xml:lang="en">Speech recognition</ProjectTitle>
+                <ProjectID>EKT 18</ProjectID>
+                <Funder xml:lang="en">National Programme for Estonian Language Technology</Funder>
+                <Url>http://www.keeletehnoloogia.ee</Url>
+                <Institution>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <Url>http://www.ioc.ee</Url>
+                    <Location>
+                        <Address xml:lang="en"/>
+                        <Region xml:lang="en"/>
+                        <ContinentName xml:lang="en"/>
+                        <Country>
+                            <CountryName xml:lang="en">Estonia</CountryName>
+                            <CountryCoding>EE</CountryCoding>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Contact>
+                    <Person>Tanel Alumäe</Person>
+                    <Role xml:lang="en">Project leader</Role>
+                    <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn</Address>
+                    <Email>tanel.aluma@phon.ioc.ee</Email>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <TelephoneNumber>+3726204202</TelephoneNumber>
+                    <FaxNumber>+3726204151</FaxNumber>
+                    <Url>http://phon.ioc.ee</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Duration>
+                    <StartYear>2011</StartYear>
+                    <CompletionYear>2014</CompletionYear>
+                </Duration>
+            </Project>
+            <Publications>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Publication>
+                    <PublicationTitle xml:lang="en">Open and extendable speech recognition application architecture for mobile environments. In: SLTU '12 : 3rd International Workshop on Spoken Language Technologies for Under-resourced Languages, 7-9 May 2012, Cape Town, South Africa, Conference Proceedings: (Toim.) Nocera, Pascal; Barnard, Etienne. Cape Town: North-West University, South Africa, 2012, 15 - 18.</PublicationTitle>
+                    <Author>Alumäe, Tanel; Kaljurand, Kaarel</Author>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+            </Publications>
+            <Documentations>
+                <Documentation>
+                    <DocumentationType xml:lang="en">User documentation</DocumentationType>
+                    <FileName xml:lang="en"/>
+                    <Url>https://play.google.com/store/apps/details?id=ee.ioc.phon.android.speak&amp;hl=en</Url>
+                    <DocumentationLanguages>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <DocumentationLanguage>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <Language>
+                                <LanguageName xml:lang="en">Estonian</LanguageName>
+                                <ISO639>
+                                    <iso-639-3-code>est</iso-639-3-code>
+                                </ISO639>
+                            </Language>
+                        </DocumentationLanguage>
+                    </DocumentationLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Documentation>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Documentations>
+            <Creators>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+                <Creator>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Creator>
+            </Creators>
+            <Access>
+                <Availability xml:lang="en"/>
+                <DistributionMedium xml:lang="en"/>
+                <CatalogueLink/>
+                <Price xml:lang="en"/>
+                <Licence src="" xml:lang="en"/>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person>Tanel Alumäe</Person>
+                    <Role xml:lang="en">Developer</Role>
+                    <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn</Address>
+                    <Email>tanel.alumae@phon.ioc.ee</Email>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <TelephoneNumber>+3726204202</TelephoneNumber>
+                    <FaxNumber>+3726204151</FaxNumber>
+                    <Url>http://phon.ioc.ee</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <ToolContext>
+                <ToolClassification>
+                    <ToolType xml:lang="en">Android application</ToolType>
+                    <ClassificationType xml:lang="en"/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ToolClassification>
+                <DocumentationLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <DocumentationLanguage>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <Language>
+                            <LanguageName xml:lang="en">Estonian</LanguageName>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </DocumentationLanguage>
+                </DocumentationLanguages>
+                <Inputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Input>
+                        <InputType xml:lang="en"/>
+                        <Schema xml:lang="en"/>
+                        <InputResource xml:lang="en"/>
+                        <InputParameters>
+                            <InputParameter xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </InputParameters>
+                        <InputResourceConditions>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </InputResourceConditions>
+                        <InputLanguages>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <InputLanguage>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                                <Language>
+                                    <LanguageName xml:lang="en">Estonian</LanguageName>
+                                    <ISO639>
+                                        <iso-639-3-code>est</iso-639-3-code>
+                                    </ISO639>
+                                </Language>
+                            </InputLanguage>
+                        </InputLanguages>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Input>
+                </Inputs>
+                <Outputs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Output>
+                        <OutputType xml:lang="en"/>
+                        <Schema xml:lang="en"/>
+                        <OutputResource xml:lang="en"/>
+                        <DisplayType xml:lang="en"/>
+                        <OutputSubstructures>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </OutputSubstructures>
+                        <TextTechnical>
+                            <CharacterEncoding xml:lang="en"/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </TextTechnical>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Output>
+                </Outputs>
+                <Implementations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Implementation>
+                        <Approach xml:lang="en"/>
+                        <ImplementationLanguage xml:lang="en">Java</ImplementationLanguage>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Implementation>
+                </Implementations>
+                <InstallEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <InstallEnv>
+                        <WorkingMemoryMin xml:lang="en"/>
+                        <HardDiskMin xml:lang="en"/>
+                        <OperatingSystems>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                            <OperatingSystemGrp>
+                                <OperatingSystem xml:lang="en">Android</OperatingSystem>
+                                <Version xml:lang="en">2.3</Version>
+                                <Descriptions>
+                                    <Description xml:lang="en"/>
+                                </Descriptions>
+                            </OperatingSystemGrp>
+                        </OperatingSystems>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </InstallEnv>
+                </InstallEnvs>
+                <Prerequisites>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Prerequisite>
+                        <PrerequisiteName xml:lang="en"/>
+                        <Url/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Prerequisite>
+                </Prerequisites>
+                <TechEnvs>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <TechEnv>
+                        <ApplicationType>other</ApplicationType>
+                        <orchestration/>
+                        <Url/>
+                        <API xml:lang="en"/>
+                        <AccessProtocol xml:lang="en"/>
+                        <Descriptions>
+                            <Description xml:lang="eng">mobile application</Description>
+                        </Descriptions>
+                    </TechEnv>
+                </TechEnvs>
+            </ToolContext>
+        </ToolProfile>
+    </Components>
+</CMD>

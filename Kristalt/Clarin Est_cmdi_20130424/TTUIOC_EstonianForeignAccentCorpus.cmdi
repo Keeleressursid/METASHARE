@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977528/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977528</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <SpeechCorpus>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">Estonian Foreign Accent Corpus</ResourceName>
+                <ResourceTitle xml:lang="en">Estonian Foreign Accent Corpus</ResourceTitle>
+                <ResourceClass>SpeechCorpus</ResourceClass>
+                <Version xml:lang="en">1.0</Version>
+                <LifeCycleStatus>development</LifeCycleStatus>
+                <StartYear>2007</StartYear>
+                <CompletionYear>2015</CompletionYear>
+                <PublicationDate/>
+                <LastUpdate/>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="en">TTU IOC</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn</Address>
+                    <Region xml:lang="en">Europe</Region>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>spoken</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en"/>
+                <DistributionMedium xml:lang="en"/>
+                <CatalogueLink/>
+                <Licence src="" xml:lang="en"/>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person>Einar Meister</Person>
+                    <Role xml:lang="en">Developer</Role>
+                    <Address xml:lang="en">Akadeemia 21, 12618 Tallinn</Address>
+                    <Email>einar@ioc.ee</Email>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <TelephoneNumber>+3726204200</TelephoneNumber>
+                    <FaxNumber>+3726204151</FaxNumber>
+                    <Url>http://phon.ioc.ee</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Creation>
+                <Topic xml:lang="en"/>
+                <Creators>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Creator>
+                        <Contact>
+                            <Person/>
+                            <Role xml:lang="en"/>
+                            <Address xml:lang="en"/>
+                            <Email/>
+                            <Department xml:lang="en"/>
+                            <Organisation xml:lang="en"/>
+                            <TelephoneNumber/>
+                            <FaxNumber/>
+                            <Url targetLang=""/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <CreationToolInfo>
+                    <CreationTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CreationToolInfo>
+                <Source>
+                    <OriginalSource xml:lang="en"/>
+                    <SourceType xml:lang="en"/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Source>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Creation>
+            <Project>
+                <ProjectName xml:lang="en">Speech and multi-modal corpora</ProjectName>
+                <ProjectTitle xml:lang="en">Speech and multi-modal corpora</ProjectTitle>
+                <ProjectID>EKT 2</ProjectID>
+                <Funder xml:lang="en">National Programme for Estonian Language Technology (2010-2017)</Funder>
+                <Url>http://www.keeletehnoloogia.ee</Url>
+                <Institution>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <Url>http://www.ioc.ee</Url>
+                    <Location>
+                        <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn</Address>
+                        <Region xml:lang="en">Europe</Region>
+                        <Country>
+                            <CountryName xml:lang="en">Estonia</CountryName>
+                            <CountryCoding>EE</CountryCoding>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                
+                <Contact>
+                    <Person>Einar Meister</Person>
+                    <Role xml:lang="en">Developer</Role>
+                    <Address xml:lang="en">Akadeemia tee 21, 12618 Tallinn, Estonia</Address>
+                    <Email>einar@ioc.ee</Email>
+                    <Department xml:lang="en">Laboratory of Phonetics and Speech Technology</Department>
+                    <Organisation xml:lang="en">Institute of Cybernetics at Tallinn University of Technology</Organisation>
+                    <TelephoneNumber>+3726204200</TelephoneNumber>
+                    <FaxNumber>+3726204151</FaxNumber>
+                    <Url>http://phon.ioc.ee</Url>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+            <Duration>
+                    <StartYear>2007</StartYear>
+                    <CompletionYear>2015</CompletionYear>
+                </Duration>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Project>
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="est">Aktsendikorpus ja võõrkeele aktsendi uurimine. Keel ja Kirjandus, 55(8-9), 696 - 714.</PublicationTitle>
+                    <Author>Meister, Lya; Meister, Einar</Author>
+                    <Url/>
+                    <PublicationDate>2012</PublicationDate>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <SubjectLanguages>
+                <NumberOfLanguages>1</NumberOfLanguages>
+                <SubjectLanguage>
+                    <DominantLanguage>false</DominantLanguage>
+                    
+                    
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </SubjectLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </SubjectLanguages>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <SpeechCorpusSpecific>
+                <Modalities>speech</Modalities>
+                <MediaType/>
+                <SpeechCorpus>
+                    <DurationOfEffectiveSpeech>18 hours</DurationOfEffectiveSpeech>
+                    <DurationOfFullDatabase>20 hours</DurationOfFullDatabase>
+                    <NumberOfSpeakers>180</NumberOfSpeakers>
+                    <RecordingEnvironment>studio</RecordingEnvironment>
+                    <SpeakerDemographics>male and female speakers; age range: 17-60; different language backgrounds</SpeakerDemographics>
+                    <Quality>5</Quality>
+                    <RecordingPlatformHardware>Two microphones, Mackie Onyx 1640, FireWire I/O-card</RecordingPlatformHardware>
+                    <RecordingPlatformSoftware>Adobe Audition 3.0</RecordingPlatformSoftware>
+                    <SpeechTechnicalMetadata>
+                        <SamplingFrequency>44100</SamplingFrequency>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <ByteOrder>little endian</ByteOrder>
+                        <Compression>none</Compression>
+                        <BitResolution>16</BitResolution>
+                        <SpeechCoding>pcm</SpeechCoding>
+                    </SpeechTechnicalMetadata>
+                </SpeechCorpus>
+                <Multilinguality>
+                    <Multilinguality>Monolingual</Multilinguality>
+                </Multilinguality>
+                <AnnotationTypes>
+                    <AnnotationType>
+                        <AnnotationType>Phonetics</AnnotationType>
+                        <Description>
+                            <Description LanguageID="" xml:lang="en"/>
+                        </Description>
+                    </AnnotationType>
+                    <Description>
+                        <Description xml:lang="en">Estonian spoken by non-native subjects with different language backgrounds</Description>
+                    </Description>
+                </AnnotationTypes>
+                <Size>
+                    <TotalSize>
+                        <Number>54</Number>
+                        <SizeUnit xml:lang="en">GB</SizeUnit>
+                    </TotalSize>
+                    <SizePerLanguage>
+                        <Number>54</Number>
+                        <SizeUnit xml:lang="en">GB</SizeUnit>
+                        <Language>
+                            <LanguageName xml:lang="en">Estonian</LanguageName>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SizePerLanguage>
+                </Size>
+            </SpeechCorpusSpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en"/>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en"/>
+                        <LanguageScript xml:lang="en"/>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </SpeechCorpus>
+    </Components>
+</CMD>

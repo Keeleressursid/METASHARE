@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1297242111879/xsd">
+   <Header>
+      <MdCreator>nemee</MdCreator>
+      <MdCreationDate>2013-03-27+02:00</MdCreationDate>
+      <MdProfile>clarin.eu:cr1:p_1297242111879</MdProfile>
+   </Header>
+   <Resources>
+      <ResourceProxyList/>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+   </Resources>
+   <Components>
+      <Tool>
+         <toolType>Web application</toolType>
+         <applicationType/>
+         <GeneralInfo>
+            <Name xml:lang="est">Teksaurus</Name>
+         </GeneralInfo>
+         <Creators>
+            <Creator>
+               <Contact/>
+            </Creator>
+         </Creators>
+         <Project/>
+         <Country>
+            <Code>EE</Code>
+         </Country>
+         <access-addedfield>
+            <Availability>free</Availability>
+            <Contact/>
+            <DistributionType>
+               <distributionType>source code</distributionType>
+            </DistributionType>
+         </access-addedfield>
+         <Implementation>
+            <implementationLanguage>Python</implementationLanguage>
+            <systemrequirements/>
+         </Implementation>
+      </Tool>
+   </Components>
+</CMD>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977522/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977522</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <TreebankProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="eng">Estonian Treebank</ResourceName>
+                <ResourceTitle xml:lang="en">Estonian Treebank</ResourceTitle>
+                <ResourceClass>Treebank</ResourceClass>
+                <Version xml:lang="zxx">08.12.2010</Version>
+                <LifeCycleStatus>development</LifeCycleStatus>
+                
+                
+                <PublicationDate>08.12.2010</PublicationDate>
+                <LastUpdate>08.12.2010</LastUpdate>
+                <TimeCoverage xml:lang="en"/>
+                <LegalOwner xml:lang="eng">University of Tartu</LegalOwner>
+                <Location>
+                    <Address xml:lang="en">Ulikooli 18, Tartu</Address>
+                    <Region xml:lang="en"/>
+                    <Country>
+                        <CountryName xml:lang="en">Estonia</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="eng">free for academic use</Availability>
+                <DistributionMedium xml:lang="eng">download</DistributionMedium>
+                <CatalogueLink/>
+                <Licence xml:lang="en">CLARIN-ACA</Licence>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person>Kaili Müürisep</Person>
+                    <Role xml:lang="eng">resource creator</Role>
+                    <Address xml:lang="en"/>
+                    <Email>kaili.muurisep@ut.ee</Email>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="eng">University of Tartu</Organisation>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <PublicationDate/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <SubjectLanguages>
+                <NumberOfLanguages>1</NumberOfLanguages>
+                <SubjectLanguage>
+                    <DominantLanguage>true</DominantLanguage>
+                    <SourceLanguage>false</SourceLanguage>
+                    <TargetLanguage>false</TargetLanguage>
+                    <Language>
+                        <LanguageName xml:lang="eng">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </SubjectLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </SubjectLanguages>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="eng">Estonian</LanguageName>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <TreebankSpecific>
+                <CorpusType>treebank</CorpusType>
+                <domain>Estonian syntax</domain>
+                <TemporalClassification>unknown</TemporalClassification>
+                <NumberOfWords>170000</NumberOfWords>
+                <AnnotationScheme>Estonian Constraint Grammar (EstCG), VISL style combined dependency and phrase structure</AnnotationScheme>
+                <AnnotationMode>manual</AnnotationMode>
+                <LinguisticSubject>syntax</LinguisticSubject>
+                <InterchangeFormat>TigerXML</InterchangeFormat>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TreebankSpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="zxx">UTF-8</CharacterEncoding>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="en">Latin</ScriptName>
+                        <LanguageScript xml:lang="en">latn</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+                <MimeTypes>
+                    <MimeType>text/xml</MimeType>
+                </MimeTypes>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </TreebankProfile>
+    </Components>
+</CMD>

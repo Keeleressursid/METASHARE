@@ -1,0 +1,81 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0000-D</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType>LandingPage</ResourceType>
+       <ResourceRef>http://math.ut.ee/~kaili/Korpus/pindmine/</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Estonian corpus with shallow syntactic annotation</resourceName>
+            <description xml:lang="en">This corpus is a monolingual corpus with Constraint Grammar-style shallow syntactic annotations.</description>
+            <resourceShortName xml:lang="en">ESTSYNCORP</resourceShortName>
+            <metaShareId>
+            NOT_DEFINED_FOR_V2
+          </metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>CLARIN_ACA-NC</licence>
+               <restrictionsOfUse>academic-nonCommercialUse</restrictionsOfUse>
+               <restrictionsOfUse>attribution</restrictionsOfUse>
+               <distributionAccessMedium>downloadable</distributionAccessMedium>
+               <downloadLocation>http://math.ut.ee/~kaili/Korpus/pindmine/</downloadLocation>
+               <userNature>academic</userNature>
+            </licenceInfo>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="et">Müürisep</surname>
+               <givenName xml:lang="et">Kaili</givenName>
+               <communicationInfo>
+                  <email>Kaili.Muurisep@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2011-12-31</metadataCreationDate>
+            <metadataLanguageName>English</metadataLanguageName>
+            <metadataLanguageId>en</metadataLanguageId>
+            <metadataLastDateUpdated>2013-01-14</metadataLastDateUpdated>
+         </metadataInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                     <languageScript>Latin</languageScript>
+                  </languageInfo>
+                  <sizeInfo>
+                     <size>300000</size>
+                     <sizeUnit>tokens</sizeUnit>
+                  </sizeInfo>
+               </corpusTextInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

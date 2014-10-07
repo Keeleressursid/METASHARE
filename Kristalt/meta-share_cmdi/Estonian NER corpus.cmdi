@@ -1,0 +1,97 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0001-1</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType mimetype="application/zip">Resource</ResourceType>
+       <ResourceRef>http://patnlp.googlecode.com/files/estner.cnll.zip</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Estonian NER corpus</resourceName>
+            <description xml:lang="en">Corpus containing morphologically analyzed articles with named entity annotations (persons, organizations, locations) in BOI format.</description>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-unrestrictedUse</availability>
+            <availabilityStartDate>2013-05-15</availabilityStartDate>
+            <licenceInfo>
+               <licence>CC-BY-NC</licence>
+               <restrictionsOfUse>academic-nonCommercialUse</restrictionsOfUse>
+               <distributionAccessMedium>downloadable</distributionAccessMedium>
+               <downloadLocation>http://patnlp.googlecode.com/files/estner.cnll.zip</downloadLocation>
+               <fee>0</fee>
+               <userNature>academic</userNature>
+            </licenceInfo>
+            <iprHolderPerson>
+               <role>iprHolder</role>
+               <personInfo>
+                  <surname xml:lang="en">Laur</surname>
+                  <givenName xml:lang="en">Sven</givenName>
+                  <sex>male</sex>
+                  <communicationInfo>
+                     <email>swen@math.ut.ee</email>
+                  </communicationInfo>
+               </personInfo>
+            </iprHolderPerson>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="en">Laur</surname>
+               <givenName xml:lang="en">Sven</givenName>
+               <sex>male</sex>
+               <communicationInfo>
+                  <email>swen@math.ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-04-24</metadataCreationDate>
+            <metadataLastDateUpdated>2013-05-21</metadataLastDateUpdated>
+         </metadataInfo>
+         <versionInfo>
+            <version>1.0</version>
+            <lastDateUpdated>2013-04-24</lastDateUpdated>
+         </versionInfo>
+         <usageInfo>
+            <foreseenUseInfo>
+               <foreseenUse>nlpApplications</foreseenUse>
+            </foreseenUseInfo>
+         </usageInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                  </languageInfo>
+                  <sizeInfo>
+                     <size>6</size>
+                     <sizeUnit>mb</sizeUnit>
+                  </sizeInfo>
+               </corpusTextInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

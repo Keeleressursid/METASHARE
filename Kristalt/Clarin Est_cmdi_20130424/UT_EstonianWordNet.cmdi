@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1357720977509/xsd ">
+    <Header>
+        <MdCreator>cmdicast</MdCreator>
+        <MdCreationDate>2013-01-29</MdCreationDate>
+        <MdSelfLink/>
+        <MdProfile>clarin.eu:cr1:p_1357720977509</MdProfile>
+        <MdCollectionDisplayName/>
+    </Header>
+    <Resources>
+        <ResourceProxyList>
+        </ResourceProxyList>
+        <JournalFileProxyList>
+            <JournalFileProxy>
+                <JournalFileRef/>
+            </JournalFileProxy>
+        </JournalFileProxyList>
+        <ResourceRelationList>
+            <ResourceRelation>
+                <RelationType/>
+                <Res1/>
+                <Res2/>
+            </ResourceRelation>
+        </ResourceRelationList>
+        <IsPartOfList>
+            <IsPartOf/>
+        </IsPartOfList>
+    </Resources>
+    <Components>
+      <WordNetProfile>
+            <GeneralInfo>
+                <ResourceName xml:lang="en">EstWN</ResourceName>
+                <ResourceTitle xml:lang="en">Estonian WordNet</ResourceTitle>
+                <ResourceClass>WordNet</ResourceClass>
+                <Version xml:lang="est">kb66</Version>
+                <LifeCycleStatus>development</LifeCycleStatus>
+                <StartYear>1999</StartYear>
+                <CompletionYear>2012</CompletionYear>
+                <PublicationDate>2012</PublicationDate>
+                <LastUpdate>2012</LastUpdate>
+                <TimeCoverage xml:lang="en">contemporary</TimeCoverage>
+                <LegalOwner xml:lang="est">Tartu Ülikool</LegalOwner>
+                <Location>
+                    <Address xml:lang="est">Ülikooli 18</Address>
+                    <Region xml:lang="en">Tartu</Region>
+                    <Country>
+                        <CountryName xml:lang="est">Eesti</CountryName>
+                        <CountryCoding>EE</CountryCoding>
+                    </Country>
+                </Location>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </GeneralInfo>
+            <Access>
+                <Availability xml:lang="en">free for academic use</Availability>
+                <DistributionMedium xml:lang="en">download</DistributionMedium>
+                <CatalogueLink>http://www.cl.ut.ee/ressursid/teksaurus/#sec-4</CatalogueLink>
+                <Licence xml:lang="en">CC - BY - NC</Licence>
+                <DeploymentToolInfo>
+                    <DeploymentTool xml:lang="en"/>
+                    <ToolType xml:lang="en"/>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DeploymentToolInfo>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Contact>
+                    <Person>Heili Orav</Person>
+                    <Person/>
+               <Role xml:lang="eng">Project leader</Role>
+                    <Address xml:lang="en">Liivi 2, Tartu</Address>
+                    <Email>heili.orav@ut.ee</Email>
+                    <Department xml:lang="est">Eesti ja üldkeeleteaduse instituut</Department>
+                    <Organisation xml:lang="est">Tartu Ülikool</Organisation>
+                    <TelephoneNumber>+372 737 6143</TelephoneNumber>
+                    <FaxNumber/>
+                    <Url>http://www.cl.ut.ee/inimesed/horav/</Url>
+                    
+                </Contact>
+            <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Access>
+            <Creation>
+                <Topic xml:lang="en"/>
+                <Creators>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Creator>
+                        <Contact>
+                            <Person/>
+                            <Role xml:lang="en"/>
+                            <Address xml:lang="en"/>
+                            <Email/>
+                            <Department xml:lang="en"/>
+                            <Organisation xml:lang="en"/>
+                            <TelephoneNumber/>
+                            <FaxNumber/>
+                            <Url targetLang=""/>
+                            <Descriptions>
+                                <Description xml:lang="en"/>
+                            </Descriptions>
+                        </Contact>
+                    </Creator>
+                </Creators>
+                <CreationToolInfo>
+                    <CreationTool xml:lang="en">Polaris</CreationTool>
+                    <ToolType xml:lang="en">EuroWordNet editor</ToolType>
+                    <Version xml:lang="en"/>
+                    <Url/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </CreationToolInfo>
+                
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Creation>
+            <Project>
+                <ProjectName xml:lang="en"/>
+                <ProjectTitle xml:lang="en"/>
+                <ProjectID/>
+                <Funder xml:lang="en"/>
+                <Url targetLang=""/>
+                <Institution>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <Url targetLang=""/>
+                    <Location>
+                        <Address xml:lang="en"/>
+                        <Region xml:lang="en"/>
+                        <Country>
+                            <CountryName xml:lang="en"/>
+                            <CountryCoding>ET</CountryCoding>
+                        </Country>
+                    </Location>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Contact>
+                        <Person/>
+                        <Role xml:lang="en"/>
+                        <Address xml:lang="en"/>
+                        <Email/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <TelephoneNumber/>
+                        <FaxNumber/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Contact>
+                </Institution>
+                <Cooperations>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <Cooperation>
+                        <CooperationPartner xml:lang="en"/>
+                        <Department xml:lang="en"/>
+                        <Organisation xml:lang="en"/>
+                        <Url targetLang=""/>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                    </Cooperation>
+                </Cooperations>
+                <Contact>
+                    <Person/>
+                    <Role xml:lang="en"/>
+                    <Address xml:lang="en"/>
+                    <Email/>
+                    <Department xml:lang="en"/>
+                    <Organisation xml:lang="en"/>
+                    <TelephoneNumber/>
+                    <FaxNumber/>
+                    <Url targetLang=""/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Contact>
+                <Duration>
+                    <StartYear/>
+                    <CompletionYear/>
+                </Duration>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Project>
+            <Publications>
+                <Publication>
+                    <PublicationTitle xml:lang="en"/>
+                    <Author/>
+                    <Url/>
+                    <PublicationDate/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </Publication>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </Publications>
+            <DocumentationLanguages>
+                <DocumentationLanguage>
+                    <Language>
+                        <LanguageName xml:lang="en"/>
+                        <ISO639>
+                            <iso-639-3-code>est</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </DocumentationLanguage>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </DocumentationLanguages>
+            <WordnetSpecific>
+                <LexiconType>wordnet</LexiconType>
+                <SubjectLanguages>
+                    <NoLanguages>bilingual</NoLanguages>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                    <SubjectLanguage>
+                        <DominantLanguage>1</DominantLanguage>
+                        <SourceLanguage>1</SourceLanguage>
+                        <TargetLanguage>1</TargetLanguage>
+                        <Descriptions>
+                            <Description xml:lang="en"/>
+                        </Descriptions>
+                        <Language>
+                            <LanguageName xml:lang="en"/>
+                            <ISO639>
+                                <iso-639-3-code>est</iso-639-3-code>
+                            </ISO639>
+                        </Language>
+                    </SubjectLanguage>
+                </SubjectLanguages>
+                <AuxiliaryLanguages>
+                    <Language>
+                        <LanguageName xml:lang="en"/>
+                        <ISO639>
+                            <iso-639-3-code>eng</iso-639-3-code>
+                        </ISO639>
+                    </Language>
+                    <Descriptions>
+                        <Description xml:lang="est"/>
+                    </Descriptions>
+                </AuxiliaryLanguages>
+                <ModalityInfo>
+                    <Modalities>written</Modalities>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </ModalityInfo>
+                <HeadwordType>
+                    <LexicalUnit xml:lang="en"/>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </HeadwordType>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </WordnetSpecific>
+            <TechnicalInfo>
+                <CharacterEncoding xml:lang="en"/>
+                <LanguageScripts>
+                    <LanguageScriptGrp>
+                        <ScriptName xml:lang="est">Ladina</ScriptName>
+                        <LanguageScript xml:lang="en">Latn</LanguageScript>
+                        <MainScript>true</MainScript>
+                    </LanguageScriptGrp>
+                    <Descriptions>
+                        <Description xml:lang="en"/>
+                    </Descriptions>
+                </LanguageScripts>
+                <MimeTypes>
+                    <MimeType>text/plain</MimeType>
+                </MimeTypes>
+                <Descriptions>
+                    <Description xml:lang="en"/>
+                </Descriptions>
+            </TechnicalInfo>
+        </WordNetProfile>
+    </Components>
+</CMD>

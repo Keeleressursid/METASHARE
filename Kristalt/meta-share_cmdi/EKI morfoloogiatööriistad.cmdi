@@ -1,0 +1,146 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360931019836/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0000-C</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1360931019836</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+      <ResourceProxy id="resourcepage">
+       <ResourceType>LandingPage</ResourceType>
+       <ResourceRef>ftp://ftp.eki.ee/pub/keeletehnoloogia/morfana/</ResourceRef>
+      </ResourceProxy>
+      <ResourceProxy id="resource">
+       <ResourceType mimetype="application/x-msi">Resource</ResourceType>
+       <ResourceRef>http://eelex.eki.ee/pub/Install/ekiMorfo/ekiMorfoSetup.msi</ResourceRef>
+      </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="et">EKI morfoloogiatööriistad</resourceName>
+            <resourceName xml:lang="en">Morphological Toolset for Estonian</resourceName>
+            <description xml:lang="et">Eesti Keele Instituudi reeglipõhine morfoloogiatööriistade komplekt sisaldab endas eraldi kasutatavaid mooduleid silbitamise, tüübituvastuse, morfoloogilise analüüsi ja sünteesi kohta.</description>
+            <description xml:lang="en">Rule-based morphological toolset for Estonian is developed at Institute of the Estonian Language. It includes separately usable modules for declination type detection, syllabification, morphological analysis and synthesis.</description>
+            <url>http://artur.eki.ee/morf/</url>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-unrestrictedUse</availability>
+            <licenceInfo>
+               <licence>BSD-style</licence>
+               <restrictionsOfUse>informLicensor</restrictionsOfUse>
+               <distributionAccessMedium>accessibleThroughInterface</distributionAccessMedium>
+               <distributionAccessMedium>downloadable</distributionAccessMedium>
+               <downloadLocation>http://eelex.eki.ee/pub/Install/ekiMorfo/ekiMorfoSetup.msi</downloadLocation>
+               <downloadLocation>ftp://ftp.eki.ee/pub/keeletehnoloogia/morfana/</downloadLocation>
+            </licenceInfo>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="en">Hein</surname>
+               <givenName xml:lang="en">Indrek</givenName>
+               <communicationInfo>
+                  <email>Indrek.Hein@eki.ee</email>
+               </communicationInfo>
+               <affiliation>
+                  <role>affiliation</role>
+                  <organizationInfo>
+                     <organizationName xml:lang="et">Eesti Keele Instituut</organizationName>
+                     <organizationName xml:lang="en">Institute of the Estonian Language</organizationName>
+                     <communicationInfo>
+                        <email>eki@eki.ee</email>
+                        <url>http://portaal.eki.ee/</url>
+                        <address>Roosikrantsi 6</address>
+                        <zipCode>10119</zipCode>
+                        <city>Tallinn</city>
+                        <country>Estonia</country>
+                        <telephoneNumber>+372 6177 500</telephoneNumber>
+                        <faxNumber>+372 6177 550</faxNumber>
+                     </communicationInfo>
+                  </organizationInfo>
+               </affiliation>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2012-06-14</metadataCreationDate>
+            <metadataLastDateUpdated>2012-12-12</metadataLastDateUpdated>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="en">Nurk</surname>
+                  <givenName xml:lang="en">Tõnis</givenName>
+                  <communicationInfo>
+                     <email>tonis@eki.ee</email>
+                  </communicationInfo>
+                  <affiliation>
+                     <role>affiliation</role>
+                     <organizationInfo>
+                        <organizationName xml:lang="et">Eesti Keele Instituut</organizationName>
+                        <organizationName xml:lang="en">Institute of the Estonian Language</organizationName>
+                        <communicationInfo>
+                           <email>eki@eki.ee</email>
+                           <url>http://portaal.eki.ee/</url>
+                           <address>Roosikrantsi 6</address>
+                           <zipCode>10119</zipCode>
+                           <city>Tallinn</city>
+                           <country>Estonia</country>
+                           <telephoneNumber>+372 6177 500</telephoneNumber>
+                           <faxNumber>+372 6177 550</faxNumber>
+                        </communicationInfo>
+                     </organizationInfo>
+                  </affiliation>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <versionInfo>
+            <version>4.2</version>
+         </versionInfo>
+         <usageInfo>
+            <actualUseInfo>
+               <actualUse>humanUse</actualUse>
+               <useNLPSpecific>lemmatization</useNLPSpecific>
+               <useNLPSpecific>morphologicalAnalysis</useNLPSpecific>
+               <useNLPSpecific>posTagging</useNLPSpecific>
+            </actualUseInfo>
+            <actualUseInfo>
+               <actualUse>nlpApplications</actualUse>
+               <useNLPSpecific>lemmatization</useNLPSpecific>
+               <useNLPSpecific>morphologicalAnalysis</useNLPSpecific>
+               <useNLPSpecific>posTagging</useNLPSpecific>
+            </actualUseInfo>
+         </usageInfo>
+         <toolServiceInfo>
+            <resourceType>toolService</resourceType>
+            <toolServiceType>suiteOfTools</toolServiceType>
+            <languageDependent>true</languageDependent>
+            <inputInfo>
+               <mediaType>text</mediaType>
+               <modalityType>writtenLanguage</modalityType>
+               <languageName>Estonian</languageName>
+               <languageId>et</languageId>
+               <characterEncoding>windows-1257</characterEncoding>
+            </inputInfo>
+            <outputInfo>
+               <mediaType>text</mediaType>
+               <modalityType>writtenLanguage</modalityType>
+               <languageName>Estonian</languageName>
+               <languageId>et</languageId>
+               <characterEncoding>windows-1257</characterEncoding>
+            </outputInfo>
+            <toolServiceOperationInfo>
+               <operatingSystem>windows</operatingSystem>
+            </toolServiceOperationInfo>
+         </toolServiceInfo>
+      </resourceInfo>
+  </Components>
+</CMD>

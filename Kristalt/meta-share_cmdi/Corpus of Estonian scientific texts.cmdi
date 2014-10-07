@@ -1,0 +1,92 @@
+<CMD xmlns="http://www.clarin.eu/cmd/"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     CMDVersion="1.1"
+     xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1361876010571/xsd ">
+  <Header>
+      <MdCreator>metashareToCmdi.xsl</MdCreator>
+      <MdCreationDate>2014-03-07</MdCreationDate>
+      <MdSelfLink>http://hdl.handle.net/11297/1-00-0000-0000-0000-0001-D</MdSelfLink>
+      <MdProfile>clarin.eu:cr1:p_1361876010571</MdProfile>
+      <MdCollectionDisplayName>Center of Estonian Language Resources</MdCollectionDisplayName>
+  </Header>
+  <Resources>
+      <ResourceProxyList>
+        <ResourceProxy id="download_page">
+          <ResourceType mimetype="application/x-compressed">Resource</ResourceType>
+          <ResourceRef>http://www.cl.ut.ee/metanordi_korpused/estonian_scientific_texts.tar.gz</ResourceRef>
+        </ResourceProxy>
+      </ResourceProxyList>
+      <JournalFileProxyList/>
+      <ResourceRelationList/>
+  </Resources>
+  <Components>
+      <resourceInfo>
+         <identificationInfo>
+            <resourceName xml:lang="en">Corpus of Estonian scientific texts</resourceName>
+            <description xml:lang="en">A text corpus containing 5 million words of Estonian scientific texts: 
+PhD dissertations (2,3 million words) and scientific articles.
+Markup: TEI P5 XML
+encoding: UTF8</description>
+            <url>http://www.cl.ut.ee/korpused/segakorpus/doktoritood/</url>
+            <metaShareId>NOT_DEFINED_FOR_V2</metaShareId>
+         </identificationInfo>
+         <distributionInfo>
+            <availability>available-restrictedUse</availability>
+            <licenceInfo>
+               <licence>CLARIN_ACA-NC</licence>
+               <restrictionsOfUse>academic-nonCommercialUse</restrictionsOfUse>
+               <restrictionsOfUse>attribution</restrictionsOfUse>
+               <distributionAccessMedium>downloadable</distributionAccessMedium>
+               <downloadLocation>http://www.cl.ut.ee/metanordi_korpused/</downloadLocation>
+               <userNature>academic</userNature>
+            </licenceInfo>
+         </distributionInfo>
+         <contactPerson>
+            <role>contactPerson</role>
+            <personInfo>
+               <surname xml:lang="et">Muischnek</surname>
+               <givenName xml:lang="et">Kadri</givenName>
+               <communicationInfo>
+                  <email>korpus.info@ut.ee</email>
+               </communicationInfo>
+            </personInfo>
+         </contactPerson>
+         <metadataInfo>
+            <metadataCreationDate>2013-01-07</metadataCreationDate>
+            <metadataLanguageName>english</metadataLanguageName>
+            <metadataLanguageId>en</metadataLanguageId>
+            <metadataLastDateUpdated>2013-01-07</metadataLastDateUpdated>
+            <metadataCreator>
+               <role>metadataCreator</role>
+               <personInfo>
+                  <surname xml:lang="et">Muischnek</surname>
+                  <givenName xml:lang="et">Kadri</givenName>
+                  <communicationInfo>
+                     <email>korpus.info@ut.ee</email>
+                  </communicationInfo>
+               </personInfo>
+            </metadataCreator>
+         </metadataInfo>
+         <corpusInfo>
+            <resourceType>corpus</resourceType>
+            <corpusMediaType>
+               <corpusTextInfo>
+                  <mediaType>text</mediaType>
+                  <lingualityInfo>
+                     <lingualityType>monolingual</lingualityType>
+                  </lingualityInfo>
+                  <languageInfo>
+                     <languageId>et</languageId>
+                     <languageName>Estonian</languageName>
+                     <languageScript>latin</languageScript>
+                  </languageInfo>
+                  <sizeInfo>
+                     <size>5000000</size>
+                     <sizeUnit>words</sizeUnit>
+                  </sizeInfo>
+               </corpusTextInfo>
+            </corpusMediaType>
+         </corpusInfo>
+      </resourceInfo>
+  </Components>
+</CMD>
