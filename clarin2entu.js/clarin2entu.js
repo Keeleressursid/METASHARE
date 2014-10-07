@@ -10,6 +10,13 @@ var resource_types = []
 var entity_definitions = []
 var classifiers = {}
 var mysql = []
+mysql.push("ALTER TABLE `entity_definition` CHANGE `keyname` `keyname` VARCHAR(50)  CHARACTER SET ascii  BINARY  NOT NULL  DEFAULT '';")
+mysql.push("ALTER TABLE `property_definition` CHANGE `keyname` `keyname` VARCHAR(100)  CHARACTER SET ascii  BINARY  NOT NULL  DEFAULT '';")
+mysql.push("ALTER TABLE `property_definition` CHANGE `entity_definition_keyname` `entity_definition_keyname` VARCHAR(50) CHARACTER SET ascii BINARY NULL DEFAULT NULL;")
+mysql.push("ALTER TABLE `translation` CHANGE `entity_definition_keyname` `entity_definition_keyname` VARCHAR(50)  CHARACTER SET ascii  BINARY  NULL DEFAULT NULL;")
+mysql.push("ALTER TABLE `translation` CHANGE `property_definition_keyname` `property_definition_keyname` VARCHAR(100)  CHARACTER SET ascii  BINARY NULL DEFAULT NULL;")
+mysql.push("ALTER TABLE `entity` CHANGE `entity_definition_keyname` `entity_definition_keyname` VARCHAR(50)  CHARACTER SET ascii  BINARY  NOT NULL DEFAULT '';")
+mysql.push("ALTER TABLE `property` CHANGE `property_definition_keyname` `property_definition_keyname` VARCHAR(100)  CHARACTER SET ascii  BINARY  NULL DEFAULT NULL;")
 
 var CMD_roots = ['corpusInfo', 'languageDescriptionInfo', 'lexicalConceptualResourceInfo', 'toolServiceInfo']
 
@@ -208,7 +215,7 @@ entity_definitions.forEach(function(entity_definition) {
             entity_definition.validator.forEach(function(cl) {
                 mysql.push("INSERT INTO entity SET entity_definition_keyname = 'CL" + entity_definition.keyname + "', sharing = 'public', created = now(), old_id = 'temporarykey';")
                 mysql.push("INSERT INTO property SET property_definition_keyname = 'CL" + entity_definition.keyname + "-name', entity_id = (SELECT id FROM entity WHERE old_id = 'temporarykey'), value_display = '" + cl.item + "', value_string = '" + cl.item + "', created = now();")
-                mysql.push("INSERT INTO property SET property_definition_keyname = 'CL" + entity_definition.keyname + "-description', entity_id = (SELECT id FROM entity WHERE old_id = 'temporarykey'), value_display = '" + cl.AppInfo + "', value_text = '" + cl.AppInfo + "', created = now();")
+                mysql.push("INSERT INTO property SET property_definition_keyname = 'CL" + entity_definition.keyname + "-description', entity_id = (SELECT id FROM entity WHERE old_id = 'temporarykey'), value_display = '" + cl.AppInfo.replace("'","\\'") + "', value_text = '" + cl.AppInfo.replace("'","\\'") + "', created = now();")
                 mysql.push("UPDATE entity SET old_id = null WHERE old_id = 'temporarykey';")
             })
         }
@@ -246,10 +253,51 @@ entity_definitions.forEach(function(entity_definition) {
                     + ", search = 1"
                     + ", classifying_entity_definition_keyname = '" + property_definition_keyname + "'"
                     + ", created = now();")
-            } else if (entity_definition.properties[property_definition_keyname] !== 'string'
-                && entity_definition.properties[property_definition_keyname] !== 'date'
-                && entity_definition.properties[property_definition_keyname] !== 'boolean'
-                && entity_definition.properties[property_definition_keyname] !== 'integer') {
+            } else if (typeof entity_definition.properties[property_definition_keyname] === 'string') {
+                mysql.push("INSERT INTO property_definition SET keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "'"
+                    + ", entity_definition_keyname = '" + entity_definition.keyname + "'"
+                    + ", dataproperty = '" + property_definition_keyname + "'"
+                    + ", datatype = 'string'"
+                    + ", ordinal = " + property_ordinal++
+                    + ", multiplicity = " + (property_element.listproperty ? 'null' : 1)
+                    + ", public = 1"
+                    + ", mandatory = " + (property_element.mandatory ? 1 : 0)
+                    + ", search = 1"
+                    + ", created = now();")
+            } else if (typeof entity_definition.properties[property_definition_keyname] === 'date') {
+                mysql.push("INSERT INTO property_definition SET keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "'"
+                    + ", entity_definition_keyname = '" + entity_definition.keyname + "'"
+                    + ", dataproperty = '" + property_definition_keyname + "'"
+                    + ", datatype = 'datetime'"
+                    + ", ordinal = " + property_ordinal++
+                    + ", multiplicity = " + (property_element.listproperty ? 'null' : 1)
+                    + ", public = 1"
+                    + ", mandatory = " + (property_element.mandatory ? 1 : 0)
+                    + ", search = 1"
+                    + ", created = now();")
+            } else if (typeof entity_definition.properties[property_definition_keyname] === 'boolean') {
+                mysql.push("INSERT INTO property_definition SET keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "'"
+                    + ", entity_definition_keyname = '" + entity_definition.keyname + "'"
+                    + ", dataproperty = '" + property_definition_keyname + "'"
+                    + ", datatype = 'boolean'"
+                    + ", ordinal = " + property_ordinal++
+                    + ", multiplicity = " + (property_element.listproperty ? 'null' : 1)
+                    + ", public = 1"
+                    + ", mandatory = " + (property_element.mandatory ? 1 : 0)
+                    + ", search = 1"
+                    + ", created = now();")
+            } else if (typeof entity_definition.properties[property_definition_keyname] === 'integer') {
+                mysql.push("INSERT INTO property_definition SET keyname = '" + entity_definition.keyname + "-" + property_definition_keyname + "'"
+                    + ", entity_definition_keyname = '" + entity_definition.keyname + "'"
+                    + ", dataproperty = '" + property_definition_keyname + "'"
+                    + ", datatype = 'integer'"
+                    + ", ordinal = " + property_ordinal++
+                    + ", multiplicity = " + (property_element.listproperty ? 'null' : 1)
+                    + ", public = 1"
+                    + ", mandatory = " + (property_element.mandatory ? 1 : 0)
+                    + ", search = 1"
+                    + ", created = now();")
+            } else {
                 throw(stringifier([typeof entity_definition.properties[property_definition_keyname], entity_definition.properties[property_definition_keyname], entity_definition]))
             }
 
@@ -263,6 +311,7 @@ entity_definitions.forEach(function(entity_definition) {
 })
 // entity_definitions.push(mysql)
 fs.writeFileSync('parsed_resources.json', stringifier(entity_definitions))
+
 fs.writeFileSync('clarin2entu.sql', mysql.join('\n'))
 console.log('\n===== ' + Date.now()/1000 + ' == END ============\n\n')
 
