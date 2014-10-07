@@ -8,8 +8,7 @@
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "creationDetails",
@@ -20,8 +19,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceCreationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "implementationLanguage",
@@ -32,8 +30,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceCreationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "evaluationDetails",
@@ -44,8 +41,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "mediaType",
@@ -95,8 +91,7 @@
 			"lexicalConceptualResourceImageInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "evaluationMeasure",
@@ -116,8 +111,7 @@
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "lingualityType",
@@ -141,8 +135,7 @@
 		],
 		"usage": [
 			"lingualityInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "multilingualityType",
@@ -170,8 +163,7 @@
 		],
 		"usage": [
 			"lingualityInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "multilingualityTypeDetails",
@@ -182,8 +174,7 @@
 		"validator": [],
 		"usage": [
 			"lingualityInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "evaluationCriteria",
@@ -203,8 +194,7 @@
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageId",
@@ -217,8 +207,7 @@
 			"languageInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageName",
@@ -231,8 +220,7 @@
 			"languageInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageScript",
@@ -243,8 +231,7 @@
 		"validator": [],
 		"usage": [
 			"languageInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "evaluationType",
@@ -264,8 +251,7 @@
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "role",
@@ -396,8 +382,7 @@
 			"evaluationReportUnstructured",
 			"evaluatorPerson",
 			"evaluatorOrganization"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "evaluationLevel",
@@ -425,8 +410,7 @@
 		],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "size",
@@ -439,8 +423,7 @@
 			"sizeInfo",
 			"durationOfEffectiveSpeechInfo",
 			"durationOfAudioInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sizeUnit",
@@ -648,8 +631,7 @@
 		],
 		"usage": [
 			"sizeInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "evaluated",
@@ -660,8 +642,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceEvaluationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageVarietyType",
@@ -685,8 +666,7 @@
 		],
 		"usage": [
 			"languageVarietyInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageVarietyName",
@@ -699,8 +679,7 @@
 			"languageVarietyInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "runningTime",
@@ -711,8 +690,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceOperationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "operatingSystem",
@@ -748,8 +726,7 @@
 		],
 		"usage": [
 			"toolServiceOperationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "modalityType",
@@ -795,8 +772,7 @@
 			"modalityInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "modalityTypeDetails",
@@ -807,8 +783,7 @@
 		"validator": [],
 		"usage": [
 			"modalityInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageDependent",
@@ -819,8 +794,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "toolServiceSubtype",
@@ -831,8 +805,7 @@
 		"validator": [],
 		"usage": [
 			"toolServiceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "mimeType",
@@ -849,8 +822,7 @@
 			"textNumericalFormatInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "toolServiceType",
@@ -894,8 +866,7 @@
 		],
 		"usage": [
 			"toolServiceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "extraTextualInformationUnit",
@@ -935,8 +906,7 @@
 		],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "characterEncoding",
@@ -949,8 +919,7 @@
 			"characterEncodingInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "extratextualInformation",
@@ -978,8 +947,7 @@
 		],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "externalRef",
@@ -990,8 +958,7 @@
 		"validator": [],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationType",
@@ -1205,8 +1172,7 @@
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotatedElements",
@@ -1242,8 +1208,7 @@
 		],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationStandoff",
@@ -1254,8 +1219,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "segmentationLevel",
@@ -1337,8 +1301,7 @@
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationFormat",
@@ -1351,8 +1314,7 @@
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "tagset",
@@ -1365,8 +1327,7 @@
 			"annotationInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "tagsetLanguageId",
@@ -1377,8 +1338,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "tagsetLanguageName",
@@ -1389,8 +1349,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "conformanceToStandardsBestPractices",
@@ -1586,8 +1545,7 @@
 			"lexicalConceptualResourceEncodingInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "theoreticModel",
@@ -1600,8 +1558,7 @@
 			"annotationInfo",
 			"languageDescriptionEncodingInfo",
 			"lexicalConceptualResourceEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationMode",
@@ -1629,8 +1586,7 @@
 		],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationModeDetails",
@@ -1641,8 +1597,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationStartDate",
@@ -1653,8 +1608,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "annotationEndDate",
@@ -1665,8 +1619,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "interannotatorAgreement",
@@ -1677,8 +1630,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "intraannotatorAgreement",
@@ -1689,8 +1641,7 @@
 		"validator": [],
 		"usage": [
 			"annotationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "linguisticInformation",
@@ -1894,8 +1845,7 @@
 		],
 		"usage": [
 			"lexicalConceptualResourceEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "documentUnstructured",
@@ -1907,8 +1857,7 @@
 		"usage": [
 			"annotationManualUnstructured",
 			"evaluationReportUnstructured"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "lexicalConceptualResourceType",
@@ -1960,8 +1909,7 @@
 		],
 		"usage": [
 			"lexicalConceptualResourceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "output",
@@ -1972,8 +1920,7 @@
 		"validator": [],
 		"usage": [
 			"languageDescriptionPerformanceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "documentType",
@@ -2037,8 +1984,7 @@
 		],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "title",
@@ -2049,8 +1995,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "author",
@@ -2061,8 +2006,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "editor",
@@ -2073,8 +2017,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "year",
@@ -2085,8 +2028,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "publisher",
@@ -2097,8 +2039,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "bookTitle",
@@ -2109,8 +2050,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "journal",
@@ -2121,8 +2061,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "volume",
@@ -2133,8 +2072,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "series",
@@ -2145,8 +2083,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "pages",
@@ -2157,8 +2094,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "edition",
@@ -2169,8 +2105,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "conference",
@@ -2181,8 +2116,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "doi",
@@ -2193,8 +2127,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "url",
@@ -2208,8 +2141,7 @@
 		"usage": [
 			"documentInfo",
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "ISSN",
@@ -2220,8 +2152,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "ISBN",
@@ -2232,8 +2163,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "keywords",
@@ -2244,8 +2174,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "documentLanguageName",
@@ -2256,8 +2185,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "documentLanguageId",
@@ -2268,8 +2196,7 @@
 		"validator": [],
 		"usage": [
 			"documentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "shallowness",
@@ -2280,8 +2207,7 @@
 		"validator": [],
 		"usage": [
 			"languageDescriptionPerformanceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "targetResourceNameURI",
@@ -2297,8 +2223,7 @@
 			"requiredSoftware",
 			"requiredLRs",
 			"evaluationTool"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "robustness",
@@ -2309,8 +2234,7 @@
 		"validator": [],
 		"usage": [
 			"languageDescriptionPerformanceInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "compatibleLexiconType",
@@ -2338,8 +2262,7 @@
 		],
 		"usage": [
 			"relatedLexiconInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "attachedLexiconPosition",
@@ -2350,8 +2273,7 @@
 		"validator": [],
 		"usage": [
 			"relatedLexiconInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "surname",
@@ -2362,8 +2284,7 @@
 		"validator": [],
 		"usage": [
 			"personInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "givenName",
@@ -2374,8 +2295,7 @@
 		"validator": [],
 		"usage": [
 			"personInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sex",
@@ -2400,8 +2320,7 @@
 		"usage": [
 			"personInfo",
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "position",
@@ -2412,8 +2331,7 @@
 		"validator": [],
 		"usage": [
 			"personInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "relatedLexiconType",
@@ -2441,8 +2359,7 @@
 		],
 		"usage": [
 			"relatedLexiconInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "email",
@@ -2455,8 +2372,7 @@
 		],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "address",
@@ -2467,8 +2383,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "zipCode",
@@ -2479,8 +2394,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "city",
@@ -2491,8 +2405,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "region",
@@ -2503,8 +2416,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "country",
@@ -2515,8 +2427,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "telephoneNumber",
@@ -2527,8 +2438,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "faxNumber",
@@ -2539,8 +2449,7 @@
 		"validator": [],
 		"usage": [
 			"communicationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "runningEnvironmentDetails",
@@ -2551,8 +2460,7 @@
 		"validator": [],
 		"usage": [
 			"runningEnvironmentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "requiredHardware",
@@ -2588,8 +2496,7 @@
 		],
 		"usage": [
 			"runningEnvironmentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "organizationName",
@@ -2600,8 +2507,7 @@
 		"validator": [],
 		"usage": [
 			"organizationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "organizationShortName",
@@ -2612,8 +2518,7 @@
 		"validator": [],
 		"usage": [
 			"organizationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "departmentName",
@@ -2624,8 +2529,7 @@
 		"validator": [],
 		"usage": [
 			"organizationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "weightedGrammar",
@@ -2636,8 +2540,7 @@
 		"validator": [],
 		"usage": [
 			"languageDescriptionEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "grammaticalPhenomenaCoverage",
@@ -2673,8 +2576,7 @@
 		],
 		"usage": [
 			"languageDescriptionEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "domain",
@@ -2685,8 +2587,7 @@
 		"validator": [],
 		"usage": [
 			"domainInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "conformanceToClassificationScheme",
@@ -2754,8 +2655,7 @@
 			"audioClassificationInfo",
 			"videoClassificationInfo",
 			"imageClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "task",
@@ -2803,8 +2703,7 @@
 		],
 		"usage": [
 			"languageDescriptionEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "formalism",
@@ -2816,8 +2715,7 @@
 		"usage": [
 			"languageDescriptionEncodingInfo",
 			"toolServiceCreationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "textGenre",
@@ -2828,8 +2726,7 @@
 		"validator": [],
 		"usage": [
 			"textClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "textType",
@@ -2840,8 +2737,7 @@
 		"validator": [],
 		"usage": [
 			"textClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "register",
@@ -2853,8 +2749,7 @@
 		"usage": [
 			"textClassificationInfo",
 			"audioClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "subject_topic",
@@ -2868,8 +2763,7 @@
 			"audioClassificationInfo",
 			"videoClassificationInfo",
 			"imageClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "encodingLevel",
@@ -2910,8 +2804,7 @@
 		"usage": [
 			"languageDescriptionEncodingInfo",
 			"lexicalConceptualResourceEncodingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "languageDescriptionType",
@@ -2931,8 +2824,7 @@
 		],
 		"usage": [
 			"languageDescriptionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "timeCoverage",
@@ -2943,8 +2835,7 @@
 		"validator": [],
 		"usage": [
 			"timeCoverageInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "interpolated",
@@ -2955,8 +2846,7 @@
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "smoothing",
@@ -2967,8 +2857,7 @@
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "geographicCoverage",
@@ -2979,8 +2868,7 @@
 		"validator": [],
 		"usage": [
 			"geographicCoverageInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "factors",
@@ -2991,8 +2879,7 @@
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "isFactored",
@@ -3003,8 +2890,7 @@
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "creationMode",
@@ -3032,8 +2918,7 @@
 		],
 		"usage": [
 			"creationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "creationModeDetails",
@@ -3044,8 +2929,7 @@
 		"validator": [],
 		"usage": [
 			"creationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "perplexity",
@@ -3056,8 +2940,7 @@
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "order",
@@ -3068,8 +2951,7 @@
 		"validator": [],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "baseItem",
@@ -3101,8 +2983,7 @@
 		],
 		"usage": [
 			"ngramInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "otherMedia",
@@ -3134,8 +3015,7 @@
 		],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "mediaTypeDetails",
@@ -3146,8 +3026,7 @@
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "synchronizedWithText",
@@ -3158,8 +3037,7 @@
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "synchronizedWithAudio",
@@ -3170,8 +3048,7 @@
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "synchronizedWithVideo",
@@ -3182,8 +3059,7 @@
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sycnhronizedWithImage",
@@ -3194,8 +3070,7 @@
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "synchronizedWithTextNumerical",
@@ -3206,8 +3081,7 @@
 		"validator": [],
 		"usage": [
 			"linkToOtherMediaInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "typeOfTextNumericalContent",
@@ -3218,8 +3092,7 @@
 		"validator": [],
 		"usage": [
 			"textNumericalContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "imageGenre",
@@ -3230,8 +3103,7 @@
 		"validator": [],
 		"usage": [
 			"imageClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "quality",
@@ -3263,8 +3135,7 @@
 		],
 		"usage": [
 			"imageFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "durationUnit",
@@ -3289,8 +3160,7 @@
 		"usage": [
 			"durationOfEffectiveSpeechInfo",
 			"durationOfAudioInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "rasterOrVectorGraphics",
@@ -3310,8 +3180,7 @@
 		],
 		"usage": [
 			"imageFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "eventDescription",
@@ -3322,8 +3191,7 @@
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "speechItems",
@@ -3395,8 +3263,7 @@
 		],
 		"usage": [
 			"audioContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "nonSpeechItems",
@@ -3436,8 +3303,7 @@
 		],
 		"usage": [
 			"audioContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "textualDescription",
@@ -3448,8 +3314,7 @@
 		"validator": [],
 		"usage": [
 			"audioContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "noiseLevel",
@@ -3473,8 +3338,7 @@
 		],
 		"usage": [
 			"audioContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "organizationDescription",
@@ -3485,8 +3349,7 @@
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "naturality",
@@ -3530,8 +3393,7 @@
 		],
 		"usage": [
 			"settingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "conversationalType",
@@ -3555,8 +3417,7 @@
 		],
 		"usage": [
 			"settingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "scenarioType",
@@ -3600,8 +3461,7 @@
 		],
 		"usage": [
 			"settingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "audience",
@@ -3629,8 +3489,7 @@
 		],
 		"usage": [
 			"settingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "interactivity",
@@ -3662,8 +3521,7 @@
 		],
 		"usage": [
 			"settingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "interaction",
@@ -3674,8 +3532,7 @@
 		"validator": [],
 		"usage": [
 			"settingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "thingDescription",
@@ -3686,8 +3543,7 @@
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "signalEncoding",
@@ -3719,8 +3575,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "samplingRate",
@@ -3731,8 +3586,7 @@
 		"validator": [],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "quantization",
@@ -3764,8 +3618,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "byteOrder",
@@ -3785,8 +3638,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "signConvention",
@@ -3810,8 +3662,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "audioQualityMeasuresIncluded",
@@ -3843,8 +3694,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "numberOfTracks",
@@ -3872,8 +3722,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "recordingQuality",
@@ -3905,8 +3754,7 @@
 		],
 		"usage": [
 			"audioFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "personDescription",
@@ -3917,8 +3765,7 @@
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "compression",
@@ -3929,8 +3776,7 @@
 		"validator": [],
 		"usage": [
 			"compressionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "compressionName",
@@ -3990,8 +3836,7 @@
 		],
 		"usage": [
 			"compressionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "compressionLoss",
@@ -4002,8 +3847,7 @@
 		"validator": [],
 		"usage": [
 			"compressionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "landscapeParts",
@@ -4014,8 +3858,7 @@
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "artifactParts",
@@ -4026,8 +3869,7 @@
 		"validator": [],
 		"usage": [
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "audioGenre",
@@ -4067,8 +3909,7 @@
 		],
 		"usage": [
 			"audioClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "speechGenre",
@@ -4136,8 +3977,7 @@
 		],
 		"usage": [
 			"audioClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "textIncludedInImage",
@@ -4165,8 +4005,7 @@
 		],
 		"usage": [
 			"imageContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "typeOfImageContent",
@@ -4177,8 +4016,7 @@
 		"validator": [],
 		"usage": [
 			"imageContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "recordingDeviceType",
@@ -4218,8 +4056,7 @@
 		],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "recordingDeviceTypeDetails",
@@ -4230,8 +4067,7 @@
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "recordingPlatformSoftware",
@@ -4242,8 +4078,7 @@
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "recordingEnvironment",
@@ -4299,8 +4134,7 @@
 		],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sourceChannel",
@@ -4352,8 +4186,7 @@
 		],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sourceChannelType",
@@ -4401,8 +4234,7 @@
 		],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "resourceType",
@@ -4435,8 +4267,7 @@
 			"toolServiceInfo",
 			"inputInfo",
 			"outputInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sourceChannelDetails",
@@ -4447,8 +4278,7 @@
 		"validator": [],
 		"usage": [
 			"recordingInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "videoGenre",
@@ -4459,8 +4289,7 @@
 		"validator": [],
 		"usage": [
 			"videoClassificationInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "resolutionStandard",
@@ -4484,8 +4313,7 @@
 		],
 		"usage": [
 			"resolutionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sizeHeight",
@@ -4496,8 +4324,7 @@
 		"validator": [],
 		"usage": [
 			"resolutionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "capturingDeviceType",
@@ -4569,8 +4396,7 @@
 		],
 		"usage": [
 			"captureInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "capturingDeviceTypeDetails",
@@ -4581,8 +4407,7 @@
 		"validator": [],
 		"usage": [
 			"captureInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "capturingDetails",
@@ -4593,8 +4418,7 @@
 		"validator": [],
 		"usage": [
 			"captureInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "capturingEnvironment",
@@ -4614,8 +4438,7 @@
 		],
 		"usage": [
 			"captureInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sensorTechnology",
@@ -4626,8 +4449,7 @@
 		"validator": [],
 		"usage": [
 			"captureInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sceneIllumination",
@@ -4663,8 +4485,7 @@
 		],
 		"usage": [
 			"captureInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sizeWidth",
@@ -4675,8 +4496,7 @@
 		"validator": [],
 		"usage": [
 			"resolutionInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "numberOfPersons",
@@ -4687,8 +4507,7 @@
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "ageOfPersons",
@@ -4716,8 +4535,7 @@
 		],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "ageRangeStart",
@@ -4728,8 +4546,7 @@
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "ageRangeEnd",
@@ -4740,8 +4557,7 @@
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "sexOfPersons",
@@ -4769,8 +4585,7 @@
 		],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "originOfPersons",
@@ -4798,8 +4613,7 @@
 		],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "dialectAccentOfPersons",
@@ -4810,8 +4624,7 @@
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "geographicDistributionOfPersons",
@@ -4822,8 +4635,7 @@
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "hearingImpairmentOfPersons",
@@ -4847,8 +4659,7 @@
 		],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "speakingImpairmentOfPersons",
@@ -4872,8 +4683,7 @@
 		],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "numberOfTrainedSpeakers",
@@ -4884,8 +4694,7 @@
 		"validator": [],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "speechInfluences",
@@ -4917,8 +4726,7 @@
 		],
 		"usage": [
 			"personSourceSetInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "fidelity",
@@ -4929,8 +4737,7 @@
 		"validator": [],
 		"usage": [
 			"videoFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "alias",
@@ -4941,8 +4748,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "ageGroup",
@@ -4970,8 +4776,7 @@
 		],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "age",
@@ -4982,8 +4787,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "origin",
@@ -5007,8 +4811,7 @@
 		],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "placeOfLiving",
@@ -5019,8 +4822,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "placeOfBirth",
@@ -5031,8 +4833,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "placeOfChildhood",
@@ -5043,8 +4844,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "dialectAccent",
@@ -5055,8 +4855,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "speakingImpairment",
@@ -5067,8 +4866,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "hearingImpairment",
@@ -5079,8 +4877,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "smokingHabits",
@@ -5091,8 +4888,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "vocalTractConditions",
@@ -5112,8 +4908,7 @@
 		],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "profession",
@@ -5124,8 +4919,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "height",
@@ -5136,8 +4930,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "weight",
@@ -5148,8 +4941,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "trainedSpeaker",
@@ -5160,8 +4952,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "placeOfSecondEducation",
@@ -5172,8 +4963,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "educationLevel",
@@ -5184,8 +4974,7 @@
 		"validator": [],
 		"usage": [
 			"participantInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "visualModelling",
@@ -5206,8 +4995,7 @@
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "frameRate",
@@ -5218,8 +5006,7 @@
 		"validator": [],
 		"usage": [
 			"videoFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "typeOfVideoContent",
@@ -5230,8 +5017,7 @@
 		"validator": [],
 		"usage": [
 			"videoContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "textIncludedInVideo",
@@ -5255,8 +5041,7 @@
 		],
 		"usage": [
 			"videoContentInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "colourDepth",
@@ -5268,8 +5053,7 @@
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "typeOfElement",
@@ -5281,8 +5065,7 @@
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "bodyParts",
@@ -5331,8 +5114,7 @@
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "distractors",
@@ -5343,8 +5125,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "interactiveMedia",
@@ -5355,8 +5136,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "faceViews",
@@ -5368,8 +5148,7 @@
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "faceExpressions",
@@ -5381,8 +5160,7 @@
 		"usage": [
 			"dynamicElementInfo",
 			"staticElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "bodyMovement",
@@ -5393,8 +5171,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "gestures",
@@ -5405,8 +5182,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "handArmMovement",
@@ -5417,8 +5193,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "handManipulation",
@@ -5429,8 +5204,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "headMovement",
@@ -5441,8 +5215,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "eyeMovement",
@@ -5453,8 +5226,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "posesPerSubject",
@@ -5465,8 +5237,7 @@
 		"validator": [],
 		"usage": [
 			"dynamicElementInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "colourSpace",
@@ -5495,8 +5266,7 @@
 		"usage": [
 			"videoFormatInfo",
 			"imageFormatInfo"
-		],
-		"mysql": []
+		]
 	},
 	{
 		"keyname": "requiredSoftware",
@@ -5508,8 +5278,7 @@
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "requiredLRs",
@@ -5521,8 +5290,7 @@
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "originalSource",
@@ -5535,8 +5303,7 @@
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "evaluationTool",
@@ -5548,8 +5315,7 @@
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "creationTool",
@@ -5561,8 +5327,7 @@
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "textNumericalContentInfo",
@@ -5574,8 +5339,7 @@
 		],
 		"properties": {
 			"typeOfTextNumericalContent": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "annotationTool",
@@ -5587,8 +5351,7 @@
 		],
 		"properties": {
 			"targetResourceNameURI": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "durationOfAudioInfo",
@@ -5600,9 +5363,8 @@
 		],
 		"properties": {
 			"size": "string",
-			"durationUnit": "enumeration [[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"durationUnit": "enumeration"
+		}
 	},
 	{
 		"keyname": "durationOfEffectiveSpeechInfo",
@@ -5614,9 +5376,8 @@
 		],
 		"properties": {
 			"size": "string",
-			"durationUnit": "enumeration [[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"durationUnit": "enumeration"
+		}
 	},
 	{
 		"keyname": "annotationManualUnstructured",
@@ -5627,10 +5388,9 @@
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"role": "enumeration",
 			"documentUnstructured": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "sizeInfo",
@@ -5671,9 +5431,8 @@
 		],
 		"properties": {
 			"size": "string",
-			"sizeUnit": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"sizeUnit": "enumeration"
+		}
 	},
 	{
 		"keyname": "evaluationReportUnstructured",
@@ -5684,10 +5443,9 @@
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"role": "enumeration",
 			"documentUnstructured": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "lingualityInfo",
@@ -5709,11 +5467,10 @@
 			"lexicalConceptualResourceImageInfo"
 		],
 		"properties": {
-			"lingualityType": "enumeration [[object Object]|[object Object]|[object Object]]",
-			"multilingualityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"lingualityType": "enumeration",
+			"multilingualityType": "enumeration",
 			"multilingualityTypeDetails": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "relatedLexiconInfo",
@@ -5724,11 +5481,10 @@
 			"languageDescriptionOperationInfo"
 		],
 		"properties": {
-			"relatedLexiconType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"relatedLexiconType": "enumeration",
 			"attachedLexiconPosition": "string",
-			"compatibleLexiconType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"compatibleLexiconType": "enumeration"
+		}
 	},
 	{
 		"keyname": "compressionInfo",
@@ -5742,10 +5498,9 @@
 		],
 		"properties": {
 			"compression": "boolean",
-			"compressionName": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"compressionName": "enumeration",
 			"compressionLoss": "boolean"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "languageDescriptionPerformanceInfo",
@@ -5759,8 +5514,7 @@
 			"robustness": "string",
 			"shallowness": "string",
 			"output": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "resolutionInfo",
@@ -5774,9 +5528,8 @@
 		"properties": {
 			"sizeWidth": "integer",
 			"sizeHeight": "integer",
-			"resolutionStandard": "enumeration [[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"resolutionStandard": "enumeration"
+		}
 	},
 	{
 		"keyname": "sizePerVideoFormat",
@@ -5787,10 +5540,9 @@
 			"videoFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerTextFormat",
@@ -5801,10 +5553,9 @@
 			"textFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerTextClassification",
@@ -5815,10 +5566,9 @@
 			"textClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerLanguage",
@@ -5829,10 +5579,9 @@
 			"languageInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerAudioClassification",
@@ -5843,10 +5592,9 @@
 			"audioClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerImageFormat",
@@ -5857,10 +5605,9 @@
 			"imageFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerDomain",
@@ -5871,10 +5618,9 @@
 			"domainInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerTimeCoverage",
@@ -5885,10 +5631,9 @@
 			"timeCoverageInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerImageClassification",
@@ -5899,10 +5644,9 @@
 			"imageClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerModality",
@@ -5913,10 +5657,9 @@
 			"modalityInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerVideoClassification",
@@ -5927,10 +5670,9 @@
 			"videoClassificationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerGeographicCoverage",
@@ -5941,10 +5683,9 @@
 			"geographicCoverageInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerAudioFormat",
@@ -5955,10 +5696,9 @@
 			"audioFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerTextNumericalFormat",
@@ -5969,10 +5709,9 @@
 			"textNumericalFormatInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerLanguageVariety",
@@ -5983,10 +5722,9 @@
 			"languageVarietyInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerAnnotation",
@@ -5997,10 +5735,9 @@
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "sizePerCharacterEncoding",
@@ -6011,10 +5748,9 @@
 			"characterEncodingInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"sizeInfo": "reference"
+		}
 	},
 	{
 		"keyname": "audioContentInfo",
@@ -6026,12 +5762,11 @@
 			"lexicalConceptualResourceAudioInfo"
 		],
 		"properties": {
-			"speechItems": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"nonSpeechItems": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"speechItems": "enumeration",
+			"nonSpeechItems": "enumeration",
 			"textualDescription": "string",
-			"noiseLevel": "enumeration [[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"noiseLevel": "enumeration"
+		}
 	},
 	{
 		"keyname": "toolServiceCreationInfo",
@@ -6045,9 +5780,8 @@
 			"implementationLanguage": "string",
 			"formalism": "string",
 			"creationDetails": "string",
-			"originalSource": "Reference to originalSource [w:1.001]"
-		},
-		"mysql": []
+			"originalSource": "reference"
+		}
 	},
 	{
 		"keyname": "timeCoverageInfo",
@@ -6070,9 +5804,8 @@
 		],
 		"properties": {
 			"timeCoverage": "string",
-			"sizePerTimeCoverage": "Reference to sizePerTimeCoverage [w:3.002]"
-		},
-		"mysql": []
+			"sizePerTimeCoverage": "reference"
+		}
 	},
 	{
 		"keyname": "geographicCoverageInfo",
@@ -6095,9 +5828,8 @@
 		],
 		"properties": {
 			"geographicCoverage": "string",
-			"sizePerGeographicCoverage": "Reference to sizePerGeographicCoverage [w:3.002]"
-		},
-		"mysql": []
+			"sizePerGeographicCoverage": "reference"
+		}
 	},
 	{
 		"keyname": "textNumericalFormatInfo",
@@ -6109,9 +5841,8 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"sizePerTextNumericalFormat": "Reference to sizePerTextNumericalFormat [w:3.002]"
-		},
-		"mysql": []
+			"sizePerTextNumericalFormat": "reference"
+		}
 	},
 	{
 		"keyname": "textFormatInfo",
@@ -6126,9 +5857,8 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"sizePerTextFormat": "Reference to sizePerTextFormat [w:3.002]"
-		},
-		"mysql": []
+			"sizePerTextFormat": "reference"
+		}
 	},
 	{
 		"keyname": "creationInfo",
@@ -6149,12 +5879,11 @@
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"creationMode": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"creationMode": "enumeration",
 			"creationModeDetails": "string",
-			"originalSource": "Reference to originalSource [w:1.001]",
-			"creationTool": "Reference to creationTool [w:1.001]"
-		},
-		"mysql": []
+			"originalSource": "reference",
+			"creationTool": "reference"
+		}
 	},
 	{
 		"keyname": "characterEncodingInfo",
@@ -6169,9 +5898,8 @@
 		],
 		"properties": {
 			"characterEncoding": "string",
-			"sizePerCharacterEncoding": "Reference to sizePerCharacterEncoding [w:3.002]"
-		},
-		"mysql": []
+			"sizePerCharacterEncoding": "reference"
+		}
 	},
 	{
 		"keyname": "runningEnvironmentInfo",
@@ -6183,12 +5911,11 @@
 			"toolServiceOperationInfo"
 		],
 		"properties": {
-			"requiredHardware": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"requiredHardware": "enumeration",
 			"runningEnvironmentDetails": "string",
-			"requiredSoftware": "Reference to requiredSoftware [w:1.001]",
-			"requiredLRs": "Reference to requiredLRs [w:1.001]"
-		},
-		"mysql": []
+			"requiredSoftware": "reference",
+			"requiredLRs": "reference"
+		}
 	},
 	{
 		"keyname": "modalityInfo",
@@ -6211,11 +5938,10 @@
 			"lexicalConceptualResourceImageInfo"
 		],
 		"properties": {
-			"modalityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"modalityType": "enumeration",
 			"modalityTypeDetails": "string",
-			"sizePerModality": "Reference to sizePerModality [w:3.002]"
-		},
-		"mysql": []
+			"sizePerModality": "reference"
+		}
 	},
 	{
 		"keyname": "domainInfo",
@@ -6238,10 +5964,9 @@
 		],
 		"properties": {
 			"domain": "string",
-			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizePerDomain": "Reference to sizePerDomain [w:3.002]"
-		},
-		"mysql": []
+			"conformanceToClassificationScheme": "enumeration",
+			"sizePerDomain": "reference"
+		}
 	},
 	{
 		"keyname": "languageVarietyInfo",
@@ -6252,11 +5977,10 @@
 			"languageInfo"
 		],
 		"properties": {
-			"languageVarietyType": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"languageVarietyType": "enumeration",
 			"languageVarietyName": "string",
-			"sizePerLanguageVariety": "Reference to sizePerLanguageVariety [w:3.002]"
-		},
-		"mysql": []
+			"sizePerLanguageVariety": "reference"
+		}
 	},
 	{
 		"keyname": "settingInfo",
@@ -6268,14 +5992,13 @@
 			"corpusVideoInfo"
 		],
 		"properties": {
-			"naturality": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"conversationalType": "enumeration [[object Object]|[object Object]|[object Object]]",
-			"scenarioType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"audience": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"interactivity": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"naturality": "enumeration",
+			"conversationalType": "enumeration",
+			"scenarioType": "enumeration",
+			"audience": "enumeration",
+			"interactivity": "enumeration",
 			"interaction": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "videoClassificationInfo",
@@ -6288,10 +6011,9 @@
 		"properties": {
 			"videoGenre": "string",
 			"subject_topic": "string",
-			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizePerVideoClassification": "Reference to sizePerVideoClassification [w:3.002]"
-		},
-		"mysql": []
+			"conformanceToClassificationScheme": "enumeration",
+			"sizePerVideoClassification": "reference"
+		}
 	},
 	{
 		"keyname": "imageClassificationInfo",
@@ -6304,10 +6026,9 @@
 		"properties": {
 			"imageGenre": "string",
 			"subject_topic": "string",
-			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizePerImageClassification": "Reference to sizePerImageClassification [w:3.002]"
-		},
-		"mysql": []
+			"conformanceToClassificationScheme": "enumeration",
+			"sizePerImageClassification": "reference"
+		}
 	},
 	{
 		"keyname": "toolServiceOperationInfo",
@@ -6318,11 +6039,10 @@
 			"toolServiceInfo"
 		],
 		"properties": {
-			"operatingSystem": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"operatingSystem": "enumeration",
 			"runningTime": "string",
-			"runningEnvironmentInfo": "Reference to runningEnvironmentInfo [w:4.003]"
-		},
-		"mysql": []
+			"runningEnvironmentInfo": "reference"
+		}
 	},
 	{
 		"keyname": "audioSizeInfo",
@@ -6333,11 +6053,10 @@
 			"corpusAudioInfo"
 		],
 		"properties": {
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"durationOfEffectiveSpeechInfo": "Reference to durationOfEffectiveSpeechInfo [w:2.001]",
-			"durationOfAudioInfo": "Reference to durationOfAudioInfo [w:2.001]"
-		},
-		"mysql": []
+			"sizeInfo": "reference",
+			"durationOfEffectiveSpeechInfo": "reference",
+			"durationOfAudioInfo": "reference"
+		}
 	},
 	{
 		"keyname": "linkToOtherMediaInfo",
@@ -6355,15 +6074,14 @@
 			"languageDescriptionImageInfo"
 		],
 		"properties": {
-			"otherMedia": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"otherMedia": "enumeration",
 			"mediaTypeDetails": "string",
 			"synchronizedWithText": "boolean",
 			"synchronizedWithAudio": "boolean",
 			"synchronizedWithVideo": "boolean",
 			"sycnhronizedWithImage": "boolean",
 			"synchronizedWithTextNumerical": "boolean"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "ngramInfo",
@@ -6374,15 +6092,14 @@
 			"corpusTextNgramInfo"
 		],
 		"properties": {
-			"baseItem": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"baseItem": "enumeration",
 			"order": "integer",
 			"perplexity": "string",
 			"isFactored": "boolean",
 			"factors": "string",
 			"smoothing": "string",
 			"interpolated": "boolean"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceEncodingInfo",
@@ -6393,15 +6110,14 @@
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"encodingLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"linguisticInformation": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"encodingLevel": "enumeration",
+			"linguisticInformation": "enumeration",
+			"conformanceToStandardsBestPractices": "enumeration",
 			"theoreticModel": "string",
 			"externalRef": "string",
-			"extratextualInformation": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"extraTextualInformationUnit": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"extratextualInformation": "enumeration",
+			"extraTextualInformationUnit": "enumeration"
+		}
 	},
 	{
 		"keyname": "languageDescriptionEncodingInfo",
@@ -6412,15 +6128,14 @@
 			"languageDescriptionInfo"
 		],
 		"properties": {
-			"encodingLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"encodingLevel": "enumeration",
+			"conformanceToStandardsBestPractices": "enumeration",
 			"theoreticModel": "string",
 			"formalism": "string",
-			"task": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"grammaticalPhenomenaCoverage": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"task": "enumeration",
+			"grammaticalPhenomenaCoverage": "enumeration",
 			"weightedGrammar": "boolean"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "languageDescriptionOperationInfo",
@@ -6431,10 +6146,9 @@
 			"languageDescriptionInfo"
 		],
 		"properties": {
-			"runningEnvironmentInfo": "Reference to runningEnvironmentInfo [w:4.003]",
-			"relatedLexiconInfo": "Reference to relatedLexiconInfo [w:3.001]"
-		},
-		"mysql": []
+			"runningEnvironmentInfo": "reference",
+			"relatedLexiconInfo": "reference"
+		}
 	},
 	{
 		"keyname": "textClassificationInfo",
@@ -6450,10 +6164,9 @@
 			"textType": "string",
 			"register": "string",
 			"subject_topic": "string",
-			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizePerTextClassification": "Reference to sizePerTextClassification [w:3.002]"
-		},
-		"mysql": []
+			"conformanceToClassificationScheme": "enumeration",
+			"sizePerTextClassification": "reference"
+		}
 	},
 	{
 		"keyname": "audioClassificationInfo",
@@ -6464,14 +6177,13 @@
 			"corpusAudioInfo"
 		],
 		"properties": {
-			"audioGenre": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"speechGenre": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"audioGenre": "enumeration",
+			"speechGenre": "enumeration",
 			"subject_topic": "string",
 			"register": "string",
-			"conformanceToClassificationScheme": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sizePerAudioClassification": "Reference to sizePerAudioClassification [w:3.002]"
-		},
-		"mysql": []
+			"conformanceToClassificationScheme": "enumeration",
+			"sizePerAudioClassification": "reference"
+		}
 	},
 	{
 		"keyname": "communicationInfo",
@@ -6483,8 +6195,8 @@
 			"organizationInfo"
 		],
 		"properties": {
-			"email": "string [[^@]+@[^\\.]+\\..+|]",
-			"url": "string [(http://|https://|ftp://|www.).*]",
+			"email": "string",
+			"url": "string",
 			"address": "string",
 			"zipCode": "string",
 			"city": "string",
@@ -6492,8 +6204,7 @@
 			"country": "string",
 			"telephoneNumber": "string",
 			"faxNumber": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "staticElementInfo",
@@ -6505,7 +6216,7 @@
 		],
 		"properties": {
 			"typeOfElement": "string",
-			"bodyParts": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"bodyParts": "enumeration",
 			"faceViews": "string",
 			"faceExpressions": "string",
 			"artifactParts": "string",
@@ -6514,8 +6225,7 @@
 			"thingDescription": "string",
 			"organizationDescription": "string",
 			"eventDescription": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "languageInfo",
@@ -6540,10 +6250,9 @@
 			"languageId": "string",
 			"languageName": "string",
 			"languageScript": "string",
-			"sizePerLanguage": "Reference to sizePerLanguage [w:3.002]",
-			"languageVarietyInfo": "Reference to languageVarietyInfo [w:5.003]"
-		},
-		"mysql": []
+			"sizePerLanguage": "reference",
+			"languageVarietyInfo": "reference"
+		}
 	},
 	{
 		"keyname": "imageContentInfo",
@@ -6557,10 +6266,9 @@
 		],
 		"properties": {
 			"typeOfImageContent": "string",
-			"textIncludedInImage": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"staticElementInfo": "Reference to staticElementInfo [w:10.001]"
-		},
-		"mysql": []
+			"textIncludedInImage": "enumeration",
+			"staticElementInfo": "reference"
+		}
 	},
 	{
 		"keyname": "organizationInfo",
@@ -6577,9 +6285,8 @@
 			"organizationName": "string",
 			"organizationShortName": "string",
 			"departmentName": "string",
-			"communicationInfo": "Reference to communicationInfo [w:9.001]"
-		},
-		"mysql": []
+			"communicationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "inputInfo",
@@ -6590,21 +6297,20 @@
 			"toolServiceInfo"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"modalityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"mediaType": "enumeration",
+			"resourceType": "enumeration",
+			"modalityType": "enumeration",
 			"languageName": "string",
 			"languageId": "string",
 			"languageVarietyName": "string",
 			"mimeType": "string",
 			"characterEncoding": "string",
-			"annotationType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"annotationType": "enumeration",
 			"annotationFormat": "string",
 			"tagset": "string",
-			"segmentationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"segmentationLevel": "enumeration",
+			"conformanceToStandardsBestPractices": "enumeration"
+		}
 	},
 	{
 		"keyname": "dynamicElementInfo",
@@ -6616,7 +6322,7 @@
 		],
 		"properties": {
 			"typeOfElement": "string",
-			"bodyParts": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"bodyParts": "enumeration",
 			"distractors": "string",
 			"interactiveMedia": "string",
 			"faceViews": "string",
@@ -6628,8 +6334,7 @@
 			"headMovement": "string",
 			"eyeMovement": "string",
 			"posesPerSubject": "integer"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "outputInfo",
@@ -6640,21 +6345,20 @@
 			"toolServiceInfo"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"modalityType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"mediaType": "enumeration",
+			"resourceType": "enumeration",
+			"modalityType": "enumeration",
 			"languageName": "string",
 			"languageId": "string",
 			"languageVarietyName": "string",
 			"mimeType": "string",
 			"characterEncoding": "string",
-			"annotationType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"annotationType": "enumeration",
 			"annotationFormat": "string",
 			"tagset": "string",
-			"segmentationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]"
-		},
-		"mysql": []
+			"segmentationLevel": "enumeration",
+			"conformanceToStandardsBestPractices": "enumeration"
+		}
 	},
 	{
 		"keyname": "affiliation",
@@ -6665,10 +6369,9 @@
 			"personInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"organizationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "annotatorOrganization",
@@ -6679,10 +6382,9 @@
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"organizationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "evaluatorOrganization",
@@ -6693,10 +6395,9 @@
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"organizationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "recorderOrganization",
@@ -6707,10 +6408,9 @@
 			"recordingInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"organizationInfo": "Reference to organizationInfo [w:12.002]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"organizationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "videoContentInfo",
@@ -6724,10 +6424,9 @@
 		],
 		"properties": {
 			"typeOfVideoContent": "string",
-			"textIncludedInVideo": "enumeration [[object Object]|[object Object]|[object Object]]",
-			"dynamicElementInfo": "Reference to dynamicElementInfo [w:13.001]"
-		},
-		"mysql": []
+			"textIncludedInVideo": "enumeration",
+			"dynamicElementInfo": "reference"
+		}
 	},
 	{
 		"keyname": "audioFormatInfo",
@@ -6740,18 +6439,17 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"signalEncoding": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"signalEncoding": "enumeration",
 			"samplingRate": "integer",
-			"quantization": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"byteOrder": "enumeration [[object Object]|[object Object]]",
-			"signConvention": "enumeration [[object Object]|[object Object]|[object Object]]",
-			"audioQualityMeasuresIncluded": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"numberOfTracks": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"recordingQuality": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"compressionInfo": "Reference to compressionInfo [w:3.001]",
-			"sizePerAudioFormat": "Reference to sizePerAudioFormat [w:3.002]"
-		},
-		"mysql": []
+			"quantization": "enumeration",
+			"byteOrder": "enumeration",
+			"signConvention": "enumeration",
+			"audioQualityMeasuresIncluded": "enumeration",
+			"numberOfTracks": "enumeration",
+			"recordingQuality": "enumeration",
+			"compressionInfo": "reference",
+			"sizePerAudioFormat": "reference"
+		}
 	},
 	{
 		"keyname": "imageFormatInfo",
@@ -6765,16 +6463,15 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"colourSpace": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"colourSpace": "enumeration",
 			"colourDepth": "integer",
-			"visualModelling": "enumeration [[object Object]|[object Object]]",
-			"rasterOrVectorGraphics": "enumeration [[object Object]|[object Object]]",
-			"quality": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"compressionInfo": "Reference to compressionInfo [w:3.001]",
-			"resolutionInfo": "Reference to resolutionInfo [w:3.001]",
-			"sizePerImageFormat": "Reference to sizePerImageFormat [w:3.002]"
-		},
-		"mysql": []
+			"visualModelling": "enumeration",
+			"rasterOrVectorGraphics": "enumeration",
+			"quality": "enumeration",
+			"compressionInfo": "reference",
+			"resolutionInfo": "reference",
+			"sizePerImageFormat": "reference"
+		}
 	},
 	{
 		"keyname": "videoFormatInfo",
@@ -6788,16 +6485,15 @@
 		],
 		"properties": {
 			"mimeType": "string",
-			"colourSpace": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"colourSpace": "enumeration",
 			"colourDepth": "integer",
 			"frameRate": "integer",
-			"visualModelling": "enumeration [[object Object]|[object Object]]",
+			"visualModelling": "enumeration",
 			"fidelity": "boolean",
-			"resolutionInfo": "Reference to resolutionInfo [w:3.001]",
-			"compressionInfo": "Reference to compressionInfo [w:3.001]",
-			"sizePerVideoFormat": "Reference to sizePerVideoFormat [w:3.002]"
-		},
-		"mysql": []
+			"resolutionInfo": "reference",
+			"compressionInfo": "reference",
+			"sizePerVideoFormat": "reference"
+		}
 	},
 	{
 		"keyname": "participantInfo",
@@ -6809,10 +6505,10 @@
 		],
 		"properties": {
 			"alias": "string",
-			"ageGroup": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"ageGroup": "enumeration",
 			"age": "string",
-			"sex": "enumeration [[object Object]|[object Object]|[object Object]]",
-			"origin": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"sex": "enumeration",
+			"origin": "enumeration",
 			"placeOfLiving": "string",
 			"placeOfBirth": "string",
 			"placeOfChildhood": "string",
@@ -6820,15 +6516,14 @@
 			"speakingImpairment": "string",
 			"hearingImpairment": "string",
 			"smokingHabits": "string",
-			"vocalTractConditions": "enumeration [[object Object]|[object Object]]",
+			"vocalTractConditions": "enumeration",
 			"profession": "string",
 			"height": "integer",
 			"weight": "integer",
 			"trainedSpeaker": "boolean",
 			"placeOfSecondEducation": "string",
 			"educationLevel": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "documentInfo",
@@ -6840,7 +6535,7 @@
 			"evaluationReportStructured"
 		],
 		"properties": {
-			"documentType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"documentType": "enumeration",
 			"title": "string",
 			"author": "string",
 			"editor": "string",
@@ -6854,14 +6549,13 @@
 			"edition": "string",
 			"conference": "string",
 			"doi": "string",
-			"url": "string [(http://|https://|ftp://|www.).*]",
+			"url": "string",
 			"ISSN": "string",
 			"ISBN": "string",
 			"keywords": "string",
 			"documentLanguageName": "string",
 			"documentLanguageId": "string"
-		},
-		"mysql": []
+		}
 	},
 	{
 		"keyname": "annotationManualStructured",
@@ -6872,10 +6566,9 @@
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"documentInfo": "Reference to documentInfo [w:20.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"documentInfo": "reference"
+		}
 	},
 	{
 		"keyname": "evaluationReportStructured",
@@ -6886,10 +6579,9 @@
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"documentInfo": "Reference to documentInfo [w:20.001]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"documentInfo": "reference"
+		}
 	},
 	{
 		"keyname": "personInfo",
@@ -6904,12 +6596,11 @@
 		"properties": {
 			"surname": "string",
 			"givenName": "string",
-			"sex": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"sex": "enumeration",
 			"position": "string",
-			"communicationInfo": "Reference to communicationInfo [w:9.001]",
-			"affiliation": "Reference to affiliation [w:13.003]"
-		},
-		"mysql": []
+			"communicationInfo": "reference",
+			"affiliation": "reference"
+		}
 	},
 	{
 		"keyname": "annotatorPerson",
@@ -6920,10 +6611,9 @@
 			"annotationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"personInfo": "Reference to personInfo [w:26.005]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"personInfo": "reference"
+		}
 	},
 	{
 		"keyname": "recorderPerson",
@@ -6934,10 +6624,9 @@
 			"recordingInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"personInfo": "Reference to personInfo [w:26.005]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"personInfo": "reference"
+		}
 	},
 	{
 		"keyname": "evaluatorPerson",
@@ -6948,10 +6637,9 @@
 			"toolServiceEvaluationInfo"
 		],
 		"properties": {
-			"role": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"personInfo": "Reference to personInfo [w:26.005]"
-		},
-		"mysql": []
+			"role": "enumeration",
+			"personInfo": "reference"
+		}
 	},
 	{
 		"keyname": "personSourceSetInfo",
@@ -6963,20 +6651,19 @@
 		],
 		"properties": {
 			"numberOfPersons": "integer",
-			"ageOfPersons": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"ageOfPersons": "enumeration",
 			"ageRangeStart": "integer",
 			"ageRangeEnd": "integer",
-			"sexOfPersons": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"originOfPersons": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"sexOfPersons": "enumeration",
+			"originOfPersons": "enumeration",
 			"dialectAccentOfPersons": "string",
 			"geographicDistributionOfPersons": "string",
-			"hearingImpairmentOfPersons": "enumeration [[object Object]|[object Object]|[object Object]]",
-			"speakingImpairmentOfPersons": "enumeration [[object Object]|[object Object]|[object Object]]",
+			"hearingImpairmentOfPersons": "enumeration",
+			"speakingImpairmentOfPersons": "enumeration",
 			"numberOfTrainedSpeakers": "integer",
-			"speechInfluences": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"participantInfo": "Reference to participantInfo [w:19.001]"
-		},
-		"mysql": []
+			"speechInfluences": "enumeration",
+			"participantInfo": "reference"
+		}
 	},
 	{
 		"keyname": "captureInfo",
@@ -6990,15 +6677,14 @@
 			"corpusTextNumericalInfo"
 		],
 		"properties": {
-			"capturingDeviceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"capturingDeviceType": "enumeration",
 			"capturingDeviceTypeDetails": "string",
 			"capturingDetails": "string",
-			"capturingEnvironment": "enumeration [[object Object]|[object Object]]",
+			"capturingEnvironment": "enumeration",
 			"sensorTechnology": "string",
-			"sceneIllumination": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"personSourceSetInfo": "Reference to personSourceSetInfo [w:31.002]"
-		},
-		"mysql": []
+			"sceneIllumination": "enumeration",
+			"personSourceSetInfo": "reference"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceTextInfo",
@@ -7009,18 +6695,17 @@
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
-			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"textFormatInfo": "reference",
+			"characterEncodingInfo": "reference",
+			"domainInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "recordingInfo",
@@ -7033,18 +6718,17 @@
 			"corpusTextNumericalInfo"
 		],
 		"properties": {
-			"recordingDeviceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"recordingDeviceType": "enumeration",
 			"recordingDeviceTypeDetails": "string",
 			"recordingPlatformSoftware": "string",
-			"recordingEnvironment": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sourceChannel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"sourceChannelType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"recordingEnvironment": "enumeration",
+			"sourceChannel": "enumeration",
+			"sourceChannelType": "enumeration",
 			"sourceChannelName": "string",
 			"sourceChannelDetails": "string",
-			"recorderPerson": "Reference to recorderPerson [w:27.006]",
-			"recorderOrganization": "Reference to recorderOrganization [w:13.003]"
-		},
-		"mysql": []
+			"recorderPerson": "reference",
+			"recorderOrganization": "reference"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceAudioInfo",
@@ -7055,18 +6739,17 @@
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"audioContentInfo": "Reference to audioContentInfo [w:4.001]",
-			"audioFormatInfo": "Reference to audioFormatInfo [w:15.004]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"audioContentInfo": "reference",
+			"audioFormatInfo": "reference",
+			"domainInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"timeCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "languageDescriptionTextInfo",
@@ -7077,20 +6760,19 @@
 			"languageDescriptionMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
-			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"textFormatInfo": "reference",
+			"characterEncodingInfo": "reference",
+			"domainInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceImageInfo",
@@ -7101,18 +6783,17 @@
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"imageContentInfo": "Reference to imageContentInfo [w:12.002]",
-			"imageFormatInfo": "Reference to imageFormatInfo [w:15.005]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"modalityInfo": "reference",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"sizeInfo": "reference",
+			"imageContentInfo": "reference",
+			"imageFormatInfo": "reference",
+			"domainInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"timeCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceVideoInfo",
@@ -7123,18 +6804,17 @@
 			"lexicalConceptualResourceMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"videoContentInfo": "Reference to videoContentInfo [w:15.002]",
-			"videoFormatInfo": "Reference to videoFormatInfo [w:15.005]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"videoContentInfo": "reference",
+			"videoFormatInfo": "reference",
+			"domainInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"timeCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "toolServiceEvaluationInfo",
@@ -7146,18 +6826,17 @@
 		],
 		"properties": {
 			"evaluated": "boolean",
-			"evaluationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"evaluationType": "enumeration [[object Object]|[object Object]]",
-			"evaluationCriteria": "enumeration [[object Object]|[object Object]]",
-			"evaluationMeasure": "enumeration [[object Object]|[object Object]]",
+			"evaluationLevel": "enumeration",
+			"evaluationType": "enumeration",
+			"evaluationCriteria": "enumeration",
+			"evaluationMeasure": "enumeration",
 			"evaluationDetails": "string",
-			"evaluationReportStructured": "Reference to evaluationReportStructured [w:21.002]",
-			"evaluationReportUnstructured": "Reference to evaluationReportUnstructured [w:2.001]",
-			"evaluationTool": "Reference to evaluationTool [w:1.001]",
-			"evaluatorPerson": "Reference to evaluatorPerson [w:27.006]",
-			"evaluatorOrganization": "Reference to evaluatorOrganization [w:13.003]"
-		},
-		"mysql": []
+			"evaluationReportStructured": "reference",
+			"evaluationReportUnstructured": "reference",
+			"evaluationTool": "reference",
+			"evaluatorPerson": "reference",
+			"evaluatorOrganization": "reference"
+		}
 	},
 	{
 		"keyname": "languageDescriptionImageInfo",
@@ -7168,20 +6847,19 @@
 			"languageDescriptionMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"imageContentInfo": "Reference to imageContentInfo [w:12.002]",
-			"imageFormatInfo": "Reference to imageFormatInfo [w:15.005]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"imageContentInfo": "reference",
+			"imageFormatInfo": "reference",
+			"domainInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"timeCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "languageDescriptionVideoInfo",
@@ -7192,20 +6870,19 @@
 			"languageDescriptionMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"videoContentInfo": "Reference to videoContentInfo [w:15.002]",
-			"videoFormatInfo": "Reference to videoFormatInfo [w:15.005]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"videoContentInfo": "reference",
+			"videoFormatInfo": "reference",
+			"domainInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"timeCoverageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "annotationInfo",
@@ -7221,30 +6898,29 @@
 			"corpusTextNgramInfo"
 		],
 		"properties": {
-			"annotationType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"annotatedElements": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"annotationType": "enumeration",
+			"annotatedElements": "enumeration",
 			"annotationStandoff": "boolean",
-			"segmentationLevel": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"segmentationLevel": "enumeration",
 			"annotationFormat": "string",
 			"tagset": "string",
 			"tagsetLanguageId": "string",
 			"tagsetLanguageName": "string",
-			"conformanceToStandardsBestPractices": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"conformanceToStandardsBestPractices": "enumeration",
 			"theoreticModel": "string",
-			"annotationMode": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
+			"annotationMode": "enumeration",
 			"annotationModeDetails": "string",
 			"annotationStartDate": "date",
 			"annotationEndDate": "date",
 			"interannotatorAgreement": "string",
 			"intraannotatorAgreement": "string",
-			"annotationManualUnstructured": "Reference to annotationManualUnstructured [w:2.001]",
-			"annotationManualStructured": "Reference to annotationManualStructured [w:21.002]",
-			"annotationTool": "Reference to annotationTool [w:1.001]",
-			"sizePerAnnotation": "Reference to sizePerAnnotation [w:3.002]",
-			"annotatorPerson": "Reference to annotatorPerson [w:27.006]",
-			"annotatorOrganization": "Reference to annotatorOrganization [w:13.003]"
-		},
-		"mysql": []
+			"annotationManualUnstructured": "reference",
+			"annotationManualStructured": "reference",
+			"annotationTool": "reference",
+			"sizePerAnnotation": "reference",
+			"annotatorPerson": "reference",
+			"annotatorOrganization": "reference"
+		}
 	},
 	{
 		"keyname": "toolServiceInfo",
@@ -7255,17 +6931,16 @@
 			"toolServiceInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"toolServiceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
+			"resourceType": "enumeration",
+			"toolServiceType": "enumeration",
 			"toolServiceSubtype": "string",
 			"languageDependent": "boolean",
-			"inputInfo": "Reference to inputInfo [w:13.001]",
-			"outputInfo": "Reference to outputInfo [w:13.001]",
-			"toolServiceOperationInfo": "Reference to toolServiceOperationInfo [w:6.004]",
-			"toolServiceEvaluationInfo": "Reference to toolServiceEvaluationInfo [w:70.014]",
-			"toolServiceCreationInfo": "Reference to toolServiceCreationInfo [w:4.002]"
-		},
-		"mysql": []
+			"inputInfo": "reference",
+			"outputInfo": "reference",
+			"toolServiceOperationInfo": "reference",
+			"toolServiceEvaluationInfo": "reference",
+			"toolServiceCreationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusTextNgramInfo",
@@ -7276,22 +6951,21 @@
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"ngramInfo": "Reference to ngramInfo [w:7.001]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
-			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
-			"annotationInfo": "Reference to annotationInfo [w:83.016]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"textClassificationInfo": "Reference to textClassificationInfo [w:8.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"creationInfo": "Reference to creationInfo [w:4.003]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"ngramInfo": "reference",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"textFormatInfo": "reference",
+			"characterEncodingInfo": "reference",
+			"annotationInfo": "reference",
+			"domainInfo": "reference",
+			"textClassificationInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"creationInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusTextInfo",
@@ -7302,22 +6976,21 @@
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"textFormatInfo": "Reference to textFormatInfo [w:4.003]",
-			"characterEncodingInfo": "Reference to characterEncodingInfo [w:4.003]",
-			"annotationInfo": "Reference to annotationInfo [w:83.016]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"textClassificationInfo": "Reference to textClassificationInfo [w:8.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"textFormatInfo": "reference",
+			"characterEncodingInfo": "reference",
+			"annotationInfo": "reference",
+			"domainInfo": "reference",
+			"textClassificationInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusTextNumericalInfo",
@@ -7328,18 +7001,17 @@
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"textNumericalContentInfo": "Reference to textNumericalContentInfo [w:1.001]",
-			"textNumericalFormatInfo": "Reference to textNumericalFormatInfo [w:4.003]",
-			"recordingInfo": "Reference to recordingInfo [w:48.01]",
-			"captureInfo": "Reference to captureInfo [w:37.003]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"annotationInfo": "Reference to annotationInfo [w:83.016]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"textNumericalContentInfo": "reference",
+			"textNumericalFormatInfo": "reference",
+			"recordingInfo": "reference",
+			"captureInfo": "reference",
+			"creationInfo": "reference",
+			"annotationInfo": "reference",
+			"linkToOtherMediaInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusImageInfo",
@@ -7350,23 +7022,22 @@
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"imageContentInfo": "Reference to imageContentInfo [w:12.002]",
-			"imageFormatInfo": "Reference to imageFormatInfo [w:15.005]",
-			"annotationInfo": "Reference to annotationInfo [w:83.016]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"imageClassificationInfo": "Reference to imageClassificationInfo [w:6.003]",
-			"captureInfo": "Reference to captureInfo [w:37.003]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"modalityInfo": "reference",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"sizeInfo": "reference",
+			"imageContentInfo": "reference",
+			"imageFormatInfo": "reference",
+			"annotationInfo": "reference",
+			"domainInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"imageClassificationInfo": "reference",
+			"captureInfo": "reference",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference"
+		}
 	},
 	{
 		"keyname": "languageDescriptionMediaType",
@@ -7377,11 +7048,10 @@
 			"languageDescriptionInfo"
 		],
 		"properties": {
-			"languageDescriptionTextInfo": "Reference to languageDescriptionTextInfo [w:54.031]",
-			"languageDescriptionVideoInfo": "Reference to languageDescriptionVideoInfo [w:76.032]",
-			"languageDescriptionImageInfo": "Reference to languageDescriptionImageInfo [w:73.032]"
-		},
-		"mysql": []
+			"languageDescriptionTextInfo": "reference",
+			"languageDescriptionVideoInfo": "reference",
+			"languageDescriptionImageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceMediaType",
@@ -7392,12 +7062,11 @@
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"lexicalConceptualResourceTextInfo": "Reference to lexicalConceptualResourceTextInfo [w:43.027]",
-			"lexicalConceptualResourceAudioInfo": "Reference to lexicalConceptualResourceAudioInfo [w:54.026]",
-			"lexicalConceptualResourceVideoInfo": "Reference to lexicalConceptualResourceVideoInfo [w:65.028]",
-			"lexicalConceptualResourceImageInfo": "Reference to lexicalConceptualResourceImageInfo [w:62.028]"
-		},
-		"mysql": []
+			"lexicalConceptualResourceTextInfo": "reference",
+			"lexicalConceptualResourceAudioInfo": "reference",
+			"lexicalConceptualResourceVideoInfo": "reference",
+			"lexicalConceptualResourceImageInfo": "reference"
+		}
 	},
 	{
 		"keyname": "languageDescriptionInfo",
@@ -7408,15 +7077,14 @@
 			"languageDescriptionInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"languageDescriptionType": "enumeration [[object Object]|[object Object]]",
-			"languageDescriptionEncodingInfo": "Reference to languageDescriptionEncodingInfo [w:7.001]",
-			"languageDescriptionOperationInfo": "Reference to languageDescriptionOperationInfo [w:7.005]",
-			"languageDescriptionPerformanceInfo": "Reference to languageDescriptionPerformanceInfo [w:3.001]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"languageDescriptionMediaType": "Reference to languageDescriptionMediaType [w:203.096]"
-		},
-		"mysql": []
+			"resourceType": "enumeration",
+			"languageDescriptionType": "enumeration",
+			"languageDescriptionEncodingInfo": "reference",
+			"languageDescriptionOperationInfo": "reference",
+			"languageDescriptionPerformanceInfo": "reference",
+			"creationInfo": "reference",
+			"languageDescriptionMediaType": "reference"
+		}
 	},
 	{
 		"keyname": "lexicalConceptualResourceInfo",
@@ -7427,13 +7095,12 @@
 			"lexicalConceptualResourceInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lexicalConceptualResourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lexicalConceptualResourceEncodingInfo": "Reference to lexicalConceptualResourceEncodingInfo [w:7.001]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"lexicalConceptualResourceMediaType": "Reference to lexicalConceptualResourceMediaType [w:224.11]"
-		},
-		"mysql": []
+			"resourceType": "enumeration",
+			"lexicalConceptualResourceType": "enumeration",
+			"lexicalConceptualResourceEncodingInfo": "reference",
+			"creationInfo": "reference",
+			"lexicalConceptualResourceMediaType": "reference"
+		}
 	},
 	{
 		"keyname": "corpusAudioInfo",
@@ -7444,25 +7111,24 @@
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"audioSizeInfo": "Reference to audioSizeInfo [w:6.004]",
-			"audioContentInfo": "Reference to audioContentInfo [w:4.001]",
-			"settingInfo": "Reference to settingInfo [w:6.001]",
-			"audioFormatInfo": "Reference to audioFormatInfo [w:15.004]",
-			"annotationInfo": "Reference to annotationInfo [w:83.016]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"audioClassificationInfo": "Reference to audioClassificationInfo [w:8.003]",
-			"recordingInfo": "Reference to recordingInfo [w:48.01]",
-			"captureInfo": "Reference to captureInfo [w:37.003]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"audioSizeInfo": "reference",
+			"audioContentInfo": "reference",
+			"settingInfo": "reference",
+			"audioFormatInfo": "reference",
+			"annotationInfo": "reference",
+			"domainInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"audioClassificationInfo": "reference",
+			"recordingInfo": "reference",
+			"captureInfo": "reference",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusVideoInfo",
@@ -7473,25 +7139,24 @@
 			"corpusMediaType"
 		],
 		"properties": {
-			"mediaType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]]",
-			"lingualityInfo": "Reference to lingualityInfo [w:3.001]",
-			"languageInfo": "Reference to languageInfo [w:11.006]",
-			"modalityInfo": "Reference to modalityInfo [w:5.003]",
-			"sizeInfo": "Reference to sizeInfo [w:2.001]",
-			"videoContentInfo": "Reference to videoContentInfo [w:15.002]",
-			"settingInfo": "Reference to settingInfo [w:6.001]",
-			"videoFormatInfo": "Reference to videoFormatInfo [w:15.005]",
-			"annotationInfo": "Reference to annotationInfo [w:83.016]",
-			"domainInfo": "Reference to domainInfo [w:5.003]",
-			"timeCoverageInfo": "Reference to timeCoverageInfo [w:4.003]",
-			"geographicCoverageInfo": "Reference to geographicCoverageInfo [w:4.003]",
-			"videoClassificationInfo": "Reference to videoClassificationInfo [w:6.003]",
-			"recordingInfo": "Reference to recordingInfo [w:48.01]",
-			"captureInfo": "Reference to captureInfo [w:37.003]",
-			"creationInfo": "Reference to creationInfo [w:4.003]",
-			"linkToOtherMediaInfo": "Reference to linkToOtherMediaInfo [w:7.001]"
-		},
-		"mysql": []
+			"mediaType": "enumeration",
+			"lingualityInfo": "reference",
+			"languageInfo": "reference",
+			"modalityInfo": "reference",
+			"sizeInfo": "reference",
+			"videoContentInfo": "reference",
+			"settingInfo": "reference",
+			"videoFormatInfo": "reference",
+			"annotationInfo": "reference",
+			"domainInfo": "reference",
+			"timeCoverageInfo": "reference",
+			"geographicCoverageInfo": "reference",
+			"videoClassificationInfo": "reference",
+			"recordingInfo": "reference",
+			"captureInfo": "reference",
+			"creationInfo": "reference",
+			"linkToOtherMediaInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusMediaType",
@@ -7502,14 +7167,13 @@
 			"corpusInfo"
 		],
 		"properties": {
-			"corpusTextInfo": "Reference to corpusTextInfo [w:145.05]",
-			"corpusAudioInfo": "Reference to corpusAudioInfo [w:251.066]",
-			"corpusVideoInfo": "Reference to corpusVideoInfo [w:256.065]",
-			"corpusImageInfo": "Reference to corpusImageInfo [w:199.054]",
-			"corpusTextNumericalInfo": "Reference to corpusTextNumericalInfo [w:192.042]",
-			"corpusTextNgramInfo": "Reference to corpusTextNgramInfo [w:145.05]"
-		},
-		"mysql": []
+			"corpusTextInfo": "reference",
+			"corpusAudioInfo": "reference",
+			"corpusVideoInfo": "reference",
+			"corpusImageInfo": "reference",
+			"corpusTextNumericalInfo": "reference",
+			"corpusTextNgramInfo": "reference"
+		}
 	},
 	{
 		"keyname": "corpusInfo",
@@ -7520,9 +7184,8 @@
 			"corpusInfo"
 		],
 		"properties": {
-			"resourceType": "enumeration [[object Object]|[object Object]|[object Object]|[object Object]]",
-			"corpusMediaType": "Reference to corpusMediaType [w:1188.328]"
-		},
-		"mysql": []
+			"resourceType": "enumeration",
+			"corpusMediaType": "reference"
+		}
 	}
 ]
