@@ -1,0 +1,14 @@
+{
+  "name": "CMDI_importer",
+  "description": "CMDI importer",
+  "version": "0.0.1",
+  "license": "CC-SA",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Keeleressursid/METASHARE.git"
+  },
+  "dependencies": {
+    "xml2js": "*"
+  }
+}
